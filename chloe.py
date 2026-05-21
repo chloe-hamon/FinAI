@@ -55,112 +55,102 @@ ACTIONS = {
     "Honda":        "7267.T",
 }
 
+# ============================================================
+# RÉCUPÉRER LES INDICES
+# ============================================================
 
-# ============================================
-# RÉCUPÉRATION DES INDICES
-# ============================================
-
-print("INDICES BOURSIERS")
-
-for nom, ticker in INDICES.items():
-    indice = yf.Ticker(ticker)
-    historique = indice.history(period="2y")
+def get_market_indices(indices: dict = INDICES, period: str = "2y") -> dict:
     
-    print(f"\n{nom} ({ticker}) - Historique 2 ans :")
-    print(historique[["Open", "High", "Low", "Close", "Volume"]].head())
-    
-    chemin = f"data/indices/{nom.lower()}.csv"
-    historique.to_csv(chemin)
-    print(f"✅ Sauvegardé : {chemin}")
+    print("RÉCUPÉRATION DES INDICES BOURSIERS")
+
+    resultats = {}
+
+    for nom, ticker in indices.items():
+        try:
+            indice = yf.Ticker(ticker)
+            historique = indice.history(period=period)
+
+            if historique.empty:
+                print(f"{nom} ({ticker}) — Pas de données disponibles")
+                continue
+
+            # Garder uniquement les colonnes utiles
+            colonnes = [c for c in ["Open", "High", "Low", "Close", "Volume"] if c in historique.columns]
+            historique = historique[colonnes]
+
+            print(f"\n{nom} ({ticker})")
+            print(f"  Lignes récupérées : {len(historique)}")
+            print(f"  Période : {historique.index[0].date()} → {historique.index[-1].date()}")
+            print(historique.tail(3).to_string())
+
+            # Sauvegarde CSV raw
+            chemin = f"data/indices/{nom.lower()}.csv"
+            historique.to_csv(chemin)
+            print(f"  ✅ Sauvegardé : {chemin}")
+
+            resultats[nom] = historique
+
+        except Exception as e:
+            print(f"❌ {nom} ({ticker}) — Erreur : {e}")
+
+    print(f"\n✅ {len(resultats)}/{len(indices)} indices récupérés avec succès")
+    return resultats
+
 
 
 # ============================================
 # RÉCUPÉRATION DES ACTIONS
 # ============================================
 
-print("ACTIONS")
-
-for nom, ticker in ACTIONS.items():
-    action = yf.Ticker(ticker)
-    info = action.info
-
-    print(f"\n=== {nom} ({ticker}) ===")
-    print(f"  Nom complet : {info.get('longName')}")
-    print(f"  Secteur     : {info.get('sector')}")
-    print(f"  Prix actuel : {info.get('currentPrice')} $")
-    print(f"  P/E Ratio   : {info.get('trailingPE')}")
-
-    historique = action.history(period="2y")
-
-    print(f"  Historique (5 derniers jours) :")
-    print(historique[["Close"]].tail(5))
-
-    nom_fichier = nom.lower().replace(' ', '_')
-    chemin = f"data/actions/{nom_fichier}.csv"
-    historique.to_csv(chemin)
-    print(f"✅ Sauvegardé : {chemin}")
+def get_multiple_stocks(actions: dict = ACTIONS, period: str = "2y") -> dict:
+    
+    print(" RÉCUPÉRATION DES ACTIONS")
 
 
+    resultats = {}
 
-# ============================================
-# NETTOYAGE DES DONNÉES
-# ============================================
+    for nom, ticker in actions.items():
+        try:
+            action = yf.Ticker(ticker)
+            historique = action.history(period=period)
 
-os.makedirs("data/indices_clean", exist_ok=True)
-os.makedirs("data/actions_clean", exist_ok=True)
+            if historique.empty:
+                print(f"{nom} ({ticker}) — Pas de données disponibles")
+                continue
 
-def nettoyer_fichier(chemin: str, nom: str) -> pd.DataFrame:
-    df = pd.read_csv(chemin, index_col=0, parse_dates=True)
+            # Garder uniquement les colonnes utiles
+            colonnes = [c for c in ["Open", "High", "Low", "Close", "Volume"] if c in historique.columns]
+            historique = historique[colonnes]
 
-    print(f"\n{nom}")
-    print(f"  Avant nettoyage : {df.shape[0]} lignes, {df.shape[1]} colonnes")
+            # Récupération des infos générales
+            try:
+                info = action.info
+                print(f"\n{nom} ({ticker})")
+                print(f"  Nom complet  : {info.get('longName', 'N/A')}")
+                print(f"  Secteur      : {info.get('sector', 'N/A')}")
+                print(f"  Industrie    : {info.get('industry', 'N/A')}")
+                print(f"  Pays         : {info.get('country', 'N/A')}")
+                print(f"  Prix actuel  : {info.get('currentPrice', 'N/A')}")
+                print(f"  P/E Ratio    : {info.get('trailingPE', 'N/A')}")
+                print(f"  Capitalisation : {info.get('marketCap', 'N/A')}")
+            except Exception:
+                print(f"\n{nom} ({ticker})")
+                print(f" Infos générales non disponibles")
 
-    # 1. Supprimer les doublons
-    df = df[~df.index.duplicated(keep="first")]
+            print(f"  Lignes récupérées : {len(historique)}")
+            print(f"  Période : {historique.index[0].date()} → {historique.index[-1].date()}")
+            print(historique[["Close"]].tail(3).to_string())
 
-    # 2. Supprimer les lignes entièrement vides
-    df = df.dropna(how="all")
+            # Sauvegarde CSV raw
+            nom_fichier = nom.lower().replace(" ", "_")
+            chemin = f"data/actions/{nom_fichier}.csv"
+            historique.to_csv(chemin)
+            print(f" Sauvegardé : {chemin}")
 
-    # 3. Remplir les valeurs manquantes
-    df = df.ffill().bfill()
+            resultats[nom] = historique
 
-    # 4. Garder uniquement les colonnes utiles
-    colonnes_utiles = ["Open", "High", "Low", "Close", "Volume"]
-    colonnes_presentes = [c for c in colonnes_utiles if c in df.columns]
-    df = df[colonnes_presentes]
+        except Exception as e:
+            print(f"❌ {nom} ({ticker}) — Erreur : {e}")
 
-    # 5. Arrondir à 2 décimales
-    df = df.round(2)
-
-    # 6. Trier par date
-    df = df.sort_index()
-
-    print(f"  Après nettoyage : {df.shape[0]} lignes, {df.shape[1]} colonnes")
-    print(f"  Valeurs nulles restantes : {df.isnull().sum().sum()}")
-
-    return df
-
-
-def nettoyer_tous():
-    dossiers = {
-        "data/indices": "data/indices_clean",
-        "data/actions": "data/actions_clean",
-    }
-
-    for dossier_src, dossier_dst in dossiers.items():
-        os.makedirs(dossier_dst, exist_ok=True)
-
-        for fichier in os.listdir(dossier_src):
-            if fichier.endswith(".csv"):
-                chemin_src = f"{dossier_src}/{fichier}"
-                chemin_dst = f"{dossier_dst}/{fichier}"
-                nom = fichier.replace(".csv", "")
-
-                df_clean = nettoyer_fichier(chemin_src, nom)
-                df_clean.to_csv(chemin_dst)
-                print(f"  ✅ Sauvegardé : {chemin_dst}")
-
-
-print("\n🧹 Nettoyage des données\n")
-nettoyer_tous()
-print("\n✅ Nettoyage terminé !")
+    print(f"\n{len(resultats)}/{len(actions)} actions récupérées avec succès")
+    return resultats
