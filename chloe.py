@@ -214,6 +214,6 @@ def nettoyer_tous():
                 print(f"  ✅ Sauvegardé : {chemin_dst}")
 
 
-print("\n🧹 Nettoyage des données\n")
+print("\nNettoyage des données\n")
 nettoyer_tous()
-print("\n✅ Nettoyage terminé !")
+print("\nNettoyage terminé !")
