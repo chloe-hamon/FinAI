@@ -2,9 +2,6 @@ import yfinance as yf
 import pandas as pd
 import os
 
-# ============================================
-# 1. RÉCUPÉRER UN INDICE (ex: CAC40)
-# ============================================
 
 os.makedirs("data/indices", exist_ok=True)
 os.makedirs("data/actions", exist_ok=True)
@@ -58,58 +55,102 @@ ACTIONS = {
     "Honda":        "7267.T",
 }
 
+# ============================================================
+# RÉCUPÉRER LES INDICES
+# ============================================================
 
-# ============================================
-# 1. RÉCUPÉRATION DES INDICES
-# ============================================
-
-print("INDICES BOURSIERS")
-
-for nom, ticker in INDICES.items():
-    indice = yf.Ticker(ticker)
-    historique = indice.history(period="2y")
+def get_market_indices(indices: dict = INDICES, period: str = "2y") -> dict:
     
-    print(f"\n{nom} ({ticker}) - Historique 2 ans :")
-    print(historique[["Open", "High", "Low", "Close", "Volume"]].head())
+    print("RÉCUPÉRATION DES INDICES BOURSIERS")
+
+    resultats = {}
+
+    for nom, ticker in indices.items():
+        try:
+            indice = yf.Ticker(ticker)
+            historique = indice.history(period=period)
+
+            if historique.empty:
+                print(f"{nom} ({ticker}) — Pas de données disponibles")
+                continue
+
+            # Garder uniquement les colonnes utiles
+            colonnes = [c for c in ["Open", "High", "Low", "Close", "Volume"] if c in historique.columns]
+            historique = historique[colonnes]
+
+            print(f"\n{nom} ({ticker})")
+            print(f"  Lignes récupérées : {len(historique)}")
+            print(f"  Période : {historique.index[0].date()} → {historique.index[-1].date()}")
+            print(historique.tail(3).to_string())
+
+            # Sauvegarde CSV raw
+            chemin = f"data/indices/{nom.lower()}.csv"
+            historique.to_csv(chemin)
+            print(f"  ✅ Sauvegardé : {chemin}")
+
+            resultats[nom] = historique
+
+        except Exception as e:
+            print(f"❌ {nom} ({ticker}) — Erreur : {e}")
+
+    print(f"\n✅ {len(resultats)}/{len(indices)} indices récupérés avec succès")
+    return resultats
+
+
+
+# ============================================
+# RÉCUPÉRATION DES ACTIONS
+# ============================================
+
+def get_multiple_stocks(actions: dict = ACTIONS, period: str = "2y") -> dict:
     
-    chemin = f"data/indices/{nom.lower()}.csv"
-    historique.to_csv(chemin)
-    print(f"✅ Sauvegardé : {chemin}")
+    print(" RÉCUPÉRATION DES ACTIONS")
 
 
-# ============================================
-# 2. RÉCUPÉRATION DES ACTIONS
-# ============================================
+    resultats = {}
 
-print("ACTIONS")
+    for nom, ticker in actions.items():
+        try:
+            action = yf.Ticker(ticker)
+            historique = action.history(period=period)
 
-for nom, ticker in ACTIONS.items():
-    action = yf.Ticker(ticker)
-    info = action.info
+            if historique.empty:
+                print(f"{nom} ({ticker}) — Pas de données disponibles")
+                continue
 
-    print(f"\n=== {nom} ({ticker}) ===")
-    print(f"  Nom complet : {info.get('longName')}")
-    print(f"  Secteur     : {info.get('sector')}")
-    print(f"  Prix actuel : {info.get('currentPrice')} $")
-    print(f"  P/E Ratio   : {info.get('trailingPE')}")
+            # Garder uniquement les colonnes utiles
+            colonnes = [c for c in ["Open", "High", "Low", "Close", "Volume"] if c in historique.columns]
+            historique = historique[colonnes]
 
-    historique = action.history(period="2y")
+            # Récupération des infos générales
+            try:
+                info = action.info
+                print(f"\n{nom} ({ticker})")
+                print(f"  Nom complet  : {info.get('longName', 'N/A')}")
+                print(f"  Secteur      : {info.get('sector', 'N/A')}")
+                print(f"  Industrie    : {info.get('industry', 'N/A')}")
+                print(f"  Pays         : {info.get('country', 'N/A')}")
+                print(f"  Prix actuel  : {info.get('currentPrice', 'N/A')}")
+                print(f"  P/E Ratio    : {info.get('trailingPE', 'N/A')}")
+                print(f"  Capitalisation : {info.get('marketCap', 'N/A')}")
+            except Exception:
+                print(f"\n{nom} ({ticker})")
+                print(f" Infos générales non disponibles")
 
-    print(f"  Historique (5 derniers jours) :")
-    print(historique[["Close"]].tail(5))
+            print(f"  Lignes récupérées : {len(historique)}")
+            print(f"  Période : {historique.index[0].date()} → {historique.index[-1].date()}")
+            print(historique[["Close"]].tail(3).to_string())
 
-    nom_fichier = nom.lower().replace(' ', '_')
-    chemin = f"data/actions/{nom_fichier}.csv"
-    historique.to_csv(chemin)
-    print(f"✅ Sauvegardé : {chemin}")
+            # Sauvegarde CSV raw
+            nom_fichier = nom.lower().replace(" ", "_")
+            chemin = f"data/actions/{nom_fichier}.csv"
+            historique.to_csv(chemin)
+            print(f" Sauvegardé : {chemin}")
 
+            resultats[nom] = historique
 
-# ============================================
-# 3. COMPARAISON MULTI-TICKERS
-# ============================================
+        except Exception as e:
+            print(f"❌ {nom} ({ticker}) — Erreur : {e}")
 
-print("COMPARAISON - Cours de clôture (5 derniers jours)")
-
-all_tickers = list(INDICES.values()) + list(ACTIONS.values())
-data = yf.download(all_tickers, period="1mo")["Close"]
-print(data.tail(5))
+    print(f"\n{len(resultats)}/{len(actions)} actions récupérées avec succès")
+    return resultats
