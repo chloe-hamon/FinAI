@@ -6,6 +6,8 @@ import os
 os.makedirs("data/indices", exist_ok=True)
 os.makedirs("data/actions", exist_ok=True)
 
+## Vadim
+
 INDICES = {
     "CAC40":     "^FCHI",
     "SP500":    "^GSPC",
@@ -14,6 +16,8 @@ INDICES = {
     "FTSE100":   "^FTSE",
     "Nikkei225": "^N225",
 }
+
+
 
 ACTIONS = {
     # US
