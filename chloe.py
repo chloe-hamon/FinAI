@@ -100,11 +100,6 @@ def get_market_indices(indices: dict = INDICES, period: str = "2y") -> dict:
     print(f"\n✅ {len(resultats)}/{len(indices)} indices récupérés avec succès")
     return resultats
 
-        except Exception as e:
-            print(f"❌ {nom} ({ticker}) — Erreur : {e}")
-
-    print(f"\n{len(resultats)}/{len(actions)} actions récupérées avec succès")
-    return resultats
 
 # ============================================
 # RÉCUPÉRATION DES ACTIONS
