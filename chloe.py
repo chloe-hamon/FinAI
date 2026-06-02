@@ -157,3 +157,66 @@ def get_multiple_stocks(actions: dict = ACTIONS, period: str = "2y") -> dict:
 
     print(f"\n{len(resultats)}/{len(actions)} actions récupérées avec succès")
     return resultats
+
+# ============================================
+# NETTOYAGE DES DONNÉES
+# ============================================
+
+os.makedirs("data/indices_clean", exist_ok=True)
+os.makedirs("data/actions_clean", exist_ok=True)
+
+def nettoyer_fichier(chemin: str, nom: str) -> pd.DataFrame:
+    df = pd.read_csv(chemin, index_col=0, parse_dates=True)
+
+    print(f"\n{nom}")
+    print(f"  Avant nettoyage : {df.shape[0]} lignes, {df.shape[1]} colonnes")
+
+    # 1. Supprimer les doublons
+    df = df[~df.index.duplicated(keep="first")]
+
+    # 2. Supprimer les lignes entièrement vides
+    df = df.dropna(how="all")
+
+    # 3. Remplir les valeurs manquantes
+    df = df.ffill().bfill()
+
+    # 4. Garder uniquement les colonnes utiles
+    colonnes_utiles = ["Open", "High", "Low", "Close", "Volume"]
+    colonnes_presentes = [c for c in colonnes_utiles if c in df.columns]
+    df = df[colonnes_presentes]
+
+    # 5. Arrondir à 2 décimales
+    df = df.round(2)
+
+    # 6. Trier par date
+    df = df.sort_index()
+
+    print(f"  Après nettoyage : {df.shape[0]} lignes, {df.shape[1]} colonnes")
+    print(f"  Valeurs nulles restantes : {df.isnull().sum().sum()}")
+
+    return df
+
+
+def nettoyer_tous():
+    dossiers = {
+        "data/indices": "data/indices_clean",
+        "data/actions": "data/actions_clean",
+    }
+
+    for dossier_src, dossier_dst in dossiers.items():
+        os.makedirs(dossier_dst, exist_ok=True)
+
+        for fichier in os.listdir(dossier_src):
+            if fichier.endswith(".csv"):
+                chemin_src = f"{dossier_src}/{fichier}"
+                chemin_dst = f"{dossier_dst}/{fichier}"
+                nom = fichier.replace(".csv", "")
+
+                df_clean = nettoyer_fichier(chemin_src, nom)
+                df_clean.to_csv(chemin_dst)
+                print(f"  ✅ Sauvegardé : {chemin_dst}")
+
+
+print("\n🧹 Nettoyage des données\n")
+nettoyer_tous()
+print("\n✅ Nettoyage terminé !")
