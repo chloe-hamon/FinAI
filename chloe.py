@@ -1,10 +1,17 @@
 import yfinance as yf
 import pandas as pd
 import os
+from langchain_core.documents import Document
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_chroma import Chroma
 
 
 os.makedirs("data/indices", exist_ok=True)
 os.makedirs("data/actions", exist_ok=True)
+
+
+CHROMA_PATH = "chroma_db/"
+EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 ## Vadim
 
@@ -225,8 +232,80 @@ def nettoyer_tous():
                 df_clean.to_csv(chemin_dst)
                 print(f"  ✅ Sauvegardé : {chemin_dst}")
 
+def indexer_csv_dans_chroma(dossier: str, type_contenu: str):
+    """
+    Lit les CSV nettoyés et les indexe dans ChromaDB.
+    """
+    embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
+    vector_store = Chroma(
+        persist_directory=CHROMA_PATH,
+        embedding_function=embeddings
+    )
+
+    documents = []
+
+    for fichier in os.listdir(dossier):
+        if not fichier.endswith(".csv"):
+            continue
+
+        nom = fichier.replace(".csv", "")
+        chemin = os.path.join(dossier, fichier)
+
+        df = pd.read_csv(chemin, index_col=0)
+
+        # Résumé global
+        resume = (
+            f"{nom} — données du {df.index[0]} au {df.index[-1]}.\n"
+            f"Prix de clôture min : {df['Close'].min():.2f}, "
+            f"max : {df['Close'].max():.2f}, "
+            f"dernier : {df['Close'].iloc[-1]:.2f}.\n"
+            f"Volume moyen : {df['Volume'].mean():.0f}."
+        )
+
+        documents.append(Document(
+            page_content=resume,
+            metadata={
+                "source": fichier,
+                "type": type_contenu,
+                "nom": nom
+            }
+        ))
+
+        # Indexer aussi les 5 dernières lignes (données récentes)
+        for date, row in df.tail(5).iterrows():
+            contenu = (
+                f"{nom} le {date} : "
+                f"Open={row.get('Open','N/A'):.2f}, "
+                f"Close={row.get('Close','N/A'):.2f}, "
+                f"High={row.get('High','N/A'):.2f}, "
+                f"Low={row.get('Low','N/A'):.2f}, "
+                f"Volume={row.get('Volume','N/A'):.0f}"
+            )
+            documents.append(Document(
+                page_content=contenu,
+                metadata={
+                    "source": fichier,
+                    "type": type_contenu,
+                    "nom": nom,
+                    "date": str(date)
+                }
+            ))
+
+    if documents:
+        vector_store.add_documents(documents)
+        print(f"✅ {len(documents)} documents indexés depuis '{dossier}'")
+    else:
+        print(f"⚠️ Aucun CSV trouvé dans '{dossier}'")
 
 
+def indexer_toutes_les_donnees():
+    indexer_csv_dans_chroma("data/indices_clean", "indice_boursier")
+    indexer_csv_dans_chroma("data/actions_clean", "action")
+
+    
 if __name__ == "__main__":
     nettoyer_tous()
     print("\n✅ Nettoyage terminé !")
+    
+    indexer_toutes_les_donnees()
+    print("\n✅ Indexation ChromaDB terminée !")
