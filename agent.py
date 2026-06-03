@@ -54,12 +54,6 @@ Historique de la conversation :
 Question: {input}
 Thought: {agent_scratchpad}""")
 
-# Mémoire
-memory = ConversationBufferMemory(
-    memory_key="chat_history",
-    return_messages=False
-)
-
 # Agent
 agent = create_react_agent(
     llm=model,
