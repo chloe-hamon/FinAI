@@ -5,6 +5,8 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
+from extraction_texte_image import lancer_extraction
+
 # ==========================================
 # CONFIGURATION
 # ==========================================
@@ -87,11 +89,20 @@ def save_to_chroma(chunks, reset: bool = True):
 # ==========================================
 # EXÉCUTION PRINCIPALE
 # ==========================================
-def lancer_ingestion(dossier_donnees : str, reset : bool =True):
+
+def lancer_ingestion(dossier_donnees: str, reset: bool = True):
     if not os.path.exists(dossier_donnees):
         print(f"❌ Erreur : Le dossier '{dossier_donnees}' n'existe pas.")
         return
-        
+
+    # Étape 1 : Analyse visuelle des PDFs
+    print("📸 Analyse visuelle des pages...")
+    for fichier in os.listdir(dossier_donnees):
+        if fichier.endswith(".pdf"):
+            pdf_path = os.path.join(dossier_donnees, fichier)
+            lancer_extraction(pdf_path)
+
+    # Étape 2 : Chunking texte
     docs = load_documents(dossier_donnees)
     if len(docs) > 0:
         chunks = split_documents(docs)
