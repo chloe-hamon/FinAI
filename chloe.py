@@ -158,6 +158,15 @@ def get_multiple_stocks(actions: dict = ACTIONS, period: str = "2y") -> dict:
     print(f"\n{len(resultats)}/{len(actions)} actions récupérées avec succès")
     return resultats
 
+def get_prix_actuel(ticker: str) -> dict:
+    action = yf.Ticker(ticker)
+    info = action.info
+    return {
+        "prix": info.get("currentPrice"),
+        "variation": info.get("regularMarketChangePercent")
+    }
+
+
 # ============================================
 # NETTOYAGE DES DONNÉES
 # ============================================
@@ -217,6 +226,7 @@ def nettoyer_tous():
                 print(f"  ✅ Sauvegardé : {chemin_dst}")
 
 
-print("\n🧹 Nettoyage des données\n")
-nettoyer_tous()
-print("\n✅ Nettoyage terminé !")
+
+if __name__ == "__main__":
+    nettoyer_tous()
+    print("\n✅ Nettoyage terminé !")
