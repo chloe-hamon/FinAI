@@ -2,10 +2,18 @@ import os
 import fitz
 import ollama
 from PyPDF2 import PdfReader
+from langchain_core.documents import Document
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_chroma import Chroma
 
-pdf_path = r"C:\Users\mache\Annual repport\2025_AnnualReport_Microsoft.pdf"
+CHROMA_PATH = "chroma_db/"
+EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+VISION_MODEL = "qwen2.5vl:3b"
 
-output_folder = "analyse_resultats"
+base = os.path.dirname(os.path.abspath(__file__))
+pdf_path = os.path.join(base, "Annual report", "2025_AnnualReport_Microsoft.pdf")
+
+output_folder = "Annual report"
 images_folder = "pages_images"
 
 os.makedirs(output_folder, exist_ok=True)
@@ -14,10 +22,31 @@ os.makedirs(images_folder, exist_ok=True)
 nom_pdf = os.path.splitext(os.path.basename(pdf_path))[0]
 output_file = os.path.join(output_folder, nom_pdf + "_test_3_pages.txt")
 
+# ==========================================
+# CHARGEMENT
+# ==========================================
+
 reader = PdfReader(pdf_path)
 doc = fitz.open(pdf_path)
 
 max_pages = min(3, len(reader.pages))
+
+# ==========================================
+# INITIALISATION CHROMADB                        
+# ==========================================
+
+embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
+vector_store = Chroma(
+    persist_directory=CHROMA_PATH,
+    embedding_function=embeddings
+)
+
+
+# ==========================================
+# BOUCLE PRINCIPALE
+# ==========================================
+
+documents_a_ajouter = []    
 
 with open(output_file, "w", encoding="utf-8") as f:
     for i in range(max_pages):
@@ -47,7 +76,7 @@ Dis seulement :
 """
 
         response = ollama.chat(
-            model="qwen2.5vl:3b",
+            model=VISION_MODEL,
             messages=[
                 {
                     "role": "user",
@@ -66,5 +95,23 @@ Dis seulement :
         f.write("\n\nANALYSE OLLAMA :\n")
         f.write(analyse)
         f.write("\n\n")
+
+        document = Document(
+            page_content=analyse,
+            metadata={
+                "source": nom_pdf,
+                "page": i + 1,
+                "type": "image_analysis"
+            }
+        )
+        documents_a_ajouter.append(document)
+
+# ==========================================
+# AJOUT DANS CHROMADB 
+# ==========================================
+
+if documents_a_ajouter:
+    vector_store.add_documents(documents_a_ajouter)
+    print(f"✅ {len(documents_a_ajouter)} analyses ajoutées dans ChromaDB")
 
 print("Terminé :", output_file)
