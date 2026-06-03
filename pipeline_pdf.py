@@ -1,4 +1,5 @@
 import os
+import shutil
 from langchain_community.document_loaders import DirectoryLoader, PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -7,7 +8,7 @@ from langchain_chroma import Chroma
 # ==========================================
 # CONFIGURATION
 # ==========================================
-DATA_PATH = "data_pdf/"
+DATA_PATH = "Annual report"
 CHROMA_PATH = "chroma_db/"
 
 # Paramètres de découpage (Chunking)
@@ -58,7 +59,7 @@ def split_documents(documents):
     print(f"✅ Documents découpés en {len(chunks)} chunks.")
     return chunks
 
-def save_to_chroma(chunks):
+def save_to_chroma(chunks, reset: bool = True):
     """
     Étape 3 & 4 : Vectorisation (Embeddings) et Stockage (Vector Store)
     Transforme le texte en vecteurs mathématiques et les sauvegarde dans ChromaDB.
@@ -66,10 +67,12 @@ def save_to_chroma(chunks):
     print(f"🧠 Initialisation du modèle d'embedding : {EMBEDDING_MODEL}...")
     embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
 
+    if reset and os.path.exists(CHROMA_PATH):
+        print("   🗑️ Suppression de l'ancienne base pour repartir proprement...")
+        shutil.rmtree(CHROMA_PATH)
+
+
     print(f"💾 Création de la base de données vectorielle ChromaDB dans '{CHROMA_PATH}'...")
-    # S'il existe déjà une base, on peut la vider d'abord (optionnel, utile en dev)
-    if os.path.exists(CHROMA_PATH):
-        print("   (Mise à jour de la base existante)")
 
     # Création et sauvegarde persistante de la base
     vector_store = Chroma.from_documents(
@@ -77,13 +80,14 @@ def save_to_chroma(chunks):
         embedding=embeddings,
         persist_directory=CHROMA_PATH
     )
-    
+    total = vector_store._collection.count()
+    print(f"✅ {total} chunks stockés dans ChromaDB.")
     print("🚀 Pipeline terminé avec succès ! Les données sont prêtes à être interrogées.")
 
 # ==========================================
 # EXÉCUTION PRINCIPALE
 # ==========================================
-def lancer_ingestion(dossier_donnees):
+def lancer_ingestion(dossier_donnees : str, reset : bool =True):
     if not os.path.exists(dossier_donnees):
         print(f"❌ Erreur : Le dossier '{dossier_donnees}' n'existe pas.")
         return
@@ -91,6 +95,9 @@ def lancer_ingestion(dossier_donnees):
     docs = load_documents(dossier_donnees)
     if len(docs) > 0:
         chunks = split_documents(docs)
-        save_to_chroma(chunks)
+        save_to_chroma(chunks, reset=reset)
     else:
         print(f"⚠️ Aucun PDF trouvé dans '{dossier_donnees}'.")
+
+if __name__ == "__main__":
+    lancer_ingestion(DATA_PATH, reset=True)
