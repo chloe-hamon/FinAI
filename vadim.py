@@ -2,8 +2,9 @@ import os
 import pandas as pd
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
-import ollama
-
+from langchain_ollama import ChatOllama
+from langchain_core.output_parsers import StrOutputParser
+from prompt_template import formater_prompt
 # ==========================================
 # CONFIGURATION (identique à pipeline_pdf.py)
 # ==========================================
@@ -17,6 +18,9 @@ K_RESULTS = 5
 # ==========================================
 # INITIALISATION (chargée une seule fois)
 # ==========================================
+llm = ChatOllama(model=OLLAMA_MODEL)
+parser = StrOutputParser()
+
 
 def charger_vector_store():
     """
@@ -99,50 +103,21 @@ def construire_contexte(documents: list) -> str:
 # ÉTAPE 3 : GÉNÉRATION
 # ==========================================
 
-def generer_reponse(question: str, contexte: str) -> str:
-    """
-    Étape Generation : Envoie la question + le contexte à Ollama
-    pour générer une réponse fondée sur les documents.
-    """
-    prompt = f"""
-Tu es un assistant financier expert. Tu analyses des rapports annuels et des données boursières.
-
-Réponds à la question en te basant UNIQUEMENT sur le contexte fourni.
-Si l'information n'est pas dans le contexte, dis-le clairement.
-Sois précis, structuré et cite les chiffres importants quand ils sont disponibles.
-
----
-CONTEXTE EXTRAIT DES DOCUMENTS :
-{contexte}
-
----
-QUESTION :
-{question}
-
----
-RÉPONSE :
-"""
-
+def generer_reponse(question: str, contexte: str, historique: list = None) -> str:
     print("\n🤖 Génération de la réponse avec Ollama...")
 
-    response = ollama.chat(
-        model=OLLAMA_MODEL,
-        messages=[
-            {
-                "role": "user",
-                "content": prompt
-            }
-        ]
-    )
+    messages = formater_prompt(contexte, question, historique)
 
-    return response["message"]["content"].strip()
+    reponse = llm.invoke(messages)
+    return parser.invoke(reponse)
+
 
 
 # ==========================================
 # FONCTION PRINCIPALE : ask()
 # ==========================================
 
-def ask(question: str, vector_store=None, verbose: bool = True) -> dict:
+def ask(question: str, vector_store=None, historique: list = None,verbose: bool = True) -> dict:
     """
     Fonction principale RAG : Retrieval + Generation.
 
@@ -186,7 +161,7 @@ def ask(question: str, vector_store=None, verbose: bool = True) -> dict:
     contexte = construire_contexte(documents)
 
     # --- GENERATION ---
-    reponse = generer_reponse(question, contexte)
+    reponse = generer_reponse(question, contexte, historique)
 
     # --- SOURCES utilisées ---
     sources = []
