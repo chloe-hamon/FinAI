@@ -1,0 +1,144 @@
+1. financial_tools.py
+Objectif
+
+Créer les fonctions financières de base.
+
+Fonctions
+calcul_marge_nette()
+Résultat net / CA
+calcul_croissance()
+Variation entre deux valeurs
+calcul_ratio_endettement()
+Dette / Capitaux propres
+alerte_seuil()
+Détection d'un dépassement de seuil
+Pourquoi ?
+
+Créer les futurs outils de calcul de FinAI.
+
+2. financial_tools_langchain.py
+Objectif
+
+Transformer les fonctions Python en Tools LangChain.
+
+Fonctionnement
+
+Avant :
+
+Fonction Python
+
+Après :
+
+@tool
+
+Donc :
+
+Fonction
+ ↓
+Tool LangChain
+Résultat
+
+Création de :
+
+calcul_marge_nette Tool
+calcul_croissance Tool
+calcul_ratio_endettement Tool
+verifier_alerte_seuil Tool
+Pourquoi ?
+
+Permettre à un agent IA d'utiliser les fonctions automatiquement.
+
+3. agent_financier.py
+Objectif
+
+Tester LangChain avec Ollama.
+
+Fonctionnement
+Question
+ ↓
+ChatOllama
+ ↓
+Réponse
+Résultat
+
+Validation que :
+
+LangChain fonctionne
+Ollama fonctionne
+le modèle répond
+Pourquoi ?
+
+Créer la base du futur agent FinAI.
+
+4. agent_financier_tools.py
+Objectif
+
+Connecter le LLM aux Tools LangChain.
+
+Fonctionnement
+Question utilisateur
+ ↓
+LLM
+ ↓
+Choisit un Tool
+ ↓
+Prépare les paramètres
+ ↓
+Tool Call
+Résultat
+
+Le modèle est capable de détecter automatiquement :
+
+Calcul de croissance
+ ↓
+calcul_croissance()
+Pourquoi ?
+
+C'est la première version d'un véritable agent financier capable d'utiliser des outils.
+
+Architecture actuelle du projet
+Rapports PDF
+      ↓
+test_pdf.py
+      ↓
+Extraction texte
+
+Rapports PDF
+      ↓
+vision_test.py
+      ↓
+Images
+
+Images
+      ↓
+ollama_vision_test.py
+      ↓
+Analyse visuelle
+
+PDF
+      ↓
+structurer_documents.py
+      ↓
+DataFrame pandas
+      ↓
+CSV
+
+Fonctions financières
+      ↓
+financial_tools.py
+      ↓
+Tools LangChain
+      ↓
+financial_tools_langchain.py
+
+Question utilisateur
+      ↓
+agent_financier.py
+      ↓
+LLM local
+
+Question utilisateur
+      ↓
+agent_financier_tools.py
+      ↓
+LLM + Tools
