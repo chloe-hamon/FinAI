@@ -95,20 +95,21 @@ def lancer_ingestion(dossier_donnees: str, reset: bool = True):
         print(f"❌ Erreur : Le dossier '{dossier_donnees}' n'existe pas.")
         return
 
-    # Étape 1 : Analyse visuelle des PDFs
-    print("📸 Analyse visuelle des pages...")
-    for fichier in os.listdir(dossier_donnees):
-        if fichier.endswith(".pdf"):
-            pdf_path = os.path.join(dossier_donnees, fichier)
-            lancer_extraction(pdf_path)
-
-    # Étape 2 : Chunking texte
+    # Étape 1 : Chunking texte (reset=True ici pour vider l'ancienne base)
     docs = load_documents(dossier_donnees)
     if len(docs) > 0:
         chunks = split_documents(docs)
         save_to_chroma(chunks, reset=reset)
     else:
         print(f"⚠️ Aucun PDF trouvé dans '{dossier_donnees}'.")
+        return
+
+    # Étape 2 : Analyse visuelle APRÈS (ChromaDB existe déjà, on ajoute dedans)
+    print("📸 Analyse visuelle des pages...")
+    for fichier in os.listdir(dossier_donnees):
+        if fichier.endswith(".pdf"):
+            pdf_path = os.path.join(dossier_donnees, fichier)
+            lancer_extraction(pdf_path)
 
 if __name__ == "__main__":
     lancer_ingestion(DATA_PATH, reset=True)
