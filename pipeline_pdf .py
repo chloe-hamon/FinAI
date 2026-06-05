@@ -1,3 +1,4 @@
+import os
 import fitz  # PyMuPDF : L'outil ultime pour manipuler les PDF
 import base64
 from langchain_community.document_loaders import DirectoryLoader, PyPDFLoader
