@@ -4,6 +4,8 @@ from langchain_community.document_loaders import DirectoryLoader, PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
+import gc
+import time
 
 from extraction_texte_image import lancer_extraction
 
@@ -66,12 +68,15 @@ def save_to_chroma(chunks, reset: bool = True):
     Étape 3 & 4 : Vectorisation (Embeddings) et Stockage (Vector Store)
     Transforme le texte en vecteurs mathématiques et les sauvegarde dans ChromaDB.
     """
+    
     print(f"🧠 Initialisation du modèle d'embedding : {EMBEDDING_MODEL}...")
     embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
 
     if reset and os.path.exists(CHROMA_PATH):
         print("   🗑️ Suppression de l'ancienne base pour repartir proprement...")
-        shutil.rmtree(CHROMA_PATH)
+        gc.collect()
+        time.sleep(1)
+        shutil.rmtree(CHROMA_PATH, ignore_errors=True)
 
 
     print(f"💾 Création de la base de données vectorielle ChromaDB dans '{CHROMA_PATH}'...")

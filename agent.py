@@ -5,10 +5,18 @@ from langchain_ollama import ChatOllama
 from langchain_core.prompts import PromptTemplate
 # Importer nos fonctions existantes
 from vadim import ask, retriever, charger_vector_store, construire_contexte
+
+from financial_tools_langchain import (
+    calcul_marge_nette,
+    calcul_croissance,
+    calcul_ratio_endettement,
+    verifier_alerte_seuil
+)
+
 # ==========================================
 # CONFIGURATION
 # ==========================================
-OLLAMA_MODEL = "qwen2.5vl:3b"
+OLLAMA_MODEL = "llama3.2:1b"
 
 model = ChatOllama(
     model=OLLAMA_MODEL,
@@ -22,12 +30,37 @@ print("✅ Base prête.\n")
 # ==========================================
 # OUTILS (TOOLS)
 # ==========================================
+@tool
+def recherche_rag(question: str) -> str:
+    """Recherche des informations dans les rapports financiers."""
+    resultat = ask(question, vector_store=vector_store)
+    return resultat["reponse"]
 
+@tool
+def get_cours_action(ticker: str) -> str:
+    """Récupère le cours actuel d'une action via yfinance."""
+    import yfinance as yf
+    try:
+        action = yf.Ticker(ticker)
+        prix = action.fast_info.last_price
+        variation = action.fast_info.get("regularMarketChangePercent", None)
+        if variation:
+            return f"{ticker} : {prix:.2f} ({variation:+.2f}%)"
+        return f"{ticker} : {prix:.2f}"
+    except Exception as e:
+        return f"❌ Impossible de récupérer {ticker} : {e}"
 # ==========================================
 # CRÉATION DE L'AGENT
 # ==========================================
 
-tools = [..., ...]
+tools = [
+    recherche_rag,
+    get_cours_action,
+    calcul_marge_nette,
+    calcul_croissance,
+    calcul_ratio_endettement,
+    verifier_alerte_seuil
+]
 
 # Prompt ReAct
 prompt = PromptTemplate.from_template("""Tu es FinAI, un assistant expert en finance et marchés boursiers.
@@ -75,7 +108,7 @@ agent_executor = AgentExecutor(
 if __name__ == "__main__":
     print("🤖 FinAI Agent — Assistant Financier")
     print("=" * 50)
-    print("📊 Outils disponibles : ...")
+    print(f"🛠️  Outils disponibles : {', '.join([t.name for t in tools])}")
     print("📊 Actions disponibles : Apple, Tesla, NVIDIA, LVMH...")
     print("📈 Indices disponibles : CAC40, S&P500, NASDAQ, DAX...")
     print("💬 Tapez 'quit' pour quitter\n")
