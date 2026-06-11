@@ -1,14 +1,18 @@
 import yfinance as yf
 import pandas as pd
 import os
+from datetime import datetime
 from langchain_core.documents import Document
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
+import feedparser
 
 
 os.makedirs("data/indices", exist_ok=True)
 os.makedirs("data/actions", exist_ok=True)
 
+os.makedirs("data/crypto", exist_ok=True)
+os.makedirs("data/forex", exist_ok=True)
 
 CHROMA_PATH = "chroma_db/"
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
@@ -65,6 +69,37 @@ ACTIONS = {
     "Mitsubishi":   "8058.T",
     "Honda":        "7267.T",
 }
+
+CRYPTO = {
+    "Bitcoin":  "BTC-USD",
+    "Ethereum": "ETH-USD",
+    "BNB":      "BNB-USD",
+}
+
+FOREX = {
+    "EUR/USD": "EURUSD=X",
+    "EUR/GBP": "EURGBP=X",
+    "USD/JPY": "JPY=X",
+}
+
+FLUX_RSS = {
+    # Médias français
+    "Les Echos":     "https://www.lesechos.fr/rss/rss_finance.xml",
+    "BFM Bourse":    "https://www.bfmtv.com/rss/bourse/",
+    "Boursorama":    "https://www.boursorama.com/bourse/actualites/rss.phtml",
+    
+    # Médias internationaux
+    "Reuters":       "https://feeds.reuters.com/reuters/businessNews",
+    "MarketWatch":   "https://feeds.marketwatch.com/marketwatch/topstories/",
+    "Yahoo Finance": "https://finance.yahoo.com/news/rssindex",
+}
+
+# Google News par mot-clé (sans clé API)
+GOOGLE_NEWS_QUERIES = [
+    "CAC40", "bourse finance", "Bitcoin crypto",
+    "taux intérêt BCE", "inflation économie",
+    "Wall Street NASDAQ", "matières premières"
+]
 
 # ============================================================
 # RÉCUPÉRER LES INDICES
@@ -174,6 +209,111 @@ def get_prix_actuel(ticker: str) -> dict:
     }
 
 
+def get_crypto_and_forex(
+    crypto: dict = CRYPTO, 
+    forex: dict = FOREX, 
+    period: str = "2y"
+) -> dict:
+    
+    os.makedirs("data/crypto", exist_ok=True)
+    os.makedirs("data/forex", exist_ok=True)
+    
+    resultats = {}
+    tous = {**crypto, **forex}
+    
+    for nom, ticker in tous.items():
+        try:
+            data = yf.Ticker(ticker)
+            historique = data.history(period=period)
+            
+            if historique.empty:
+                print(f"⚠️ {nom} — pas de données")
+                continue
+                
+            colonnes = [c for c in ["Open","High","Low","Close","Volume"] 
+                       if c in historique.columns]
+            historique = historique[colonnes]
+            
+            # Dossier selon le type
+            dossier = "data/crypto" if ticker in crypto.values() else "data/forex"
+            nom_fichier = nom.lower().replace("/", "_")
+            chemin = f"{dossier}/{nom_fichier}.csv"
+            historique.to_csv(chemin)
+            print(f"✅ {nom} sauvegardé : {chemin}")
+            
+            resultats[nom] = historique
+            
+        except Exception as e:
+            print(f"❌ {nom} — Erreur : {e}")
+    
+    return resultats
+
+def fetch_news(ticker: str, max_news: int = 5) -> list[dict]:
+    try:
+        t = yf.Ticker(ticker)
+        news = t.news or []
+        resultats = []
+        for article in news[:max_news]:
+            content = article.get("content", {})
+            resultats.append({
+                "titre":  content.get("title", "N/A"),
+                "date":   content.get("pubDate", "N/A"),
+                "url":    content.get("canonicalUrl", {}).get("url", "N/A"),
+                "source": content.get("provider", {}).get("displayName", "N/A"),
+            })
+        return resultats
+    except Exception as e:
+        print(f"❌ Erreur news {ticker} : {e}")
+        return []
+
+def collecter_toutes_news(groupe: dict, max_news: int = 3) -> dict:
+    toutes = {}
+    for nom, ticker in groupe.items():
+        news = fetch_news(ticker, max_news)
+        if news:
+            toutes[nom] = news
+    return toutes
+
+
+def build_google_news_rss(queries: list) -> dict:
+    flux = {}
+    for q in queries:
+        nom = q.replace(" ", "_")
+        url = f"https://news.google.com/rss/search?q={q.replace(' ', '+')}&hl=fr&gl=FR&ceid=FR:fr"
+        flux[nom] = url
+    return flux
+
+def collecter_rss(flux: dict, max_articles: int = 10) -> list[dict]:
+    """
+    Collecte les articles depuis les flux RSS.
+    """
+    articles = []
+
+    for source, url in flux.items():
+        try:
+            feed = feedparser.parse(url)
+
+            if not feed.entries:
+                print(f"⚠️ {source} — aucun article")
+                continue
+
+            for entry in feed.entries[:max_articles]:
+                articles.append({
+                    "titre":  entry.get("title", "N/A"),
+                    "date":   entry.get("published", str(datetime.now())),
+                    "resume": entry.get("summary", "N/A"),
+                    "url":    entry.get("link", "N/A"),
+                    "source": source
+                })
+
+            print(f"✅ {source} — {min(len(feed.entries), max_articles)} articles collectés")
+
+        except Exception as e:
+            print(f"❌ {source} — Erreur : {e}")
+
+    print(f"\n📰 Total : {len(articles)} articles collectés")
+    return articles
+
 # ============================================
 # NETTOYAGE DES DONNÉES
 # ============================================
@@ -217,6 +357,8 @@ def nettoyer_tous():
     dossiers = {
         "data/indices": "data/indices_clean",
         "data/actions": "data/actions_clean",
+        "data/crypto":  "data/crypto_clean",
+        "data/forex":   "data/forex_clean",    
     }
 
     for dossier_src, dossier_dst in dossiers.items():
@@ -297,15 +439,105 @@ def indexer_csv_dans_chroma(dossier: str, type_contenu: str):
     else:
         print(f"⚠️ Aucun CSV trouvé dans '{dossier}'")
 
+def indexer_news_dans_chroma(news_dict: dict):
+    embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
+    vector_store = Chroma(
+        persist_directory=CHROMA_PATH,
+        embedding_function=embeddings
+    )
+    documents = []
+    for nom, articles in news_dict.items():
+        for article in articles:
+            contenu = f"{nom} — {article['date']} : {article['titre']} (source: {article['source']})"
+            documents.append(Document(
+                page_content=contenu,
+                metadata={"source": article["url"], "type": "news", "nom": nom}
+            ))
+    if documents:
+        vector_store.add_documents(documents)
+        print(f"✅ {len(documents)} news indexées")
+
+def indexer_articles_dans_chroma(articles: list[dict]):
+    """
+    Indexe les articles RSS dans ChromaDB.
+    """
+    if not articles:
+        print("⚠️ Aucun article à indexer")
+        return
+
+    embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
+    vector_store = Chroma(
+        persist_directory=CHROMA_PATH,
+        embedding_function=embeddings
+    )
+
+    documents = []
+
+    for article in articles:
+        contenu = (
+            f"[{article['source']}] {article['date']}\n"
+            f"Titre : {article['titre']}\n"
+            f"Résumé : {article['resume']}"
+        )
+
+        documents.append(Document(
+            page_content=contenu,
+            metadata={
+                "source": article["url"],
+                "type":   "media_article",
+                "nom":    article["source"],
+                "date":   article["date"]
+            }
+        ))
+
+    vector_store.add_documents(documents)
+    print(f"✅ {len(documents)} articles indexés dans ChromaDB")
 
 def indexer_toutes_les_donnees():
     indexer_csv_dans_chroma("data/indices_clean", "indice_boursier")
     indexer_csv_dans_chroma("data/actions_clean", "action")
+    indexer_csv_dans_chroma("data/crypto_clean",  "crypto")
+    indexer_csv_dans_chroma("data/forex_clean",   "forex") 
+
 
     
 if __name__ == "__main__":
+    # 1. Récupération des données
+    get_market_indices()
+    print("\n✅ Indices récupérés !")
+    
+    get_multiple_stocks()
+    print("\n✅ Actions récupérées !")
+
+    get_crypto_and_forex()        
+    print("\n✅ Crypto & Forex récupérés !")
+    
+    # 2. Nettoyage
     nettoyer_tous()
     print("\n✅ Nettoyage terminé !")
-    
+
+    # 3. Indexation
     indexer_toutes_les_donnees()
-    print("\n✅ Indexation ChromaDB terminée !")
+    print("\n✅ Indexation financière terminée !")
+
+    # 4. News yFinance
+    print("\n📰 Collecte des news yFinance...")
+    news = collecter_toutes_news(ACTIONS, max_news=5)
+    indexer_news_dans_chroma(news)
+
+    # 5. Médias RSS
+    print("\n📡 Collecte des flux RSS médias...")
+    
+    # RSS directs
+    articles_rss = collecter_rss(FLUX_RSS, max_articles=10)
+    
+    # Google News
+    google_flux = build_google_news_rss(GOOGLE_NEWS_QUERIES)
+    articles_google = collecter_rss(google_flux, max_articles=5)
+    
+    # Indexation de tous les articles
+    tous_articles = articles_rss + articles_google
+    indexer_articles_dans_chroma(tous_articles)
+    print("\n✅ Médias indexés dans ChromaDB !")
+
+    print("\n🎉 Pipeline complet terminé !")
