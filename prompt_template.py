@@ -64,24 +64,15 @@ def formater_prompt(contexte: str, question: str, historique: list = None) -> st
     ------------
     - contexte   : Chunks récupérés depuis ChromaDB
     - question   : Question de l'utilisateur
-    - historique : Liste de dict [{"role": "user/assistant", "content": "..."}]
+    - historique : Liste de string ou dict [{"role": "user/assistant", "content": "..."}]
 
     Retourne :
     ----------
-    - Le prompt formaté sous forme de string
+    Liste de dicts [{"role": ..., "content": ...}]  
     """
 
-    # Formatage de l'historique
-    if historique:
-        blocs_historique = []
-        for msg in historique[-6:]:  # On garde les 6 derniers messages max
-            role = "Utilisateur" if msg["role"] == "user" else "FinAI"
-            blocs_historique.append(f"{role} : {msg['content']}")
-        historique_str = "\n".join(blocs_historique)
-    else:
-        historique_str = "Aucun historique — début de conversation."
+    historique_str = _formater_historique(historique)
 
-    # Construction du prompt final
     prompt_template = creer_prompt_template()
 
     messages = prompt_template.format_messages(
@@ -100,6 +91,38 @@ def formater_prompt(contexte: str, question: str, historique: list = None) -> st
 
     return messages_ollama
 
+def _formater_historique(historique) -> str:
+    """
+    Convertit l'historique en string lisible.
+    Accepte :
+    - None ou liste vide
+    - Liste de strings : ["Humain: ...", "Assistant: ..."]
+    - Liste de dicts   : [{"role": "user", "content": "..."}]
+    """
+    if not historique:
+        return "Aucun historique — début de conversation."
+
+    blocs = []
+
+    for msg in historique[-6:]:  # 6 derniers messages max
+        if isinstance(msg, dict):
+            role = "Utilisateur" if msg.get("role") == "user" else "FinAI"
+            contenu = msg.get("content", "")
+        elif isinstance(msg, str):
+            contenu = msg
+            # Détecter le rôle depuis le préfixe
+            if msg.startswith("Humain:") or msg.startswith("Human:"):
+                role = "Utilisateur"
+            elif msg.startswith("Assistant:") or msg.startswith("FinAI:"):
+                role = "FinAI"
+            else:
+                role = "Message"
+        else:
+            continue
+
+        blocs.append(f"{role} : {contenu}")
+
+    return "\n".join(blocs) if blocs else "Aucun historique — début de conversation."
 
 # ==========================================
 # TEST STANDALONE
@@ -112,21 +135,25 @@ if __name__ == "__main__":
     Total Revenue: $211.9 billion, up 16% year-over-year.
     Cloud revenue grew 23% to $135.7 billion."""
 
-    historique_test = [
+    historique_dicts = [
         {"role": "user", "content": "Bonjour, parle-moi de Microsoft"},
         {"role": "assistant", "content": "Bonjour ! Je suis prêt à analyser les données Microsoft."}
     ]
+    historique_strings = [
+        "Humain: Bonjour, parle-moi de Microsoft",
+        "Assistant: Bonjour ! Je suis prêt à analyser les données Microsoft."
+    ]
 
-    messages = formater_prompt(
-        contexte=contexte_test,
-        question="Quel est le chiffre d'affaires cloud de Microsoft ?",
-        historique=historique_test
-    )
-
-    print(f"Nombre de messages générés : {len(messages)}\n")
-    for msg in messages:
-        print(f"[{msg['role'].upper()}]")
-        print(msg['content'][:300])
-        print("...\n")
+    for label, hist in [("DICTS", historique_dicts), ("STRINGS", historique_strings)]:
+        print(f"--- Test format {label} ---")
+        messages = formater_prompt(
+            contexte=contexte_test,
+            question="Quel est le chiffre d'affaires cloud de Microsoft ?",
+            historique=hist
+        )
+        print(f"Nombre de messages : {len(messages)}")
+        for msg in messages:
+            print(f"[{msg['role'].upper()}] {msg['content'][:200]}...")
+        print()
 
     print("✅ Prompt template opérationnel !")

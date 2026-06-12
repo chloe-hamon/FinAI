@@ -1,6 +1,7 @@
 import schedule
 import time
 import logging
+import zoneinfo   
 from datetime import datetime
 from chloe import (
     get_market_indices,
@@ -17,6 +18,8 @@ from chloe import (
     FLUX_RSS,
     GOOGLE_NEWS_QUERIES
 )
+
+os.makedirs("logs", exist_ok=True)
 
 # ============================================================
 # LOGGING
@@ -124,10 +127,7 @@ def configurer_planning():
 # ============================================================
 
 if __name__ == "__main__":
-    import os
-    os.makedirs("logs", exist_ok=True)
-
-    log.info("🚀 Démarrage du scheduler Chloé")
+    log.info("🚀 Démarrage du scheduler")
 
     # Pipeline initial au démarrage
     log.info("⚡ Pipeline initial...")
