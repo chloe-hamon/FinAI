@@ -60,19 +60,14 @@ def calcul_ratio_endettement(dette_totale: float, capitaux_propres: float) -> fl
 
 
 @tool
-def verifier_alerte_seuil(valeur: float, seuil: float) -> str:
-    """
-    Vérifie si une valeur financière dépasse ou est en dessous d'un seuil critique.
-    Utilise cet outil pour déclencher des alertes sur des indicateurs 
-    comme le RSI, un ratio financier ou un cours de bourse.
-    Paramètres : valeur (valeur actuelle), seuil (limite critique)
-    """
-    if valeur < seuil:
-        ecart = round(seuil - valeur, 4)
-        return f"⚠️ ALERTE : {valeur} est inférieur au seuil {seuil} (écart : -{ecart})"
-    
-    ecart = round(valeur - seuil, 4)
-    return f"✅ OK : {valeur} est au-dessus du seuil {seuil} (marge : +{ecart})"
+def verifier_alerte(valeur: float, seuil_bas: float, seuil_haut: float, nom: str) -> str:
+    """Vérifie si une valeur financière dépasse les seuils d'alerte définis."""
+    if valeur < seuil_bas:
+        return f"🚨 ALERTE : {nom} = {valeur} est SOUS le seuil bas ({seuil_bas})"
+    elif valeur > seuil_haut:
+        return f"🚨 ALERTE : {nom} = {valeur} est AU-DESSUS du seuil haut ({seuil_haut})"
+    else:
+        return f"✅ {nom} = {valeur} dans la zone normale [{seuil_bas} - {seuil_haut}]"
 
 
 if __name__ == "__main__":
@@ -93,7 +88,7 @@ if __name__ == "__main__":
         "capitaux_propres": 100000
     }))
 
-    print(verifier_alerte_seuil.invoke({
+    print(verifier_alerte.invoke({
         "valeur": 4.5,
         "seuil": 5
     }))
