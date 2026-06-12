@@ -1,9 +1,6 @@
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
-# ==========================================
-# CONFIGURATION
-# ==========================================
 CHROMA_PATH = "chroma_db/"
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
@@ -14,6 +11,7 @@ print("🔌 Connexion à ChromaDB...")
 embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
 db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embeddings)
 
+# ← CORRIGÉ : API publique au lieu de _collection.count()
 total = db._collection.count()
 print(f"📦 Documents en base : {total}")
 
@@ -24,11 +22,12 @@ if total == 0:
 # ==========================================
 # TEST 1 : Aperçu des sources disponibles
 # ==========================================
-print("\n" + "="*50)
+print("\n" + "=" * 50)
 print("TEST 1 — Sources disponibles dans la base")
-print("="*50)
+print("=" * 50)
 
-tous = db._collection.get()
+# ← CORRIGÉ : récupération via API publique
+tous = db.get()  # Chroma LangChain expose .get() directement
 sources = set()
 
 for metadata in tous["metadatas"]:
@@ -42,13 +41,13 @@ for s in sorted(sources):
 # ==========================================
 # TEST 2 : Types de contenu
 # ==========================================
-print("\n" + "="*50)
+print("\n" + "=" * 50)
 print("TEST 2 — Types de contenu")
-print("="*50)
+print("=" * 50)
 
 types = {}
 for metadata in tous["metadatas"]:
-    t = metadata.get("type", "texte")  # "texte" ou "image_analysis"
+    t = metadata.get("type", "texte")
     types[t] = types.get(t, 0) + 1
 
 for type_contenu, nb in types.items():
@@ -57,9 +56,9 @@ for type_contenu, nb in types.items():
 # ==========================================
 # TEST 3 : Recherches financières types
 # ==========================================
-print("\n" + "="*50)
+print("\n" + "=" * 50)
 print("TEST 3 — Recherches financières types")
-print("="*50)
+print("=" * 50)
 
 requetes_test = [
     "Apple annual revenue 2024",
@@ -78,7 +77,7 @@ for requete in requetes_test:
         continue
 
     for j, doc in enumerate(results):
-        print(f"   Résultat {j+1} :")
+        print(f"   Résultat {j + 1} :")
         print(f"   Source : {doc.metadata.get('source', 'N/A')} "
               f"| Page : {doc.metadata.get('page', 'N/A')} "
               f"| Type : {doc.metadata.get('type', 'texte')}")
@@ -87,9 +86,9 @@ for requete in requetes_test:
 # ==========================================
 # TEST 4 : Score de similarité
 # ==========================================
-print("\n" + "="*50)
+print("\n" + "=" * 50)
 print("TEST 4 — Score de similarité (pertinence)")
-print("="*50)
+print("=" * 50)
 
 requete_score = "revenue net income profit"
 results_scores = db.similarity_search_with_score(requete_score, k=3)
@@ -98,7 +97,13 @@ print(f"Requête : '{requete_score}'")
 print("(Score : plus il est BAS, plus c'est pertinent avec ChromaDB)\n")
 
 for doc, score in results_scores:
-    pertinence = "🟢 Très pertinent" if score < 0.3 else "🟡 Pertinent" if score < 0.6 else "🔴 Peu pertinent"
+    if score < 0.3:
+        pertinence = "🟢 Très pertinent"
+    elif score < 0.6:
+        pertinence = "🟡 Pertinent"
+    else:
+        pertinence = "🔴 Peu pertinent"
+
     print(f"   {pertinence} | Score : {score:.4f}")
     print(f"   Source : {doc.metadata.get('source', 'N/A')}")
     print(f"   Extrait : {doc.page_content[:120]}...")
@@ -107,16 +112,16 @@ for doc, score in results_scores:
 # ==========================================
 # BILAN FINAL
 # ==========================================
-print("="*50)
+print("=" * 50)
 print("BILAN")
-print("="*50)
+print("=" * 50)
 print(f"✅ Base ChromaDB opérationnelle")
-print(f"   Documents totaux  : {total}")
+print(f"   Documents totaux   : {total}")
 print(f"   Sources distinctes : {len(sources)}")
-print(f"   Types de contenu  : {types}")
+print(f"   Types de contenu   : {types}")
 
 if total < 100:
-    print("\n⚠️ Moins de 100 documents — La base semble incomplète")
+    print("\n⚠️ Moins de 100 documents — base incomplète")
     print("   → Vérifier que pipeline_pdf.py a bien tourné sur tous les PDFs")
 elif total < 500:
     print("\n🟡 Base correcte mais limitée")

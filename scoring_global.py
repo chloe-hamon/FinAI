@@ -60,8 +60,8 @@ def scorer_actif(
     }
 
     # Score pondéré
-    score_total = sum(scores[k] * poids[k] for k in scores)
-    score_total = round(score_total, 2)
+    score_total = round(sum(scores[k] * poids[k] for k in scores), 2)
+
 
     # Recommandation
     if score_total >= 6:
@@ -88,7 +88,9 @@ def scorer_actif(
 
     # Confiance (nombre de scores disponibles)
     nb_scores     = sum(1 for v in [score_tech, score_fond, score_senti, score_macro] if v is not None)
-    confiance     = ["⚠️ Faible", "🟡 Moyenne", "🟠 Bonne", "🟢 Élevée"][min(nb_scores - 1, 3)]
+    niveaux = ["⚠️ Faible", "🟡 Moyenne", "🟠 Bonne", "🟢 Élevée"]
+    confiance = niveaux[min(max(nb_scores - 1, 0), 3)]
+
 
     return {
         "ticker":        ticker,
@@ -133,14 +135,16 @@ def afficher_scoring(resultat: dict):
 # ============================================================
 
 def pipeline_scoring_global(
-    resultats_tech:  dict,
-    resultats_fond:  dict,
-    score_macro:     float,
-    actifs:          dict,
+    resultats_tech:   dict,
+    resultats_fond:   dict,
+    resultats_senti:  dict,        
+    score_macro:      float,
+    actifs:           dict,
 ) -> list[dict]:
     """
     resultats_tech  → {ticker: score}
     resultats_fond  → {ticker: score}
+    resultats_senti → {ticker: score}   ← AJOUT
     score_macro     → score unique partagé par tous
     actifs          → {ticker: type_actif}
     """
@@ -152,6 +156,7 @@ def pipeline_scoring_global(
             type_actif  = type_actif,
             score_tech  = resultats_tech.get(ticker),
             score_fond  = resultats_fond.get(ticker),
+            score_senti = resultats_senti.get(ticker),  
             score_macro = score_macro,
         )
         afficher_scoring(resultat)
