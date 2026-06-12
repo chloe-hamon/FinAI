@@ -3,37 +3,46 @@ from langchain.agents import create_react_agent, AgentExecutor
 from langchain.tools import tool
 from langchain_ollama import ChatOllama
 from langchain_core.prompts import PromptTemplate
-# Importer nos fonctions existantes
+from langchain.memory import ConversationBufferMemory
 from vadim import ask, retriever, charger_vector_store, construire_contexte
 
 from financial_tools_langchain import (
     calcul_marge_nette,
     calcul_croissance,
     calcul_ratio_endettement,
-    verifier_alerte_seuil
+    verifier_alerte
 )
 
 # ==========================================
 # CONFIGURATION
 # ==========================================
-OLLAMA_MODEL = "llama3.2:1b"
+OLLAMA_MODEL = "qwen2.5vl:3b"
 
 model = ChatOllama(
     model=OLLAMA_MODEL,
     temperature=0
 )
 
-print("🔌 Chargement de la base vectorielle...")
+print("📂 Chargement de la base vectorielle...")
 vector_store = charger_vector_store()
 print("✅ Base prête.\n")
+
+# ==========================================
+# MEMORY
+# ==========================================
+memory = ConversationBufferMemory(
+    memory_key="chat_history",
+    return_messages=True
+)
+
 
 # ==========================================
 # OUTILS (TOOLS)
 # ==========================================
 @tool
-def recherche_rag(question: str) -> str:
-    """Recherche des informations dans les rapports financiers."""
-    resultat = ask(question, vector_store=vector_store)
+def recherche_financiere(question: str) -> str:
+    """Recherche des informations dans les documents financiers indexés (rapports annuels, bilans, analyses)."""
+    resultat = ask(question, vector_store=vector_store, historique=historique, verbose=False)
     return resultat["reponse"]
 
 @tool
@@ -54,12 +63,12 @@ def get_cours_action(ticker: str) -> str:
 # ==========================================
 
 tools = [
-    recherche_rag,
+    recherche_financiere,
     get_cours_action,
     calcul_marge_nette,
     calcul_croissance,
     calcul_ratio_endettement,
-    verifier_alerte_seuil
+    verifier_alerte
 ]
 
 # Prompt ReAct
@@ -69,7 +78,7 @@ Tu réponds toujours en français, de façon claire et précise.
 Tu as accès aux outils suivants :
 {tools}
 
-Noms des outils disponibles : {tool_names}
+Outils disponibles : {tool_names}
 
 Pour répondre, utilise ce format :
 Question: la question posée
@@ -97,6 +106,7 @@ agent = create_react_agent(
 agent_executor = AgentExecutor(
     agent=agent,
     tools=tools,
+    memory=memory,
     verbose=True,
     handle_parsing_errors=True,
     max_iterations=5
@@ -107,7 +117,6 @@ agent_executor = AgentExecutor(
 
 if __name__ == "__main__":
     print("🤖 FinAI Agent — Assistant Financier")
-    print("=" * 50)
     print(f"🛠️  Outils disponibles : {', '.join([t.name for t in tools])}")
     print("📊 Actions disponibles : Apple, Tesla, NVIDIA, LVMH...")
     print("📈 Indices disponibles : CAC40, S&P500, NASDAQ, DAX...")
