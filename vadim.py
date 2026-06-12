@@ -105,6 +105,12 @@ def construire_contexte(documents: list) -> str:
 def generer_reponse(question: str, contexte: str, historique: list = None) -> str:
     print("\n🤖 Génération de la réponse avec Ollama...")
 
+    if historique is None:
+        historique = []
+    
+    # Filtrer les entrées vides éventuelles
+    historique = [h for h in historique if h.strip()]
+    
     messages = formater_prompt(contexte, question, historique)
 
     reponse = llm.invoke(messages)

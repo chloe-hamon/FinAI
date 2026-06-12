@@ -37,15 +37,35 @@ def load_documents(directory_path: str):
     Parcourt le dossier spécifié et charge tous les fichiers PDF.
     """
     print(f"📄 Chargement des PDF depuis le dossier '{directory_path}'...")
-    # On utilise DirectoryLoader qui va appliquer PyPDFLoader sur chaque fichier ".pdf"
-    loader = DirectoryLoader(
-        directory_path, 
-        glob="**/*.pdf", 
-        loader_cls=PyPDFLoader
-    )
-    documents = loader.load()
-    print(f"✅ {len(documents)} pages chargées au total.")
-    return documents
+    all_docs = []
+    pdf_files = [f for f in os.listdir(directory_path) if f.endswith(".pdf")]
+
+    if not pdf_files:
+        print(f"⚠️ Aucun PDF trouvé dans '{directory_path}'.")
+        return []
+
+    for fichier in pdf_files:
+        path = os.path.join(directory_path, fichier)
+        try:
+            loader = PyPDFLoader(path)
+            docs = loader.load()
+            print(f"   ✅ {fichier} — {len(docs)} pages")
+            all_docs.extend(docs)
+        except Exception as e:
+            print(f"   ❌ Erreur sur {fichier} : {e} — ignoré")
+
+    print(f"✅ {len(all_docs)} pages chargées au total.")
+    return all_docs
+
+def evaluer_qualite(texte):
+    if len(texte) == 0:
+        return "nulle"
+    elif len(texte) < 300:
+        return "faible"
+    elif len(texte) < 1000:
+        return "moyenne"
+    else:
+        return "bonne"
 
 def split_documents(documents):
     """
@@ -60,8 +80,23 @@ def split_documents(documents):
         add_start_index=True, # Garde la trace d'où vient le texte dans la page
     )
     chunks = text_splitter.split_documents(documents)
-    print(f"✅ Documents découpés en {len(chunks)} chunks.")
-    return chunks
+    print(f"   → {len(chunks)} chunks bruts générés")
+    
+    # ── FILTRE QUALITÉ ──────────────────────────────────────────
+    chunks_filtres = []
+    ignores = 0
+
+    for chunk in chunks:
+        qualite = evaluer_qualite(chunk.page_content)
+        if qualite in ("nulle", "faible"):
+            ignores += 1
+        else:
+            chunk.metadata["qualite"] = qualite   # utile pour debug
+            chunks_filtres.append(chunk)
+
+    print(f"   → {ignores} chunks ignorés (qualité nulle/faible)")
+    print(f"✅ {len(chunks_filtres)} chunks conservés après filtrage.")
+    return chunks_filtres
 
 def save_to_chroma(chunks, reset: bool = True):
     """
@@ -81,15 +116,50 @@ def save_to_chroma(chunks, reset: bool = True):
 
     print(f"💾 Création de la base de données vectorielle ChromaDB dans '{CHROMA_PATH}'...")
 
-    # Création et sauvegarde persistante de la base
-    vector_store = Chroma.from_documents(
-        documents=chunks,
-        embedding=embeddings,
-        persist_directory=CHROMA_PATH
-    )
+    BATCH_SIZE = 500
+    vector_store = None
+
+    for i in range(0, len(chunks), BATCH_SIZE):
+        batch = chunks[i:i + BATCH_SIZE]
+        print(f"   → Batch {i // BATCH_SIZE + 1} : {len(batch)} chunks...")
+
+        if vector_store is None:
+            vector_store = Chroma.from_documents(
+                documents=batch,
+                embedding=embeddings,
+                persist_directory=CHROMA_PATH
+            )
+        else:
+            vector_store.add_documents(batch)
+
     total = vector_store._collection.count()
     print(f"✅ {total} chunks stockés dans ChromaDB.")
-    print("🚀 Pipeline terminé avec succès ! Les données sont prêtes à être interrogées.")
+    return vector_store
+
+
+def ajouter_extractions_visuelles(dossier: str, vector_store: Chroma):
+    """
+    Étape 5 : Extraction visuelle (images, tableaux) et ajout dans ChromaDB.
+    """
+    print("📸 Analyse visuelle des pages (images/tableaux)...")
+
+    embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
+    pdf_files = [f for f in os.listdir(dossier) if f.endswith(".pdf")]
+
+    for fichier in pdf_files:
+        pdf_path = os.path.join(dossier, fichier)
+        try:
+            # lancer_extraction doit retourner une liste de Documents LangChain
+            docs_visuels = lancer_extraction(pdf_path)
+
+            if docs_visuels:
+                vector_store.add_documents(docs_visuels)
+                print(f"   ✅ {fichier} — {len(docs_visuels)} éléments visuels ajoutés")
+            else:
+                print(f"   ⚠️ {fichier} — aucun élément visuel extrait")
+
+        except Exception as e:
+            print(f"   ❌ Erreur visuelle sur {fichier} : {e} — ignoré")
 
 # ==========================================
 # EXÉCUTION PRINCIPALE
@@ -100,21 +170,17 @@ def lancer_ingestion(dossier_donnees: str, reset: bool = True):
         print(f"❌ Erreur : Le dossier '{dossier_donnees}' n'existe pas.")
         return
 
-    # Étape 1 : Chunking texte (reset=True ici pour vider l'ancienne base)
     docs = load_documents(dossier_donnees)
-    if len(docs) > 0:
-        chunks = split_documents(docs)
-        save_to_chroma(chunks, reset=reset)
-    else:
-        print(f"⚠️ Aucun PDF trouvé dans '{dossier_donnees}'.")
+    if not docs:
         return
 
-    # Étape 2 : Analyse visuelle APRÈS (ChromaDB existe déjà, on ajoute dedans)
-    print("📸 Analyse visuelle des pages...")
-    for fichier in os.listdir(dossier_donnees):
-        if fichier.endswith(".pdf"):
-            pdf_path = os.path.join(dossier_donnees, fichier)
-            lancer_extraction(pdf_path)
+    chunks = split_documents(docs)
+    vector_store = save_to_chroma(chunks, reset=reset)
+
+    # Étape 4 : Visuel — ajout dans la même base
+    ajouter_extractions_visuelles(dossier_donnees, vector_store)
+
+    print("\n🚀 Pipeline terminé ! La base est prête à être interrogée.")
 
 if __name__ == "__main__":
     lancer_ingestion(DATA_PATH, reset=True)
