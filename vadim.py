@@ -24,7 +24,7 @@ parser = StrOutputParser()
 def charger_vector_store():
     """
     Charge la base vectorielle ChromaDB existante.
-    La base doit avoir été créée via pipeline_pdf.py au préalable.
+    
     """
     if not os.path.exists(CHROMA_PATH):
         raise FileNotFoundError(
