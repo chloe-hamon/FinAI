@@ -1,8 +1,12 @@
 import schedule
+import os
 import time
 import logging
-import zoneinfo   
+from zoneinfo import ZoneInfo
 from datetime import datetime
+from analyse_tech import pipeline_technique
+from analyse_fond import pipeline_fondamental
+from macro import pipeline_macro
 from chloe import (
     get_market_indices,
     get_multiple_stocks,
@@ -16,10 +20,11 @@ from chloe import (
     indexer_articles_dans_chroma,
     ACTIONS,
     FLUX_RSS,
-    GOOGLE_NEWS_QUERIES
+    GOOGLE_NEWS_QUERIES,
+    PATHS,
 )
 
-os.makedirs("logs", exist_ok=True)
+os.makedirs(PATHS["logs"], exist_ok=True)
 
 # ============================================================
 # LOGGING
@@ -72,10 +77,37 @@ def tache_news():
 
 def tache_nuit():
     """Pipeline complet — chaque nuit à 2h"""
+    from macro import pipeline_macro
+    from chloe import ACTIONS
+    from scoring_global import pipeline_scoring_global
+
     log.info("🌙 Pipeline nuit complet...")
     try:
+        # 1. Collecte des données
         tache_cours()
         tache_news()
+
+        # 2. Analyses
+        resultats_tech = pipeline_technique(PATHS["actions_clean"])
+        resultats_fond = pipeline_fondamental(list(ACTIONS.values()))
+        macro_result   = pipeline_macro()
+
+        # 3. Extraction scores macro
+        fear_greed  = macro_result.get("fear_greed", {})
+        score_macro = macro_result.get("scoring", {}).get("score", 0)
+
+        # 4. Scoring global
+        # Construire actifs {ticker: type_actif} depuis ACTIONS
+        actifs = {ticker: "action" for ticker in ACTIONS.values()}
+
+        pipeline_scoring_global(
+            resultats_tech = resultats_tech or {},
+            resultats_fond = resultats_fond or {},
+            score_macro    = score_macro,
+            actifs         = actifs,
+            fear_greed     = fear_greed,
+        )
+
         log.info("✅ Pipeline nuit terminé")
     except Exception as e:
         log.error(f"❌ Erreur pipeline nuit : {e}")
@@ -89,7 +121,7 @@ def marches_ouverts() -> bool:
     Vérifie si on est en semaine entre 8h et 22h (CET)
     Couvre NYSE, NASDAQ, Euronext, LSE, Tokyo
     """
-    now = datetime.now()
+    now = datetime.now(ZoneInfo("Europe/Paris"))
     # 0=lundi ... 4=vendredi
     if now.weekday() > 4:
         return False

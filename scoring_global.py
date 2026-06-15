@@ -1,8 +1,9 @@
 import json
 import os
 from datetime import datetime
+from chloe import PATHS
 
-os.makedirs("data/scoring", exist_ok=True)
+os.makedirs(PATHS["scoring"], exist_ok=True)
 
 # ============================================================
 # PONDÉRATIONS PAR TYPE D'ACTIF
@@ -34,7 +35,65 @@ POIDS = {
         "macro":        0.40,
     },
 }
+# ============================================================
+# SENTIMENT PAR TICKER — DEPUIS FEAR & GREED GLOBAL
+# ============================================================
 
+def construire_senti_par_ticker(
+    actifs:          dict,
+    fear_greed:      dict | None = None,
+    scores_news:     dict | None = None,
+) -> dict:
+    """
+    Construit un score sentiment [-10, +10] par ticker.
+
+    Sources utilisées (par priorité) :
+    1. scores_news   → {ticker: score} si disponible (analyse NLP des news)
+    2. fear_greed    → score global CNN Fear & Greed converti en [-10, +10]
+    3. Fallback      → 0 (neutre)
+
+    Ajustement par type d'actif :
+    - crypto         → sentiment amplifié (×1.2)
+    - matiere_premiere → légèrement amplifié (×1.1)
+    - action / etf   → score brut
+    """
+    resultats = {}
+
+    # Conversion Fear & Greed [0-100] → [-10, +10]
+    score_fg_global = None
+    if fear_greed and "erreur" not in fear_greed and "valeur" in fear_greed:
+        # 50 = neutre → 0, 0 = extreme fear → +10 (opportunité), 100 = extreme greed → -10
+        fg_val = fear_greed["valeur"]
+        # Formule : (50 - fg) / 5  → [+10 à -10]
+        score_fg_global = round((50 - fg_val) / 5, 2)
+        score_fg_global = max(-10, min(10, score_fg_global))
+
+    for ticker, type_actif in actifs.items():
+
+        # Priorité 1 : score news NLP individuels
+        if scores_news and ticker in scores_news:
+            score_base = scores_news[ticker]
+
+        # Priorité 2 : Fear & Greed global
+        elif score_fg_global is not None:
+            score_base = score_fg_global
+
+        # Priorité 3 : neutre
+        else:
+            score_base = 0
+
+        # Ajustement par type d'actif
+        if type_actif == "crypto":
+            score_final = round(score_base * 1.2, 2)
+        elif type_actif == "matiere_premiere":
+            score_final = round(score_base * 1.1, 2)
+        else:
+            score_final = score_base
+
+        # Clamp final
+        resultats[ticker] = max(-10, min(10, score_final))
+
+    return resultats
 # ============================================================
 # SCORE GLOBAL
 # ============================================================
@@ -49,6 +108,8 @@ def scorer_actif(
 ) -> dict:
     """
     Calcule le score global pondéré d'un actif
+    Tous les scores sont sur une échelle [-10, +10].
+
     """
     poids = POIDS.get(type_actif, POIDS["action"])
 
@@ -60,7 +121,7 @@ def scorer_actif(
     }
 
     # Score pondéré
-    score_total = round(sum(scores[k] * poids[k] for k in scores), 2)
+    score_total = round(max(-10, min(10, sum(scores[k] * poids[k] for k in scores))), 2)
 
 
     # Recommandation
@@ -135,27 +196,40 @@ def afficher_scoring(resultat: dict):
 # ============================================================
 
 def pipeline_scoring_global(
-    resultats_tech:   dict,
-    resultats_fond:   dict,
-    resultats_senti:  dict,        
-    score_macro:      float,
-    actifs:           dict,
+    resultats_tech:  list[dict],   
+    resultats_fond:  list[dict],   
+    score_macro:     float,
+    actifs:          dict,         
+    fear_greed:      dict | None = None,
+    scores_news:     dict | None = None,
 ) -> list[dict]:
-    """
-    resultats_tech  → {ticker: score}
-    resultats_fond  → {ticker: score}
-    resultats_senti → {ticker: score}   ← AJOUT
-    score_macro     → score unique partagé par tous
-    actifs          → {ticker: type_actif}
-    """
+    
+    tech_par_ticker  = {
+        r["nom"]: r["score"]
+        for r in resultats_tech
+        if "nom" in r and "score" in r
+    }
+    fond_par_ticker  = {
+        r["ticker"]: r["scores"]["total"]
+        for r in resultats_fond
+        if "ticker" in r and "erreur" not in r
+    }
+
+     # Construction automatique du sentiment par ticker
+    resultats_senti = construire_senti_par_ticker(
+        actifs      = actifs,
+        fear_greed  = fear_greed,
+        scores_news = scores_news,
+    )
+    
     scores_finaux = []
 
     for ticker, type_actif in actifs.items():
         resultat = scorer_actif(
             ticker      = ticker,
             type_actif  = type_actif,
-            score_tech  = resultats_tech.get(ticker),
-            score_fond  = resultats_fond.get(ticker),
+            score_tech  = tech_par_ticker.get(ticker),
+            score_fond  = fond_par_ticker.get(ticker),
             score_senti = resultats_senti.get(ticker),  
             score_macro = score_macro,
         )
@@ -172,7 +246,10 @@ def pipeline_scoring_global(
         print(f"  {i:2}. {r['ticker']:8} | {r['scores']['total']:+5.2f} | {r['recommandation']}")
 
     # Sauvegarde
-    chemin = f"data/scoring/scoring_{datetime.now().strftime('%Y%m%d_%H%M')}.json"
+    chemin = os.path.join(
+        PATHS["scoring"],
+        f"scoring_{datetime.now().strftime('%Y%m%d_%H%M')}.json"
+    )
     with open(chemin, "w", encoding="utf-8") as f:
         json.dump(tries, f, ensure_ascii=False, indent=2)
 
@@ -180,8 +257,12 @@ def pipeline_scoring_global(
     return tries
 
 
+# ============================================================
+# MAIN
+# ============================================================
+
 if __name__ == "__main__":
-    # Test rapide
+    # Test scorer_actif
     test = scorer_actif(
         ticker      = "AAPL",
         type_actif  = "action",
@@ -191,3 +272,15 @@ if __name__ == "__main__":
         score_macro = -1,
     )
     afficher_scoring(test)
+
+    # Test construire_senti_par_ticker
+    print("\n--- Test sentiment ---")
+    actifs_test = {
+        "AAPL": "action",
+        "BTC-USD": "crypto",
+        "GC=F": "matiere_premiere",
+    }
+    fg_test = {"valeur": 30, "rating": "Fear"}  # Fear → score positif
+    senti = construire_senti_par_ticker(actifs_test, fear_greed=fg_test)
+    for t, s in senti.items():
+        print(f"  {t:12} → sentiment {s:+.2f}")

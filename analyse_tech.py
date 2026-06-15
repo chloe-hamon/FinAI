@@ -1,8 +1,9 @@
 import pandas as pd
 import numpy as np
 import os
+from chloe import PATHS
 
-os.makedirs("data/analyse_technique", exist_ok=True)
+os.makedirs(PATHS["analyse_technique"], exist_ok=True)
 
 # ============================================================
 # INDICATEURS TECHNIQUES
@@ -124,7 +125,7 @@ def analyser_actif(df: pd.DataFrame, nom: str) -> pd.DataFrame:
     result["ATR"] = calcul_atr(df)
     result = pd.concat([result, calcul_stochastique(df)],            axis=1)
 
-    chemin = f"data/analyse_technique/{nom.lower().replace(' ', '_')}.csv"
+    chemin = os.path.join(PATHS["analyse_technique"], f"{nom.lower()}.csv")
     result.to_csv(chemin)
     print(f"  ✅ {nom} — sauvegardé : {chemin}")
     return result

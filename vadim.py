@@ -4,12 +4,12 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_ollama import ChatOllama
 from langchain_core.output_parsers import StrOutputParser
 from prompt_template import formater_prompt
+from chloe import CHROMA_PATH, EMBEDDING_MODEL
+
 # ==========================================
 # CONFIGURATION (identique à pipeline_pdf.py)
 # ==========================================
-CHROMA_PATH = "chroma_db/"
-EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-OLLAMA_MODEL = "qwen2.5vl:3b"
+OLLAMA_MODEL = "qwen2.5vl:7b"
 
 # Nombre de chunks récupérés depuis ChromaDB
 K_RESULTS = 5

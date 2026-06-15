@@ -11,7 +11,6 @@ print("🔌 Connexion à ChromaDB...")
 embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
 db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embeddings)
 
-# ← CORRIGÉ : API publique au lieu de _collection.count()
 total = db._collection.count()
 print(f"📦 Documents en base : {total}")
 
@@ -26,7 +25,6 @@ print("\n" + "=" * 50)
 print("TEST 1 — Sources disponibles dans la base")
 print("=" * 50)
 
-# ← CORRIGÉ : récupération via API publique
 tous = db.get()  # Chroma LangChain expose .get() directement
 sources = set()
 
