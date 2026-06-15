@@ -98,7 +98,7 @@ def split_documents(documents):
     print(f"✅ {len(chunks_filtres)} chunks conservés après filtrage.")
     return chunks_filtres
 
-def save_to_chroma(chunks, reset: bool = True):
+def save_to_chroma(chunks, reset: bool = False):
     """
     Étape 3 & 4 : Vectorisation (Embeddings) et Stockage (Vector Store)
     Transforme le texte en vecteurs mathématiques et les sauvegarde dans ChromaDB.
@@ -143,7 +143,6 @@ def ajouter_extractions_visuelles(dossier: str, vector_store: Chroma):
     """
     print("📸 Analyse visuelle des pages (images/tableaux)...")
 
-    embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
     pdf_files = [f for f in os.listdir(dossier) if f.endswith(".pdf")]
 
     for fichier in pdf_files:
@@ -165,7 +164,7 @@ def ajouter_extractions_visuelles(dossier: str, vector_store: Chroma):
 # EXÉCUTION PRINCIPALE
 # ==========================================
 
-def lancer_ingestion(dossier_donnees: str, reset: bool = True):
+def lancer_ingestion(dossier_donnees: str, reset: bool = False):
     if not os.path.exists(dossier_donnees):
         print(f"❌ Erreur : Le dossier '{dossier_donnees}' n'existe pas.")
         return

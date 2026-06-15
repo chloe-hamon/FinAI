@@ -16,7 +16,7 @@ from financial_tools_langchain import (
 # ==========================================
 # CONFIGURATION
 # ==========================================
-OLLAMA_MODEL = "qwen2.5vl:3b"
+OLLAMA_MODEL = "qwen2.5vl:7b"
 
 model = ChatOllama(
     model=OLLAMA_MODEL,
@@ -45,12 +45,11 @@ def recherche_financiere(question: str) -> str:
     """Recherche des informations dans les documents financiers indexés (rapports annuels, bilans, analyses)."""
     # Récupérer l'historique depuis la memory sous forme de liste propre
     historique_raw = memory.load_memory_variables({}).get("chat_history", "")
-    
-    # Convertir en liste de strings pour vadim.ask()
-    if historique_raw:
-        historique = historique_raw.split("\n") if isinstance(historique_raw, str) else []
-    else:
-        historique = []
+
+    historique = [
+        ligne for ligne in historique_raw.split("\n")
+        if ligne.strip()
+    ] if isinstance(historique_raw, str) and historique_raw.strip() else []
 
     resultat = ask(
         question=question,
@@ -70,9 +69,7 @@ def get_cours_action(ticker: str) -> str:
         if prix is None:
             return f"❌ Aucun cours trouvé pour {ticker}. Vérifiez le symbole."
         
-        # Variation optionnelle (peut ne pas exister)
         try:
-            variation = action.fast_info.three_month_return
             return f"{ticker.upper()} : {prix:.2f} USD"
         except Exception:
             return f"{ticker.upper()} : {prix:.2f} USD"

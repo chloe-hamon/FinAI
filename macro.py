@@ -2,8 +2,9 @@ import requests
 import json
 import os
 from datetime import datetime
+from chloe import PATHS
 
-os.makedirs("data/macro", exist_ok=True)
+os.makedirs(PATHS["macro"], exist_ok=True)
 
 # ============================================================
 # SOURCES MACRO GRATUITES

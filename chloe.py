@@ -17,11 +17,31 @@ for _d in [
     "data/indices", "data/actions", "data/crypto", "data/forex",
     "data/indices_clean", "data/actions_clean",
     "data/crypto_clean", "data/forex_clean",
+    "data/analyse_technique",    
+    "data/analyse_fondamentale", 
+    "data/scoring",              
+    "logs",
+    "data/macro",                      
 ]:
     os.makedirs(_d, exist_ok=True)
 
 CHROMA_PATH     = "chroma_db/"
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+
+PATHS = {
+    "indices_clean": "data/indices_clean",
+    "actions_clean": "data/actions_clean",
+    "crypto_clean":  "data/crypto_clean",
+    "forex_clean":   "data/forex_clean",
+    "scoring":       "data/scoring",
+    "logs":          "logs",
+    "analyse_technique":  "data/analyse_technique",
+    "analyse_fondamentale": "data/analyse_fondamentale",
+    "macro":                "data/macro",
+    "chroma":                "chroma_db",
+    "pdf":                   "Annual report",
+    "images":                "pages_images",
+}
 
 # ============================================================
 # UNIVERS D'INVESTISSEMENT

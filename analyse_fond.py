@@ -1,10 +1,10 @@
 import json
 import os
 from datetime import datetime
-
+from chloe import PATHS
 import yfinance as yf
 
-os.makedirs("data/analyse_fondamentale", exist_ok=True)
+os.makedirs(PATHS["analyse_fondamentale"], exist_ok=True)
 
 
 # ============================================================
@@ -296,7 +296,7 @@ def analyser_fondamentaux(ticker: str) -> dict:
         "donnees_brutes": data,
     }
 
-    chemin = f"data/analyse_fondamentale/{ticker.lower()}.json"
+    chemin = os.path.join(PATHS["analyse_fondamentale"], f"{ticker.lower()}.json")
     with open(chemin, "w", encoding="utf-8") as f:
         json.dump(resultat, f, ensure_ascii=False, indent=2, default=str)
 
@@ -364,7 +364,7 @@ def pipeline_fondamental(tickers: list[str]) -> list[dict]:
 if __name__ == "__main__":
     from chloe import ACTIONS
 
-    tickers = list(ACTIONS.keys())
+    tickers = list(ACTIONS.values())
     print(f"🚀 Analyse fondamentale — {len(tickers)} actifs\n")
     resultats = pipeline_fondamental(tickers)
     print(f"\n✅ {len(resultats)} analyses terminées")

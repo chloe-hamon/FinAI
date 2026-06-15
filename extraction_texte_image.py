@@ -7,7 +7,7 @@ from langchain_core.documents import Document
 
 CHROMA_PATH = "chroma_db/"
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-VISION_MODEL = "qwen2.5vl:3b"
+VISION_MODEL = "qwen2.5vl:7b"
 
 output_folder = "Annual report"
 images_folder = "pages_images"
