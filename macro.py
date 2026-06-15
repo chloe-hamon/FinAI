@@ -1,10 +1,10 @@
 import requests
-import pandas as pd
 import json
 import os
 from datetime import datetime
+from chloe import PATHS
 
-os.makedirs("data/macro", exist_ok=True)
+os.makedirs(PATHS["macro"], exist_ok=True)
 
 # ============================================================
 # SOURCES MACRO GRATUITES
@@ -63,8 +63,7 @@ def get_fred_serie(serie_id: str, nom: str, nb_obs: int = 12) -> dict:
         "api_key":       FRED_API_KEY,
         "file_type":     "json",
         "sort_order":    "desc",
-        "limit":         nb_obs,
-        "observation_start": "2020-01-01"
+        "limit":         nb_obs
     }
 
     try:
@@ -75,27 +74,15 @@ def get_fred_serie(serie_id: str, nom: str, nb_obs: int = 12) -> dict:
         if not observations:
             return {"nom": nom, "serie": serie_id, "erreur": "Pas de données"}
 
-        # Dernière valeur valide
-        derniere = None
-        for obs in observations:
-            if obs["value"] != ".":
-                derniere = obs
-                break
+        derniere = next((o for o in observations if o["value"] != "."), None)
+        avant_derniere = next(
+            (o for o in observations if o["value"] != "." and o != derniere), None
+        )
 
-        # Avant-dernière pour calcul variation
-        avant_derniere = None
-        for obs in observations[1:]:
-            if obs["value"] != ".":
-                avant_derniere = obs
-                break
-
-        valeur     = float(derniere["value"]) if derniere else None
-        date       = derniere["date"] if derniere else None
+        valeur     = float(derniere["value"])     if derniere      else None
+        date       = derniere["date"]             if derniere      else None
         precedente = float(avant_derniere["value"]) if avant_derniere else None
-
-        variation  = None
-        if valeur and precedente:
-            variation = round(valeur - precedente, 4)
+        variation  = round(valeur - precedente, 4) if valeur and precedente else None
 
         return {
             "nom":        nom,
@@ -103,8 +90,7 @@ def get_fred_serie(serie_id: str, nom: str, nb_obs: int = 12) -> dict:
             "date":       date,
             "valeur":     valeur,
             "precedente": precedente,
-            "variation":  variation,
-            "unite":      data.get("units", ""),
+            "variation":  variation
         }
 
     except Exception as e:
@@ -123,7 +109,7 @@ def get_toutes_series_fred() -> list[dict]:
         resultats.append(r)
 
         if "erreur" not in r:
-            variation_str = f"({r['variation']:+.2f})" if r["variation"] else ""
+            variation_str = f"({r['variation']:+.2f})" if r["variation"] is not None else ""
             print(f"  ✅ {nom:20} → {r['valeur']} {variation_str} [{r['date']}]")
         else:
             print(f"  ❌ {nom:20} → {r['erreur']}")
@@ -205,47 +191,65 @@ def interpreter_vix(valeur: float) -> str:
         return "😱 Panique — volatilité extrême"
 
 
-def get_courbe_taux() -> dict:
+def get_courbe_taux(fred_data: list[dict]=None) -> dict:
     """
     Analyse de la courbe des taux (2Y vs 10Y)
     Courbe inversée → signal récession historique
     """
+    if fred_data:
+        macro = {d["nom"]: d for d in fred_data if "erreur" not in d}
+        t2y_data  = macro.get("T2Y")
+        t10y_data = macro.get("T10Y")
+        spread_data = macro.get("T10Y2Y")
+
+        if t2y_data and t10y_data:
+            taux_2y  = t2y_data["valeur"]
+            taux_10y = t10y_data["valeur"]
+            spread   = round(taux_10y - taux_2y, 3)
+            return {
+                "nom":      "Courbe_Taux",
+                "taux_2y":  taux_2y,
+                "taux_10y": taux_10y,
+                "spread":   spread,
+                "signal":   _signal_courbe(spread),
+                "source":   "FRED",
+                "date":     t10y_data["date"],
+            }
+
+    # Fallback yFinance
     try:
         import yfinance as yf
+        # ← CORRIGÉ : ^FVX (5 ans) remplace ^IRX (3 mois)
+        t5y  = yf.Ticker("^FVX")
+        t10y = yf.Ticker("^TNX")
 
-        t2y  = yf.Ticker("^IRX")   # 13 semaines (proxy 2Y)
-        t10y = yf.Ticker("^TNX")   # 10 ans
-
-        h2  = t2y.history(period="5d")
+        h5  = t5y.history(period="5d")
         h10 = t10y.history(period="5d")
 
-        if h2.empty or h10.empty:
+        if h5.empty or h10.empty:
             return {"nom": "Courbe_Taux", "erreur": "Données manquantes"}
 
-        taux_2y  = round(float(h2["Close"].iloc[-1]), 3)
+        taux_5y  = round(float(h5["Close"].iloc[-1]), 3)
         taux_10y = round(float(h10["Close"].iloc[-1]), 3)
-        spread   = round(taux_10y - taux_2y, 3)
-
-        if spread > 1:
-            signal = "✅ Courbe normale — économie saine"
-        elif spread > 0:
-            signal = "⚠️ Courbe plate — ralentissement possible"
-        elif spread > -0.5:
-            signal = "🔴 Courbe légèrement inversée — attention"
-        else:
-            signal = "🚨 Courbe très inversée — signal récession"
+        spread   = round(taux_10y - taux_5y, 3)
 
         return {
-            "nom":     "Courbe_Taux",
-            "taux_2y":  taux_2y,
+            "nom":      "Courbe_Taux",
+            "taux_2y":  taux_5y,    # proxy 5Y
             "taux_10y": taux_10y,
             "spread":   spread,
-            "signal":   signal,
-            "date":     str(h10.index[-1].date())
+            "signal":   _signal_courbe(spread),
+            "source":   "yFinance (proxy 5Y)",
+            "date":     str(h10.index[-1].date()),
         }
-
     except Exception as e:
         return {"nom": "Courbe_Taux", "erreur": str(e)}
+
+def _signal_courbe(spread: float) -> str:
+    if spread > 1:    return "✅ Courbe normale — économie saine"
+    if spread > 0:    return "⚠️ Courbe plate — ralentissement possible"
+    if spread > -0.5: return "🔴 Courbe légèrement inversée — attention"
+    return "🚨 Courbe très inversée — signal récession"
 
 
 # ============================================================
@@ -372,7 +376,7 @@ def pipeline_macro() -> dict:
     print("\n📡 Données de sentiment...")
     vix        = get_vix()
     fear_greed = get_fear_greed()
-    courbe     = get_courbe_taux()
+    courbe     = get_courbe_taux(fred_data=fred_data)
 
     print(f"  VIX          : {vix.get('valeur', 'N/A')} — {vix.get('signal', '')}")
     print(f"  Fear & Greed : {fear_greed.get('valeur', 'N/A')} ({fear_greed.get('rating', '')})")
