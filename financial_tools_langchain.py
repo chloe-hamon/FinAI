@@ -1,5 +1,3 @@
-
-
 from langchain.tools import tool
 
 
@@ -14,7 +12,17 @@ def calcul_marge_nette(resultat_net: float, chiffre_affaires: float) -> float:
         return "Erreur : chiffre d'affaires ne peut pas être zéro."
     
     marge = round((resultat_net / chiffre_affaires) * 100, 2)
-    return f"Marge nette : {marge}%"
+
+    if marge < 0:
+        niveau = "🔴 Négative — entreprise en perte"
+    elif marge < 5:
+        niveau = "🟡 Faible"
+    elif marge < 15:
+        niveau = "✅ Correcte"
+    else:
+        niveau = "✅ Excellente"
+
+    return f"Marge nette : {marge}% → {niveau}"
 
 
 @tool
@@ -61,13 +69,17 @@ def calcul_ratio_endettement(dette_totale: float, capitaux_propres: float) -> fl
 
 @tool
 def verifier_alerte(valeur: float, seuil_bas: float, seuil_haut: float, nom: str) -> str:
-    """Vérifie si une valeur financière dépasse les seuils d'alerte définis."""
+    """
+    Vérifie si une valeur financière est en dehors des seuils d'alerte.
+    Utilise cet outil pour surveiller un indicateur et déclencher une alerte si nécessaire.
+    Paramètres : valeur (float), seuil_bas (float), seuil_haut (float), nom (str, nom de l'indicateur)
+    """
     if valeur < seuil_bas:
         return f"🚨 ALERTE : {nom} = {valeur} est SOUS le seuil bas ({seuil_bas})"
     elif valeur > seuil_haut:
         return f"🚨 ALERTE : {nom} = {valeur} est AU-DESSUS du seuil haut ({seuil_haut})"
     else:
-        return f"✅ {nom} = {valeur} dans la zone normale [{seuil_bas} - {seuil_haut}]"
+        return f"✅ {nom} = {valeur} dans la zone normale [{seuil_bas} — {seuil_haut}]"
 
 
 if __name__ == "__main__":
@@ -90,5 +102,7 @@ if __name__ == "__main__":
 
     print(verifier_alerte.invoke({
         "valeur": 4.5,
-        "seuil": 5
+        "seuil_bas": 3.0,
+        "seuil_haut": 5.0,
+        "nom": "RSI"
     }))
