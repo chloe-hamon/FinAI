@@ -14,7 +14,7 @@ from extraction_texte_image import lancer_extraction
 # CONFIGURATION
 # ==========================================
 DATA_PATH = "Annual report"
-CHROMA_PATH = "chroma_db/"
+CHROMA_PATH = "chroma_db/" 
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 200
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
