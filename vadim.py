@@ -7,12 +7,12 @@ from prompt_template import formater_prompt
 from chloe import CHROMA_PATH, EMBEDDING_MODEL
 
 # ==========================================
-# CONFIGURATION (identique à pipeline_pdf.py)
+# CONFIGURATION 
 # ==========================================
 OLLAMA_MODEL = "qwen2.5vl:7b"
 
 # Nombre de chunks récupérés depuis ChromaDB
-K_RESULTS = 5
+K_RESULTS = 8
 
 # ==========================================
 # INITIALISATION (chargée une seule fois)
@@ -56,22 +56,27 @@ def retriever(vector_store, question: str, k: int = K_RESULTS) -> list:
 
     Retourne une liste de Documents LangChain.
     """
-    print(f"\n🔍 Recherche des {k} chunks les plus pertinents...")
-
     resultats = vector_store.similarity_search_with_score(
         query=question,
-        k=k
+        k=k * 2  # On prend plus pour pouvoir filtrer
     )
 
-    # Affichage debug des sources trouvées
-    print(f"   → {len(resultats)} chunks trouvés :")
-    for i, (doc, score) in enumerate(resultats):
+    # Filtrer les pages de définitions (>= 65 = annexes/glossaire)
+    resultats_filtres = [
+        (doc, score) for doc, score in resultats
+        if doc.metadata.get("page", 0) < 200
+    ]
+
+    # Reprendre les k meilleurs après filtrage
+    resultats_filtres = resultats_filtres[:k]
+
+    print(f"   → {len(resultats_filtres)} chunks après filtrage :")
+    for i, (doc, score) in enumerate(resultats_filtres):
         source = doc.metadata.get("source", "inconnue")
         page   = doc.metadata.get("page", "?")
         print(f"     [{i+1}] Score: {score:.4f} | {os.path.basename(source)} p.{page}")
 
-    # On retourne uniquement les documents (sans les scores)
-    return [doc for doc, score in resultats]
+    return [doc for doc, score in resultats_filtres]
 
 
 # ==========================================
@@ -108,14 +113,17 @@ def generer_reponse(question: str, contexte: str, historique: list = None) -> st
     if historique is None:
         historique = []
     
-    # Filtrer les entrées vides éventuelles
-    historique = [h for h in historique if h.strip()]
-    
-    messages = formater_prompt(contexte, question, historique)
+    historique_filtre = []
+    for h in historique:
+        if isinstance(h, dict) and h.get("content", "").strip():
+            historique_filtre.append(h)
+        elif isinstance(h, str) and h.strip():
+            historique_filtre.append(h)
+
+    messages = formater_prompt(contexte, question, historique_filtre)
 
     reponse = llm.invoke(messages)
     return parser.invoke(reponse)
-
 
 
 # ==========================================
@@ -152,7 +160,7 @@ def ask(question: str, vector_store=None, historique: list = None,verbose: bool 
         vector_store = charger_vector_store()
 
     # --- RETRIEVAL ---
-    documents = retriever(vector_store, question)
+    documents = retriever(vector_store, question, k=10)
 
     if not documents:
         return {

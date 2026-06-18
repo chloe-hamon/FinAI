@@ -1,0 +1,79 @@
+{
+  "ticker": "AMZN",
+  "nom": "Amazon.com, Inc.",
+  "secteur": "Consumer Cyclical",
+  "date": "2026-06-15 16:15",
+  "prix": 246.22,
+  "market_cap": 2648615682048,
+  "beta": 1.444,
+  "scores": {
+    "valorisation": -2,
+    "rentabilite": 3,
+    "croissance": 3,
+    "sante_financiere": 1,
+    "dividende": 1,
+    "total": 6
+  },
+  "recommandation": "🟡 BUY",
+  "details": {
+    "valorisation": {
+      "PE": "ATTENTION (PE=32.7 → cher)",
+      "PEG": "NEUTRAL (PEG=1.83)",
+      "PB": "ATTENTION (PB=5.99 > 3)",
+      "EV_EBITDA": "ATTENTION (EV/EBITDA=17.1 > 15)"
+    },
+    "rentabilite": {
+      "ROE": "BUY (ROE=24.3% > 20%)",
+      "Marge_Nette": "NEUTRAL (marge=12.2%)",
+      "ROA": "NEUTRAL (ROA=6.8%)"
+    },
+    "croissance": {
+      "Croissance_CA": "NEUTRAL (croissance=16.6%)",
+      "Croissance_BPA": "BUY (BPA=74.8%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "NEUTRAL (D/E=53.3%)",
+      "Current_Ratio": "NEUTRAL (CR=1.18)"
+    },
+    "dividende": {
+      "Payout": "BUY (payout=0.0% → soutenable)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "AMZN",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 32.655174,
+    "pe_forward": 24.971704,
+    "pb_ratio": 5.991775,
+    "ps_ratio": 3.5658338,
+    "ev_ebitda": 17.057,
+    "peg_ratio": 1.83,
+    "roe": 0.24285,
+    "roa": 0.06845,
+    "marge_nette": 0.12224,
+    "marge_brute": 0.50604,
+    "marge_operationnelle": 0.1314,
+    "ebitda": 155860992000,
+    "croissance_revenus": 0.166,
+    "croissance_bpa": 0.748,
+    "revenus": 742775980032,
+    "bpa": 7.54,
+    "bpa_forward": 9.85996,
+    "dette_totale": 235540004864,
+    "cash": 143088992256,
+    "ratio_dette_equity": 53.3,
+    "current_ratio": 1.177,
+    "quick_ratio": 0.974,
+    "dividende_yield": null,
+    "dividende_par_action": null,
+    "payout_ratio": 0.0,
+    "market_cap": 2648615682048,
+    "beta": 1.444,
+    "52w_high": 278.56,
+    "52w_low": 196.0,
+    "prix_actuel": 246.22,
+    "secteur": "Consumer Cyclical",
+    "industrie": "Internet Retail",
+    "nom": "Amazon.com, Inc."
+  }
+}

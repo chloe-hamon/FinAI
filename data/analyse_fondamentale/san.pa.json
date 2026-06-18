@@ -1,0 +1,80 @@
+{
+  "ticker": "SAN.PA",
+  "nom": "Sanofi",
+  "secteur": "Healthcare",
+  "date": "2026-06-15 16:15",
+  "prix": 75.52,
+  "market_cap": 90388709376,
+  "beta": 0.275,
+  "scores": {
+    "valorisation": 3,
+    "rentabilite": -1,
+    "croissance": -1,
+    "sante_financiere": 2,
+    "dividende": 1,
+    "total": 4
+  },
+  "recommandation": "⚪ NEUTRAL",
+  "details": {
+    "valorisation": {
+      "PE": "NEUTRAL (PE=19.1)",
+      "PEG": "SELL (PEG=3.85 > 2)",
+      "PB": "NEUTRAL (PB=1.25)",
+      "EV_EBITDA": "BUY (EV/EBITDA=8.3 < 10)"
+    },
+    "rentabilite": {
+      "ROE": "ATTENTION (ROE=6.6% < 10%)",
+      "Marge_Nette": "NEUTRAL (marge=16.0%)",
+      "ROA": "ATTENTION (ROA=4.7% < 5%)"
+    },
+    "croissance": {
+      "Croissance_CA": "ATTENTION (croissance=6.0% faible)",
+      "Croissance_BPA": "ATTENTION (BPA=-11.7%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "BUY (D/E=27.4% → peu endetté)",
+      "Current_Ratio": "NEUTRAL (CR=1.00)"
+    },
+    "dividende": {
+      "Dividende": "BUY (rendement=538.0%)",
+      "Payout": "ATTENTION (payout=99.0% → risqué)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "SAN.PA",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 19.070705,
+    "pe_forward": 8.381053,
+    "pb_ratio": 1.249049,
+    "ps_ratio": 1.9087873,
+    "ev_ebitda": 8.345,
+    "peg_ratio": 3.85,
+    "roe": 0.06576,
+    "roa": 0.04666,
+    "marge_nette": 0.15954,
+    "marge_brute": 0.72357005,
+    "marge_operationnelle": 0.20002002,
+    "ebitda": 12826999808,
+    "croissance_revenus": 0.06,
+    "croissance_bpa": -0.117,
+    "revenus": 47353999360,
+    "bpa": 3.96,
+    "bpa_forward": 9.0108,
+    "dette_totale": 20021000192,
+    "cash": 5544000000,
+    "ratio_dette_equity": 27.372,
+    "current_ratio": 1.005,
+    "quick_ratio": 0.201,
+    "dividende_yield": 5.38,
+    "dividende_par_action": 4.12,
+    "payout_ratio": 0.9899,
+    "market_cap": 90388709376,
+    "beta": 0.275,
+    "52w_high": 91.15,
+    "52w_low": 71.73,
+    "prix_actuel": 75.52,
+    "secteur": "Healthcare",
+    "industrie": "Drug Manufacturers - General",
+    "nom": "Sanofi"
+  }
+}

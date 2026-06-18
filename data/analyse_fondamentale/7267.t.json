@@ -1,0 +1,77 @@
+{
+  "ticker": "7267.T",
+  "nom": "Honda Motor Co., Ltd.",
+  "secteur": "Consumer Cyclical",
+  "date": "2026-06-15 16:15",
+  "prix": 1458.0,
+  "market_cap": 5675381948416,
+  "beta": 0.287,
+  "scores": {
+    "valorisation": 0,
+    "rentabilite": -4,
+    "croissance": 0,
+    "sante_financiere": -1,
+    "dividende": 2,
+    "total": -3
+  },
+  "recommandation": "🟠 SELL",
+  "details": {
+    "valorisation": {
+      "PEG": "SELL (PEG=3.45 > 2)",
+      "PB": "BUY (PB=0.48 < 1 → sous valeur comptable)",
+      "EV_EBITDA": "ATTENTION (EV/EBITDA=16.0 > 15)"
+    },
+    "rentabilite": {
+      "ROE": "ATTENTION (ROE=-2.8% < 10%)",
+      "Marge_Nette": "SELL (marge=-1.9% négative)",
+      "ROA": "ATTENTION (ROA=-0.8% < 5%)"
+    },
+    "croissance": {
+      "Croissance_CA": "ATTENTION (croissance=8.6% faible)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "ATTENTION (D/E=113.6%)",
+      "Current_Ratio": "NEUTRAL (CR=1.28)"
+    },
+    "dividende": {
+      "Dividende": "BUY (rendement=496.0%)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "7267.T",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": null,
+    "pe_forward": 6.390813,
+    "pb_ratio": 0.48025188,
+    "ps_ratio": 0.2603791,
+    "ev_ebitda": 16.037,
+    "peg_ratio": 3.45,
+    "roe": -0.028499998,
+    "roa": -0.00806,
+    "marge_nette": -0.019450001,
+    "marge_brute": 0.16531,
+    "marge_operationnelle": -0.1728,
+    "ebitda": 888917000192,
+    "croissance_revenus": 0.086,
+    "croissance_bpa": null,
+    "revenus": 21796610899968,
+    "bpa": -106.11,
+    "bpa_forward": 228.14,
+    "dette_totale": 13796360847360,
+    "cash": 5363801784320,
+    "ratio_dette_equity": 113.568,
+    "current_ratio": 1.281,
+    "quick_ratio": 0.95,
+    "dividende_yield": 4.96,
+    "dividende_par_action": 70.0,
+    "payout_ratio": 0.553,
+    "market_cap": 5675381948416,
+    "beta": 0.287,
+    "52w_high": 1730.0,
+    "52w_low": 1238.0,
+    "prix_actuel": 1458.0,
+    "secteur": "Consumer Cyclical",
+    "industrie": "Auto Manufacturers",
+    "nom": "Honda Motor Co., Ltd."
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "ticker": "6758.T",
+  "nom": "Sony Group Corporation",
+  "secteur": "Technology",
+  "date": "2026-06-15 16:15",
+  "prix": 3320.0,
+  "market_cap": 19554356953088,
+  "beta": 0.74,
+  "scores": {
+    "valorisation": 5,
+    "rentabilite": -2,
+    "croissance": 0,
+    "sante_financiere": 2,
+    "dividende": 3,
+    "total": 8
+  },
+  "recommandation": "🟡 BUY",
+  "details": {
+    "valorisation": {
+      "PE": "NEUTRAL (PE=19.4)",
+      "PEG": "NEUTRAL (PEG=1.87)",
+      "PB": "NEUTRAL (PB=2.42)",
+      "EV_EBITDA": "BUY (EV/EBITDA=7.2 < 10)"
+    },
+    "rentabilite": {
+      "ROE": "NEUTRAL (ROE=12.4%)",
+      "Marge_Nette": "SELL (marge=-2.6% négative)",
+      "ROA": "ATTENTION (ROA=3.7% < 5%)"
+    },
+    "croissance": {
+      "Croissance_CA": "NEUTRAL (croissance=15.4%)",
+      "Croissance_BPA": "ATTENTION (BPA=-57.5%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "BUY (D/E=19.6% → peu endetté)",
+      "Current_Ratio": "NEUTRAL (CR=1.18)"
+    },
+    "dividende": {
+      "Dividende": "BUY (rendement=106.0%)",
+      "Payout": "BUY (payout=14.6% → soutenable)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "6758.T",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 19.357473,
+    "pe_forward": 18.12227,
+    "pb_ratio": 2.4157436,
+    "ps_ratio": 1.5669032,
+    "ev_ebitda": 7.17,
+    "peg_ratio": 1.87,
+    "roe": 0.12367,
+    "roa": 0.03707,
+    "marge_nette": -0.02619,
+    "marge_brute": 0.30805,
+    "marge_operationnelle": 0.07552,
+    "ebitda": 2692355981312,
+    "croissance_revenus": 0.154,
+    "croissance_bpa": -0.575,
+    "revenus": 12479619923968,
+    "bpa": 171.51,
+    "bpa_forward": 183.2,
+    "dette_totale": 1669669060608,
+    "cash": 2208879083520,
+    "ratio_dette_equity": 19.612,
+    "current_ratio": 1.182,
+    "quick_ratio": 0.801,
+    "dividende_yield": 1.06,
+    "dividende_par_action": 35.0,
+    "payout_ratio": 0.1458,
+    "market_cap": 19554356953088,
+    "beta": 0.74,
+    "52w_high": 4776.0,
+    "52w_low": 3043.0,
+    "prix_actuel": 3320.0,
+    "secteur": "Technology",
+    "industrie": "Consumer Electronics",
+    "nom": "Sony Group Corporation"
+  }
+}

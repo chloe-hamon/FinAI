@@ -1,0 +1,79 @@
+{
+  "ticker": "8058.T",
+  "nom": "Mitsubishi Corporation",
+  "secteur": "Industrials",
+  "date": "2026-06-15 16:15",
+  "prix": 4728.0,
+  "market_cap": 17311565086720,
+  "beta": 0.504,
+  "scores": {
+    "valorisation": 2,
+    "rentabilite": -2,
+    "croissance": 3,
+    "sante_financiere": 1,
+    "dividende": 2,
+    "total": 6
+  },
+  "recommandation": "🟡 BUY",
+  "details": {
+    "valorisation": {
+      "PE": "NEUTRAL (PE=22.5)",
+      "PEG": "NEUTRAL (PEG=1.72)",
+      "PB": "NEUTRAL (PB=1.83)",
+      "EV_EBITDA": "ATTENTION (EV/EBITDA=33.0 > 15)"
+    },
+    "rentabilite": {
+      "ROE": "ATTENTION (ROE=9.0% < 10%)",
+      "Marge_Nette": "ATTENTION (marge=4.2% faible)",
+      "ROA": "ATTENTION (ROA=1.2% < 5%)"
+    },
+    "croissance": {
+      "Croissance_CA": "NEUTRAL (croissance=12.0%)",
+      "Croissance_BPA": "BUY (BPA=68.3%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "NEUTRAL (D/E=63.5%)",
+      "Current_Ratio": "NEUTRAL (CR=1.41)"
+    },
+    "dividende": {
+      "Dividende": "BUY (rendement=267.0%)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "8058.T",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 22.535748,
+    "pe_forward": 22.29768,
+    "pb_ratio": 1.8337423,
+    "ps_ratio": 0.91518134,
+    "ev_ebitda": 32.959,
+    "peg_ratio": 1.72,
+    "roe": 0.08984999,
+    "roa": 0.011619999,
+    "marge_nette": 0.04232,
+    "marge_brute": 0.08781,
+    "marge_operationnelle": 0.01869,
+    "ebitda": 685887979520,
+    "croissance_revenus": 0.12,
+    "croissance_bpa": 0.683,
+    "revenus": 18915994370048,
+    "bpa": 209.8,
+    "bpa_forward": 212.04,
+    "dette_totale": 6507851153408,
+    "cash": 1858730983424,
+    "ratio_dette_equity": 63.488,
+    "current_ratio": 1.411,
+    "quick_ratio": 0.839,
+    "dividende_yield": 2.67,
+    "dividende_par_action": 125.0,
+    "payout_ratio": 0.5244,
+    "market_cap": 17311565086720,
+    "beta": 0.504,
+    "52w_high": 6012.0,
+    "52w_low": 2764.5,
+    "prix_actuel": 4728.0,
+    "secteur": "Industrials",
+    "industrie": "Conglomerates",
+    "nom": "Mitsubishi Corporation"
+  }
+}

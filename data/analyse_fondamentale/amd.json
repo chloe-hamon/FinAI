@@ -1,0 +1,79 @@
+{
+  "ticker": "AMD",
+  "nom": "Advanced Micro Devices, Inc.",
+  "secteur": "Technology",
+  "date": "2026-06-15 16:15",
+  "prix": 551.66,
+  "market_cap": 900034461696,
+  "beta": 2.492,
+  "scores": {
+    "valorisation": -3,
+    "rentabilite": -1,
+    "croissance": 4,
+    "sante_financiere": 3,
+    "dividende": 1,
+    "total": 4
+  },
+  "recommandation": "⚪ NEUTRAL",
+  "details": {
+    "valorisation": {
+      "PE": "SELL (PE=182.8 → très cher)",
+      "PEG": "NEUTRAL (PEG=1.23)",
+      "PB": "ATTENTION (PB=13.96 > 3)",
+      "EV_EBITDA": "ATTENTION (EV/EBITDA=111.1 > 15)"
+    },
+    "rentabilite": {
+      "ROE": "ATTENTION (ROE=8.1% < 10%)",
+      "Marge_Nette": "NEUTRAL (marge=13.4%)",
+      "ROA": "ATTENTION (ROA=3.6% < 5%)"
+    },
+    "croissance": {
+      "Croissance_CA": "BUY (croissance=37.8%)",
+      "Croissance_BPA": "BUY (BPA=91.2%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "BUY (D/E=6.0% → peu endetté)",
+      "Current_Ratio": "BUY (CR=2.73 → bonne liquidité)"
+    },
+    "dividende": {
+      "Payout": "BUY (payout=0.0% → soutenable)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "AMD",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 182.76988,
+    "pe_forward": 42.123478,
+    "pb_ratio": 13.9571905,
+    "ps_ratio": 24.017115,
+    "ev_ebitda": 111.129,
+    "peg_ratio": 1.23,
+    "roe": 0.08063,
+    "roa": 0.03647,
+    "marge_nette": 0.13374,
+    "marge_brute": 0.5306,
+    "marge_operationnelle": 0.14396,
+    "ebitda": 7430000128,
+    "croissance_revenus": 0.378,
+    "croissance_bpa": 0.912,
+    "revenus": 37454000128,
+    "bpa": 3.02,
+    "bpa_forward": 13.1035,
+    "dette_totale": 3871000064,
+    "cash": 12346999808,
+    "ratio_dette_equity": 6.005,
+    "current_ratio": 2.725,
+    "quick_ratio": 1.75,
+    "dividende_yield": null,
+    "dividende_par_action": null,
+    "payout_ratio": 0.0,
+    "market_cap": 900034461696,
+    "beta": 2.492,
+    "52w_high": 558.37,
+    "52w_low": 117.78,
+    "prix_actuel": 551.66,
+    "secteur": "Technology",
+    "industrie": "Semiconductors",
+    "nom": "Advanced Micro Devices, Inc."
+  }
+}

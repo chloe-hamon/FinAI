@@ -1,0 +1,180 @@
+{
+  "fred": [
+    {
+      "nom": "CPI",
+      "serie": "CPIAUCSL",
+      "date": "2026-05-01",
+      "valeur": 333.979,
+      "precedente": 332.407,
+      "variation": 1.572
+    },
+    {
+      "nom": "PCE",
+      "serie": "PCEPI",
+      "date": "2026-04-01",
+      "valeur": 130.902,
+      "precedente": 130.381,
+      "variation": 0.521
+    },
+    {
+      "nom": "PPI",
+      "serie": "PPIACO",
+      "date": "2026-05-01",
+      "valeur": 292.504,
+      "precedente": 282.7,
+      "variation": 9.804
+    },
+    {
+      "nom": "Chomage_US",
+      "serie": "UNRATE",
+      "date": "2026-05-01",
+      "valeur": 4.3,
+      "precedente": 4.3,
+      "variation": 0.0
+    },
+    {
+      "nom": "NFP",
+      "serie": "PAYEMS",
+      "date": "2026-05-01",
+      "valeur": 159001.0,
+      "precedente": 158829.0,
+      "variation": 172.0
+    },
+    {
+      "nom": "Chomage_Init",
+      "serie": "ICSA",
+      "date": "2026-06-06",
+      "valeur": 229000.0,
+      "precedente": 225000.0,
+      "variation": 4000.0
+    },
+    {
+      "nom": "PIB_US",
+      "serie": "GDP",
+      "date": "2026-01-01",
+      "valeur": 31819.464,
+      "precedente": 31422.526,
+      "variation": 396.938
+    },
+    {
+      "nom": "PIB_Growth",
+      "serie": "A191RL1Q225SBEA",
+      "date": "2026-01-01",
+      "valeur": 1.6,
+      "precedente": 0.5,
+      "variation": 1.1
+    },
+    {
+      "nom": "Fed_Funds",
+      "serie": "FEDFUNDS",
+      "date": "2026-05-01",
+      "valeur": 3.63,
+      "precedente": 3.64,
+      "variation": -0.01
+    },
+    {
+      "nom": "T10Y",
+      "serie": "DGS10",
+      "date": "2026-06-11",
+      "valeur": 4.45,
+      "precedente": 4.55,
+      "variation": -0.1
+    },
+    {
+      "nom": "T2Y",
+      "serie": "DGS2",
+      "date": "2026-06-11",
+      "valeur": 4.05,
+      "precedente": 4.13,
+      "variation": -0.08
+    },
+    {
+      "nom": "T10Y2Y",
+      "serie": "T10Y2Y",
+      "date": "2026-06-12",
+      "valeur": 0.39,
+      "precedente": 0.4,
+      "variation": -0.01
+    },
+    {
+      "nom": "Immo_Ventes",
+      "serie": "HSN1F",
+      "date": "2026-04-01",
+      "valeur": 622.0,
+      "precedente": 663.0,
+      "variation": -41.0
+    },
+    {
+      "nom": "Immo_Prix",
+      "serie": "CSUSHPISA",
+      "date": "2026-03-01",
+      "valeur": 331.265,
+      "precedente": 331.998,
+      "variation": -0.733
+    },
+    {
+      "nom": "Confiance_Conso",
+      "serie": "UMCSENT",
+      "date": "2026-04-01",
+      "valeur": 49.8,
+      "precedente": 53.3,
+      "variation": -3.5
+    },
+    {
+      "nom": "ISM_Manuf",
+      "serie": "MANEMP",
+      "date": "2026-05-01",
+      "valeur": 12605.0,
+      "precedente": 12598.0,
+      "variation": 7.0
+    },
+    {
+      "nom": "M2",
+      "serie": "M2SL",
+      "date": "2026-04-01",
+      "valeur": 22804.5,
+      "precedente": 22686.4,
+      "variation": 118.1
+    },
+    {
+      "nom": "Credit",
+      "serie": "TOTALSL",
+      "date": "2026-04-01",
+      "valeur": 5153090.64,
+      "precedente": 5132357.83,
+      "variation": 20732.81
+    }
+  ],
+  "vix": {
+    "nom": "VIX",
+    "valeur": 16.45,
+    "variation": -1.23,
+    "date": "2026-06-15",
+    "signal": "😐 Volatilité normale"
+  },
+  "fear_greed": {
+    "nom": "Fear & Greed Index",
+    "erreur": "Expecting value: line 1 column 1 (char 0)"
+  },
+  "courbe": {
+    "nom": "Courbe_Taux",
+    "taux_2y": 4.05,
+    "taux_10y": 4.45,
+    "spread": 0.4,
+    "signal": "⚠️ Courbe plate — ralentissement possible",
+    "source": "FRED",
+    "date": "2026-06-11"
+  },
+  "scoring": {
+    "score": 2,
+    "contexte": "⚪ NEUTRE — Prudence recommandée",
+    "details": {
+      "CPI": "🔴 Inflation en hausse (+1.57)",
+      "Chomage": "🟡 Chômage modéré (4.3%)",
+      "Fed_Funds": "🟡 Taux modérés (3.63%)",
+      "Courbe": "🟡 Courbe plate (spread=+0.40)",
+      "VIX": "🟡 Volatilité normale (VIX=16.45)"
+    },
+    "date": "2026-06-15 16:16"
+  }
+}

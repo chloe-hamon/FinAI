@@ -1,0 +1,75 @@
+{
+  "ticker": "HSBA.L",
+  "nom": "HSBC Holdings plc",
+  "secteur": "Financial Services",
+  "date": "2026-06-15 16:15",
+  "prix": 1379.6,
+  "market_cap": 236611010560,
+  "beta": 0.579,
+  "scores": {
+    "valorisation": 4,
+    "rentabilite": 2,
+    "croissance": -1,
+    "sante_financiere": 0,
+    "dividende": 2,
+    "total": 7
+  },
+  "recommandation": "🟡 BUY",
+  "details": {
+    "valorisation": {
+      "PE": "NEUTRAL (PE=15.3)",
+      "PEG": "BUY (PEG=0.91 < 1)",
+      "PB": "NEUTRAL (PB=1.81)"
+    },
+    "rentabilite": {
+      "ROE": "NEUTRAL (ROE=11.6%)",
+      "Marge_Nette": "BUY (marge=35.0%)",
+      "ROA": "ATTENTION (ROA=0.7% < 5%)"
+    },
+    "croissance": {
+      "Croissance_CA": "ATTENTION (croissance=3.3% faible)",
+      "Croissance_BPA": "ATTENTION (BPA=2.6%)"
+    },
+    "sante_financiere": {},
+    "dividende": {
+      "Dividende": "BUY (rendement=405.0%)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "HSBA.L",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 15.331112,
+    "pe_forward": 9.78151,
+    "pb_ratio": 1.8086325,
+    "ps_ratio": 3.7096107,
+    "ev_ebitda": null,
+    "peg_ratio": 0.91,
+    "roe": 0.11611,
+    "roa": 0.00722,
+    "marge_nette": 0.34977,
+    "marge_brute": 0.0,
+    "marge_operationnelle": 0.50684,
+    "ebitda": null,
+    "croissance_revenus": 0.033,
+    "croissance_bpa": 0.026,
+    "revenus": 63773999104,
+    "bpa": 0.9,
+    "bpa_forward": 1.4106206,
+    "dette_totale": 773452988416,
+    "cash": 1162820976640,
+    "ratio_dette_equity": null,
+    "current_ratio": null,
+    "quick_ratio": null,
+    "dividende_yield": 4.05,
+    "dividende_par_action": 0.56,
+    "payout_ratio": 0.6082,
+    "market_cap": 236611010560,
+    "beta": 0.579,
+    "52w_high": 1416.8,
+    "52w_low": 860.3,
+    "prix_actuel": 1379.6,
+    "secteur": "Financial Services",
+    "industrie": "Banks - Diversified",
+    "nom": "HSBC Holdings plc"
+  }
+}

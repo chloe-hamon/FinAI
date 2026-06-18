@@ -1,0 +1,80 @@
+{
+  "ticker": "9984.T",
+  "nom": "SoftBank Group Corp.",
+  "secteur": "Communication Services",
+  "date": "2026-06-15 16:15",
+  "prix": 7139.0,
+  "market_cap": 40684614582272,
+  "beta": 1.008,
+  "scores": {
+    "valorisation": 1,
+    "rentabilite": 3,
+    "croissance": 2,
+    "sante_financiere": -3,
+    "dividende": 3,
+    "total": 6
+  },
+  "recommandation": "🟡 BUY",
+  "details": {
+    "valorisation": {
+      "PE": "BUY (PE=8.2 < 15 → sous-évalué)",
+      "PEG": "SELL (PEG=1244.77 > 2)",
+      "PB": "NEUTRAL (PB=2.33)",
+      "EV_EBITDA": "ATTENTION (EV/EBITDA=64.6 > 15)"
+    },
+    "rentabilite": {
+      "ROE": "BUY (ROE=32.7% > 20%)",
+      "Marge_Nette": "BUY (marge=64.1%)",
+      "ROA": "ATTENTION (ROA=0.0% < 5%)"
+    },
+    "croissance": {
+      "Croissance_CA": "ATTENTION (croissance=7.1% faible)",
+      "Croissance_BPA": "BUY (BPA=260.7%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "ATTENTION (D/E=125.4%)",
+      "Current_Ratio": "SELL (CR=0.80 < 1 → risque liquidité)"
+    },
+    "dividende": {
+      "Dividende": "BUY (rendement=17.0%)",
+      "Payout": "BUY (payout=1.3% → soutenable)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "9984.T",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 8.182892,
+    "pe_forward": 24.176233,
+    "pb_ratio": 2.334356,
+    "ps_ratio": 5.2168794,
+    "ev_ebitda": 64.587,
+    "peg_ratio": 1244.77,
+    "roe": 0.32724,
+    "roa": 0.00013,
+    "marge_nette": 0.64142996,
+    "marge_brute": 0.51498,
+    "marge_operationnelle": -0.20402001,
+    "ebitda": 929463009280,
+    "croissance_revenus": 0.071,
+    "croissance_bpa": 2.607,
+    "revenus": 7798649782272,
+    "bpa": 872.43,
+    "bpa_forward": 295.29,
+    "dette_totale": 25663566249984,
+    "cash": 5362149752832,
+    "ratio_dette_equity": 125.381,
+    "current_ratio": 0.797,
+    "quick_ratio": 0.584,
+    "dividende_yield": 0.17,
+    "dividende_par_action": 11.0,
+    "payout_ratio": 0.0126,
+    "market_cap": 40684614582272,
+    "beta": 1.008,
+    "52w_high": 9074.0,
+    "52w_low": 2070.75,
+    "prix_actuel": 7139.0,
+    "secteur": "Communication Services",
+    "industrie": "Telecom Services",
+    "nom": "SoftBank Group Corp."
+  }
+}

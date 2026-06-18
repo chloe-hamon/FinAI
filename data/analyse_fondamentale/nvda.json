@@ -1,0 +1,80 @@
+{
+  "ticker": "NVDA",
+  "nom": "NVIDIA Corporation",
+  "secteur": "Technology",
+  "date": "2026-06-15 16:15",
+  "prix": 209.1146,
+  "market_cap": 5064964440064,
+  "beta": 2.202,
+  "scores": {
+    "valorisation": -1,
+    "rentabilite": 5,
+    "croissance": 4,
+    "sante_financiere": 3,
+    "dividende": 3,
+    "total": 14
+  },
+  "recommandation": "🟢 STRONG BUY",
+  "details": {
+    "valorisation": {
+      "PE": "ATTENTION (PE=32.0 → cher)",
+      "PEG": "BUY (PEG=0.63 < 1)",
+      "PB": "ATTENTION (PB=25.91 > 3)",
+      "EV_EBITDA": "ATTENTION (EV/EBITDA=29.8 > 15)"
+    },
+    "rentabilite": {
+      "ROE": "BUY (ROE=114.3% > 20%)",
+      "Marge_Nette": "BUY (marge=63.0%)",
+      "ROA": "BUY (ROA=52.7%)"
+    },
+    "croissance": {
+      "Croissance_CA": "BUY (croissance=85.2%)",
+      "Croissance_BPA": "BUY (BPA=214.5%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "BUY (D/E=6.6% → peu endetté)",
+      "Current_Ratio": "BUY (CR=3.44 → bonne liquidité)"
+    },
+    "dividende": {
+      "Dividende": "BUY (rendement=49.0%)",
+      "Payout": "BUY (payout=0.6% → soutenable)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "NVDA",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 32.023674,
+    "pe_forward": 16.430592,
+    "pb_ratio": 25.91259,
+    "ps_ratio": 19.980844,
+    "ev_ebitda": 29.757,
+    "peg_ratio": 0.63,
+    "roe": 1.14288,
+    "roa": 0.52727,
+    "marge_nette": 0.62966,
+    "marge_brute": 0.74144995,
+    "marge_operationnelle": 0.65596,
+    "ebitda": 165514002432,
+    "croissance_revenus": 0.852,
+    "croissance_bpa": 2.145,
+    "revenus": 253491003392,
+    "bpa": 6.53,
+    "bpa_forward": 12.72715,
+    "dette_totale": 12814000128,
+    "cash": 53171998720,
+    "ratio_dette_equity": 6.555,
+    "current_ratio": 3.441,
+    "quick_ratio": 2.139,
+    "dividende_yield": 0.49,
+    "dividende_par_action": 1.0,
+    "payout_ratio": 0.0061000003,
+    "market_cap": 5064964440064,
+    "beta": 2.202,
+    "52w_high": 236.54,
+    "52w_low": 142.03,
+    "prix_actuel": 209.1146,
+    "secteur": "Technology",
+    "industrie": "Semiconductors",
+    "nom": "NVIDIA Corporation"
+  }
+}

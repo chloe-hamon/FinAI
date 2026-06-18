@@ -1,0 +1,80 @@
+{
+  "ticker": "SAP.DE",
+  "nom": "SAP SE",
+  "secteur": "Technology",
+  "date": "2026-06-15 16:15",
+  "prix": 144.08,
+  "market_cap": 168221900800,
+  "beta": 0.727,
+  "scores": {
+    "valorisation": 2,
+    "rentabilite": 2,
+    "croissance": 1,
+    "sante_financiere": 2,
+    "dividende": 3,
+    "total": 10
+  },
+  "recommandation": "🟢 STRONG BUY",
+  "details": {
+    "valorisation": {
+      "PE": "NEUTRAL (PE=23.1)",
+      "PEG": "NEUTRAL (PEG=1.42)",
+      "PB": "ATTENTION (PB=3.77 > 3)",
+      "EV_EBITDA": "NEUTRAL (EV/EBITDA=13.9)"
+    },
+    "rentabilite": {
+      "ROE": "NEUTRAL (ROE=16.4%)",
+      "Marge_Nette": "NEUTRAL (marge=19.6%)",
+      "ROA": "NEUTRAL (ROA=9.1%)"
+    },
+    "croissance": {
+      "Croissance_CA": "ATTENTION (croissance=6.0% faible)",
+      "Croissance_BPA": "NEUTRAL (BPA=9.3%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "BUY (D/E=17.3% → peu endetté)",
+      "Current_Ratio": "NEUTRAL (CR=1.07)"
+    },
+    "dividende": {
+      "Dividende": "BUY (rendement=178.0%)",
+      "Payout": "BUY (payout=37.7% → soutenable)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "SAP.DE",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 23.089745,
+    "pe_forward": 16.821615,
+    "pb_ratio": 3.7730117,
+    "ps_ratio": 4.504898,
+    "ev_ebitda": 13.913,
+    "peg_ratio": 1.42,
+    "roe": 0.16350001,
+    "roa": 0.09082,
+    "marge_nette": 0.19584,
+    "marge_brute": 0.73719,
+    "marge_operationnelle": 0.30025998,
+    "ebitda": 11603999744,
+    "croissance_revenus": 0.06,
+    "croissance_bpa": 0.093,
+    "revenus": 37341999104,
+    "bpa": 6.24,
+    "bpa_forward": 8.56517,
+    "dette_totale": 7862000128,
+    "cash": 10044999680,
+    "ratio_dette_equity": 17.331,
+    "current_ratio": 1.069,
+    "quick_ratio": 0.916,
+    "dividende_yield": 1.78,
+    "dividende_par_action": 2.5,
+    "payout_ratio": 0.3766,
+    "market_cap": 168221900800,
+    "beta": 0.727,
+    "52w_high": 269.35,
+    "52w_low": 135.44,
+    "prix_actuel": 144.08,
+    "secteur": "Technology",
+    "industrie": "Software - Application",
+    "nom": "SAP SE"
+  }
+}

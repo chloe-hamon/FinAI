@@ -1,0 +1,2643 @@
+
+PAGE 1
+==================================================
+TEXTE PDFREADER :
+FY2026 Third Quarter Financial Results
+February 6, 2026Toyota Motor Corporation
+GR GT3 GR GT
+
+ANALYSE OLLAMA :
+1. Rapport financier trimestriel
+2. FY2026 Third Quarter Financial Results
+3. Aucun graphique ou tableau visible dans l'image fournie.
+4. Le rapport financier trimestriel de Toyota Motor Corporation pour le troisième trimestre de l'exercice fiscal 2026 a été publié le 6 février 2026, mettant en avant les modèles GR GT3 et GR GT.
+
+
+PAGE 2
+==================================================
+TEXTE PDFREADER :
+2Cautionary Statement with Respect to Forward -Looking Statements 
+and Caution Concerning Insider Trading
+This presentation contains forward -looking statements that reflect the plans and expectations of Toyota Motor Corporation and it s consolidated subsidiaries (“Toyota”). These forward -looking 
+statements are not guarantees of future performance and involve known and unknown risks, uncertainties and other factors that may cause Toyota’s actual results, performance, achievements 
+or financial position to be materially different from any future results, performance, achievements or financial position expressed or implied by these forward -looking statements. These factors
+include, but are not limited to: ( i)changes in economic conditions, market demand, and the competitive environment affecting the automotive markets in Japan, Nor th America, Europe, Asia and 
+other markets in which Toyota operates; (ii) fluctuations in currency exchange rates (particularly with respect to the value of the Japanese yen, the U.S. dollar, the euro, the Australian dollar, the 
+Canadian dollar and the British pound), stock prices and interest rates; (iii) changes in funding environment in financial ma rkets and increased competition in the financial services industry; (iv) 
+Toyota’s ability to market and distribute effectively; (v) Toyota’s ability to realize production efficiencies and to impleme nt capital expenditures at the levels and times planned by management;(vi)
+changes in the laws and regulations, as well as other government actions, in the markets in which Toyota operates that affect Toyota’s operations, particularly laws, regulations and government 
+actions relating to vehicle safety including remedial measures such as recalls, environmental protection, vehicle emissions a nd vehicle fuel economy, and tariffs and other trade policies, as well 
+as current and future litigation and other legal proceedings, government proceedings and investigations ; (vii) political and econ
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Cette page est une déclaration cautionnaire concernant les prévisions à long terme et une mise en garde contre le commerce intérieur (insider trading) dans le contexte d'un rapport financier de Toyota Motor Corporation.
+
+### 2. Chiffres importants
+Il n'y a pas de chiffres spécifiques dans ce texte, mais il mentionne divers facteurs qui peuvent influencer les prévisions à long terme de Toyota, comme les fluctuations des taux de change et les conditions économiques.
+
+### 3. Graphiques/tableaux visibles
+Ce document ne contient aucun graphique ou tableau.
+
+### 4. Résumé utile pour un RAG (Résumé Analytique Général)
+Cette page souligne que le présent rapport comporte des déclarations à long terme qui reflètent les plans et les attentes de Toyota Motor Corporation et ses filiales consolidées. Ces prévisions ne sont pas garanties du rendement futur et sont sujets à divers risques, incertitudes et autres facteurs externes pouvant affecter la performance réelle, les réalisations financières ou le positionnement financier de Toyota par rapport aux prédictions exprimées ou implicites dans ces déclarations. Les facteurs mentionnés incluent des changements économiques, des fluctuations des taux de change, des modifications du marché et des lois réglementaires qui peuvent influencer les opérations de Toyota.
+
+Il est également important de noter que toute personne ayant reçu certaines informations importantes concernant l'entreprise Toyota ne peut pas trader ses actions ou effectuer d'autres transactions liées à ces actions avant que cette information n'ait été rendue publique conformément aux réglementations japonaises.
+
+
+PAGE 3
+==================================================
+TEXTE PDFREADER :
+3FY2026 Third Quarter Results Summary
+Actual
+(9 months)
+FY2026
+Forecast
+Profit 
+Structure 
+Improve -
+mentSteadfastly advancing product -centered management and region -centered management, 
+we will further increase our ratio of value -added work* and strengthen our “earning power”.
+Operating income 3,196.7 billion yen ( -482.7 billion yen YoY)
+ -Despite the continued impact of U.S. tariffs, strong demand supported by product 
+competitiveness has led to increased sales volumes, and we achieved a high level
+of profit due to price revisions.
+Operating income 3,800.0 billion yen ( -995.5 billion yen YoY)
+  -Despite the 1,450 billion yen negative impact of U.S. tariffs that newly arose this 
+fiscal year, we have reduced the extent of the profit decline by implementing cost 
+reductions and marketing efforts .
+-Company -wide initiatives aimed at reducing the break -even volume.
+-Strengthening earning power for medium -to long -term competitiveness to
+continue.
+-Together with suppliers, we will increase productivity to generate resources
+for growth and protect Japanese manufacturing.*The proportion of tasks that increase added value
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Ce document est une récapitulation des résultats financiers du troisième trimestre de l'exercice fiscal (FY) 2026, présentée par Toyota.
+
+### 2. Chiffres importants
+- **Opérationnel** : 
+  - Réel : 3,196.7 milliards de yens (-482.7 milliards de yens en comparaison avec l'année précédente)
+  - Prévision : 3,800.0 milliards de yens (-995.5 milliards de yens en comparaison avec l'année précédente)
+
+### 3. Graphiques/tableaux visibles
+Il n'y a pas de graphiques ou tableaux visibles dans cette image.
+
+### 4. Résumé utile pour un RAG (Résumé Analytique Général)
+- **Objectifs** : Toyota poursuit son approche centrée sur le produit et la gestion régionale, visant à augmenter sa part de travail ajoutant de la valeur et renforcer ses capacités d'obtenir des bénéfices.
+- **Résultats Réels (9 mois)** :
+  - Revenu opérationnel : 3,196.7 milliards de yens (-482.7 milliards de yens par rapport à l'année précédente).
+    - Malgré les tarifs américains qui continuent d'avoir un impact négatif, la forte demande soutenue par la compétitivité du produit a conduit à une augmentation des volumes de ventes et à un niveau élevé de profit en raison des révisions de prix.
+- **Prévision pour l'Exercice Fiscal 2026** :
+  - Revenu opérationnel : 3,800.0 milliards de yens (-995.5 milliards de yens par rapport à l'année précédente).
+    - Malgré un impact négatif de 1,450 milliards de yens des nouveaux tarifs américains cette année fiscale, Toyota a réduit l'ampleur du recul des bénéfices grâce aux efforts de réduction des coûts et de marketing.
+- **Amélioration de la Structure des Profits** :
+  - Initiatives d'entreprise visant à réduire le volume de break-even.
+  - Renforcement des capacités d'obtenir des bénéfices pour une compétitivité à long terme.
+  - Collaboration avec les fournisseurs pour augmenter la productivité et générer des ressources pour le développement et protéger l'industrie manufacturière japonaise.
+
+
+PAGE 4
+==================================================
+TEXTE PDFREADER :
+4FY2026 Third Quarter 
+Financial Performance
+
+ANALYSE OLLAMA :
+1. **Type de contenu**: Rapport financier trimestriel.
+2. **Chiffres importants**:
+   - Année financière : FY2026
+   - Trimestre : Troisième trimestre
+
+3. **Graphiques/tableaux visibles**:
+   - Non visible sur cette page.
+
+4. **Résumé utile pour un RAG**: Ce rapport présente les performances financières du troisième trimestre de l'exercice financier FY2026, sans fournir d'informations spécifiques sur les chiffres ou les graphiques.
+
+
+PAGE 5
+==================================================
+TEXTE PDFREADER :
+5Consolidated Vehicle Sales (FY2026 9 months)
+Reference (retail)2024.4 -12 YoY 2025.4-121,259 1,262 1,378 1,325 866 881 2,043 2,318 1,454 1,516 
+01,0002,0003,0004,0005,0006,0007,0008,000
+100.2%96.1%101.8%113.5%104.3%104.3%7,000(thousands of vehicles)
+Japan
+N. America
+Europe
+Asia
+Other
+Central and 
+South America,
+Oceania,
+Africa,
+The Middle East, etc.
+Toyota and Lexus Vehicle Sales 7,758 8,020 103.4%
+Electrified Vehicle  [%] 3,504 3,742 106.8%
+       HEV 3,278 3,439 104.9%
+PHEV 115 138 119.9%
+BEV 110 164 149.8%
+FCEV 1 1 87.0%
+Total Retail Vehicle Sales 8,295 8,607 103.8%[45.2%] [46.7%]7,302
+
+ANALYSE OLLAMA :
+1. Rapport financier sur les ventes de véhicules consolidées.
+2. Ventes totales : 7,000 (2024) et 7,302 (2025).
+   - Toyota et Lexus : 7,758 (2024) et 8,020 (2025), soit une augmentation de 103.4%.
+   - Véhicules électrifiés : 3,504 (2024) et 3,742 (2025), soit une augmentation de 106.8%.
+     - HEV : 3,278 (2024) et 3,439 (2025), soit une augmentation de 104.9%.
+     - PHEV : 115 (2024) et 138 (2025), soit une augmentation de 119.9%.
+     - BEV : 110 (2024) et 164 (2025), soit une augmentation de 149.8%.
+     - FCEV : 1 (2024) et 1 (2025), soit une augmentation de 87.0%.
+3. Graphique à barres comparant les ventes par région pour le Japon, l'Amérique du Nord, l'Europe, l'Asie et d'autres régions.
+   Tableau des ventes totales et des véhicules électrifiés avec leur taux de croissance par rapport aux années précédentes.
+4. Résumé utile pour un RAG :
+- Toyota a connu une augmentation significative de ses ventes, en particulier dans les véhicules électrifiés.
+- L'Asie et l'Europe ont montré des augmentations importantes, tandis que d'autres régions ont maintenu ou légèrement augmenté leurs ventes.
+- Les ventes totales pour Toyota et Lexus ont augmenté de 103.4% en un an.
+
+
+PAGE 6
+==================================================
+TEXTE PDFREADER :
+6Consolidated Financial Summary (FY2026 9 months)
+Sales Revenues 35,673.5 38,087.6 +2,414.0
+Operating Income 3,679.4 3,196.7 -482.7
+Margin 10.3% 8.4%
+Other Income 1,750.6 991.7 -758.8
+  Share of Profit (Loss) of Investments
+Accounted for Using the Equity Method 454.7 437.9 -16.8
+Income before Income Taxes 5,430.0 4,188.4 -1,241.6
+NetIncome Attributable to 
+Toyota Motor Corporation4,100.3 3,030.8 -1,069.4
+Margin 11.5% 8.0%
+FOREX RatesUS$ 153 yen 149 yen -4 yen
+€ 165 yen 172 yen +7 yen(billions of yen)
+*2024.4-12 2025.4 -12 Change
+* Regarding Japan: 300.3 ( -28.2 year on year), China: 75.2  (+6.5 year on year),  Other: 62.3 (+4.9 year on year)
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Rapport financier consolidé d'une entreprise (Toyota) pour les neuf premiers mois de l'exercice fiscal 2026.
+
+### 2. Chiffres importants
+- **Revenus**: 
+  - 2024: ¥35,673.5 milliards
+  - 2025: ¥38,087.6 milliards (+¥2,414.0)
+  
+- **Pertes opérationnelles**:
+  - 2024: ¥3,679.4 milliards
+  - 2025: ¥3,196.7 milliards (-¥482.7)
+
+- **Marge**:
+  - 2024: 10.3%
+  - 2025: 8.4% (-1.9 p.p.)
+
+- **Autres revenus**:
+  - 2024: ¥1,750.6 milliards
+  - 2025: ¥991.7 milliards (-¥758.8)
+
+- **Pertes avant impôts**:
+  - 2024: ¥5,430.0 milliards
+  - 2025: ¥4,188.4 milliards (-¥1,241.6)
+
+- **Perte nette attribuable à Toyota Motor Corporation**:
+  - 2024: ¥4,100.3 milliards
+  - 2025: ¥3,030.8 milliards (-¥1,069.4)
+  
+### 3. Graphiques/tableaux visibles
+- Tableau comparatif des revenus et pertes opérationnelles pour les deux exercices.
+- Tableau comparatif des marges et autres revenus pour les deux exercices.
+
+### 4. Résumé utile pour un RAG
+Toyota a enregistré une augmentation significative de ses revenus au cours des neuf premiers mois de l'exercice fiscal 2026, passant de ¥35,673.5 milliards à ¥38,087.6 milliards (+¥2,414.0). Cependant, les pertes opérationnelles ont diminué de ¥3,679.4 milliards à ¥3,196.7 milliards (-¥482.7), tandis que la marge a chuté de 10.3% à 8.4%. Les autres revenus ont également diminué de ¥1,750.6 milliards à ¥991.7 milliards (-¥758.8). La perte avant impôts est passée de ¥5,430.0 milliards à ¥4,188.4 milliards (-¥1,241.6), et la perte nette attribuable à Toyota Motor Corporation a diminué de ¥4,100.3 milliards à ¥3,030.8 milliards (-¥1,069.4).
+
+
+PAGE 7
+==================================================
+TEXTE PDFREADER :
+7・市況影響：
+・原価改善：△
+※Analysis of Consolidated Operating Income (FY2026 9 months )
+*1 Details *2 Details *3 Details *4 Details
+Transactional (Imports/Exports) -255.0 Volume, Model Mix +335.0 Labor Cost -100.0 Valuation Gains / Losses from Swaps, etc. +130.4
+  　- US $ -155.0 Value Chain +145.0 Depreciation Expenses -45.0 Impact of Inflation Accounting, etc. +36.8
+　  - € +50.0 　- Financial Services +45.0 R&D Expenses -105.0
+　  - Other -150.0 　- Accessories / Spare Parts / Expenses, etc. -1,215.0
+Translational FOREX Impact Concerning      Used Vehicle / Connected, etc. Other +105.4
+Overseas Subsidiaries, etc. Other +265.0HINO MOTORS Certification Related
+Expenses  (One-time Expenses in FY2025)+279.7
++100.0
+-20.03,679.4
+3,196.7-275.0-40.0+745.0 -1,465.0
++552.3-760.0Excluding the overall impact of foreign exchange 
+rates and swap valuation gains/losses, etc. ：
+(-482.7) Operating IncomeWhich includes:
+Strength ening Foundation of Suppliers/
+Materials Prices
+Cost Reduction-265.0
++225.0Which includes:
+Tariff Impact  -1,200.0
+(billions of yen)
+2024.4-12
+153 yen/US$
+165 yen/ €2025.4-12
+149 yen/US$
+172 yen/ €Cost
+Reduction
+Efforts Increase or 
+Decrease in 
+Expenses and 
+Expense Reduction 
+Efforts *3Other *4Effects of
+FOREX 
+Rates *1Marketing 
+Efforts *2
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Cette page est une analyse financière détaillée du bénéfice opérationnel consolidé d'une entreprise (Toyota) au cours des neuf premiers mois de l'exercice financier 2026.
+
+### 2. Chiffres importants
+- **Bénéfice opérationnel consolidé initial** : 3,679.4 milliards de yens
+- **Effets des taux de change (FOREX)** : -275.0 milliards de yens
+- **Réduction des coûts** : +745.0 milliards de yens
+- **Augmentation ou diminution des dépenses et efforts de réduction des coûts** : -1,465.0 milliards de yens
+- **Autres facteurs** : +552.3 milliards de yens
+- **Bénéfice opérationnel consolidé final** : 3,196.7 milliards de yens
+
+### 3. Graphiques/tableaux visibles
+Le graphique montre les différents éléments qui contribuent au bénéfice opérationnel consolidé, avec des chiffres positifs et négatifs représentant l'impact de chaque facteur.
+
+### 4. Résumé utile pour un RAG (Résumé Analytique Général)
+Cette analyse financière révèle que le bénéfice opérationnel consolidé initial de Toyota a diminué à -482.7 milliards de yens en raison des effets négatifs des taux de change et d'autres facteurs comme les augmentations des coûts et les efforts de réduction des dépenses. Cependant, les efforts de réduction des coûts ont contribué à un bénéfice positif net de 552.3 milliards de yens, améliorant ainsi le bénéfice opérationnel consolidé final à 3,196.7 milliards de yens.
+
+Cette analyse met en évidence l'importance des taux de change et des coûts dans la performance financière d'une entreprise comme Toyota, soulignant également les efforts pour réduire ces coûts afin d'améliorer le bénéfice opérationnel consolidé.
+
+
+PAGE 8
+==================================================
+TEXTE PDFREADER :
+8Geographic Operating Income (FY2026 9 months)
+2,341.2
+204.2376.1
+680.7168.81,802.3 
+-5.6 317.7 645.4 243.0 1,454 1,516 2,043 2,318 
+866 881 1,378 1,325 1,259 1,262 
+[14.4 %][ ]Margin
+Japan N. America Europe Asia Other
+Operating Income including Valuation Gains/Losses relating to Swaps, etc . (billions of yen)
+2,337.0 1,796 .5          172.1 94.9      373.1     324.6  685.2 635.0 179.6    258.2 2024.4-12 2025.4-12[5.0%] [1.4%][8.3%]-209.9-538.9
+-58.3 -35.2+74.2
+[10.0%](104 .3%)(113.5%)
+(101.8%)(96.1%)Operating  Income (billions of yen) (excluding  Valuation  Gains/Losses relating to Swaps, etc.) Consolidated Vehicle Sales (thousands of vehicles)
+Incl. China (excl. investments accounted 
+for using the equity method of associates 
+and joint ventures)
+[11.0 %]
+[-0.0%][9.3%] [7.0%][6.4%](100.2%)
+2024.4-12 2025 .4-12 2024.4-12 2025.4-12 2024.4-122025.4-12 2024 .4-122025.4-12
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Le rapport financier présente les revenus opérationnels géographiques de Toyota au cours des neuf premiers mois de l'exercice fiscal 2026 (FY2026).
+
+### 2. Chiffres importants
+- **Revenu opérationnel**:
+  - Japon: 1,454 milliards de yens en 2024 et 1,516 milliards de yens en 2025.
+  - Amérique du Nord: 2,043 milliards de yens en 2024 et 2,318 milliards de yens en 2025 (augmentation de 113.5%).
+  - Europe: 866 milliards de yens en 2024 et 881 milliards de yens en 2025.
+  - Asie: 1,378 milliards de yens en 2024 et 1,325 milliards de yens en 2025 (diminution de 96.1%).
+  - Autres régions: 1,259 milliards de yens en 2024 et 1,262 milliards de yens en 2025.
+
+- **Revenu opérationnel incluant les gains/pertes d'évaluation liés aux swaps**:
+  - Japon: 2,341.2 milliards de yens en 2024 et 1,802.3 milliards de yens en 2025.
+  - Amérique du Nord: 204.2 milliards de yens en 2024 et 376.1 milliards de yens en 2025 (augmentation de 8.3%).
+  - Europe: 317.7 milliards de yens en 2024 et 645.4 milliards de yens en 2025.
+  - Asie: 680.7 milliards de yens en 2024 et 635.0 milliards de yens en 2025 (diminution de 10%).
+  - Autres régions: 168.8 milliards de yens en 2024 et 243.0 milliards de yens en 2025.
+
+### 3. Graphiques/tableaux visibles
+Le rapport utilise des graphiques à barres pour représenter les revenus opérationnels par région, ainsi que des tableaux pour détailler les chiffres exacts et les variations annuelles.
+
+### 4. Résumé utile pour un RAG (Résumé Analytique Général)
+Toyota a enregistré une augmentation significative de ses revenus opérationnels dans l'Amérique du Nord (+113.5%) au cours des neuf premiers mois de l'exercice fiscal 2026, passant de 2,043 milliards de yens à 2,318 milliards de yens. Cependant, les revenus en Europe et en Asie ont diminué respectivement de -58.3% et de -35.2%. Les autres régions ont connu une légère augmentation de +74.2%. L'analyse des revenus opérationnels incluant les gains/pertes d'évaluation révèle également des variations importantes, avec une forte croissance en Amérique du Nord (+8.3%) et une diminution significative en Asie (-10%).
+
+
+PAGE 9
+==================================================
+TEXTE PDFREADER :
+968.6 75.2 125.4 138.6 China Business / Financial Services (FY2026 9 months)
+(Ref.) China Business
+Operating Income of Consolidated Subsidiaries (billions of yen)
+Share of Profit of Investments Accounted for Using the Equity
+Method  of Associates and Joint Ventures (billions of yen)
+Toyota and Lexus Vehicle Retail Sales (thousands of vehicles)Financial Services 
+Operating Income (billions of yen) 
+Excluding  Valuation Gains/Losses relating to Swaps, etc. ＊
+1,402 1,393
+2024.4-12 2025.4-12+13.2
+Marketing
+Efforts ,etc.
+520.2 556.9 +36.6
+Effects of 
+Increase in
+Loan Balance,
+etc.
+2024.4-12 2025.4-12
+496.2 663.3+6.5
+Cost Reduction
+Efforts ,etc.(99.4 %)
+Operating Income including Valuation Gains/Losses relating to Swaps, etc. (billions of yen)
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Ce rapport financier présente les performances financières de Toyota en Chine et dans ses services financiers au cours des neuf premiers mois de l'exercice fiscal 2026.
+
+### 2. Chiffres importants
+- **China Business:**
+  - Opérationnel : 1,393 milliards de yens (croissance de +13.2%)
+  - Part des bénéfices des investissements utilisant la méthode du capital-risque : 75.2 milliards de yens
+- **Financial Services:**
+  - Opérationnel : 556.9 milliards de yens (croissance de +36.6%)
+  - Bénéfice incluant les gains/pertes d'évaluation liés aux swaps, etc. : 663.3 milliards de yens
+
+### 3. Graphiques/tableaux visibles
+- **Graphique de la Chine Business:**
+  - Comparaison des chiffres opérationnels consolidés (milliards de yens) et des ventes de véhicules Toyota et Lexus (mille unités).
+  
+- **Graphique des Services financiers:**
+  - Comparaison des chiffres opérationnels (milliards de yens).
+
+### 4. Résumé utile pour un RAG
+Toyota a enregistré une croissance significative dans ses activités chinoises et financières au cours des neuf premiers mois de l'exercice fiscal 2026, avec une augmentation de +13.2% dans les opérations consolidées et de +36.6% dans les services financiers. Les chiffres détaillés montrent également une croissance dans les ventes de véhicules Toyota et Lexus ainsi que des gains importants dans les investissements utilisant la méthode du capital-risque.
+
+
+PAGE 10
+==================================================
+TEXTE PDFREADER :
+10FY2026 Financial  Forecasts
+
+ANALYSE OLLAMA :
+1. **Type de contenu**: Présentation des prévisions financières pour l'exercice fiscal 2026 (FY2026).
+
+2. **Chiffres importants**:
+   - Pas de chiffres spécifiques visibles sur cette page.
+
+3. **Graphiques/tableaux visibles**:
+   - Aucun graphique ou tableau n'est visible sur cette page.
+
+4. **Résumé utile pour un RAG**: Cette page présente les prévisions financières pour l'exercice fiscal 2026 de Toyota, mais aucune donnée quantitative détaillée n'est fournie dans le cadre de cette image.
+
+
+PAGE 11
+==================================================
+TEXTE PDFREADER :
+11FY2026 Forecast: Consolidated Vehicle Sales  
+1,680 1,840 1,240 2,960 2,080 
+1,659 1,670 1,838 1,820 1,172 1,230 2,703 2,960 1,991 2,070 
+02,0004,0006,0008,00010,000 9,362
+FY2025 Results
+2024.4 -2025.3New Forecast
+2025.4 -2026.39,750 104.1%
+104.0%
+99.0%
+100.7%109.5%
+104.9%
+YoY(thousands of vehicles)
+Japan
+Europe
+Asia
+Other
+Reference (retail)
+Toyota and Lexus Vehicle Sales 10,274 10,500 102.2% 10,500
+Electrified Vehicles  [%] 4,732 5,060 106.9% 5,133
+HEV 4,425 4,633 104.7% 4,667
+PHEV 161 175 108.7% 187
+BEV 145 251 173.1% 277
+FCEV 1 1 100.0% 1
+Total Retail Vehicle Sales 11,011 11,300 102.6% 11,300[46.1%] [48.2%] [48.9%]9,800
+Previous Forecast
+2025.4 -2026.3N. America
+Central and 
+South America,
+Oceania,
+Africa,
+The Middle East, etc.
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Ce document est une page de rapport financier présentant les prévisions et résultats des ventes de véhicules Toyota au cours de l'exercice fiscal 2026 (FY2026).
+
+### 2. Chiffres importants
+- **Ventes totales consolidées** : 
+  - FY2025 : 9,362 milliers de véhicules
+  - Nouvelle prévision pour FY2026 : 9,750 milliers de véhicules (+4.1%)
+  - Précédente prévision pour FY2026 : 9,800 milliers de véhicules
+
+- **Ventes par région** :
+  - Japon
+  - Amérique du Nord (N. America)
+  - Europe
+  - Asie
+  - Autres régions
+
+### 3. Graphiques/tableaux visibles
+Le document contient un graphique horizontal montrant les ventes consolidées pour chaque région et une table de référence des ventes de Toyota et Lexus, ainsi que des prévisions pour les véhicules électrifiés (HEV, PHEV, BEV, FCEV).
+
+### 4. Résumé utile pour un RAG
+- **Objectif** : Prédire les ventes consolidées de Toyota au cours de l'exercice fiscal 2026.
+- **Résultats FY2025** : 9,362 milliers de véhicules vendus.
+- **Prévisions FY2026** :
+  - Nouvelle prévision : 9,750 milliers de véhicules (+4.1% par rapport à FY2025).
+  - Précédente prévision : 9,800 milliers de véhicules.
+- **Tendance des ventes** : Une légère augmentation est attendue pour l'exercice fiscal 2026.
+
+Ce résumé fournit une vue d'ensemble claire et concise du contenu principal du rapport.
+
+
+PAGE 12
+==================================================
+TEXTE PDFREADER :
+12Strength of Global Production 
+Through Region -Centered Management
+Brazil Production Recovery after the Disaster at Porto Feliz Plant
+By producing a common engine at multiple global locations, 
+it is possible to supply engines across sites even in emergencies.
+Engine plant collapsed due to the storm, 
+and assembly plant operations 
+were halted
+Japan
+IndonesiaAssembly 
+Plant
+4 months after the disaster, 
+the production facility was relocated 
+and engine production resumedProvide backup for
+the engine supplyThe assembly plant reopens 
+2 months after the disasterGlobal SitesThe Local Plant Affected 
+by the Disaster
+Engine 
+Plant
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Ce document est une présentation ou un rapport financier décrivant la réorganisation et la reprise des opérations d'une usine automobile au Brésil après un événement catastrophique.
+
+### 2. Chiffres importants
+- **Durée du temps** : 
+  - 2 mois pour que l'usine de montage puisse rouvrir.
+  - 4 mois pour que la production soit rétablie et que les usines reprendent leur activité normale.
+
+### 3. Graphiques/tableaux visibles
+- **Diagramme de flux** : Il illustre le processus de récupération des opérations après l'événement, montrant comment les sites globaux ont fourni une assistance pour la fourniture d'engins et comment l'usine a pu reprendre ses activités.
+  
+### 4. Résumé utile pour un RAG
+- **Contexte** : Un événement météorologique a endommagé l'usine de production d'engins à Porto Feliz au Brésil, ce qui a interrompu les opérations.
+- **Stratégie adoptée** :
+  - Les usines globales ont fourni des engins en tant que remplacement pour soutenir la production.
+  - L'usine de montage a pu reprendre ses activités deux mois après l'événement, grâce à une assistance de substitution.
+- **Résultats** : Quatre mois plus tard, les opérations ont été rétablies et la production d'engins a repris normalement.
+
+Ce résumé fournit un aperçu clair des actions entreprises pour maintenir la continuité opérationnelle malgré une catastrophe.
+
+
+PAGE 13
+==================================================
+TEXTE PDFREADER :
+13FY2026 Forecast: Consolidated Financial Summary
+(billions of yen)Previous Forecast
+2025.4 -2026.3New Forecast
+2025.4 -2026.3Change
+Sales Revenues 49,000.0 50,000.0 +1,000.0
+Operating Income 3,400.0 3,800.0 +400.0
+Margin 6.9% 7.6%
+Other Income 780.0 1,220.0 +440.0
+  Share of Profit (Loss) of Investments
+Accounted for Using the Equity Method 550.0 560.0 +10.0
+Income before Income Taxes 4,180.0 5,020.0 +840.0
+NetIncome Attributable to 
+Toyota Motor Corporation2,930.0 3,570.0 +640.0
+Margin 6.0% 7.1%
+Dividend per share 95 yen 95 yen ±0 yen
+FOREX RatesUS$* 146 yen 150 yen +4 yen
+€* 169 yen 174 yen +5 yenFY2025 Results
+2024 .4-2025 .3
+48,036.7
+4,795.5
+10.0%
+1,619.0
+591.2
+6,414.5
+4,765.0
+9.9%
+90 yen
+153 yen
+164 yen
+* FOREX Rate performance: 149 yen against the U.S. dollar and 172 yen against the Euro from April 2025 to December 2025
+FOREX Rate assumptions: 155 yen against the U.S. dollar and 180 yen against the Euro from January 2026 to March 2026
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Ce document est une analyse financière consolidée du rapport financier de Toyota pour l'exercice fiscal 2026 (FY2026). Il présente des prévisions comparées à des résultats historiques et offre des perspectives sur les revenus, les marges, les bénéfices opérationnels, etc.
+
+### 2. Chiffres importants
+- **Revenus de vente** : 
+  - Précédent : 490 milliards de yens
+  - Nouveau : 500 milliards de yens
+
+- **Bénéfice opérationnel** :
+  - Précédent : 34 milliards de yens
+  - Nouveau : 38 milliards de yens
+
+- **Marge** :
+  - Précédent : 6,9%
+  - Nouveau : 7,6%
+
+- **Autres revenus** :
+  - Précédent : 7,8 milliards de yens
+  - Nouveau : 12,2 milliards de yens
+
+### 3. Graphiques/tableaux visibles
+Le document ne contient pas de graphiques ou de tableaux visuels, mais il présente des données financières sous forme de tableau.
+
+### 4. Résumé utile pour un RAG (Résumé Analytique Général)
+Toyota prévoit une augmentation significative de ses revenus de vente à 500 milliards de yens pour l'exercice fiscal 2026, en hausse de 10 milliards par rapport aux prévisions précédentes. Le bénéfice opérationnel est également projeté à 38 milliards de yens, soit une augmentation de 4 milliards. La marge prévue s'élève à 7,6%, ce qui représente une amélioration par rapport au taux précédent de 6,9%. Les autres revenus sont estimés à 12,2 milliards de yens, en hausse de 4,4 milliards par rapport aux prévisions précédentes. Bien que les dividendes per partes restent inchangés à 95 yens, Toyota projette une amélioration des marges et un bénéfice net attribuable à la société de 35,7 milliards de yens pour l'exercice fiscal 2026.
+
+
+PAGE 14
+==================================================
+TEXTE PDFREADER :
+14Analysis of FY2026 Forecast: 
+Consolidated Operating Income  (vs. FY2025 Results)
+153 yen/US$
+164 yen/ €150 yen/US$
+174 yen/ €FY2025  Results
+2024.4 -2025.3FY2026 New Forecast
+2025.4 -2026.3Human Resources -205.0
+Growth Areas         -205.0-195.0
+-410.0+904.5 3,800.0-1,450.0 4,795.5(billions of yen)
+One-time
+Factors+400.0
+Effects of
+FOREX
+Rates-245.0
+Materials Prices
+Tariff Impact
+(Investment in 
+Human Resources
+and Growth Areas)Comprehensive
+InvestmentImprovement
+Efforts etc.Cost  Reduction        +300.0
+Volume, Model Mix +260.0
+Value Chain Profits +175.0
+Other                        +169.5
+Operating Income ( -995.5)
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Ce document est une analyse financière présentant les prévisions consolidées des résultats d'exploitation pour l'exercice fiscal (FY) 2026 par rapport aux résultats de FY 2025.
+
+### 2. Chiffres importants
+- **Résultat d'exploitation consolidé** : 4,795.5 milliards de yens en FY 2025.
+- **Prévision pour FY 2026** : 3,800.0 milliards de yens.
+
+### 3. Graphiques/tableaux visibles
+Le document utilise un diagramme de barres pour illustrer les différents facteurs qui influencent le résultat d'exploitation consolidé entre FY 2025 et FY 2026. Les principaux éléments sont :
+- **One-time Factors** : +400.0 milliards de yens.
+- **Effects of FOREX Rates** : -245.0 milliards de yens.
+- **Materials Prices** : -195.0 milliards de yens.
+- **Tariff Impact** : -1,450.0 milliards de yens (réduction des coûts).
+- **Comprehensive Investment** : -410.0 milliards de yens.
+- **Improvement Efforts etc.** : +904.5 milliards de yens.
+
+### 4. Résumé utile pour un RAG
+Cette analyse montre que le résultat d'exploitation consolidé est prévu à 3,800.0 milliards de yens pour FY 2026, en diminuant de 995.5 milliards de yens par rapport aux résultats de FY 2025 (4,795.5 milliards de yens). Les principales sources de cette réduction sont les effets des taux de change (-245.0 milliards), les prix des matériaux (-195.0 milliards) et l'impact des tarifs (-1,450.0 milliards). Cependant, des efforts d'amélioration (+904.5 milliards) et des investissements complets (-410.0 milliards) sont également pris en compte pour compenser ces facteurs négatifs.
+
+
+PAGE 15
+==================================================
+TEXTE PDFREADER :
+1509.3 10.3 11.3 12.3 13.3 14.3 15.3 16.3 17.3 18.3 19.3 20.3 21.3 22.3 23.3 24.3 25.3 26.3 27.3(Ref.) Initiatives to Improve Break -even Volume
+Trend of break -even volume
+Forecast   ・We have begun company -wide initiatives to improve our break -even volume, focusing not only on reducing fixed costs 
+but also on lowering variable costs and enhancing value chain profitability. 
+2Q Forecast
+3Q Forecast・Rather than simple across -the-board cuts, we are focusing on productivity and the ratio of value -added work 
+to ensure sustainable efforts. 
+・To achieve a full turnaround next fiscal year, we began these activities this fiscal year and aim to  accelerate them further .
+
+ANALYSE OLLAMA :
+### Analyse rapide du rapport financier
+
+#### 1. Type de contenu
+Le document présente des initiatives entreprises par Toyota pour améliorer le volume d'équilibre (break-even volume) de l'entreprise, en se concentrant sur la réduction des coûts fixes et variables ainsi que sur l'amélioration de la rentabilité de la chaîne de valeur.
+
+#### 2. Chiffres importants
+- Les dates mentionnées sont allant de "09.3" à "27.3", qui pourraient représenter des trimestres ou des années financières.
+- Il est indiqué que les initiatives ont commencé cette année fiscale et visent à accélérer ces efforts.
+
+#### 3. Graphiques/tableaux visibles
+Le graphique montre la tendance du volume d'équilibre avec deux prévisions pour le deuxième et troisième trimestres (2Q Forecast, 3Q Forecast).
+
+#### 4. Résumé utile pour un RAG
+Toyota a lancé des initiatives à l'échelle de l'entreprise visant à améliorer son volume d'équilibre en réduisant les coûts fixes et variables tout en augmentant la rentabilité de la chaîne de valeur. Ces efforts visent à atteindre un retour complet dans le prochain exercice financier, avec des actions commencées cette année et une intention d'accélérer ces initiatives pour les trimestres suivants.
+
+### Exemple de RAG (Résumé Analytique Général)
+Toyota a initié des mesures pour améliorer son volume d'équilibre en concentrant ses efforts sur la réduction des coûts fixes et variables, ainsi que sur l'augmentation de la rentabilité de sa chaîne de valeur. Ces initiatives ont commencé cette année et visent à accélérer leur mise en œuvre pour les trimestres suivants afin d'atteindre un retour complet dans le prochain exercice financier.
+
+
+PAGE 16
+==================================================
+TEXTE PDFREADER :
+16(Ref.) Analysis of FY2026 Forecast: Consolidated Operating Income
+(vs. Previous Forecast)
+3,400.0Cost 
+Reduction
+EffortsOther *4+90.0 +30.0 +310.0
+Operating Income (+400.0)Effects  of
+FOREX 
+Rates *1Effects of 
+Marketing 
+Activities *2-60.0
+146 yen/US$
+169 yen/ €150 yen/US$
+174 yen/ €Excluding the overall impact of foreign exchange 
+rates and swap valuation gains/losses, etc：+60.0
++30.0 3,800.0
+FY2026 Previous Forecast
+2025.4 -2026.3FY2026 New Forecast
+2025.4 -2026.3Which includes:
+Strengthening Foundation of 
+Suppliers/
+Materials Prices +65.0
+Cost Reduction +25.0Increase or 
+Decrease in
+Expenses and 
+Expense Reduction 
+Efforts *3(billions of yen)
+Which includes:
+Tariff Impact ±0.0
+*1 Details *2 Details *3 Details *4 Details
+Transactional (Imports/Exports) +350.0 Volume, Model Mix -60.0 Labor Cost +20.0 Valuation Gains / Losses from Swaps, etc. +30.0
+  　- US $ +225.0 Value Chain -20.0 Depreciation Expenses +20.0 Impact of Inflation Accounting, etc. -3.5
+　  - € +50.0　- Financial Services -20.0 R&D Expenses +15.0 HINO MOTORS Certification Related -5.2
+　  - Other +75.0　- Accessories / Spare Parts / Expenses, etc. -25.0 Expenses
+Translational FOREX Impact Concerning      Used Vehicle / Connected, etc.Other +8.7
+Overseas Subsidiaries, etc.Other +20.0±0.0
+-40.0
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Ce document est une analyse financière présentant les prévisions consolidées des revenus opérationnels pour l'exercice fiscal (FY) 2026, en comparaison avec la prévision précédente.
+
+### 2. Chiffres importants
+- **Revenu opérationnel précédent** : 3,400 milliards de yens
+- **Augmentation du revenu opérationnel** : +400 milliards de yens (pour atteindre 3,800 milliards de yens)
+- **Impact des taux de change** : +310 milliards de yens
+- **Réduction des coûts** : +90 milliards de yens
+- **Effets des activités de marketing** : -60 milliards de yens
+- **Autres facteurs** : +30 milliards de yens
+
+### 3. Graphiques/tableaux visibles
+Le document utilise un diagramme en barre pour illustrer les composantes du revenu opérationnel et leur impact sur la prévision consolidée.
+
+### 4. Résumé utile pour un RAG (Résumé Analyse Générale)
+Cette analyse financière de Toyota présente une prévision des revenus opérationnels pour l'exercice fiscal 2026, en comparaison avec les prévisions précédentes. Le revenu opérationnel est projeté à 3,800 milliards de yens, soit une augmentation de 400 milliards de yens par rapport aux 3,400 milliards de yens du précédent exercice. Les principales sources d'augmentation sont l'effet des taux de change (+310 milliards), la réduction des coûts (+90 milliards) et les autres facteurs (+30 milliards). Cependant, les activités de marketing ont un impact négatif (-60 milliards). Les prévisions sont basées sur une appréciation du yen par rapport au dollar américain (150 yens/US$ contre 146 yens/US$ précédemment) et une appréciation du yen par rapport à l'euro (174 yens/€ contre 169 yens/€).
+
+
+PAGE 17
+==================================================
+TEXTE PDFREADER :
+174,795.5
+Cost 
+Reduction
+Efforts
+Other *4-70.0
++525.0-245.0
+Operating Income ( -995.5)Effects  of
+FOREX 
+Rates *1Marketing 
+Efforts *2+665.0
+153 yen/US$
+164 yen/ €150 yen/US$
+174 yen/ €Excluding the overall impact of foreign exchange 
+rates and swap valuation gains/losses, etc：-1,275 .5
+-1,870.5
+3,800.0
+FY2025  Results
+2024.4 -2025.3FY2026 New Forecast
+2025.4 -2026.3Which includes:
+Strengthening Foundation of 
+Suppliers/
+Materials Prices -360.0
+Cost Reduction +290.0Increase or 
+Decrease in
+Expenses and 
+Expense Reduction 
+Efforts *3(billions of yen)(Ref.) Analysis of FY2026 Forecast: Consolidated Operating Income
+(vs. FY2025 Results)
+Which includes:
+Tariff Impact -1,450.0
+*1 Details *2 Details *3 Details *4 Details
+Transactional (Imports/Exports) -190.0 Volume, Model Mix +260.0 Labor Cost -145.0 Valuation Gains / Losses from Swaps, etc. +95.0
+  　- US $ -130.0 Value Chain +175.0 Depreciation Expenses -140.0 Impact of Inflation Accounting, etc. +43.0
+　  - € +95.0　- Financial Services +55.0 R&D Expenses -85.0 HINO MOTORS Certification Related +275.4
+　  - Other -155.0 　- Accessories / Spare Parts / Expenses, etc. -1,500.5 Expenses
+Translational FOREX Impact Concerning      Used Vehicle / Connected, etc.Other +111.6
+Overseas Subsidiaries, etc.Other +230.0+120.0
+-55.0
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Ce document est une analyse financière détaillée du résultat d'exploitation consolidé de Toyota pour l'exercice fiscal (FY) 2026, en comparaison avec les résultats de FY 2025.
+
+### 2. Chiffres importants
+- **Résultat d'exploitation consolidé** : 
+  - FY 2025 : 4795.5 milliards de yens
+  - FY 2026 (nouvelle prévision) : 3800.0 milliards de yens
+
+- **Effets des taux de change** :
+  - FY 2025 : -245.0 milliards de yens
+  - FY 2026 (nouvelle prévision) : -70.0 milliards de yens
+
+### 3. Graphiques/tableaux visibles
+- **Diagramme des effets des taux de change** :
+  - Effets positifs et négatifs sur le résultat d'exploitation consolidé.
+  
+- **Répartition des éléments contribuant au résultat d'exploitation** :
+  - Coûts réduits, efforts marketing, augmentation ou diminution des dépenses, etc.
+
+### 4. Résumé utile pour un RAG
+Cette analyse financière de Toyota montre que le résultat d'exploitation consolidé est attendu à 3800 milliards de yens pour FY 2026, en comparaison avec les 4795.5 milliards de yens du FY 2025. Les principales modifications sont dues aux effets des taux de change (qui ont diminué de -245 à -70 milliards de yens) et aux efforts marketing (+665 milliards de yens). Des ajustements pour les coûts réduits, les dépenses et autres facteurs financiers sont également pris en compte.
+
+
+PAGE 18
+==================================================
+TEXTE PDFREADER :
+18Toyota and Lexus Vehicle Sales 2,729 2,753 100.9%
+Electrified Vehicles  [%] 1,278 1,281 100.3%
+       HEV 1,206 1,178 97.7%
+   PHEV 40 40 101.1%
+   BEV 32 63 199.1%
+   FCEV 0 1 179.0%
+Total Retail Vehicle Sales 2,922 2,964 101.4%2024 .10-12 YoY 2025 .10-12442 408 473 471 318 308 695 784 516 546 
+05001,0001,5002,0002,500
+92.4%99.6%96.9%112.9%105.9%103.0% 2,444 2,519（thousands of vehicles ）
+Europe
+Asia
+OtherJapan
+N. America
+Central and 
+South America,
+Oceania,
+Africa,
+The Middle East,
+etc.
+Reference (retail)
+[46.8%] [46.5%](Ref.) Consolidated Vehicle Sales (3 months)
+
+ANALYSE OLLAMA :
+1. **Type de contenu** : Rapport financier sur les ventes consolidées de véhicules Toyota et Lexus.
+
+2. **Chiffres importants** :
+   - Ventes totales consolidées (3 mois) : 2,444 en 2024 et 2,519 en 2025.
+   - Ventes de Toyota et Lexus : 2,729 en 2024 et 2,753 en 2025.
+   - Ventes d'hybrides électriques (HEV) : 1,206 en 2024 et 1,178 en 2025.
+   - Ventes de voitures à pile à combustible (FCEV) : 0 en 2024 et 1 en 2025.
+
+3. **Graphiques/tableaux visibles** :
+   - Diagramme à barres comparant les ventes consolidées par région pour les trois derniers mois.
+   - Tableau des ventes de véhicules électrifiés (HEV, PHEV, BEV et FCEV) avec leur pourcentage par rapport aux ventes totales.
+
+4. **Résumé utile pour un RAG** :
+   Toyota a enregistré une légère augmentation de ses ventes consolidées de 2,444 à 2,519 unités entre octobre-décembre 2024 et 2025. Les ventes de Toyota et Lexus ont également augmenté de 2,729 à 2,753 unités. L'hybride électrique (HEV) a connu une légère diminution des ventes, tandis que les voitures à pile à combustible (FCEV) ont connu une augmentation significative avec un seul véhicule vendu en 2025 par rapport à zéro en 2024.
+
+
+PAGE 19
+==================================================
+TEXTE PDFREADER :
+192024. 10-12 2025. 10-12 Change
+Sales Revenues 12,391.0 13,456.8 +1,065.7
+Operating Income 1,215.2 1,191.0 -24.2
+Margin 9.8% 8.9%
+Other Income 1,482.7 519.3 -963.4
+  Share of Profit (Loss) of Investments
+Accounted for Using the Equity Method 190.4 165.2 -25.1
+Income before Income Taxes 2,698.0 1,710.3 -987.6
+NetIncome Attributable to 
+Toyota Motor Corporation2,193.2 1,257.4 -935.8
+Margin 17.7% 9.3%
+FOREX RatesUS$ 152 yen 154 yen +2 yen
+€ 163 yen 179 yen +16 yen＊(billions of yen)
+*Regarding Japan: 116.6 (-23.4 year on year) , China: 27.1 ( -3.7 year on year), Other: 21.3 ( +2.1 year on year)(Ref.) Consolidated Financial Summary (FY2026 3 months)
+
+ANALYSE OLLAMA :
+### Type de contenu:
+Rapport financier consolidé trimestriel (FY2026, 3 mois) de Toyota.
+
+### Chiffres importants:
+- **Revenus**: 
+  - 2024.10-12: ¥12,391.0 milliards
+  - 2025.10-12: ¥13,456.8 milliards (+¥1,065.7)
+  
+- **Pertes opérationnelles**:
+  - 2024.10-12: ¥1,215.2 milliards
+  - 2025.10-12: ¥1,191.0 milliards (-¥24.2)
+  
+- **Marge**:
+  - 2024.10-12: 9.8%
+  - 2025.10-12: 8.9% (diminution de 0.9 p.p.)
+  
+- **Autres revenus**:
+  - 2024.10-12: ¥1,482.7 milliards
+  - 2025.10-12: ¥519.3 milliards (-¥963.4)
+  
+- **Pertes avant impôts**:
+  - 2024.10-12: ¥2,698.0 milliards
+  - 2025.10-12: ¥1,710.3 milliards (-¥987.6)
+  
+- **Pertes nettes attribuables à Toyota Motor Corporation**:
+  - 2024.10-12: ¥2,193.2 milliards
+  - 2025.10-12: ¥1,257.4 milliards (-¥935.8)
+  
+- **Marge** (pour les pertes nettes):
+  - 2024.10-12: 17.7%
+  - 2025.10-12: 9.3% (diminution de 8.4 p.p.)
+  
+### Graphiques/tableaux visibles:
+- Tableau comparatif des revenus, pertes opérationnelles et marges pour les deux périodes.
+- Tableau des autres revenus et des pertes avant impôts.
+- Tableau des pertes nettes attribuables à Toyota Motor Corporation.
+
+### Résumé utile pour un RAG:
+Toyota a enregistré une augmentation significative de ses revenus au cours du trimestre (¥1,065.7 milliards), malgré une légère diminution des pertes opérationnelles (-¥24.2 milliards). Cependant, les autres revenus ont connu une forte réduction (-¥963.4 milliards) et les pertes avant impôts ont chuté de ¥987.6 milliards. Les pertes nettes attribuables à Toyota Motor Corporation ont également diminué considérablement (-¥935.8 milliards), avec une marge qui a diminué de 8.4 points de pourcentage. Les taux de change des devises (US$ et €) ont également varié, avec un gain de ¥2 par US$ et ¥16 par €.
+
+
+PAGE 20
+==================================================
+TEXTE PDFREADER :
+20(Ref.) Analysis of Consolidated Operating Income (FY2026 3 months)
+1,215.2 1,191.0+115.0 +30.0+100.0 -390.0
++120.8
+Which includes:
+Strength ening Foundation of Suppliers/
+Materials Prices
+Cost Reduction-60.0
++90.0Excluding the overall impact of foreign exchange 
+rates and swap valuation gains/losses, etc. ：
+(-24.2) Operating Income
+*1 Details *2 Details *3 Details *4 Details
+Transactional (Imports/Exports) +55.0 Volume, Model Mix +25.0 Labor Cost -20.0 Valuation Gains / Losses from Swaps, etc. +52.1
+  　- US $ +20.0 Value Chain +15.0 Depreciation Expenses -40.0 Impact of Inflation Accounting, etc. -2.4
+　  - € +40.0 　- Financial Services -15.0 R&D Expenses -35.0
+　  - Other -5.0　- Accessories / Spare Parts / Expenses, etc. -295.0
+Translational FOREX Impact Concerning      Used Vehicle / Connected, etc.Other +21.4
+Overseas Subsidiaries, etc.Other +60.0+30.0
++60.0HINO MOTORS Certification Related
+Expenses  (One-time Expenses in FY2025)+49.7Which includes:
+Tariff Impact  -300.0-260.0
+Cost 
+Reduction
+Efforts Other *4
+2024.10 -12Effects of
+FOREX 
+Rates *1
+152 yen/US$
+163 yen/ €154 yen/US$
+179 yen/ €(billions of yen)
+2025.10 -12Increase or 
+Decrease in 
+Expenses and 
+Expense Reduction 
+Efforts *3Marketing 
+Efforts *2
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+
+Cette page est une analyse financière détaillée du bénéfice opérationnel consolidé d'une entreprise (Toyota) au cours des trois premiers mois de l'exercice financier 2026.
+
+### 2. Chiffres importants
+
+- **Bénéfice opérationnel consolidé initial** : 1,215.2 milliards de yens
+- **Bénéfice opérationnel consolidé final** : 1,191.0 milliards de yens
+- **Impact des taux de change (FOREX)** : +115.0 milliards de yens
+- **Efforts de réduction des coûts** : +30.0 milliards de yens
+- **Efforts marketing** : +100.0 milliards de yens
+- **Augmentation ou diminution des dépenses et efforts de réduction des coûts** : -390.0 milliards de yens
+- **Autres facteurs** : +120.8 milliards de yens
+
+### 3. Graphiques/tableaux visibles
+
+Le graphique principal montre l'évolution du bénéfice opérationnel consolidé avec les différents éléments qui ont contribué à cette évolution.
+
+### 4. Résumé utile pour un RAG (Résumé Analyse Générale)
+
+Cette analyse financière révèle que le bénéfice opérationnel consolidé de Toyota a diminué d'environ 24,2 milliards de yens au cours des trois premiers mois de l'exercice financier 2026. Cette diminution est principalement attribuable à plusieurs facteurs :
+
+- **Effets des taux de change (FOREX)** : Un bénéfice positif de +115.0 milliards de yens.
+- **Réduction des coûts** : Un bénéfice positif de +30.0 milliards de yens.
+- **Efforts marketing** : Un bénéfice positif de +100.0 milliards de yens.
+
+Cependant, les augmentations ou diminutions des dépenses et efforts de réduction des coûts ont eu un impact négatif total de -390.0 milliards de yens. Les autres facteurs ont également contribué avec une augmentation de +120.8 milliards de yens.
+
+En conclusion, bien que certains éléments aient permis d'améliorer le bénéfice opérationnel consolidé (taux de change et efforts marketing), les coûts et dépenses élevés ont eu un impact significatif négatif sur la performance financière globale.
+
+
+PAGE 21
+==================================================
+TEXTE PDFREADER :
+21816.7 
+76.1 152.5 
+193.8 43.5 683.8 
+128.4 123.2 
+200.2 43.9 516 546 695 784 
+318 308 473 471 442 408 Consolidated Vehicle Sales (thousands of vehicles)  
+[14.2 %] [11.8%][ ] Margin
+Japan N. America Europe Asia Other
+Operating Income including Valuation Gains/Losses relating to Swaps, etc . (billions of yen)
+814.6  679.3   58.3  162.8  157.1     123.9 194.8 190.7  39.0    56.2 2024.10 -122025.10 -12[3.5%][6.8%]
+[1.6%][9.4%]+52.2-132.8
+-29.2
++6.4+0.3
+[8.3% ] [8.1%] [3.8%](105.9%)
+(99.6%)（92.4%）Operating Income (billions of yen) (excluding  Valuation  Gains/Losses relating to Swaps, etc. ) 
+Incl. China (excl. investments accounted 
+for using the equity method of associates 
+and joint ventures)
+(112.9%)
+(96.9%)
+[2.3%]
+2024.10 -122025.10 -12 2024.10 -122025.10 -12 2024.10 -122025.10 -12 2024 .10-122025.10 -12(Ref.) Geographic Operating Income (FY2026 3 months)
+
+ANALYSE OLLAMA :
+### Type de contenu:
+Rapport financier sur les revenus opérationnels géographiques de Toyota au cours des 3 mois de l'exercice fiscal 2026.
+
+### Chiffres importants:
+- **Japon**: Revenu opérationnel (en milliards de yens) -132.8
+- **Amérique du Nord**: Revenu opérationnel +52.2
+- **Europe**: Revenu opérationnel -29.2
+- **Asie**: Revenu opérationnel +6.4
+- **Autres régions**: Revenu opérationnel +0.3
+
+### Graphiques/tableaux visibles:
+1. Barres représentant les revenus opérationnels (en milliards de yens) pour chaque région.
+2. Tableau comparatif des chiffres de revenus opérationnels et des marges pour chaque région.
+
+### Résumé utile pour un RAG:
+Toyota a enregistré une perte opérationnelle de 132,8 milliards de yens au Japon, tandis qu'il a réalisé des gains dans les autres régions. L'Amérique du Nord et l'Asie ont montré des performances positives avec respectivement +52,2 et +6,4 milliards de yens. La perte la plus importante est observée en Europe (-29,2 milliards de yens). Les marges varient également selon les régions, avec une légère amélioration pour l'Asie (+0,3%).
+
+
+PAGE 22
+==================================================
+TEXTE PDFREADER :
+22(Ref.) China Business / Financial Services (FY2026 3 months)
+182.5 179.5 
+30.9 27.1 16.5 
+16.4 (Ref.) China Business
+Operating Income of Consolidated  Subsidiaries (billions of yen)
+Share of Profit of Investments Accounted for Using the Equity
+Method  of Associates and Joint Ventures (billions of yen)Financial Services 
+Operating Income (billions of yen) 
+163.7 212.92024 .10-12 2025.10 -122024.10 -12 2025.10 -12535 479 (89.4%)
+-0.1
+-3.7-3.0Toyota and Lexus Vehicle Retail Sales (thousands of vehicles)Excluding  Valuation Gains/Losses relating to Swaps, etc. ＊
+Operating Income including Valuation Gains/Losses relating to Swaps, etc.  (billions of yen)
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Le contenu est une analyse financière présentant les performances des affaires chinoises et des services financiers de Toyota au cours des trois derniers mois de l'exercice financier (FY) 2026.
+
+### 2. Chiffres importants
+- **China Business:**
+  - Opérationnel : 16,5 milliards de yens en 2024 et 16,4 milliards de yens en 2025.
+  - Part des bénéfices des investissements utilisant la méthode du partage de l'équité : 30,9 milliards de yens en 2024 et 27,1 milliards de yens en 2025.
+- **Financial Services:**
+  - Opérationnel : 182,5 milliards de yens en 2024 et 179,5 milliards de yens en 2025.
+
+### 3. Graphiques/tableaux visibles
+Le rapport comporte deux graphiques :
+- **Graphique de la Chine Business** : Il montre l'évolution des opérations consolidées et des parts de bénéfices des investissements utilisant la méthode du partage de l'équité.
+- **Graphique des Services financiers** : Il présente les revenus opérationnels pour les deux périodes.
+
+### 4. Résumé utile pour un RAG
+Le rapport indique une légère diminution des revenus opérationnels consolidés et des parts de bénéfices des investissements utilisant la méthode du partage de l'équité dans le secteur chinois, tandis que les revenus opérationnels des services financiers ont connu un léger recul en 2025 par rapport à 2024. Cependant, il est important de noter que ces chiffres excluent les gains et pertes liés aux swaps et autres transactions financières.
+
+
+PAGE 23
+==================================================
+TEXTE PDFREADER :
+23Depreciation Expenses *7 Ratio to Sales Revenues (%)
+52 607590 95(Ref.)  Transition of Financial Performance
+2,134.8
+1,605.82,010.82,300.0
+1,343.0
+2022.3 2023.3 2024.3 2025.3 2026.31,500.0
+1,185.01,248.41,360.5
+1,007.28,230 8,822 9,443 9,362 9,750 
+2022.3 2023.3 2024.3 2025.3 2026.3
+718.2816.91,011.71,178.4
+2022.3 2023.3 2024.3 2025.3 2026.312,651.6
+9,027.714,465.015,549.3
+2022.3 2023.3 2024.3 2025.3 2025.1216,702.431.3 37.2 45.0 48.0 50.0 
+2022.3 2023.3 2024.3 2025.3 2026.3
+3.6 3.3 
+2.7 2.8 2.8 9.5 
+7.3 11.9 
+10.0 
+7.6 9.1
+6.611.0 9.9 
+7.1
+4,944.9 4,765.0
+3,570.0
+2,850.12,451.3
+2022.3 2023.3 2024.3 2025.3 2026.34,795.5
+3,800.0
+2,995.6 2,725.05,352.9
+2022.3 2023.3 2024.3 2025.3 2026.3
+1,241.61,202.31,326.41,420.0
+1,124.2
+2022.3 2023.3 2024.3 2025.3 2026.3(thousands of vehicles)Consolidated Vehicle Sales (trillions of yen ) Sales Revenues (billions of yen ) Operating IncomeNet Income Attributable to
+Toyota Motor Corporation
+Operating Margin (%) (billions of yen )
+Net Margin (%)
+Dividend per Share  (yen)  *3 Total Liquid Assets *1 Total Shareholder Return 
+(billions of yen)(billions of yen) (billions of yen) R&D Expenses *6 Capital Expenditures
+(billions of yen)
+Share
+Repurchase*4*5
+DividendInterest -
+Bearing 
+Debt*2
+Net Liquid 
+Assets
+*1  Cash and cash equivalents, time deposits, public and corporate bonds and its investment in monetary trust funds, excluding in each cas e those relating to financial services.
+*6  Figures for R&D expenses are R&D activity related expenditures incurred during the reporting period and do not conform to res earch and development costs on Toyota's Consolidated Statement of Income8,341.3
+Forecast 15,079.5
+1,153.8 1,116.92,111.7
+1,378.4
+*2  Not including lease liabilities.10,517.311,313.718,005.8(Forecast )
+*4  Excluding shares constituting less than one unit that were purchased upon request and the commission fees incurred for th e repurchase.
+*5  States the maximum value of shares resolved to be repurchased if before the completion of 
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Ce document est une page de rapport financier présentant les tendances financières et les prévisions de Toyota Motor Corporation sur plusieurs indicateurs clés.
+
+### 2. Chiffres importants
+- **Ventes consolidées** : 8,230 à 9,750 milliers de véhicules.
+- **Revenus totaux** : 31,3 à 50,0 trillions de yens.
+- **Prix d'exploitation** : 9.5% en 2022.3 et 7.6% en 2026.3.
+- **Bénéfice net attribuable à Toyota Motor Corporation** : 2,850.1 à 3,570 milliards de yens.
+
+### 3. Graphiques/tableaux visibles
+- **Ventes consolidées** (en milliers de véhicules).
+- **Revenus totaux** (en trillions de yens).
+- **Prix d'exploitation** et **marge nette**.
+- **Bénéfice net attribuable à Toyota Motor Corporation** (en milliards de yens).
+- **Total des actifs liquides**, **retour total aux actionnaires**, **dépenses R&D**, et **investissements capitaux**.
+
+### 4. Résumé utile pour un RAG
+Toyota prévoit une augmentation significative des ventes consolidées, passant de 8,230 à 9,750 milliers de véhicules entre 2022.3 et 2026.3. Les revenus totaux sont également projetés à augmenter de manière importante, atteignant 50 trillions de yens en 2026.3.
+
+Le prix d'exploitation est attendu de diminuer légèrement de 9.5% en 2022.3 à 7.6% en 2026.3, tandis que la marge nette reste stable autour de 11%. Le bénéfice net attribuable à Toyota Motor Corporation est prévu à augmenter jusqu'à 3,570 milliards de yens en 2026.3.
+
+Les dépenses R&D et les investissements capitaux sont également projetés à croître, respectivement passant de 1,420 à 1,500 milliards de yens pour les dépenses R&D et de 2,010.8 à 2,300 milliards de yens pour les investissements capitaux.
+
+En résumé, Toyota prévoit une croissance continue dans ses ventes et revenus tout en maintenant un certain niveau d'efficacité opérationnelle et financière.
+
+
+PAGE 24
+==================================================
+TEXTE PDFREADER :
+24(Ref.) FY2026 Forecast: Vehicle Production and Retail Sales
+生産Vehicle 
+Production *Japan 3,300 3,250 -50
+Overseas 6,700 6,700 ±0
+Total 10,000 9,950 -50Previous Forecast
+2025.4 -2026.3New Forecast
+2025.4 -2026.3Change
+11,300 11,300 ±0
+Toyota & Lexus
+Total Retail Vehicle Sales 
+*  Including vehicles by Toyota’s unconsolidated entities(thousands of vehicles)
+*Retail
+Vehicle
+Sales *Japan 1,500 1,500 ±0
+Overseas 9,000 9,000 ±0
+Total 10,500 10,500 ±03,236
+6,446
+   9,683FY2025 Results
+2024.4 -2025.3
+11,0111,505
+8,768
+ 10,274
+
+ANALYSE OLLAMA :
+1. **Type de contenu** : Rapport financier sur les prévisions de production et de vente de véhicules Toyota pour l'exercice fiscal 2026.
+
+2. **Chiffres importants** :
+   - Production totale : 9,950 (en baisse de 50 unités par rapport à la précédente estimation).
+   - Ventes au détail totales : 11,300 (sans changement par rapport à l'estimation précédente).
+
+3. **Graphiques/tableaux visibles** :
+   - Tableau comparant les prévisions et résultats historiques de production et de vente pour le Japon et l'ensemble des pays étrangers.
+
+4. **Résumé utile pour un RAG** : Toyota a révisé ses prévisions de production en baisse de 50 unités, mais maintient les ventes au détail à niveau. Les chiffres historiques montrent une légère diminution de la production et des ventes par rapport aux années précédentes.
+
+
+PAGE 25
+==================================================
+TEXTE PDFREADER :
+25(Ref.) Definitions of Consolidated and Retail Vehicle Sales
+Daihatsu -and Hino -brand vehicles
+Number of vehicles produced for wholesale by Toyota Motor 
+Corporation and its consolidated subsidiaries
+Number of vehicles produced for wholesale by Toyota’s 
+unconsolidated entities (e.g. joint ventures in China, etc.)
+*There are a limited number of exceptional cases where sales are made 
+other than in accordance with the flowchart above.Consolidated Vehicle SalesDistributors or Dealers outside consolidationToyota and Lexus Vehicle SalesTotal Retail Vehicle SalesCustomers
+Toyota -and Lexus -brand vehicles
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Cette page fournit des définitions et une structure détaillée des ventes consolidées et des ventes au détail des véhicules Toyota, Daihatsu et Hino.
+
+### 2. Chiffres importants
+- **Ventes consolidées** : Comprend les véhicules produits pour le commerce à grande échelle par Toyota Motor Corporation et ses filiales consolidées.
+- **Ventes aux distributeurs ou concessionnaires hors consolidation** : Comprend les véhicules produits pour le commerce à grande échelle par les entités non consolidées de Toyota (par exemple, joint ventures en Chine).
+- **Ventes totales au détail des véhicules Toyota et Lexus** : Somme des ventes consolidées et des ventes aux distributeurs ou concessionnaires hors consolidation.
+- **Clients finaux** : Consommateurs qui achètent les véhicules.
+
+### 3. Graphiques/tableaux visibles
+Le diagramme illustre la structure de vente avec les étapes suivantes :
+1. Ventes consolidées (Daihatsu et Hino)
+2. Distributeurs ou concessionnaires hors consolidation
+3. Ventes totales au détail des véhicules Toyota et Lexus
+4. Clients finaux
+
+### 4. Résumé utile pour un RAG
+Cette page définit les ventes consolidées et les ventes au détail des véhicules Toyota, Daihatsu et Hino en distinguant entre les véhicules produits par Toyota Motor Corporation et ses filiales consolidées d'une part, et ceux produits par ses entités non consolidées d'autre part. Elle indique que la somme de ces deux catégories donne le total des ventes au détail des véhicules Toyota et Lexus, qui sont ensuite livrés aux clients finaux. Il est important de noter qu'il existe quelques exceptions où les ventes ne suivent pas cette structure.
+
+
+PAGE 2
+==================================================
+TEXTE PDFREADER :
+2Cautionary Statement with Respect to Forward -Looking Statements 
+and Caution Concerning Insider Trading
+This presentation contains forward -looking statements that reflect the plans and expectations of Toyota Motor Corporation and it s consolidated subsidiaries (“Toyota”). These forward -looking 
+statements are not guarantees of future performance and involve known and unknown risks, uncertainties and other factors that may cause Toyota’s actual results, performance, achievements 
+or financial position to be materially different from any future results, performance, achievements or financial position expressed or implied by these forward -looking statements. These factors
+include, but are not limited to: ( i)changes in economic conditions, market demand, and the competitive environment affecting the automotive markets in Japan, Nor th America, Europe, Asia and 
+other markets in which Toyota operates; (ii) fluctuations in currency exchange rates (particularly with respect to the value of the Japanese yen, the U.S. dollar, the euro, the Australian dollar, the 
+Canadian dollar and the British pound), stock prices and interest rates; (iii) changes in funding environment in financial ma rkets and increased competition in the financial services industry; (iv) 
+Toyota’s ability to market and distribute effectively; (v) Toyota’s ability to realize production efficiencies and to impleme nt capital expenditures at the levels and times planned by management;(vi)
+changes in the laws and regulations, as well as other government actions, in the markets in which Toyota operates that affect Toyota’s operations, particularly laws, regulations and government 
+actions relating to vehicle safety including remedial measures such as recalls, environmental protection, vehicle emissions a nd vehicle fuel economy, and tariffs and other trade policies, as well 
+as current and future litigation and other legal proceedings, government proceedings and investigations ; (vii) political and econ
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 4
+==================================================
+TEXTE PDFREADER :
+4FY2026 Third Quarter 
+Financial Performance
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 6
+==================================================
+TEXTE PDFREADER :
+6Consolidated Financial Summary (FY2026 9 months)
+Sales Revenues 35,673.5 38,087.6 +2,414.0
+Operating Income 3,679.4 3,196.7 -482.7
+Margin 10.3% 8.4%
+Other Income 1,750.6 991.7 -758.8
+  Share of Profit (Loss) of Investments
+Accounted for Using the Equity Method 454.7 437.9 -16.8
+Income before Income Taxes 5,430.0 4,188.4 -1,241.6
+NetIncome Attributable to 
+Toyota Motor Corporation4,100.3 3,030.8 -1,069.4
+Margin 11.5% 8.0%
+FOREX RatesUS$ 153 yen 149 yen -4 yen
+€ 165 yen 172 yen +7 yen(billions of yen)
+*2024.4-12 2025.4 -12 Change
+* Regarding Japan: 300.3 ( -28.2 year on year), China: 75.2  (+6.5 year on year),  Other: 62.3 (+4.9 year on year)
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 3
+==================================================
+TEXTE PDFREADER :
+3FY2026 Third Quarter Results Summary
+Actual
+(9 months)
+FY2026
+Forecast
+Profit 
+Structure 
+Improve -
+mentSteadfastly advancing product -centered management and region -centered management, 
+we will further increase our ratio of value -added work* and strengthen our “earning power”.
+Operating income 3,196.7 billion yen ( -482.7 billion yen YoY)
+ -Despite the continued impact of U.S. tariffs, strong demand supported by product 
+competitiveness has led to increased sales volumes, and we achieved a high level
+of profit due to price revisions.
+Operating income 3,800.0 billion yen ( -995.5 billion yen YoY)
+  -Despite the 1,450 billion yen negative impact of U.S. tariffs that newly arose this 
+fiscal year, we have reduced the extent of the profit decline by implementing cost 
+reductions and marketing efforts .
+-Company -wide initiatives aimed at reducing the break -even volume.
+-Strengthening earning power for medium -to long -term competitiveness to
+continue.
+-Together with suppliers, we will increase productivity to generate resources
+for growth and protect Japanese manufacturing.*The proportion of tasks that increase added value
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 5
+==================================================
+TEXTE PDFREADER :
+5Consolidated Vehicle Sales (FY2026 9 months)
+Reference (retail)2024.4 -12 YoY 2025.4-121,259 1,262 1,378 1,325 866 881 2,043 2,318 1,454 1,516 
+01,0002,0003,0004,0005,0006,0007,0008,000
+100.2%96.1%101.8%113.5%104.3%104.3%7,000(thousands of vehicles)
+Japan
+N. America
+Europe
+Asia
+Other
+Central and 
+South America,
+Oceania,
+Africa,
+The Middle East, etc.
+Toyota and Lexus Vehicle Sales 7,758 8,020 103.4%
+Electrified Vehicle  [%] 3,504 3,742 106.8%
+       HEV 3,278 3,439 104.9%
+PHEV 115 138 119.9%
+BEV 110 164 149.8%
+FCEV 1 1 87.0%
+Total Retail Vehicle Sales 8,295 8,607 103.8%[45.2%] [46.7%]7,302
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 1
+==================================================
+TEXTE PDFREADER :
+FY2026 Third Quarter Financial Results
+February 6, 2026Toyota Motor Corporation
+GR GT3 GR GT
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 7
+==================================================
+TEXTE PDFREADER :
+7・市況影響：
+・原価改善：△
+※Analysis of Consolidated Operating Income (FY2026 9 months )
+*1 Details *2 Details *3 Details *4 Details
+Transactional (Imports/Exports) -255.0 Volume, Model Mix +335.0 Labor Cost -100.0 Valuation Gains / Losses from Swaps, etc. +130.4
+  　- US $ -155.0 Value Chain +145.0 Depreciation Expenses -45.0 Impact of Inflation Accounting, etc. +36.8
+　  - € +50.0 　- Financial Services +45.0 R&D Expenses -105.0
+　  - Other -150.0 　- Accessories / Spare Parts / Expenses, etc. -1,215.0
+Translational FOREX Impact Concerning      Used Vehicle / Connected, etc. Other +105.4
+Overseas Subsidiaries, etc. Other +265.0HINO MOTORS Certification Related
+Expenses  (One-time Expenses in FY2025)+279.7
++100.0
+-20.03,679.4
+3,196.7-275.0-40.0+745.0 -1,465.0
++552.3-760.0Excluding the overall impact of foreign exchange 
+rates and swap valuation gains/losses, etc. ：
+(-482.7) Operating IncomeWhich includes:
+Strength ening Foundation of Suppliers/
+Materials Prices
+Cost Reduction-265.0
++225.0Which includes:
+Tariff Impact  -1,200.0
+(billions of yen)
+2024.4-12
+153 yen/US$
+165 yen/ €2025.4-12
+149 yen/US$
+172 yen/ €Cost
+Reduction
+Efforts Increase or 
+Decrease in 
+Expenses and 
+Expense Reduction 
+Efforts *3Other *4Effects of
+FOREX 
+Rates *1Marketing 
+Efforts *2
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 8
+==================================================
+TEXTE PDFREADER :
+8Geographic Operating Income (FY2026 9 months)
+2,341.2
+204.2376.1
+680.7168.81,802.3 
+-5.6 317.7 645.4 243.0 1,454 1,516 2,043 2,318 
+866 881 1,378 1,325 1,259 1,262 
+[14.4 %][ ]Margin
+Japan N. America Europe Asia Other
+Operating Income including Valuation Gains/Losses relating to Swaps, etc . (billions of yen)
+2,337.0 1,796 .5          172.1 94.9      373.1     324.6  685.2 635.0 179.6    258.2 2024.4-12 2025.4-12[5.0%] [1.4%][8.3%]-209.9-538.9
+-58.3 -35.2+74.2
+[10.0%](104 .3%)(113.5%)
+(101.8%)(96.1%)Operating  Income (billions of yen) (excluding  Valuation  Gains/Losses relating to Swaps, etc.) Consolidated Vehicle Sales (thousands of vehicles)
+Incl. China (excl. investments accounted 
+for using the equity method of associates 
+and joint ventures)
+[11.0 %]
+[-0.0%][9.3%] [7.0%][6.4%](100.2%)
+2024.4-12 2025 .4-12 2024.4-12 2025.4-12 2024.4-122025.4-12 2024 .4-122025.4-12
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 9
+==================================================
+TEXTE PDFREADER :
+968.6 75.2 125.4 138.6 China Business / Financial Services (FY2026 9 months)
+(Ref.) China Business
+Operating Income of Consolidated Subsidiaries (billions of yen)
+Share of Profit of Investments Accounted for Using the Equity
+Method  of Associates and Joint Ventures (billions of yen)
+Toyota and Lexus Vehicle Retail Sales (thousands of vehicles)Financial Services 
+Operating Income (billions of yen) 
+Excluding  Valuation Gains/Losses relating to Swaps, etc. ＊
+1,402 1,393
+2024.4-12 2025.4-12+13.2
+Marketing
+Efforts ,etc.
+520.2 556.9 +36.6
+Effects of 
+Increase in
+Loan Balance,
+etc.
+2024.4-12 2025.4-12
+496.2 663.3+6.5
+Cost Reduction
+Efforts ,etc.(99.4 %)
+Operating Income including Valuation Gains/Losses relating to Swaps, etc. (billions of yen)
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 10
+==================================================
+TEXTE PDFREADER :
+10FY2026 Financial  Forecasts
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 11
+==================================================
+TEXTE PDFREADER :
+11FY2026 Forecast: Consolidated Vehicle Sales  
+1,680 1,840 1,240 2,960 2,080 
+1,659 1,670 1,838 1,820 1,172 1,230 2,703 2,960 1,991 2,070 
+02,0004,0006,0008,00010,000 9,362
+FY2025 Results
+2024.4 -2025.3New Forecast
+2025.4 -2026.39,750 104.1%
+104.0%
+99.0%
+100.7%109.5%
+104.9%
+YoY(thousands of vehicles)
+Japan
+Europe
+Asia
+Other
+Reference (retail)
+Toyota and Lexus Vehicle Sales 10,274 10,500 102.2% 10,500
+Electrified Vehicles  [%] 4,732 5,060 106.9% 5,133
+HEV 4,425 4,633 104.7% 4,667
+PHEV 161 175 108.7% 187
+BEV 145 251 173.1% 277
+FCEV 1 1 100.0% 1
+Total Retail Vehicle Sales 11,011 11,300 102.6% 11,300[46.1%] [48.2%] [48.9%]9,800
+Previous Forecast
+2025.4 -2026.3N. America
+Central and 
+South America,
+Oceania,
+Africa,
+The Middle East, etc.
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 12
+==================================================
+TEXTE PDFREADER :
+12Strength of Global Production 
+Through Region -Centered Management
+Brazil Production Recovery after the Disaster at Porto Feliz Plant
+By producing a common engine at multiple global locations, 
+it is possible to supply engines across sites even in emergencies.
+Engine plant collapsed due to the storm, 
+and assembly plant operations 
+were halted
+Japan
+IndonesiaAssembly 
+Plant
+4 months after the disaster, 
+the production facility was relocated 
+and engine production resumedProvide backup for
+the engine supplyThe assembly plant reopens 
+2 months after the disasterGlobal SitesThe Local Plant Affected 
+by the Disaster
+Engine 
+Plant
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 13
+==================================================
+TEXTE PDFREADER :
+13FY2026 Forecast: Consolidated Financial Summary
+(billions of yen)Previous Forecast
+2025.4 -2026.3New Forecast
+2025.4 -2026.3Change
+Sales Revenues 49,000.0 50,000.0 +1,000.0
+Operating Income 3,400.0 3,800.0 +400.0
+Margin 6.9% 7.6%
+Other Income 780.0 1,220.0 +440.0
+  Share of Profit (Loss) of Investments
+Accounted for Using the Equity Method 550.0 560.0 +10.0
+Income before Income Taxes 4,180.0 5,020.0 +840.0
+NetIncome Attributable to 
+Toyota Motor Corporation2,930.0 3,570.0 +640.0
+Margin 6.0% 7.1%
+Dividend per share 95 yen 95 yen ±0 yen
+FOREX RatesUS$* 146 yen 150 yen +4 yen
+€* 169 yen 174 yen +5 yenFY2025 Results
+2024 .4-2025 .3
+48,036.7
+4,795.5
+10.0%
+1,619.0
+591.2
+6,414.5
+4,765.0
+9.9%
+90 yen
+153 yen
+164 yen
+* FOREX Rate performance: 149 yen against the U.S. dollar and 172 yen against the Euro from April 2025 to December 2025
+FOREX Rate assumptions: 155 yen against the U.S. dollar and 180 yen against the Euro from January 2026 to March 2026
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 14
+==================================================
+TEXTE PDFREADER :
+14Analysis of FY2026 Forecast: 
+Consolidated Operating Income  (vs. FY2025 Results)
+153 yen/US$
+164 yen/ €150 yen/US$
+174 yen/ €FY2025  Results
+2024.4 -2025.3FY2026 New Forecast
+2025.4 -2026.3Human Resources -205.0
+Growth Areas         -205.0-195.0
+-410.0+904.5 3,800.0-1,450.0 4,795.5(billions of yen)
+One-time
+Factors+400.0
+Effects of
+FOREX
+Rates-245.0
+Materials Prices
+Tariff Impact
+(Investment in 
+Human Resources
+and Growth Areas)Comprehensive
+InvestmentImprovement
+Efforts etc.Cost  Reduction        +300.0
+Volume, Model Mix +260.0
+Value Chain Profits +175.0
+Other                        +169.5
+Operating Income ( -995.5)
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 15
+==================================================
+TEXTE PDFREADER :
+1509.3 10.3 11.3 12.3 13.3 14.3 15.3 16.3 17.3 18.3 19.3 20.3 21.3 22.3 23.3 24.3 25.3 26.3 27.3(Ref.) Initiatives to Improve Break -even Volume
+Trend of break -even volume
+Forecast   ・We have begun company -wide initiatives to improve our break -even volume, focusing not only on reducing fixed costs 
+but also on lowering variable costs and enhancing value chain profitability. 
+2Q Forecast
+3Q Forecast・Rather than simple across -the-board cuts, we are focusing on productivity and the ratio of value -added work 
+to ensure sustainable efforts. 
+・To achieve a full turnaround next fiscal year, we began these activities this fiscal year and aim to  accelerate them further .
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 16
+==================================================
+TEXTE PDFREADER :
+16(Ref.) Analysis of FY2026 Forecast: Consolidated Operating Income
+(vs. Previous Forecast)
+3,400.0Cost 
+Reduction
+EffortsOther *4+90.0 +30.0 +310.0
+Operating Income (+400.0)Effects  of
+FOREX 
+Rates *1Effects of 
+Marketing 
+Activities *2-60.0
+146 yen/US$
+169 yen/ €150 yen/US$
+174 yen/ €Excluding the overall impact of foreign exchange 
+rates and swap valuation gains/losses, etc：+60.0
++30.0 3,800.0
+FY2026 Previous Forecast
+2025.4 -2026.3FY2026 New Forecast
+2025.4 -2026.3Which includes:
+Strengthening Foundation of 
+Suppliers/
+Materials Prices +65.0
+Cost Reduction +25.0Increase or 
+Decrease in
+Expenses and 
+Expense Reduction 
+Efforts *3(billions of yen)
+Which includes:
+Tariff Impact ±0.0
+*1 Details *2 Details *3 Details *4 Details
+Transactional (Imports/Exports) +350.0 Volume, Model Mix -60.0 Labor Cost +20.0 Valuation Gains / Losses from Swaps, etc. +30.0
+  　- US $ +225.0 Value Chain -20.0 Depreciation Expenses +20.0 Impact of Inflation Accounting, etc. -3.5
+　  - € +50.0　- Financial Services -20.0 R&D Expenses +15.0 HINO MOTORS Certification Related -5.2
+　  - Other +75.0　- Accessories / Spare Parts / Expenses, etc. -25.0 Expenses
+Translational FOREX Impact Concerning      Used Vehicle / Connected, etc.Other +8.7
+Overseas Subsidiaries, etc.Other +20.0±0.0
+-40.0
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 17
+==================================================
+TEXTE PDFREADER :
+174,795.5
+Cost 
+Reduction
+Efforts
+Other *4-70.0
++525.0-245.0
+Operating Income ( -995.5)Effects  of
+FOREX 
+Rates *1Marketing 
+Efforts *2+665.0
+153 yen/US$
+164 yen/ €150 yen/US$
+174 yen/ €Excluding the overall impact of foreign exchange 
+rates and swap valuation gains/losses, etc：-1,275 .5
+-1,870.5
+3,800.0
+FY2025  Results
+2024.4 -2025.3FY2026 New Forecast
+2025.4 -2026.3Which includes:
+Strengthening Foundation of 
+Suppliers/
+Materials Prices -360.0
+Cost Reduction +290.0Increase or 
+Decrease in
+Expenses and 
+Expense Reduction 
+Efforts *3(billions of yen)(Ref.) Analysis of FY2026 Forecast: Consolidated Operating Income
+(vs. FY2025 Results)
+Which includes:
+Tariff Impact -1,450.0
+*1 Details *2 Details *3 Details *4 Details
+Transactional (Imports/Exports) -190.0 Volume, Model Mix +260.0 Labor Cost -145.0 Valuation Gains / Losses from Swaps, etc. +95.0
+  　- US $ -130.0 Value Chain +175.0 Depreciation Expenses -140.0 Impact of Inflation Accounting, etc. +43.0
+　  - € +95.0　- Financial Services +55.0 R&D Expenses -85.0 HINO MOTORS Certification Related +275.4
+　  - Other -155.0 　- Accessories / Spare Parts / Expenses, etc. -1,500.5 Expenses
+Translational FOREX Impact Concerning      Used Vehicle / Connected, etc.Other +111.6
+Overseas Subsidiaries, etc.Other +230.0+120.0
+-55.0
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 18
+==================================================
+TEXTE PDFREADER :
+18Toyota and Lexus Vehicle Sales 2,729 2,753 100.9%
+Electrified Vehicles  [%] 1,278 1,281 100.3%
+       HEV 1,206 1,178 97.7%
+   PHEV 40 40 101.1%
+   BEV 32 63 199.1%
+   FCEV 0 1 179.0%
+Total Retail Vehicle Sales 2,922 2,964 101.4%2024 .10-12 YoY 2025 .10-12442 408 473 471 318 308 695 784 516 546 
+05001,0001,5002,0002,500
+92.4%99.6%96.9%112.9%105.9%103.0% 2,444 2,519（thousands of vehicles ）
+Europe
+Asia
+OtherJapan
+N. America
+Central and 
+South America,
+Oceania,
+Africa,
+The Middle East,
+etc.
+Reference (retail)
+[46.8%] [46.5%](Ref.) Consolidated Vehicle Sales (3 months)
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 19
+==================================================
+TEXTE PDFREADER :
+192024. 10-12 2025. 10-12 Change
+Sales Revenues 12,391.0 13,456.8 +1,065.7
+Operating Income 1,215.2 1,191.0 -24.2
+Margin 9.8% 8.9%
+Other Income 1,482.7 519.3 -963.4
+  Share of Profit (Loss) of Investments
+Accounted for Using the Equity Method 190.4 165.2 -25.1
+Income before Income Taxes 2,698.0 1,710.3 -987.6
+NetIncome Attributable to 
+Toyota Motor Corporation2,193.2 1,257.4 -935.8
+Margin 17.7% 9.3%
+FOREX RatesUS$ 152 yen 154 yen +2 yen
+€ 163 yen 179 yen +16 yen＊(billions of yen)
+*Regarding Japan: 116.6 (-23.4 year on year) , China: 27.1 ( -3.7 year on year), Other: 21.3 ( +2.1 year on year)(Ref.) Consolidated Financial Summary (FY2026 3 months)
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 20
+==================================================
+TEXTE PDFREADER :
+20(Ref.) Analysis of Consolidated Operating Income (FY2026 3 months)
+1,215.2 1,191.0+115.0 +30.0+100.0 -390.0
++120.8
+Which includes:
+Strength ening Foundation of Suppliers/
+Materials Prices
+Cost Reduction-60.0
++90.0Excluding the overall impact of foreign exchange 
+rates and swap valuation gains/losses, etc. ：
+(-24.2) Operating Income
+*1 Details *2 Details *3 Details *4 Details
+Transactional (Imports/Exports) +55.0 Volume, Model Mix +25.0 Labor Cost -20.0 Valuation Gains / Losses from Swaps, etc. +52.1
+  　- US $ +20.0 Value Chain +15.0 Depreciation Expenses -40.0 Impact of Inflation Accounting, etc. -2.4
+　  - € +40.0 　- Financial Services -15.0 R&D Expenses -35.0
+　  - Other -5.0　- Accessories / Spare Parts / Expenses, etc. -295.0
+Translational FOREX Impact Concerning      Used Vehicle / Connected, etc.Other +21.4
+Overseas Subsidiaries, etc.Other +60.0+30.0
++60.0HINO MOTORS Certification Related
+Expenses  (One-time Expenses in FY2025)+49.7Which includes:
+Tariff Impact  -300.0-260.0
+Cost 
+Reduction
+Efforts Other *4
+2024.10 -12Effects of
+FOREX 
+Rates *1
+152 yen/US$
+163 yen/ €154 yen/US$
+179 yen/ €(billions of yen)
+2025.10 -12Increase or 
+Decrease in 
+Expenses and 
+Expense Reduction 
+Efforts *3Marketing 
+Efforts *2
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 21
+==================================================
+TEXTE PDFREADER :
+21816.7 
+76.1 152.5 
+193.8 43.5 683.8 
+128.4 123.2 
+200.2 43.9 516 546 695 784 
+318 308 473 471 442 408 Consolidated Vehicle Sales (thousands of vehicles)  
+[14.2 %] [11.8%][ ] Margin
+Japan N. America Europe Asia Other
+Operating Income including Valuation Gains/Losses relating to Swaps, etc . (billions of yen)
+814.6  679.3   58.3  162.8  157.1     123.9 194.8 190.7  39.0    56.2 2024.10 -122025.10 -12[3.5%][6.8%]
+[1.6%][9.4%]+52.2-132.8
+-29.2
++6.4+0.3
+[8.3% ] [8.1%] [3.8%](105.9%)
+(99.6%)（92.4%）Operating Income (billions of yen) (excluding  Valuation  Gains/Losses relating to Swaps, etc. ) 
+Incl. China (excl. investments accounted 
+for using the equity method of associates 
+and joint ventures)
+(112.9%)
+(96.9%)
+[2.3%]
+2024.10 -122025.10 -12 2024.10 -122025.10 -12 2024.10 -122025.10 -12 2024 .10-122025.10 -12(Ref.) Geographic Operating Income (FY2026 3 months)
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 22
+==================================================
+TEXTE PDFREADER :
+22(Ref.) China Business / Financial Services (FY2026 3 months)
+182.5 179.5 
+30.9 27.1 16.5 
+16.4 (Ref.) China Business
+Operating Income of Consolidated  Subsidiaries (billions of yen)
+Share of Profit of Investments Accounted for Using the Equity
+Method  of Associates and Joint Ventures (billions of yen)Financial Services 
+Operating Income (billions of yen) 
+163.7 212.92024 .10-12 2025.10 -122024.10 -12 2025.10 -12535 479 (89.4%)
+-0.1
+-3.7-3.0Toyota and Lexus Vehicle Retail Sales (thousands of vehicles)Excluding  Valuation Gains/Losses relating to Swaps, etc. ＊
+Operating Income including Valuation Gains/Losses relating to Swaps, etc.  (billions of yen)
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 23
+==================================================
+TEXTE PDFREADER :
+23Depreciation Expenses *7 Ratio to Sales Revenues (%)
+52 607590 95(Ref.)  Transition of Financial Performance
+2,134.8
+1,605.82,010.82,300.0
+1,343.0
+2022.3 2023.3 2024.3 2025.3 2026.31,500.0
+1,185.01,248.41,360.5
+1,007.28,230 8,822 9,443 9,362 9,750 
+2022.3 2023.3 2024.3 2025.3 2026.3
+718.2816.91,011.71,178.4
+2022.3 2023.3 2024.3 2025.3 2026.312,651.6
+9,027.714,465.015,549.3
+2022.3 2023.3 2024.3 2025.3 2025.1216,702.431.3 37.2 45.0 48.0 50.0 
+2022.3 2023.3 2024.3 2025.3 2026.3
+3.6 3.3 
+2.7 2.8 2.8 9.5 
+7.3 11.9 
+10.0 
+7.6 9.1
+6.611.0 9.9 
+7.1
+4,944.9 4,765.0
+3,570.0
+2,850.12,451.3
+2022.3 2023.3 2024.3 2025.3 2026.34,795.5
+3,800.0
+2,995.6 2,725.05,352.9
+2022.3 2023.3 2024.3 2025.3 2026.3
+1,241.61,202.31,326.41,420.0
+1,124.2
+2022.3 2023.3 2024.3 2025.3 2026.3(thousands of vehicles)Consolidated Vehicle Sales (trillions of yen ) Sales Revenues (billions of yen ) Operating IncomeNet Income Attributable to
+Toyota Motor Corporation
+Operating Margin (%) (billions of yen )
+Net Margin (%)
+Dividend per Share  (yen)  *3 Total Liquid Assets *1 Total Shareholder Return 
+(billions of yen)(billions of yen) (billions of yen) R&D Expenses *6 Capital Expenditures
+(billions of yen)
+Share
+Repurchase*4*5
+DividendInterest -
+Bearing 
+Debt*2
+Net Liquid 
+Assets
+*1  Cash and cash equivalents, time deposits, public and corporate bonds and its investment in monetary trust funds, excluding in each cas e those relating to financial services.
+*6  Figures for R&D expenses are R&D activity related expenditures incurred during the reporting period and do not conform to res earch and development costs on Toyota's Consolidated Statement of Income8,341.3
+Forecast 15,079.5
+1,153.8 1,116.92,111.7
+1,378.4
+*2  Not including lease liabilities.10,517.311,313.718,005.8(Forecast )
+*4  Excluding shares constituting less than one unit that were purchased upon request and the commission fees incurred for th e repurchase.
+*5  States the maximum value of shares resolved to be repurchased if before the completion of 
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 24
+==================================================
+TEXTE PDFREADER :
+24(Ref.) FY2026 Forecast: Vehicle Production and Retail Sales
+生産Vehicle 
+Production *Japan 3,300 3,250 -50
+Overseas 6,700 6,700 ±0
+Total 10,000 9,950 -50Previous Forecast
+2025.4 -2026.3New Forecast
+2025.4 -2026.3Change
+11,300 11,300 ±0
+Toyota & Lexus
+Total Retail Vehicle Sales 
+*  Including vehicles by Toyota’s unconsolidated entities(thousands of vehicles)
+*Retail
+Vehicle
+Sales *Japan 1,500 1,500 ±0
+Overseas 9,000 9,000 ±0
+Total 10,500 10,500 ±03,236
+6,446
+   9,683FY2025 Results
+2024.4 -2025.3
+11,0111,505
+8,768
+ 10,274
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 25
+==================================================
+TEXTE PDFREADER :
+25(Ref.) Definitions of Consolidated and Retail Vehicle Sales
+Daihatsu -and Hino -brand vehicles
+Number of vehicles produced for wholesale by Toyota Motor 
+Corporation and its consolidated subsidiaries
+Number of vehicles produced for wholesale by Toyota’s 
+unconsolidated entities (e.g. joint ventures in China, etc.)
+*There are a limited number of exceptional cases where sales are made 
+other than in accordance with the flowchart above.Consolidated Vehicle SalesDistributors or Dealers outside consolidationToyota and Lexus Vehicle SalesTotal Retail Vehicle SalesCustomers
+Toyota -and Lexus -brand vehicles
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 5
+==================================================
+TEXTE PDFREADER :
+5Consolidated Vehicle Sales (FY2026 9 months)
+Reference (retail)2024.4 -12 YoY 2025.4-121,259 1,262 1,378 1,325 866 881 2,043 2,318 1,454 1,516 
+01,0002,0003,0004,0005,0006,0007,0008,000
+100.2%96.1%101.8%113.5%104.3%104.3%7,000(thousands of vehicles)
+Japan
+N. America
+Europe
+Asia
+Other
+Central and 
+South America,
+Oceania,
+Africa,
+The Middle East, etc.
+Toyota and Lexus Vehicle Sales 7,758 8,020 103.4%
+Electrified Vehicle  [%] 3,504 3,742 106.8%
+       HEV 3,278 3,439 104.9%
+PHEV 115 138 119.9%
+BEV 110 164 149.8%
+FCEV 1 1 87.0%
+Total Retail Vehicle Sales 8,295 8,607 103.8%[45.2%] [46.7%]7,302
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 4
+==================================================
+TEXTE PDFREADER :
+4FY2026 Third Quarter 
+Financial Performance
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 3
+==================================================
+TEXTE PDFREADER :
+3FY2026 Third Quarter Results Summary
+Actual
+(9 months)
+FY2026
+Forecast
+Profit 
+Structure 
+Improve -
+mentSteadfastly advancing product -centered management and region -centered management, 
+we will further increase our ratio of value -added work* and strengthen our “earning power”.
+Operating income 3,196.7 billion yen ( -482.7 billion yen YoY)
+ -Despite the continued impact of U.S. tariffs, strong demand supported by product 
+competitiveness has led to increased sales volumes, and we achieved a high level
+of profit due to price revisions.
+Operating income 3,800.0 billion yen ( -995.5 billion yen YoY)
+  -Despite the 1,450 billion yen negative impact of U.S. tariffs that newly arose this 
+fiscal year, we have reduced the extent of the profit decline by implementing cost 
+reductions and marketing efforts .
+-Company -wide initiatives aimed at reducing the break -even volume.
+-Strengthening earning power for medium -to long -term competitiveness to
+continue.
+-Together with suppliers, we will increase productivity to generate resources
+for growth and protect Japanese manufacturing.*The proportion of tasks that increase added value
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 2
+==================================================
+TEXTE PDFREADER :
+2Cautionary Statement with Respect to Forward -Looking Statements 
+and Caution Concerning Insider Trading
+This presentation contains forward -looking statements that reflect the plans and expectations of Toyota Motor Corporation and it s consolidated subsidiaries (“Toyota”). These forward -looking 
+statements are not guarantees of future performance and involve known and unknown risks, uncertainties and other factors that may cause Toyota’s actual results, performance, achievements 
+or financial position to be materially different from any future results, performance, achievements or financial position expressed or implied by these forward -looking statements. These factors
+include, but are not limited to: ( i)changes in economic conditions, market demand, and the competitive environment affecting the automotive markets in Japan, Nor th America, Europe, Asia and 
+other markets in which Toyota operates; (ii) fluctuations in currency exchange rates (particularly with respect to the value of the Japanese yen, the U.S. dollar, the euro, the Australian dollar, the 
+Canadian dollar and the British pound), stock prices and interest rates; (iii) changes in funding environment in financial ma rkets and increased competition in the financial services industry; (iv) 
+Toyota’s ability to market and distribute effectively; (v) Toyota’s ability to realize production efficiencies and to impleme nt capital expenditures at the levels and times planned by management;(vi)
+changes in the laws and regulations, as well as other government actions, in the markets in which Toyota operates that affect Toyota’s operations, particularly laws, regulations and government 
+actions relating to vehicle safety including remedial measures such as recalls, environmental protection, vehicle emissions a nd vehicle fuel economy, and tariffs and other trade policies, as well 
+as current and future litigation and other legal proceedings, government proceedings and investigations ; (vii) political and econ
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 6
+==================================================
+TEXTE PDFREADER :
+6Consolidated Financial Summary (FY2026 9 months)
+Sales Revenues 35,673.5 38,087.6 +2,414.0
+Operating Income 3,679.4 3,196.7 -482.7
+Margin 10.3% 8.4%
+Other Income 1,750.6 991.7 -758.8
+  Share of Profit (Loss) of Investments
+Accounted for Using the Equity Method 454.7 437.9 -16.8
+Income before Income Taxes 5,430.0 4,188.4 -1,241.6
+NetIncome Attributable to 
+Toyota Motor Corporation4,100.3 3,030.8 -1,069.4
+Margin 11.5% 8.0%
+FOREX RatesUS$ 153 yen 149 yen -4 yen
+€ 165 yen 172 yen +7 yen(billions of yen)
+*2024.4-12 2025.4 -12 Change
+* Regarding Japan: 300.3 ( -28.2 year on year), China: 75.2  (+6.5 year on year),  Other: 62.3 (+4.9 year on year)
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 1
+==================================================
+TEXTE PDFREADER :
+FY2026 Third Quarter Financial Results
+February 6, 2026Toyota Motor Corporation
+GR GT3 GR GT
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 7
+==================================================
+TEXTE PDFREADER :
+7・市況影響：
+・原価改善：△
+※Analysis of Consolidated Operating Income (FY2026 9 months )
+*1 Details *2 Details *3 Details *4 Details
+Transactional (Imports/Exports) -255.0 Volume, Model Mix +335.0 Labor Cost -100.0 Valuation Gains / Losses from Swaps, etc. +130.4
+  　- US $ -155.0 Value Chain +145.0 Depreciation Expenses -45.0 Impact of Inflation Accounting, etc. +36.8
+　  - € +50.0 　- Financial Services +45.0 R&D Expenses -105.0
+　  - Other -150.0 　- Accessories / Spare Parts / Expenses, etc. -1,215.0
+Translational FOREX Impact Concerning      Used Vehicle / Connected, etc. Other +105.4
+Overseas Subsidiaries, etc. Other +265.0HINO MOTORS Certification Related
+Expenses  (One-time Expenses in FY2025)+279.7
++100.0
+-20.03,679.4
+3,196.7-275.0-40.0+745.0 -1,465.0
++552.3-760.0Excluding the overall impact of foreign exchange 
+rates and swap valuation gains/losses, etc. ：
+(-482.7) Operating IncomeWhich includes:
+Strength ening Foundation of Suppliers/
+Materials Prices
+Cost Reduction-265.0
++225.0Which includes:
+Tariff Impact  -1,200.0
+(billions of yen)
+2024.4-12
+153 yen/US$
+165 yen/ €2025.4-12
+149 yen/US$
+172 yen/ €Cost
+Reduction
+Efforts Increase or 
+Decrease in 
+Expenses and 
+Expense Reduction 
+Efforts *3Other *4Effects of
+FOREX 
+Rates *1Marketing 
+Efforts *2
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 8
+==================================================
+TEXTE PDFREADER :
+8Geographic Operating Income (FY2026 9 months)
+2,341.2
+204.2376.1
+680.7168.81,802.3 
+-5.6 317.7 645.4 243.0 1,454 1,516 2,043 2,318 
+866 881 1,378 1,325 1,259 1,262 
+[14.4 %][ ]Margin
+Japan N. America Europe Asia Other
+Operating Income including Valuation Gains/Losses relating to Swaps, etc . (billions of yen)
+2,337.0 1,796 .5          172.1 94.9      373.1     324.6  685.2 635.0 179.6    258.2 2024.4-12 2025.4-12[5.0%] [1.4%][8.3%]-209.9-538.9
+-58.3 -35.2+74.2
+[10.0%](104 .3%)(113.5%)
+(101.8%)(96.1%)Operating  Income (billions of yen) (excluding  Valuation  Gains/Losses relating to Swaps, etc.) Consolidated Vehicle Sales (thousands of vehicles)
+Incl. China (excl. investments accounted 
+for using the equity method of associates 
+and joint ventures)
+[11.0 %]
+[-0.0%][9.3%] [7.0%][6.4%](100.2%)
+2024.4-12 2025 .4-12 2024.4-12 2025.4-12 2024.4-122025.4-12 2024 .4-122025.4-12
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 9
+==================================================
+TEXTE PDFREADER :
+968.6 75.2 125.4 138.6 China Business / Financial Services (FY2026 9 months)
+(Ref.) China Business
+Operating Income of Consolidated Subsidiaries (billions of yen)
+Share of Profit of Investments Accounted for Using the Equity
+Method  of Associates and Joint Ventures (billions of yen)
+Toyota and Lexus Vehicle Retail Sales (thousands of vehicles)Financial Services 
+Operating Income (billions of yen) 
+Excluding  Valuation Gains/Losses relating to Swaps, etc. ＊
+1,402 1,393
+2024.4-12 2025.4-12+13.2
+Marketing
+Efforts ,etc.
+520.2 556.9 +36.6
+Effects of 
+Increase in
+Loan Balance,
+etc.
+2024.4-12 2025.4-12
+496.2 663.3+6.5
+Cost Reduction
+Efforts ,etc.(99.4 %)
+Operating Income including Valuation Gains/Losses relating to Swaps, etc. (billions of yen)
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 10
+==================================================
+TEXTE PDFREADER :
+10FY2026 Financial  Forecasts
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 11
+==================================================
+TEXTE PDFREADER :
+11FY2026 Forecast: Consolidated Vehicle Sales  
+1,680 1,840 1,240 2,960 2,080 
+1,659 1,670 1,838 1,820 1,172 1,230 2,703 2,960 1,991 2,070 
+02,0004,0006,0008,00010,000 9,362
+FY2025 Results
+2024.4 -2025.3New Forecast
+2025.4 -2026.39,750 104.1%
+104.0%
+99.0%
+100.7%109.5%
+104.9%
+YoY(thousands of vehicles)
+Japan
+Europe
+Asia
+Other
+Reference (retail)
+Toyota and Lexus Vehicle Sales 10,274 10,500 102.2% 10,500
+Electrified Vehicles  [%] 4,732 5,060 106.9% 5,133
+HEV 4,425 4,633 104.7% 4,667
+PHEV 161 175 108.7% 187
+BEV 145 251 173.1% 277
+FCEV 1 1 100.0% 1
+Total Retail Vehicle Sales 11,011 11,300 102.6% 11,300[46.1%] [48.2%] [48.9%]9,800
+Previous Forecast
+2025.4 -2026.3N. America
+Central and 
+South America,
+Oceania,
+Africa,
+The Middle East, etc.
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 12
+==================================================
+TEXTE PDFREADER :
+12Strength of Global Production 
+Through Region -Centered Management
+Brazil Production Recovery after the Disaster at Porto Feliz Plant
+By producing a common engine at multiple global locations, 
+it is possible to supply engines across sites even in emergencies.
+Engine plant collapsed due to the storm, 
+and assembly plant operations 
+were halted
+Japan
+IndonesiaAssembly 
+Plant
+4 months after the disaster, 
+the production facility was relocated 
+and engine production resumedProvide backup for
+the engine supplyThe assembly plant reopens 
+2 months after the disasterGlobal SitesThe Local Plant Affected 
+by the Disaster
+Engine 
+Plant
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 13
+==================================================
+TEXTE PDFREADER :
+13FY2026 Forecast: Consolidated Financial Summary
+(billions of yen)Previous Forecast
+2025.4 -2026.3New Forecast
+2025.4 -2026.3Change
+Sales Revenues 49,000.0 50,000.0 +1,000.0
+Operating Income 3,400.0 3,800.0 +400.0
+Margin 6.9% 7.6%
+Other Income 780.0 1,220.0 +440.0
+  Share of Profit (Loss) of Investments
+Accounted for Using the Equity Method 550.0 560.0 +10.0
+Income before Income Taxes 4,180.0 5,020.0 +840.0
+NetIncome Attributable to 
+Toyota Motor Corporation2,930.0 3,570.0 +640.0
+Margin 6.0% 7.1%
+Dividend per share 95 yen 95 yen ±0 yen
+FOREX RatesUS$* 146 yen 150 yen +4 yen
+€* 169 yen 174 yen +5 yenFY2025 Results
+2024 .4-2025 .3
+48,036.7
+4,795.5
+10.0%
+1,619.0
+591.2
+6,414.5
+4,765.0
+9.9%
+90 yen
+153 yen
+164 yen
+* FOREX Rate performance: 149 yen against the U.S. dollar and 172 yen against the Euro from April 2025 to December 2025
+FOREX Rate assumptions: 155 yen against the U.S. dollar and 180 yen against the Euro from January 2026 to March 2026
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 14
+==================================================
+TEXTE PDFREADER :
+14Analysis of FY2026 Forecast: 
+Consolidated Operating Income  (vs. FY2025 Results)
+153 yen/US$
+164 yen/ €150 yen/US$
+174 yen/ €FY2025  Results
+2024.4 -2025.3FY2026 New Forecast
+2025.4 -2026.3Human Resources -205.0
+Growth Areas         -205.0-195.0
+-410.0+904.5 3,800.0-1,450.0 4,795.5(billions of yen)
+One-time
+Factors+400.0
+Effects of
+FOREX
+Rates-245.0
+Materials Prices
+Tariff Impact
+(Investment in 
+Human Resources
+and Growth Areas)Comprehensive
+InvestmentImprovement
+Efforts etc.Cost  Reduction        +300.0
+Volume, Model Mix +260.0
+Value Chain Profits +175.0
+Other                        +169.5
+Operating Income ( -995.5)
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 15
+==================================================
+TEXTE PDFREADER :
+1509.3 10.3 11.3 12.3 13.3 14.3 15.3 16.3 17.3 18.3 19.3 20.3 21.3 22.3 23.3 24.3 25.3 26.3 27.3(Ref.) Initiatives to Improve Break -even Volume
+Trend of break -even volume
+Forecast   ・We have begun company -wide initiatives to improve our break -even volume, focusing not only on reducing fixed costs 
+but also on lowering variable costs and enhancing value chain profitability. 
+2Q Forecast
+3Q Forecast・Rather than simple across -the-board cuts, we are focusing on productivity and the ratio of value -added work 
+to ensure sustainable efforts. 
+・To achieve a full turnaround next fiscal year, we began these activities this fiscal year and aim to  accelerate them further .
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 16
+==================================================
+TEXTE PDFREADER :
+16(Ref.) Analysis of FY2026 Forecast: Consolidated Operating Income
+(vs. Previous Forecast)
+3,400.0Cost 
+Reduction
+EffortsOther *4+90.0 +30.0 +310.0
+Operating Income (+400.0)Effects  of
+FOREX 
+Rates *1Effects of 
+Marketing 
+Activities *2-60.0
+146 yen/US$
+169 yen/ €150 yen/US$
+174 yen/ €Excluding the overall impact of foreign exchange 
+rates and swap valuation gains/losses, etc：+60.0
++30.0 3,800.0
+FY2026 Previous Forecast
+2025.4 -2026.3FY2026 New Forecast
+2025.4 -2026.3Which includes:
+Strengthening Foundation of 
+Suppliers/
+Materials Prices +65.0
+Cost Reduction +25.0Increase or 
+Decrease in
+Expenses and 
+Expense Reduction 
+Efforts *3(billions of yen)
+Which includes:
+Tariff Impact ±0.0
+*1 Details *2 Details *3 Details *4 Details
+Transactional (Imports/Exports) +350.0 Volume, Model Mix -60.0 Labor Cost +20.0 Valuation Gains / Losses from Swaps, etc. +30.0
+  　- US $ +225.0 Value Chain -20.0 Depreciation Expenses +20.0 Impact of Inflation Accounting, etc. -3.5
+　  - € +50.0　- Financial Services -20.0 R&D Expenses +15.0 HINO MOTORS Certification Related -5.2
+　  - Other +75.0　- Accessories / Spare Parts / Expenses, etc. -25.0 Expenses
+Translational FOREX Impact Concerning      Used Vehicle / Connected, etc.Other +8.7
+Overseas Subsidiaries, etc.Other +20.0±0.0
+-40.0
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 17
+==================================================
+TEXTE PDFREADER :
+174,795.5
+Cost 
+Reduction
+Efforts
+Other *4-70.0
++525.0-245.0
+Operating Income ( -995.5)Effects  of
+FOREX 
+Rates *1Marketing 
+Efforts *2+665.0
+153 yen/US$
+164 yen/ €150 yen/US$
+174 yen/ €Excluding the overall impact of foreign exchange 
+rates and swap valuation gains/losses, etc：-1,275 .5
+-1,870.5
+3,800.0
+FY2025  Results
+2024.4 -2025.3FY2026 New Forecast
+2025.4 -2026.3Which includes:
+Strengthening Foundation of 
+Suppliers/
+Materials Prices -360.0
+Cost Reduction +290.0Increase or 
+Decrease in
+Expenses and 
+Expense Reduction 
+Efforts *3(billions of yen)(Ref.) Analysis of FY2026 Forecast: Consolidated Operating Income
+(vs. FY2025 Results)
+Which includes:
+Tariff Impact -1,450.0
+*1 Details *2 Details *3 Details *4 Details
+Transactional (Imports/Exports) -190.0 Volume, Model Mix +260.0 Labor Cost -145.0 Valuation Gains / Losses from Swaps, etc. +95.0
+  　- US $ -130.0 Value Chain +175.0 Depreciation Expenses -140.0 Impact of Inflation Accounting, etc. +43.0
+　  - € +95.0　- Financial Services +55.0 R&D Expenses -85.0 HINO MOTORS Certification Related +275.4
+　  - Other -155.0 　- Accessories / Spare Parts / Expenses, etc. -1,500.5 Expenses
+Translational FOREX Impact Concerning      Used Vehicle / Connected, etc.Other +111.6
+Overseas Subsidiaries, etc.Other +230.0+120.0
+-55.0
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 18
+==================================================
+TEXTE PDFREADER :
+18Toyota and Lexus Vehicle Sales 2,729 2,753 100.9%
+Electrified Vehicles  [%] 1,278 1,281 100.3%
+       HEV 1,206 1,178 97.7%
+   PHEV 40 40 101.1%
+   BEV 32 63 199.1%
+   FCEV 0 1 179.0%
+Total Retail Vehicle Sales 2,922 2,964 101.4%2024 .10-12 YoY 2025 .10-12442 408 473 471 318 308 695 784 516 546 
+05001,0001,5002,0002,500
+92.4%99.6%96.9%112.9%105.9%103.0% 2,444 2,519（thousands of vehicles ）
+Europe
+Asia
+OtherJapan
+N. America
+Central and 
+South America,
+Oceania,
+Africa,
+The Middle East,
+etc.
+Reference (retail)
+[46.8%] [46.5%](Ref.) Consolidated Vehicle Sales (3 months)
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 19
+==================================================
+TEXTE PDFREADER :
+192024. 10-12 2025. 10-12 Change
+Sales Revenues 12,391.0 13,456.8 +1,065.7
+Operating Income 1,215.2 1,191.0 -24.2
+Margin 9.8% 8.9%
+Other Income 1,482.7 519.3 -963.4
+  Share of Profit (Loss) of Investments
+Accounted for Using the Equity Method 190.4 165.2 -25.1
+Income before Income Taxes 2,698.0 1,710.3 -987.6
+NetIncome Attributable to 
+Toyota Motor Corporation2,193.2 1,257.4 -935.8
+Margin 17.7% 9.3%
+FOREX RatesUS$ 152 yen 154 yen +2 yen
+€ 163 yen 179 yen +16 yen＊(billions of yen)
+*Regarding Japan: 116.6 (-23.4 year on year) , China: 27.1 ( -3.7 year on year), Other: 21.3 ( +2.1 year on year)(Ref.) Consolidated Financial Summary (FY2026 3 months)
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 20
+==================================================
+TEXTE PDFREADER :
+20(Ref.) Analysis of Consolidated Operating Income (FY2026 3 months)
+1,215.2 1,191.0+115.0 +30.0+100.0 -390.0
++120.8
+Which includes:
+Strength ening Foundation of Suppliers/
+Materials Prices
+Cost Reduction-60.0
++90.0Excluding the overall impact of foreign exchange 
+rates and swap valuation gains/losses, etc. ：
+(-24.2) Operating Income
+*1 Details *2 Details *3 Details *4 Details
+Transactional (Imports/Exports) +55.0 Volume, Model Mix +25.0 Labor Cost -20.0 Valuation Gains / Losses from Swaps, etc. +52.1
+  　- US $ +20.0 Value Chain +15.0 Depreciation Expenses -40.0 Impact of Inflation Accounting, etc. -2.4
+　  - € +40.0 　- Financial Services -15.0 R&D Expenses -35.0
+　  - Other -5.0　- Accessories / Spare Parts / Expenses, etc. -295.0
+Translational FOREX Impact Concerning      Used Vehicle / Connected, etc.Other +21.4
+Overseas Subsidiaries, etc.Other +60.0+30.0
++60.0HINO MOTORS Certification Related
+Expenses  (One-time Expenses in FY2025)+49.7Which includes:
+Tariff Impact  -300.0-260.0
+Cost 
+Reduction
+Efforts Other *4
+2024.10 -12Effects of
+FOREX 
+Rates *1
+152 yen/US$
+163 yen/ €154 yen/US$
+179 yen/ €(billions of yen)
+2025.10 -12Increase or 
+Decrease in 
+Expenses and 
+Expense Reduction 
+Efforts *3Marketing 
+Efforts *2
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 21
+==================================================
+TEXTE PDFREADER :
+21816.7 
+76.1 152.5 
+193.8 43.5 683.8 
+128.4 123.2 
+200.2 43.9 516 546 695 784 
+318 308 473 471 442 408 Consolidated Vehicle Sales (thousands of vehicles)  
+[14.2 %] [11.8%][ ] Margin
+Japan N. America Europe Asia Other
+Operating Income including Valuation Gains/Losses relating to Swaps, etc . (billions of yen)
+814.6  679.3   58.3  162.8  157.1     123.9 194.8 190.7  39.0    56.2 2024.10 -122025.10 -12[3.5%][6.8%]
+[1.6%][9.4%]+52.2-132.8
+-29.2
++6.4+0.3
+[8.3% ] [8.1%] [3.8%](105.9%)
+(99.6%)（92.4%）Operating Income (billions of yen) (excluding  Valuation  Gains/Losses relating to Swaps, etc. ) 
+Incl. China (excl. investments accounted 
+for using the equity method of associates 
+and joint ventures)
+(112.9%)
+(96.9%)
+[2.3%]
+2024.10 -122025.10 -12 2024.10 -122025.10 -12 2024.10 -122025.10 -12 2024 .10-122025.10 -12(Ref.) Geographic Operating Income (FY2026 3 months)
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 22
+==================================================
+TEXTE PDFREADER :
+22(Ref.) China Business / Financial Services (FY2026 3 months)
+182.5 179.5 
+30.9 27.1 16.5 
+16.4 (Ref.) China Business
+Operating Income of Consolidated  Subsidiaries (billions of yen)
+Share of Profit of Investments Accounted for Using the Equity
+Method  of Associates and Joint Ventures (billions of yen)Financial Services 
+Operating Income (billions of yen) 
+163.7 212.92024 .10-12 2025.10 -122024.10 -12 2025.10 -12535 479 (89.4%)
+-0.1
+-3.7-3.0Toyota and Lexus Vehicle Retail Sales (thousands of vehicles)Excluding  Valuation Gains/Losses relating to Swaps, etc. ＊
+Operating Income including Valuation Gains/Losses relating to Swaps, etc.  (billions of yen)
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 23
+==================================================
+TEXTE PDFREADER :
+23Depreciation Expenses *7 Ratio to Sales Revenues (%)
+52 607590 95(Ref.)  Transition of Financial Performance
+2,134.8
+1,605.82,010.82,300.0
+1,343.0
+2022.3 2023.3 2024.3 2025.3 2026.31,500.0
+1,185.01,248.41,360.5
+1,007.28,230 8,822 9,443 9,362 9,750 
+2022.3 2023.3 2024.3 2025.3 2026.3
+718.2816.91,011.71,178.4
+2022.3 2023.3 2024.3 2025.3 2026.312,651.6
+9,027.714,465.015,549.3
+2022.3 2023.3 2024.3 2025.3 2025.1216,702.431.3 37.2 45.0 48.0 50.0 
+2022.3 2023.3 2024.3 2025.3 2026.3
+3.6 3.3 
+2.7 2.8 2.8 9.5 
+7.3 11.9 
+10.0 
+7.6 9.1
+6.611.0 9.9 
+7.1
+4,944.9 4,765.0
+3,570.0
+2,850.12,451.3
+2022.3 2023.3 2024.3 2025.3 2026.34,795.5
+3,800.0
+2,995.6 2,725.05,352.9
+2022.3 2023.3 2024.3 2025.3 2026.3
+1,241.61,202.31,326.41,420.0
+1,124.2
+2022.3 2023.3 2024.3 2025.3 2026.3(thousands of vehicles)Consolidated Vehicle Sales (trillions of yen ) Sales Revenues (billions of yen ) Operating IncomeNet Income Attributable to
+Toyota Motor Corporation
+Operating Margin (%) (billions of yen )
+Net Margin (%)
+Dividend per Share  (yen)  *3 Total Liquid Assets *1 Total Shareholder Return 
+(billions of yen)(billions of yen) (billions of yen) R&D Expenses *6 Capital Expenditures
+(billions of yen)
+Share
+Repurchase*4*5
+DividendInterest -
+Bearing 
+Debt*2
+Net Liquid 
+Assets
+*1  Cash and cash equivalents, time deposits, public and corporate bonds and its investment in monetary trust funds, excluding in each cas e those relating to financial services.
+*6  Figures for R&D expenses are R&D activity related expenditures incurred during the reporting period and do not conform to res earch and development costs on Toyota's Consolidated Statement of Income8,341.3
+Forecast 15,079.5
+1,153.8 1,116.92,111.7
+1,378.4
+*2  Not including lease liabilities.10,517.311,313.718,005.8(Forecast )
+*4  Excluding shares constituting less than one unit that were purchased upon request and the commission fees incurred for th e repurchase.
+*5  States the maximum value of shares resolved to be repurchased if before the completion of 
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 24
+==================================================
+TEXTE PDFREADER :
+24(Ref.) FY2026 Forecast: Vehicle Production and Retail Sales
+生産Vehicle 
+Production *Japan 3,300 3,250 -50
+Overseas 6,700 6,700 ±0
+Total 10,000 9,950 -50Previous Forecast
+2025.4 -2026.3New Forecast
+2025.4 -2026.3Change
+11,300 11,300 ±0
+Toyota & Lexus
+Total Retail Vehicle Sales 
+*  Including vehicles by Toyota’s unconsolidated entities(thousands of vehicles)
+*Retail
+Vehicle
+Sales *Japan 1,500 1,500 ±0
+Overseas 9,000 9,000 ±0
+Total 10,500 10,500 ±03,236
+6,446
+   9,683FY2025 Results
+2024.4 -2025.3
+11,0111,505
+8,768
+ 10,274
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 25
+==================================================
+TEXTE PDFREADER :
+25(Ref.) Definitions of Consolidated and Retail Vehicle Sales
+Daihatsu -and Hino -brand vehicles
+Number of vehicles produced for wholesale by Toyota Motor 
+Corporation and its consolidated subsidiaries
+Number of vehicles produced for wholesale by Toyota’s 
+unconsolidated entities (e.g. joint ventures in China, etc.)
+*There are a limited number of exceptional cases where sales are made 
+other than in accordance with the flowchart above.Consolidated Vehicle SalesDistributors or Dealers outside consolidationToyota and Lexus Vehicle SalesTotal Retail Vehicle SalesCustomers
+Toyota -and Lexus -brand vehicles
+
+ANALYSE OLLAMA :
+???????????????????????????????
+

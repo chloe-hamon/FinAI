@@ -1,0 +1,1090 @@
+
+PAGE 1
+==================================================
+TEXTE PDFREADER :
+UNITED STATES SECURITIES AND EXCHANGE COMMISSION
+Washington, D.C. 20549
+ 
+FORM 
+10-K
+(Mark One)
+☒
+ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934.
+For the fiscal year ended 
+December 27
+, 2025
+OR
+☐
+TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934.
+For the transition period from 
+             
+to 
+            
+Commission File Number
+ 
+001-07882
+ 
+ADVANCED MICRO DEVICES, INC.
+(Exact name of registrant as specified in its charter)
+Delaware
+94-1692300
+(State or other jurisdiction of incorporation or organization)
+(I.R.S. Employer Identification No.)
+2485 Augustine Drive
+Santa Clara
+, 
+California
+ 
+95054
+(Address of principal executive offices)(Zip Code)
+(
+408
+) 
+749-4000
+(Registrant’s telephone number, including area code)
+Securities registered pursuant to Section 12(b) of the Act:
+(Title of each class)
+(Trading symbol)
+(Name of each exchange on which registered)
+Common Stock, $0.01 par value per share
+AMD
+The NASDAQ Global Select Market
+Securities registered pursuant to Section 12(g) of the Act:
+None
+Indicate by check mark if the registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act.    
+Yes
+  
+☑
+     No  
+☐
+Indicate by check mark if the registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Exchange Act.    Yes  
+☐
+    
+No
+  
+☑
+Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding
+12 months (or for such shorter period that the registrant was required to ﬁle such reports), and (2) has been subject to such ﬁling requirements for the past 90
+days.    
+Yes
+  
+☑
+     No  
+☐
+Indicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T
+during the preceding 12 months (or for such shorter period that the regi
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Ce document est un rapport annuel (Form 10-K) déposé auprès de la Securities and Exchange Commission (SEC). Il contient des informations financières et administratives d'Advanced Micro Devices, Inc.
+
+### 2. Chiffres importants
+- **Date de fin du exercice fiscal** : Décembre 27, 2025.
+- **Nombre total d’actions en circulation** : 1,630,410,843 actions.
+- **Valeur totale des actions non affiliées** : Environ $232.3 milliards (base sur le prix de clôture de $143.81 par action).
+
+### 3. Graphiques/tableaux visibles
+Il n'y a pas de graphiques ou tableaux visibles dans cette page.
+
+### 4. Résumé utile pour un RAG
+Ce rapport annuel fournit des informations essentielles sur Advanced Micro Devices, Inc., telles que son statut juridique (Delaware), son numéro d'identification fiscale (94-1692300), et les détails de ses actions en circulation. Il indique également la valeur totale des actions non affiliées, qui est un indicateur important pour évaluer la capitalisation boursière de l'entreprise.
+
+
+PAGE 49
+==================================================
+TEXTE PDFREADER :
+Table of Conten
+t
+s
+Performance Graph
+Comparison of Five-Year Cumulative Total Returns
+Advanced Micro Devices, S&P 500 Index and S&P 500 Semiconductors Index
+The following graph shows a ﬁve-year comparison of cumulative total return on our common stock, the S&P 500 Index and the S&P 500
+Semiconductors Index from December 26, 2020 through December 27, 2025, assuming reinvestment of dividends. The past performance of our
+common stock is no indication of future performance.
+Base Period
+Years Ended
+Company / Index
+12/26/2020
+12/25/2021
+12/31/2022
+12/30/2023
+12/28/2024
+12/27/2025
+Advanced Micro Devices, Inc.
+$100
+$
+159 
+$
+71 
+$
+161 
+$
+136 
+$
+234 
+S&P 500 Index
+$100
+$
+129 
+$
+107 
+$
+135 
+$
+171 
+$
+201 
+S&P 500 Semiconductors Index
+$100
+$
+153 
+$
+96 
+$
+201 
+$
+383 
+$
+547 
+ITEM 6. 
+[RESERVED]
+46
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Ce document est une page de rapport financier présentant des données sur les performances financières d'Advanced Micro Devices, Inc., en comparaison avec l'indice S&P 500 et l'indice S&P 500 Semiconductors Index.
+
+### 2. Chiffres importants
+- **Base Period (12/26/2020)**: $100 pour tous les indicateurs.
+- **Years Ended (12/27/2025)**:
+  - Advanced Micro Devices, Inc.: $234
+  - S&P 500 Index: $201
+  - S&P 500 Semiconductors Index: $547
+
+### 3. Graphiques/tableaux visibles
+- **Graphique**: Comparaison des retours cumulatifs sur cinq ans pour Advanced Micro Devices, Inc., l'indice S&P 500 et l'indice S&P 500 Semiconductors Index.
+  
+### 4. Résumé utile pour un RAG
+Ce rapport compare les performances financières de Advanced Micro Devices, Inc. avec celles des indices S&P 500 et S&P 500 Semiconductors Index sur une période de cinq ans (depuis le 26 décembre 2020 jusqu'au 27 décembre 2025). Les données montrent que l'action d'Advanced Micro Devices, Inc. a connu un retour cumulatif de $134 pour chaque unité investie à la base période (contre $201 pour le S&P 500 et $547 pour le S&P 500 Semiconductors Index). Le graphique illustre cette tendance, montrant une croissance significative de l'action d'Advanced Micro Devices, Inc. par rapport aux indices comparatifs.
+
+
+PAGE 145
+==================================================
+TEXTE PDFREADER :
+Exhibit 23
+Consent of Independent Registered Public Accounting Firm
+We consent to the incorporation by reference in the following Registration Statements of Advanced Micro Devices, Inc.:
+•
+Registration Statement on Form S-8 (No. 333-115474) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-134853) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan and
+the Advanced Micro Devices, Inc. 2000 Employee Stock Purchase Plan;
+•
+Registration Statement on Form S-8 (No. 333-159367) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333- 166616) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-181451) pertaining to the Advanced Micro Devices, Inc. 
+2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333- 190039) pertaining to the Advanced Micro Devices, Inc. 
+2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-195984) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333- 204166) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-211438) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Post-Effective Amendment No. 1 to Registration Statement on Form S-8 (No. 333-204166) pertaining to the Advanced Micro Devices,
+Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-217784) pertaining to the Advanced Micro Devices, Inc. 
+2004 Equity Incentive Plan and
+2017 Employee Stock Purchase Plan;
+•
+Registration Statement on Form S-8 (No. 333-232922) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-262698) pertaining to the Xilinx, Inc. 2007 Equity Incentive Plan;
+•
+R
+
+ANALYSE OLLAMA :
+### Analyse rapide de la page de rapport financier :
+
+#### 1. **Type de contenu**
+- Cette page est une déclaration d'accord (consent) émise par Ernst & Young LLP, un cabinet d'audit indépendant.
+- Elle concerne l'inclusion des rapports financiers et des documents relatifs aux plans d'incentive et aux actions d'achat d'employés de Advanced Micro Devices, Inc. dans les formulaires de déclaration auprès de la SEC.
+
+#### 2. **Chiffres importants**
+- Les numéros de formulaire S-8 (ex: No. 333-115474) et les dates des documents concernés.
+- Les années des plans d'incentive et des programmes d'achat d'actions (par exemple, 2004, 2000, etc.).
+
+#### 3. **Graphiques/tableaux visibles**
+- Aucun graphique ou tableau n'est visible dans cette page.
+
+#### 4. **Résumé utile pour un RAG**
+- Ernst & Young LLP donne son accord pour que les documents mentionnés soient inclus par référence dans les formulaires de déclaration S-8 et S-3 d'Advanced Micro Devices, Inc.
+- Ces documents incluent divers plans d'incentive et programmes d'achat d'actions datant de 2004 à 2025, ainsi que des informations sur la consolidation financière et le contrôle interne au sein de l'entreprise.
+
+Cette déclaration est cruciale pour comprendre les structures et les documents liés aux plans d'incentive et aux actions d'achat d'employés chez Advanced Micro Devices, Inc., qui sont inclus dans leurs formulaires de déclaration auprès de la SEC.
+
+
+PAGE 146
+==================================================
+TEXTE PDFREADER :
+Exhibit 24
+POWER OF ATTORNEY
+KNOW ALL BY THESE PRESENTS, that each person whose signature appears below constitutes and appoints Jean Hu and Ava Hahn,
+and each of them, his or her true and lawful attorneys-in-fact and agents, with full power of substitution and re-substitution, for him or her and in
+his or her name, place and stead, in any and all capacities, to sign Advanced Micro Devices, Inc.’s Annual Report on Form 10-K for the fiscal
+year ended December 27, 2025, and any and all amendments thereto, and to file the same, with all exhibits thereto, and other documents in
+connection therewith, with the Securities and Exchange Commission, granting unto said attorneys-in-fact and agents, and each of them, full
+power and authority to do and perform each and every act and thing requisite and necessary to be done in connection therewith, as fully to all
+intents and purposes as he or she might or could do in person, hereby ratifying and confirming all that said attorneys-in-fact and agents, or any of
+them, or their or his or her substitute or substitutes, may lawfully do or cause to be done by virtue hereof.
+Signature
+Title
+Date
+/s/Lisa T. Su
+Chair, President and Chief Executive Officer, Director
+February 3, 2026
+Lisa T. Su
+/s/Jean Hu
+Executive Vice President, Chief Financial Officer and Treasurer
+February 3, 2026
+Jean Hu
+/s/Emily Ellis
+Corporate Vice President, Chief Accounting Officer
+February 3, 2026
+Emily Ellis
+/s/Nora M. Denzel
+Director, Lead Independent Director
+February 2, 2026
+Nora M. Denzel
+/s/Mike P. Gregoire
+Director
+February 2, 2026
+Mike P. Gregoire
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Cette page est une **Power of Attorney** (POA), qui est un document juridique permettant à des personnes désignées d'agir en tant qu'avocats et représentants légaux pour signer les documents financiers et administratifs au nom de l'entreprise.
+
+### 2. Chiffres importants
+- **Date du rapport financier** : Financière pour l'exercice terminé le 27 décembre 2025.
+- **Signature des représentants légaux** : Les signatures sont celles de Lisa T. Su, Jean Hu, Emily Ellis, Nora M. Denzel et Mike P. Gregoire.
+
+### 3. Graphiques/tableaux visibles
+Il n'y a pas de graphiques ou de tableaux visibles sur cette page.
+
+### 4. Résumé utile pour un RAG (Résumé Analyse Générale)
+Cette Power of Attorney autorise Jean Hu et Ava Hahn, ainsi que leurs substituts, à représenter Advanced Micro Devices, Inc., en signant le rapport annuel Form 10-K pour l'exercice financier terminé le 27 décembre 2025. Le document confère aux représentants la pleine autorité pour signer et déposer ce rapport ainsi que tous les amendements potentiels auprès de la Securities and Exchange Commission (SEC). Les signatures indiquent que cette POA a été signée par des dirigeants importants de l'entreprise, notamment Lisa T. Su en tant que Présidente et PDG, Jean Hu en tant que Vice-Président exécutif et CFO, et d'autres membres du conseil d'administration.
+
+
+PAGE 49
+==================================================
+TEXTE PDFREADER :
+Table of Conten
+t
+s
+Performance Graph
+Comparison of Five-Year Cumulative Total Returns
+Advanced Micro Devices, S&P 500 Index and S&P 500 Semiconductors Index
+The following graph shows a ﬁve-year comparison of cumulative total return on our common stock, the S&P 500 Index and the S&P 500
+Semiconductors Index from December 26, 2020 through December 27, 2025, assuming reinvestment of dividends. The past performance of our
+common stock is no indication of future performance.
+Base Period
+Years Ended
+Company / Index
+12/26/2020
+12/25/2021
+12/31/2022
+12/30/2023
+12/28/2024
+12/27/2025
+Advanced Micro Devices, Inc.
+$100
+$
+159 
+$
+71 
+$
+161 
+$
+136 
+$
+234 
+S&P 500 Index
+$100
+$
+129 
+$
+107 
+$
+135 
+$
+171 
+$
+201 
+S&P 500 Semiconductors Index
+$100
+$
+153 
+$
+96 
+$
+201 
+$
+383 
+$
+547 
+ITEM 6. 
+[RESERVED]
+46
+
+ANALYSE OLLAMA :
+[Erreur analyse visuelle : model 'qwen2.5vl:3b' not found (status code: 404)]
+
+
+PAGE 146
+==================================================
+TEXTE PDFREADER :
+Exhibit 24
+POWER OF ATTORNEY
+KNOW ALL BY THESE PRESENTS, that each person whose signature appears below constitutes and appoints Jean Hu and Ava Hahn,
+and each of them, his or her true and lawful attorneys-in-fact and agents, with full power of substitution and re-substitution, for him or her and in
+his or her name, place and stead, in any and all capacities, to sign Advanced Micro Devices, Inc.’s Annual Report on Form 10-K for the fiscal
+year ended December 27, 2025, and any and all amendments thereto, and to file the same, with all exhibits thereto, and other documents in
+connection therewith, with the Securities and Exchange Commission, granting unto said attorneys-in-fact and agents, and each of them, full
+power and authority to do and perform each and every act and thing requisite and necessary to be done in connection therewith, as fully to all
+intents and purposes as he or she might or could do in person, hereby ratifying and confirming all that said attorneys-in-fact and agents, or any of
+them, or their or his or her substitute or substitutes, may lawfully do or cause to be done by virtue hereof.
+Signature
+Title
+Date
+/s/Lisa T. Su
+Chair, President and Chief Executive Officer, Director
+February 3, 2026
+Lisa T. Su
+/s/Jean Hu
+Executive Vice President, Chief Financial Officer and Treasurer
+February 3, 2026
+Jean Hu
+/s/Emily Ellis
+Corporate Vice President, Chief Accounting Officer
+February 3, 2026
+Emily Ellis
+/s/Nora M. Denzel
+Director, Lead Independent Director
+February 2, 2026
+Nora M. Denzel
+/s/Mike P. Gregoire
+Director
+February 2, 2026
+Mike P. Gregoire
+
+ANALYSE OLLAMA :
+[Erreur analyse visuelle : model 'qwen2.5vl:3b' not found (status code: 404)]
+
+
+PAGE 1
+==================================================
+TEXTE PDFREADER :
+UNITED STATES SECURITIES AND EXCHANGE COMMISSION
+Washington, D.C. 20549
+ 
+FORM 
+10-K
+(Mark One)
+☒
+ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934.
+For the fiscal year ended 
+December 27
+, 2025
+OR
+☐
+TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934.
+For the transition period from 
+             
+to 
+            
+Commission File Number
+ 
+001-07882
+ 
+ADVANCED MICRO DEVICES, INC.
+(Exact name of registrant as specified in its charter)
+Delaware
+94-1692300
+(State or other jurisdiction of incorporation or organization)
+(I.R.S. Employer Identification No.)
+2485 Augustine Drive
+Santa Clara
+, 
+California
+ 
+95054
+(Address of principal executive offices)(Zip Code)
+(
+408
+) 
+749-4000
+(Registrant’s telephone number, including area code)
+Securities registered pursuant to Section 12(b) of the Act:
+(Title of each class)
+(Trading symbol)
+(Name of each exchange on which registered)
+Common Stock, $0.01 par value per share
+AMD
+The NASDAQ Global Select Market
+Securities registered pursuant to Section 12(g) of the Act:
+None
+Indicate by check mark if the registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act.    
+Yes
+  
+☑
+     No  
+☐
+Indicate by check mark if the registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Exchange Act.    Yes  
+☐
+    
+No
+  
+☑
+Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding
+12 months (or for such shorter period that the registrant was required to ﬁle such reports), and (2) has been subject to such ﬁling requirements for the past 90
+days.    
+Yes
+  
+☑
+     No  
+☐
+Indicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T
+during the preceding 12 months (or for such shorter period that the regi
+
+ANALYSE OLLAMA :
+[Erreur analyse visuelle : model 'qwen2.5vl:3b' not found (status code: 404)]
+
+
+PAGE 145
+==================================================
+TEXTE PDFREADER :
+Exhibit 23
+Consent of Independent Registered Public Accounting Firm
+We consent to the incorporation by reference in the following Registration Statements of Advanced Micro Devices, Inc.:
+•
+Registration Statement on Form S-8 (No. 333-115474) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-134853) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan and
+the Advanced Micro Devices, Inc. 2000 Employee Stock Purchase Plan;
+•
+Registration Statement on Form S-8 (No. 333-159367) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333- 166616) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-181451) pertaining to the Advanced Micro Devices, Inc. 
+2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333- 190039) pertaining to the Advanced Micro Devices, Inc. 
+2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-195984) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333- 204166) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-211438) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Post-Effective Amendment No. 1 to Registration Statement on Form S-8 (No. 333-204166) pertaining to the Advanced Micro Devices,
+Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-217784) pertaining to the Advanced Micro Devices, Inc. 
+2004 Equity Incentive Plan and
+2017 Employee Stock Purchase Plan;
+•
+Registration Statement on Form S-8 (No. 333-232922) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-262698) pertaining to the Xilinx, Inc. 2007 Equity Incentive Plan;
+•
+R
+
+ANALYSE OLLAMA :
+[Erreur analyse visuelle : model 'qwen2.5vl:3b' not found (status code: 404)]
+
+
+PAGE 146
+==================================================
+TEXTE PDFREADER :
+Exhibit 24
+POWER OF ATTORNEY
+KNOW ALL BY THESE PRESENTS, that each person whose signature appears below constitutes and appoints Jean Hu and Ava Hahn,
+and each of them, his or her true and lawful attorneys-in-fact and agents, with full power of substitution and re-substitution, for him or her and in
+his or her name, place and stead, in any and all capacities, to sign Advanced Micro Devices, Inc.’s Annual Report on Form 10-K for the fiscal
+year ended December 27, 2025, and any and all amendments thereto, and to file the same, with all exhibits thereto, and other documents in
+connection therewith, with the Securities and Exchange Commission, granting unto said attorneys-in-fact and agents, and each of them, full
+power and authority to do and perform each and every act and thing requisite and necessary to be done in connection therewith, as fully to all
+intents and purposes as he or she might or could do in person, hereby ratifying and confirming all that said attorneys-in-fact and agents, or any of
+them, or their or his or her substitute or substitutes, may lawfully do or cause to be done by virtue hereof.
+Signature
+Title
+Date
+/s/Lisa T. Su
+Chair, President and Chief Executive Officer, Director
+February 3, 2026
+Lisa T. Su
+/s/Jean Hu
+Executive Vice President, Chief Financial Officer and Treasurer
+February 3, 2026
+Jean Hu
+/s/Emily Ellis
+Corporate Vice President, Chief Accounting Officer
+February 3, 2026
+Emily Ellis
+/s/Nora M. Denzel
+Director, Lead Independent Director
+February 2, 2026
+Nora M. Denzel
+/s/Mike P. Gregoire
+Director
+February 2, 2026
+Mike P. Gregoire
+
+ANALYSE OLLAMA :
+Type de contenu: Document juridique (Pouvoir d'attorney)
+
+Chiffres importants:
+- Nom des signataires : Lisa T. Su, Jean Hu, Emily Ellis, Nora M. Denzel, Mike P. Gregoire
+- Dates : février 2026
+
+Graphiques/tableaux visibles: Aucun graphique ou tableau visible dans le document.
+
+Résumé utile pour un RAG:
+Ce document est une attestation de pouvoir d'attorney signée par plusieurs personnes qui ont la charge de signer et de soumettre à l' SEC (Securities and Exchange Commission) les rapports annuels de Advanced Micro Devices, Inc. Les signatures sont datées en février 2026 pour le rapport du exercice fiscal terminé le 27 décembre 2025.
+
+
+PAGE 49
+==================================================
+TEXTE PDFREADER :
+Table of Conten
+t
+s
+Performance Graph
+Comparison of Five-Year Cumulative Total Returns
+Advanced Micro Devices, S&P 500 Index and S&P 500 Semiconductors Index
+The following graph shows a ﬁve-year comparison of cumulative total return on our common stock, the S&P 500 Index and the S&P 500
+Semiconductors Index from December 26, 2020 through December 27, 2025, assuming reinvestment of dividends. The past performance of our
+common stock is no indication of future performance.
+Base Period
+Years Ended
+Company / Index
+12/26/2020
+12/25/2021
+12/31/2022
+12/30/2023
+12/28/2024
+12/27/2025
+Advanced Micro Devices, Inc.
+$100
+$
+159 
+$
+71 
+$
+161 
+$
+136 
+$
+234 
+S&P 500 Index
+$100
+$
+129 
+$
+107 
+$
+135 
+$
+171 
+$
+201 
+S&P 500 Semiconductors Index
+$100
+$
+153 
+$
+96 
+$
+201 
+$
+383 
+$
+547 
+ITEM 6. 
+[RESERVED]
+46
+
+ANALYSE OLLAMA :
+1. **Type de contenu**: Le document contient des informations financières et une analyse comparative des performances d'actions.
+
+2. **Chiffres importants**:
+   - **Advanced Micro Devices, Inc.** : 
+     - 12/26/2020 : $100
+     - 12/31/2022 : $71
+     - 12/30/2023 : $161
+     - 12/28/2024 : $136
+     - 12/27/2025 : $234
+   
+   - **S&P 500 Index** :
+     - 12/26/2020 : $100
+     - 12/31/2022 : $107
+     - 12/30/2023 : $135
+     - 12/28/2024 : $171
+     - 12/27/2025 : $201
+   
+   - **S&P 500 Semiconductors Index** :
+     - 12/26/2020 : $100
+     - 12/31/2022 : $96
+     - 12/30/2023 : $201
+     - 12/28/2024 : $383
+     - 12/27/2025 : $547
+
+3. **Graphiques/tableaux visibles**:
+   - Un graphique intitulé "Comparison of Cumulative Five Year Total Return" qui compare les retours cumulatifs sur cinq ans pour Advanced Micro Devices, Inc., le S&P 500 Index et le S&P 500 Semiconductors Index.
+
+4. **Résumé utile pour un RAG**:
+   - Le document présente une analyse comparative des performances financières d'Advanced Micro Devices, Inc., du S&P 500 Index et du S&P 500 Semiconductors Index sur une période de cinq ans.
+   - Les chiffres montrent que le S&P 500 Semiconductors Index a connu les plus fortes augmentations en termes de valeur, passant de $100 à $547 au cours des cinq années.
+   - Le graphique montre clairement la progression exponentielle du S&P 500 Semiconductors Index par rapport aux autres indices.
+
+
+PAGE 1
+==================================================
+TEXTE PDFREADER :
+UNITED STATES SECURITIES AND EXCHANGE COMMISSION
+Washington, D.C. 20549
+ 
+FORM 
+10-K
+(Mark One)
+☒
+ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934.
+For the fiscal year ended 
+December 27
+, 2025
+OR
+☐
+TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934.
+For the transition period from 
+             
+to 
+            
+Commission File Number
+ 
+001-07882
+ 
+ADVANCED MICRO DEVICES, INC.
+(Exact name of registrant as specified in its charter)
+Delaware
+94-1692300
+(State or other jurisdiction of incorporation or organization)
+(I.R.S. Employer Identification No.)
+2485 Augustine Drive
+Santa Clara
+, 
+California
+ 
+95054
+(Address of principal executive offices)(Zip Code)
+(
+408
+) 
+749-4000
+(Registrant’s telephone number, including area code)
+Securities registered pursuant to Section 12(b) of the Act:
+(Title of each class)
+(Trading symbol)
+(Name of each exchange on which registered)
+Common Stock, $0.01 par value per share
+AMD
+The NASDAQ Global Select Market
+Securities registered pursuant to Section 12(g) of the Act:
+None
+Indicate by check mark if the registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act.    
+Yes
+  
+☑
+     No  
+☐
+Indicate by check mark if the registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Exchange Act.    Yes  
+☐
+    
+No
+  
+☑
+Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding
+12 months (or for such shorter period that the registrant was required to ﬁle such reports), and (2) has been subject to such ﬁling requirements for the past 90
+days.    
+Yes
+  
+☑
+     No  
+☐
+Indicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T
+during the preceding 12 months (or for such shorter period that the regi
+
+ANALYSE OLLAMA :
+### Type de contenu
+- Rapport annuel ou transition selon la section 13 ou 15(d) du Acte de l'Échange des valeurs (SEC).
+
+### Chiffres importants
+- **Année fiscale :** 2025
+- **Date limite d'échéance :** 27 décembre
+
+### Graphiques/Tableaux visibles
+- Pas de graphiques ou tableaux visibles dans le texte fourni.
+
+### Résumé utile pour un RAG
+Le rapport annuel (10-K) d'Advanced Micro Devices, Inc. a été déposé selon la section 13 du Acte de l'Échange des valeurs en date du 27 décembre 2025. Le numéro de dossier est 001-07882 et le code postal de l'adresse principale des bureaux exécutifs est 95054, Santa Clara, Californie.
+
+
+PAGE 145
+==================================================
+TEXTE PDFREADER :
+Exhibit 23
+Consent of Independent Registered Public Accounting Firm
+We consent to the incorporation by reference in the following Registration Statements of Advanced Micro Devices, Inc.:
+•
+Registration Statement on Form S-8 (No. 333-115474) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-134853) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan and
+the Advanced Micro Devices, Inc. 2000 Employee Stock Purchase Plan;
+•
+Registration Statement on Form S-8 (No. 333-159367) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333- 166616) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-181451) pertaining to the Advanced Micro Devices, Inc. 
+2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333- 190039) pertaining to the Advanced Micro Devices, Inc. 
+2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-195984) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333- 204166) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-211438) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Post-Effective Amendment No. 1 to Registration Statement on Form S-8 (No. 333-204166) pertaining to the Advanced Micro Devices,
+Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-217784) pertaining to the Advanced Micro Devices, Inc. 
+2004 Equity Incentive Plan and
+2017 Employee Stock Purchase Plan;
+•
+Registration Statement on Form S-8 (No. 333-232922) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-262698) pertaining to the Xilinx, Inc. 2007 Equity Incentive Plan;
+•
+R
+
+ANALYSE OLLAMA :
+Type de contenu: Consent d'audit indépendant
+
+Chiffres importants:
+- Liste des déclarations de régulation S-8 concernant les plans d'incentive et de revente d'actions d'Advanced Micro Devices, Inc.
+
+Graphiques/tableaux visibles : Non disponibles dans le texte fourni.
+
+Résumé utile pour un RAG :
+Cette page du rapport financier indique que l'audit indépendant a consenti à l'intégration par référence des déclarations de régulation S-8 concernant les plans d'incentive et de revente d'actions d'Advanced Micro Devices, Inc.
+
+
+PAGE 49
+==================================================
+TEXTE PDFREADER :
+Table of Conten
+t
+s
+Performance Graph
+Comparison of Five-Year Cumulative Total Returns
+Advanced Micro Devices, S&P 500 Index and S&P 500 Semiconductors Index
+The following graph shows a ﬁve-year comparison of cumulative total return on our common stock, the S&P 500 Index and the S&P 500
+Semiconductors Index from December 26, 2020 through December 27, 2025, assuming reinvestment of dividends. The past performance of our
+common stock is no indication of future performance.
+Base Period
+Years Ended
+Company / Index
+12/26/2020
+12/25/2021
+12/31/2022
+12/30/2023
+12/28/2024
+12/27/2025
+Advanced Micro Devices, Inc.
+$100
+$
+159 
+$
+71 
+$
+161 
+$
+136 
+$
+234 
+S&P 500 Index
+$100
+$
+129 
+$
+107 
+$
+135 
+$
+171 
+$
+201 
+S&P 500 Semiconductors Index
+$100
+$
+153 
+$
+96 
+$
+201 
+$
+383 
+$
+547 
+ITEM 6. 
+[RESERVED]
+46
+
+ANALYSE OLLAMA :
+1. **Type de contenu**: Le document contient des informations financières et une analyse comparative des performances d'actions.
+
+2. **Chiffres importants**:
+   - **Advanced Micro Devices, Inc.** : 
+     - 12/26/2020 : $100
+     - 12/31/2022 : $71
+     - 12/30/2023 : $161
+     - 12/28/2024 : $136
+     - 12/27/2025 : $234
+   
+   - **S&P 500 Index** :
+     - 12/26/2020 : $100
+     - 12/31/2022 : $107
+     - 12/30/2023 : $135
+     - 12/28/2024 : $171
+     - 12/27/2025 : $201
+   
+   - **S&P 500 Semiconductors Index** :
+     - 12/26/2020 : $100
+     - 12/31/2022 : $96
+     - 12/30/2023 : $201
+     - 12/28/2024 : $383
+     - 12/27/2025 : $547
+
+3. **Graphiques/tableaux visibles**:
+   - Un graphique intitulé "Comparison of Cumulative Five Year Total Return" qui compare les retours cumulatifs sur cinq ans pour Advanced Micro Devices, Inc., le S&P 500 Index et le S&P 500 Semiconductors Index.
+
+4. **Résumé utile pour un RAG**:
+   - Le document présente une analyse comparative des performances financières d'Advanced Micro Devices, Inc., du S&P 500 Index et du S&P 500 Semiconductors Index sur une période de cinq ans.
+   - Les chiffres montrent que le S&P 500 Semiconductors Index a connu les plus fortes augmentations en termes de valeur, passant de $100 à $547 au cours des cinq années.
+   - Le graphique montre clairement la progression exponentielle du S&P 500 Semiconductors Index par rapport aux autres indices.
+
+
+PAGE 145
+==================================================
+TEXTE PDFREADER :
+Exhibit 23
+Consent of Independent Registered Public Accounting Firm
+We consent to the incorporation by reference in the following Registration Statements of Advanced Micro Devices, Inc.:
+•
+Registration Statement on Form S-8 (No. 333-115474) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-134853) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan and
+the Advanced Micro Devices, Inc. 2000 Employee Stock Purchase Plan;
+•
+Registration Statement on Form S-8 (No. 333-159367) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333- 166616) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-181451) pertaining to the Advanced Micro Devices, Inc. 
+2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333- 190039) pertaining to the Advanced Micro Devices, Inc. 
+2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-195984) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333- 204166) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-211438) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Post-Effective Amendment No. 1 to Registration Statement on Form S-8 (No. 333-204166) pertaining to the Advanced Micro Devices,
+Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-217784) pertaining to the Advanced Micro Devices, Inc. 
+2004 Equity Incentive Plan and
+2017 Employee Stock Purchase Plan;
+•
+Registration Statement on Form S-8 (No. 333-232922) pertaining to the Advanced Micro Devices, Inc. 2004 Equity Incentive Plan;
+•
+Registration Statement on Form S-8 (No. 333-262698) pertaining to the Xilinx, Inc. 2007 Equity Incentive Plan;
+•
+R
+
+ANALYSE OLLAMA :
+Type de contenu: Consent d'audit indépendant
+
+Chiffres importants:
+- Liste des déclarations de régulation S-8 concernant les plans d'incentive et de revente d'actions d'Advanced Micro Devices, Inc.
+
+Graphiques/tableaux visibles : Non disponibles dans le texte fourni.
+
+Résumé utile pour un RAG :
+Cette page du rapport financier indique que l'audit indépendant a consenti à l'intégration par référence des déclarations de régulation S-8 concernant les plans d'incentive et de revente d'actions d'Advanced Micro Devices, Inc.
+
+
+PAGE 1
+==================================================
+TEXTE PDFREADER :
+UNITED STATES SECURITIES AND EXCHANGE COMMISSION
+Washington, D.C. 20549
+ 
+FORM 
+10-K
+(Mark One)
+☒
+ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934.
+For the fiscal year ended 
+December 27
+, 2025
+OR
+☐
+TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934.
+For the transition period from 
+             
+to 
+            
+Commission File Number
+ 
+001-07882
+ 
+ADVANCED MICRO DEVICES, INC.
+(Exact name of registrant as specified in its charter)
+Delaware
+94-1692300
+(State or other jurisdiction of incorporation or organization)
+(I.R.S. Employer Identification No.)
+2485 Augustine Drive
+Santa Clara
+, 
+California
+ 
+95054
+(Address of principal executive offices)(Zip Code)
+(
+408
+) 
+749-4000
+(Registrant’s telephone number, including area code)
+Securities registered pursuant to Section 12(b) of the Act:
+(Title of each class)
+(Trading symbol)
+(Name of each exchange on which registered)
+Common Stock, $0.01 par value per share
+AMD
+The NASDAQ Global Select Market
+Securities registered pursuant to Section 12(g) of the Act:
+None
+Indicate by check mark if the registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act.    
+Yes
+  
+☑
+     No  
+☐
+Indicate by check mark if the registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Exchange Act.    Yes  
+☐
+    
+No
+  
+☑
+Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding
+12 months (or for such shorter period that the registrant was required to ﬁle such reports), and (2) has been subject to such ﬁling requirements for the past 90
+days.    
+Yes
+  
+☑
+     No  
+☐
+Indicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T
+during the preceding 12 months (or for such shorter period that the regi
+
+ANALYSE OLLAMA :
+### Type de contenu
+- Rapport annuel ou transition selon la section 13 ou 15(d) du Acte de l'Échange des valeurs (SEC).
+
+### Chiffres importants
+- **Année fiscale :** 2025
+- **Date limite d'échéance :** 27 décembre
+
+### Graphiques/Tableaux visibles
+- Pas de graphiques ou tableaux visibles dans le texte fourni.
+
+### Résumé utile pour un RAG
+Le rapport annuel (10-K) d'Advanced Micro Devices, Inc. a été déposé selon la section 13 du Acte de l'Échange des valeurs en date du 27 décembre 2025. Le numéro de dossier est 001-07882 et le code postal de l'adresse principale des bureaux exécutifs est 95054, Santa Clara, Californie.
+
+
+PAGE 146
+==================================================
+TEXTE PDFREADER :
+Exhibit 24
+POWER OF ATTORNEY
+KNOW ALL BY THESE PRESENTS, that each person whose signature appears below constitutes and appoints Jean Hu and Ava Hahn,
+and each of them, his or her true and lawful attorneys-in-fact and agents, with full power of substitution and re-substitution, for him or her and in
+his or her name, place and stead, in any and all capacities, to sign Advanced Micro Devices, Inc.’s Annual Report on Form 10-K for the fiscal
+year ended December 27, 2025, and any and all amendments thereto, and to file the same, with all exhibits thereto, and other documents in
+connection therewith, with the Securities and Exchange Commission, granting unto said attorneys-in-fact and agents, and each of them, full
+power and authority to do and perform each and every act and thing requisite and necessary to be done in connection therewith, as fully to all
+intents and purposes as he or she might or could do in person, hereby ratifying and confirming all that said attorneys-in-fact and agents, or any of
+them, or their or his or her substitute or substitutes, may lawfully do or cause to be done by virtue hereof.
+Signature
+Title
+Date
+/s/Lisa T. Su
+Chair, President and Chief Executive Officer, Director
+February 3, 2026
+Lisa T. Su
+/s/Jean Hu
+Executive Vice President, Chief Financial Officer and Treasurer
+February 3, 2026
+Jean Hu
+/s/Emily Ellis
+Corporate Vice President, Chief Accounting Officer
+February 3, 2026
+Emily Ellis
+/s/Nora M. Denzel
+Director, Lead Independent Director
+February 2, 2026
+Nora M. Denzel
+/s/Mike P. Gregoire
+Director
+February 2, 2026
+Mike P. Gregoire
+
+ANALYSE OLLAMA :
+Type de contenu: Document juridique (Pouvoir d'attorney)
+
+Chiffres importants:
+- Nom des signataires : Lisa T. Su, Jean Hu, Emily Ellis, Nora M. Denzel, Mike P. Gregoire
+- Dates : février 2026
+
+Graphiques/tableaux visibles: Aucun graphique ou tableau visible dans le document.
+
+Résumé utile pour un RAG:
+Ce document est une attestation de pouvoir d'attorney signée par plusieurs personnes qui ont la charge de signer et de soumettre à l' SEC (Securities and Exchange Commission) les rapports annuels de Advanced Micro Devices, Inc. Les signatures sont datées en février 2026 pour le rapport du exercice fiscal terminé le 27 décembre 2025.
+

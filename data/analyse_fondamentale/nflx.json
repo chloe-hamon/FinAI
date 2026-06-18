@@ -1,0 +1,79 @@
+{
+  "ticker": "NFLX",
+  "nom": "Netflix, Inc.",
+  "secteur": "Communication Services",
+  "date": "2026-06-15 16:15",
+  "prix": 80.6901,
+  "market_cap": 339769753600,
+  "beta": 1.491,
+  "scores": {
+    "valorisation": -2,
+    "rentabilite": 5,
+    "croissance": 3,
+    "sante_financiere": 1,
+    "dividende": 1,
+    "total": 8
+  },
+  "recommandation": "🟡 BUY",
+  "details": {
+    "valorisation": {
+      "PE": "ATTENTION (PE=26.0 → cher)",
+      "PEG": "NEUTRAL (PEG=1.58)",
+      "PB": "ATTENTION (PB=10.92 > 3)",
+      "EV_EBITDA": "ATTENTION (EV/EBITDA=24.0 > 15)"
+    },
+    "rentabilite": {
+      "ROE": "BUY (ROE=48.5% > 20%)",
+      "Marge_Nette": "BUY (marge=28.5%)",
+      "ROA": "BUY (ROA=15.4%)"
+    },
+    "croissance": {
+      "Croissance_CA": "NEUTRAL (croissance=16.2%)",
+      "Croissance_BPA": "BUY (BPA=86.4%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "NEUTRAL (D/E=53.8%)",
+      "Current_Ratio": "NEUTRAL (CR=1.41)"
+    },
+    "dividende": {
+      "Payout": "BUY (payout=0.0% → soutenable)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "NFLX",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 26.029066,
+    "pe_forward": 21.002327,
+    "pb_ratio": 10.9203005,
+    "ps_ratio": 7.246104,
+    "ev_ebitda": 23.999,
+    "peg_ratio": 1.58,
+    "roe": 0.48494998,
+    "roa": 0.15402001,
+    "marge_nette": 0.28521,
+    "marge_brute": 0.49029,
+    "marge_operationnelle": 0.32303002,
+    "ebitda": 14288497664,
+    "croissance_revenus": 0.162,
+    "croissance_bpa": 0.864,
+    "revenus": 46889992192,
+    "bpa": 3.1,
+    "bpa_forward": 3.84196,
+    "dette_totale": 16742200320,
+    "cash": 12288449536,
+    "ratio_dette_equity": 53.788,
+    "current_ratio": 1.407,
+    "quick_ratio": 1.178,
+    "dividende_yield": null,
+    "dividende_par_action": null,
+    "payout_ratio": 0.0,
+    "market_cap": 339769753600,
+    "beta": 1.491,
+    "52w_high": 134.115,
+    "52w_low": 75.01,
+    "prix_actuel": 80.6901,
+    "secteur": "Communication Services",
+    "industrie": "Entertainment",
+    "nom": "Netflix, Inc."
+  }
+}

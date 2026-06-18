@@ -1,0 +1,21 @@
+# LangChain
+langchain
+langchain-core
+langchain-community
+langchain-chroma
+langchain-huggingface
+langchain-ollama
+
+# Vector Store
+chromadb
+
+# Embeddings
+sentence-transformers
+
+# PDF parsing
+pypdf
+pymupdf
+
+# Utilitaires
+python-dotenv
+tqdm

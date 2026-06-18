@@ -1,0 +1,80 @@
+{
+  "ticker": "GOOGL",
+  "nom": "Alphabet Inc.",
+  "secteur": "Communication Services",
+  "date": "2026-06-15 16:15",
+  "prix": 368.0701,
+  "market_cap": 4488955428864,
+  "beta": 1.237,
+  "scores": {
+    "valorisation": -2,
+    "rentabilite": 5,
+    "croissance": 4,
+    "sante_financiere": 2,
+    "dividende": 3,
+    "total": 12
+  },
+  "recommandation": "🟢 STRONG BUY",
+  "details": {
+    "valorisation": {
+      "PE": "ATTENTION (PE=28.1 → cher)",
+      "PEG": "NEUTRAL (PEG=1.42)",
+      "PB": "ATTENTION (PB=9.32 > 3)",
+      "EV_EBITDA": "ATTENTION (EV/EBITDA=26.8 > 15)"
+    },
+    "rentabilite": {
+      "ROE": "BUY (ROE=38.9% > 20%)",
+      "Marge_Nette": "BUY (marge=37.9%)",
+      "ROA": "BUY (ROA=14.6%)"
+    },
+    "croissance": {
+      "Croissance_CA": "BUY (croissance=21.8%)",
+      "Croissance_BPA": "BUY (BPA=82.0%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "BUY (D/E=20.0% → peu endetté)",
+      "Current_Ratio": "NEUTRAL (CR=1.92)"
+    },
+    "dividende": {
+      "Dividende": "BUY (rendement=24.0%)",
+      "Payout": "BUY (payout=6.4% → soutenable)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "GOOGL",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 28.120703,
+    "pe_forward": 25.4202,
+    "pb_ratio": 9.315685,
+    "ps_ratio": 10.623934,
+    "ev_ebitda": 26.823,
+    "peg_ratio": 1.42,
+    "roe": 0.38884997,
+    "roa": 0.14641,
+    "marge_nette": 0.37919,
+    "marge_brute": 0.60368,
+    "marge_operationnelle": 0.36121,
+    "ebitda": 161315995648,
+    "croissance_revenus": 0.218,
+    "croissance_bpa": 0.82,
+    "revenus": 422498009088,
+    "bpa": 13.09,
+    "bpa_forward": 14.48061,
+    "dette_totale": 95875997696,
+    "cash": 126839996416,
+    "ratio_dette_equity": 20.026,
+    "current_ratio": 1.922,
+    "quick_ratio": 1.707,
+    "dividende_yield": 0.24,
+    "dividende_par_action": 0.88,
+    "payout_ratio": 0.0641,
+    "market_cap": 4488955428864,
+    "beta": 1.237,
+    "52w_high": 408.61,
+    "52w_low": 162.0,
+    "prix_actuel": 368.0701,
+    "secteur": "Communication Services",
+    "industrie": "Internet Content & Information",
+    "nom": "Alphabet Inc."
+  }
+}

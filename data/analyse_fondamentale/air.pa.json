@@ -1,0 +1,80 @@
+{
+  "ticker": "AIR.PA",
+  "nom": "Airbus SE",
+  "secteur": "Industrials",
+  "date": "2026-06-15 16:15",
+  "prix": 184.48,
+  "market_cap": 145227841536,
+  "beta": 0.88,
+  "scores": {
+    "valorisation": -2,
+    "rentabilite": 0,
+    "croissance": -3,
+    "sante_financiere": 1,
+    "dividende": 3,
+    "total": -1
+  },
+  "recommandation": "⚪ NEUTRAL",
+  "details": {
+    "valorisation": {
+      "PE": "ATTENTION (PE=29.1 → cher)",
+      "PEG": "NEUTRAL (PEG=1.57)",
+      "PB": "ATTENTION (PB=5.57 > 3)",
+      "EV_EBITDA": "ATTENTION (EV/EBITDA=18.3 > 15)"
+    },
+    "rentabilite": {
+      "ROE": "NEUTRAL (ROE=19.7%)",
+      "Marge_Nette": "ATTENTION (marge=6.9% faible)",
+      "ROA": "ATTENTION (ROA=2.5% < 5%)"
+    },
+    "croissance": {
+      "Croissance_CA": "SELL (croissance=-6.6% négative)",
+      "Croissance_BPA": "ATTENTION (BPA=-26.5%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "NEUTRAL (D/E=55.7%)",
+      "Current_Ratio": "NEUTRAL (CR=1.14)"
+    },
+    "dividende": {
+      "Dividende": "BUY (rendement=178.0%)",
+      "Payout": "BUY (payout=31.6% → soutenable)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "AIR.PA",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 29.143759,
+    "pe_forward": 21.52181,
+    "pb_ratio": 5.5661826,
+    "ps_ratio": 2.0023417,
+    "ev_ebitda": 18.293,
+    "peg_ratio": 1.57,
+    "roe": 0.19748,
+    "roa": 0.024820002,
+    "marge_nette": 0.06913,
+    "marge_brute": 0.15366,
+    "marge_operationnelle": 0.014780001,
+    "ebitda": 7654000128,
+    "croissance_revenus": -0.066,
+    "croissance_bpa": -0.265,
+    "revenus": 72529002496,
+    "bpa": 6.33,
+    "bpa_forward": 8.57177,
+    "dette_totale": 14570000384,
+    "cash": 15776000000,
+    "ratio_dette_equity": 55.655,
+    "current_ratio": 1.14,
+    "quick_ratio": 0.399,
+    "dividende_yield": 1.78,
+    "dividende_par_action": 3.2,
+    "payout_ratio": 0.316,
+    "market_cap": 145227841536,
+    "beta": 0.88,
+    "52w_high": 221.3,
+    "52w_low": 157.42,
+    "prix_actuel": 184.48,
+    "secteur": "Industrials",
+    "industrie": "Aerospace & Defense",
+    "nom": "Airbus SE"
+  }
+}

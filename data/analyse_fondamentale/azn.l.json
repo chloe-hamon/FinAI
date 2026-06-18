@@ -1,0 +1,80 @@
+{
+  "ticker": "AZN.L",
+  "nom": "AstraZeneca PLC",
+  "secteur": "Healthcare",
+  "date": "2026-06-15 16:15",
+  "prix": 13192.0,
+  "market_cap": 204589744128,
+  "beta": 0.214,
+  "scores": {
+    "valorisation": 0,
+    "rentabilite": 3,
+    "croissance": 2,
+    "sante_financiere": -1,
+    "dividende": 3,
+    "total": 7
+  },
+  "recommandation": "🟡 BUY",
+  "details": {
+    "valorisation": {
+      "PE": "ATTENTION (PE=26.7 → cher)",
+      "PEG": "NEUTRAL (PEG=1.38)",
+      "PB": "ATTENTION (PB=5.79 > 3)",
+      "EV_EBITDA": "NEUTRAL (EV/EBITDA=11.7)"
+    },
+    "rentabilite": {
+      "ROE": "BUY (ROE=23.5% > 20%)",
+      "Marge_Nette": "NEUTRAL (marge=17.2%)",
+      "ROA": "NEUTRAL (ROA=8.5%)"
+    },
+    "croissance": {
+      "Croissance_CA": "NEUTRAL (croissance=12.5%)",
+      "Croissance_BPA": "NEUTRAL (BPA=5.3%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "NEUTRAL (D/E=71.8%)",
+      "Current_Ratio": "SELL (CR=0.91 < 1 → risque liquidité)"
+    },
+    "dividende": {
+      "Dividende": "BUY (rendement=175.0%)",
+      "Payout": "BUY (payout=47.7% → soutenable)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "AZN.L",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 26.650505,
+    "pe_forward": 15.214399,
+    "pb_ratio": 5.788472,
+    "ps_ratio": 3.3850617,
+    "ev_ebitda": 11.731,
+    "peg_ratio": 1.38,
+    "roe": 0.23482999,
+    "roa": 0.08487,
+    "marge_nette": 0.17188999,
+    "marge_brute": 0.81504995,
+    "marge_operationnelle": 0.27943,
+    "ebitda": 20025999360,
+    "croissance_revenus": 0.125,
+    "croissance_bpa": 0.053,
+    "revenus": 60438999040,
+    "bpa": 4.95,
+    "bpa_forward": 8.670733,
+    "dette_totale": 34029000704,
+    "cash": 7674999808,
+    "ratio_dette_equity": 71.815,
+    "current_ratio": 0.909,
+    "quick_ratio": 0.701,
+    "dividende_yield": 1.75,
+    "dividende_par_action": 2.36,
+    "payout_ratio": 0.477,
+    "market_cap": 204589744128,
+    "beta": 0.214,
+    "52w_high": 15732.0,
+    "52w_low": 10103.0,
+    "prix_actuel": 13192.0,
+    "secteur": "Healthcare",
+    "industrie": "Drug Manufacturers - General",
+    "nom": "AstraZeneca PLC"
+  }
+}

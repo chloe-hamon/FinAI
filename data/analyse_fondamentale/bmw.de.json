@@ -1,0 +1,79 @@
+{
+  "ticker": "BMW.DE",
+  "nom": "Bayerische Motoren Werke Aktiengesellschaft",
+  "secteur": "Consumer Cyclical",
+  "date": "2026-06-15 16:15",
+  "prix": 69.36,
+  "market_cap": 42110414848,
+  "beta": 0.739,
+  "scores": {
+    "valorisation": 8,
+    "rentabilite": -2,
+    "croissance": -2,
+    "sante_financiere": -1,
+    "dividende": 3,
+    "total": 6
+  },
+  "recommandation": "🟡 BUY",
+  "details": {
+    "valorisation": {
+      "PE": "BUY (PE=6.2 < 15 → sous-évalué)",
+      "PEG": "BUY (PEG=0.43 < 1)",
+      "PB": "BUY (PB=0.44 < 1 → sous valeur comptable)",
+      "EV_EBITDA": "BUY (EV/EBITDA=9.5 < 10)"
+    },
+    "rentabilite": {
+      "ROE": "ATTENTION (ROE=7.1% < 10%)",
+      "Marge_Nette": "ATTENTION (marge=5.2% faible)",
+      "ROA": "ATTENTION (ROA=2.1% < 5%)"
+    },
+    "croissance": {
+      "Croissance_CA": "SELL (croissance=-8.1% négative)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "ATTENTION (D/E=112.7%)",
+      "Current_Ratio": "NEUTRAL (CR=1.17)"
+    },
+    "dividende": {
+      "Dividende": "BUY (rendement=657.0%)",
+      "Payout": "BUY (payout=38.4% → soutenable)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "BMW.DE",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 6.198392,
+    "pe_forward": 5.6957226,
+    "pb_ratio": 0.4400401,
+    "ps_ratio": 0.32218647,
+    "ev_ebitda": 9.488,
+    "peg_ratio": 0.43,
+    "roe": 0.0709,
+    "roa": 0.020539999,
+    "marge_nette": 0.05217,
+    "marge_brute": 0.13136,
+    "marge_operationnelle": 0.06553,
+    "ebitda": 14666999808,
+    "croissance_revenus": -0.081,
+    "croissance_bpa": null,
+    "revenus": 130702000128,
+    "bpa": 11.19,
+    "bpa_forward": 12.17756,
+    "dette_totale": 112183001088,
+    "cash": 15994999808,
+    "ratio_dette_equity": 112.684,
+    "current_ratio": 1.173,
+    "quick_ratio": 0.756,
+    "dividende_yield": 6.57,
+    "dividende_par_action": 4.4,
+    "payout_ratio": 0.3843,
+    "market_cap": 42110414848,
+    "beta": 0.739,
+    "52w_high": 97.92,
+    "52w_low": 65.5,
+    "prix_actuel": 69.36,
+    "secteur": "Consumer Cyclical",
+    "industrie": "Auto Manufacturers",
+    "nom": "Bayerische Motoren Werke Aktiengesellschaft"
+  }
+}

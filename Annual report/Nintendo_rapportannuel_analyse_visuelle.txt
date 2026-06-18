@@ -1,0 +1,256 @@
+
+PAGE 13
+==================================================
+TEXTE PDFREADER :
+- 11 - 
+ 2. Approach to  and initiatives for  sustainability  
+The Company group (the Company and its consolidated subsidiaries) is engaged in gro up-wide efforts to address 
+issues associated with sustainability, with the goal of “ putting smiles on the faces of everyone Nintendo touches. ” As 
+part of this, the Company group is working to promote CSR activities focusing on the four CSR priority areas  of 
+Consumers, Supply Chain, Employees and E nvironment.  These initiatives encompass  improving product quality and 
+ensuring product safety, creating an environment where children can play with peace of mind, promoting CSR 
+procurement through communication with our suppliers, building a work environment w here employees can realize 
+their various capabilities and reducing the environmental impact of the Company group’s  products and business 
+activities.  
+The forward -looking statements in this section  are based on the judgment of the Company group as of March 31, 
+2025 . 
+(1) Governance  
+To promote CSR activities , the Company has established the CSR Promotion Project Team tasked with 
+coordinating CSR activities  and providing support under the supervision of the Senior General Manager of the 
+General Affairs Division, who is an Executive Officer , and are engaged in group -wide efforts to  promote CSR 
+activities . To advanc e our CSR activities  globally , we also have CSR teams  at our  main subsidiaries  outside of 
+Japan and information on the status of activities in each country is shared among the group companies . 
+The CSR Promotion Project Team  reports on important matters related to  CSR activities , including the CSR 
+priority areas , to the Executive Management Committee, and carries out these activities  based on the 
+instructions received . The Board of Directors  receives reports  on important matters  related to  CSR activities  
+and monitors  their progress . 
+ 
+ 
+ 
+(2) Strateg y 
+The initiatives undertaken to address each CSR priority area 
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+Ce document est une section d'un rapport financier ou stratégique, détaillant les initiatives et approches de la société en matière de durabilité et de responsabilité sociale des entreprises (CSR).
+
+### 2. Chiffres importants
+- La date de référence pour les prévisions à l'avance : Mars 31, 2025.
+- Les quatre priorités CSR mentionnées sont : Consommateurs, Chaîne d'approvisionnement, Employés et Environnement.
+
+### 3. Graphiques/tableaux visibles
+Un diagramme de flux est visible dans la section (1) Governance, illustrant les relations entre différents niveaux hiérarchiques et les processus de reporting et de coordination.
+
+### 4. Résumé utile pour un RAG
+Cette page décrit comment la société s'engage à promouvoir des initiatives de durabilité en se concentrant sur quatre domaines prioritaires : consommateurs, chaîne d'approvisionnement, employés et environnement. Elle détaille les actions entreprises pour améliorer la qualité des produits, assurer leur sécurité, créer un environnement sûr pour les enfants, promouvoir l'achat responsable auprès de fournisseurs, construire un environnement de travail où les employés peuvent développer leurs compétences et réduire l'impact environnemental. Le diagramme illustre la structure organisationnelle impliquée dans ces initiatives.
+
+
+PAGE 35
+==================================================
+TEXTE PDFREADER :
+- 33 - 
+ 4. Corporate governance  
+(1) Outline of corporate governance  
+(i) Basic views on corporate governance  
+At Nintendo, we strive to maximize long -term, continuous corporate value while carefully considering the benefits 
+for everyone we touch, including not only shareholders but also consumers, business partners, employees, local 
+communities and other stakeholders. We are working to build a highly transparent and sound system of corporate 
+governance, as well as improve our corporate ethics.  
+ 
+(ii) Outline of corporate governance system and reason for adoption of such system  
+The Company aims to strengthen the supervisory function s of the Board of Directors and further enhance the 
+corporate governance system of the Company as a Company with an Audit and Supervisory Committee. The 
+Company has also introduced the Executive Officer System for the purpose of clarifying the responsibility for the execution of operations and establishing a more flexible management structure which can appropriately and swiftly 
+respond to the rapidly changing business environment. The foregoing will be enabled  by separating the 
+management decision -making and supervisory functions from the execution of operations as well as by 
+accelerating the delegation of authority to execute operations.  
+ 
+The Company’ s corporate governance system  as of June 26, 2025 ( the submission date of the Company’ s Annual 
+Securities  Report ) is as shown below.  
+ 
+ 
+ 
+(Board of Directors)  
+The Board of Directors consists of thirteen  Directors ( including five Directors who are Audit and Supervisory 
+Committee Members) , of whom six  are Outside Directors (including  four Directors who are Audit and Supervisory 
+Committee Members). The Board of Directors holds meetings once a month in principle and deliberates important 
+matters related to management in accordance with laws and regulations, etc. as the body in charge of management 
+decision -making and supervision.  
+
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+
+Ce document est une section d'un rapport financier ou stratégique, dédiée à la gouvernance corporative (Corporate Governance) chez Nintendo.
+
+---
+
+### 2. Chiffres importants
+
+- Nombre de membres du Conseil d'administration : 13
+- Nombre de membres du Comité de Contrôle et de Supervision : 5
+- Nombre de Directeurs indépendants : 6, dont 4 sont également des membres du Comité de Contrôle et de Supervision.
+
+---
+
+### 3. Graphiques/tableaux visibles
+
+Le document contient un diagramme détaillé intitulé "System of Governance" qui illustre la structure de gouvernance chez Nintendo. Ce diagramme montre les relations entre différents organes de direction, comme le Conseil d'administration, le Comité de Contrôle et de Supervision, l'Auditeur Comptable, etc.
+
+---
+
+### 4. Résumé utile pour un RAG
+
+Nintendo vise à maximiser sa valeur à long terme tout en tenant compte des bénéfices pour tous ses parties prenantes (actionnaires, consommateurs, partenaires commerciaux, employés, communautés locales et autres). La société met l'accent sur la transparence et la bonne gouvernance, ainsi que sur l'amélioration de son code éthique.
+
+La structure de gouvernance comprend :
+- Le Conseil d'administration qui supervise les opérations.
+- Un Comité de Contrôle et de Supervision pour renforcer le rôle des auditeurs internes.
+- Un système d'officiers exécutifs pour clarifier la responsabilité dans l'exécution des opérations.
+
+Le diagramme de gouvernance montre les interactions entre ces différents organes, soulignant ainsi leur rôle et leurs responsabilités respectives.
+
+
+PAGE 13
+==================================================
+TEXTE PDFREADER :
+- 11 - 
+ 2. Approach to  and initiatives for  sustainability  
+The Company group (the Company and its consolidated subsidiaries) is engaged in gro up-wide efforts to address 
+issues associated with sustainability, with the goal of “ putting smiles on the faces of everyone Nintendo touches. ” As 
+part of this, the Company group is working to promote CSR activities focusing on the four CSR priority areas  of 
+Consumers, Supply Chain, Employees and E nvironment.  These initiatives encompass  improving product quality and 
+ensuring product safety, creating an environment where children can play with peace of mind, promoting CSR 
+procurement through communication with our suppliers, building a work environment w here employees can realize 
+their various capabilities and reducing the environmental impact of the Company group’s  products and business 
+activities.  
+The forward -looking statements in this section  are based on the judgment of the Company group as of March 31, 
+2025 . 
+(1) Governance  
+To promote CSR activities , the Company has established the CSR Promotion Project Team tasked with 
+coordinating CSR activities  and providing support under the supervision of the Senior General Manager of the 
+General Affairs Division, who is an Executive Officer , and are engaged in group -wide efforts to  promote CSR 
+activities . To advanc e our CSR activities  globally , we also have CSR teams  at our  main subsidiaries  outside of 
+Japan and information on the status of activities in each country is shared among the group companies . 
+The CSR Promotion Project Team  reports on important matters related to  CSR activities , including the CSR 
+priority areas , to the Executive Management Committee, and carries out these activities  based on the 
+instructions received . The Board of Directors  receives reports  on important matters  related to  CSR activities  
+and monitors  their progress . 
+ 
+ 
+ 
+(2) Strateg y 
+The initiatives undertaken to address each CSR priority area 
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 35
+==================================================
+TEXTE PDFREADER :
+- 33 - 
+ 4. Corporate governance  
+(1) Outline of corporate governance  
+(i) Basic views on corporate governance  
+At Nintendo, we strive to maximize long -term, continuous corporate value while carefully considering the benefits 
+for everyone we touch, including not only shareholders but also consumers, business partners, employees, local 
+communities and other stakeholders. We are working to build a highly transparent and sound system of corporate 
+governance, as well as improve our corporate ethics.  
+ 
+(ii) Outline of corporate governance system and reason for adoption of such system  
+The Company aims to strengthen the supervisory function s of the Board of Directors and further enhance the 
+corporate governance system of the Company as a Company with an Audit and Supervisory Committee. The 
+Company has also introduced the Executive Officer System for the purpose of clarifying the responsibility for the execution of operations and establishing a more flexible management structure which can appropriately and swiftly 
+respond to the rapidly changing business environment. The foregoing will be enabled  by separating the 
+management decision -making and supervisory functions from the execution of operations as well as by 
+accelerating the delegation of authority to execute operations.  
+ 
+The Company’ s corporate governance system  as of June 26, 2025 ( the submission date of the Company’ s Annual 
+Securities  Report ) is as shown below.  
+ 
+ 
+ 
+(Board of Directors)  
+The Board of Directors consists of thirteen  Directors ( including five Directors who are Audit and Supervisory 
+Committee Members) , of whom six  are Outside Directors (including  four Directors who are Audit and Supervisory 
+Committee Members). The Board of Directors holds meetings once a month in principle and deliberates important 
+matters related to management in accordance with laws and regulations, etc. as the body in charge of management 
+decision -making and supervision.  
+
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 13
+==================================================
+TEXTE PDFREADER :
+- 11 - 
+ 2. Approach to  and initiatives for  sustainability  
+The Company group (the Company and its consolidated subsidiaries) is engaged in gro up-wide efforts to address 
+issues associated with sustainability, with the goal of “ putting smiles on the faces of everyone Nintendo touches. ” As 
+part of this, the Company group is working to promote CSR activities focusing on the four CSR priority areas  of 
+Consumers, Supply Chain, Employees and E nvironment.  These initiatives encompass  improving product quality and 
+ensuring product safety, creating an environment where children can play with peace of mind, promoting CSR 
+procurement through communication with our suppliers, building a work environment w here employees can realize 
+their various capabilities and reducing the environmental impact of the Company group’s  products and business 
+activities.  
+The forward -looking statements in this section  are based on the judgment of the Company group as of March 31, 
+2025 . 
+(1) Governance  
+To promote CSR activities , the Company has established the CSR Promotion Project Team tasked with 
+coordinating CSR activities  and providing support under the supervision of the Senior General Manager of the 
+General Affairs Division, who is an Executive Officer , and are engaged in group -wide efforts to  promote CSR 
+activities . To advanc e our CSR activities  globally , we also have CSR teams  at our  main subsidiaries  outside of 
+Japan and information on the status of activities in each country is shared among the group companies . 
+The CSR Promotion Project Team  reports on important matters related to  CSR activities , including the CSR 
+priority areas , to the Executive Management Committee, and carries out these activities  based on the 
+instructions received . The Board of Directors  receives reports  on important matters  related to  CSR activities  
+and monitors  their progress . 
+ 
+ 
+ 
+(2) Strateg y 
+The initiatives undertaken to address each CSR priority area 
+
+ANALYSE OLLAMA :
+???????????????????????????????
+
+
+PAGE 35
+==================================================
+TEXTE PDFREADER :
+- 33 - 
+ 4. Corporate governance  
+(1) Outline of corporate governance  
+(i) Basic views on corporate governance  
+At Nintendo, we strive to maximize long -term, continuous corporate value while carefully considering the benefits 
+for everyone we touch, including not only shareholders but also consumers, business partners, employees, local 
+communities and other stakeholders. We are working to build a highly transparent and sound system of corporate 
+governance, as well as improve our corporate ethics.  
+ 
+(ii) Outline of corporate governance system and reason for adoption of such system  
+The Company aims to strengthen the supervisory function s of the Board of Directors and further enhance the 
+corporate governance system of the Company as a Company with an Audit and Supervisory Committee. The 
+Company has also introduced the Executive Officer System for the purpose of clarifying the responsibility for the execution of operations and establishing a more flexible management structure which can appropriately and swiftly 
+respond to the rapidly changing business environment. The foregoing will be enabled  by separating the 
+management decision -making and supervisory functions from the execution of operations as well as by 
+accelerating the delegation of authority to execute operations.  
+ 
+The Company’ s corporate governance system  as of June 26, 2025 ( the submission date of the Company’ s Annual 
+Securities  Report ) is as shown below.  
+ 
+ 
+ 
+(Board of Directors)  
+The Board of Directors consists of thirteen  Directors ( including five Directors who are Audit and Supervisory 
+Committee Members) , of whom six  are Outside Directors (including  four Directors who are Audit and Supervisory 
+Committee Members). The Board of Directors holds meetings once a month in principle and deliberates important 
+matters related to management in accordance with laws and regulations, etc. as the body in charge of management 
+decision -making and supervision.  
+
+
+ANALYSE OLLAMA :
+???????????????????????????????
+

@@ -1,0 +1,79 @@
+{
+  "ticker": "SIE.DE",
+  "nom": "Siemens Aktiengesellschaft",
+  "secteur": "Industrials",
+  "date": "2026-06-15 16:15",
+  "prix": 270.2,
+  "market_cap": 206093271040,
+  "beta": 1.29,
+  "scores": {
+    "valorisation": -4,
+    "rentabilite": 0,
+    "croissance": -3,
+    "sante_financiere": 1,
+    "dividende": 2,
+    "total": -4
+  },
+  "recommandation": "🟠 SELL",
+  "details": {
+    "valorisation": {
+      "PE": "ATTENTION (PE=27.9 → cher)",
+      "PEG": "SELL (PEG=4.02 > 2)",
+      "PB": "ATTENTION (PB=3.26 > 3)",
+      "EV_EBITDA": "ATTENTION (EV/EBITDA=21.8 > 15)"
+    },
+    "rentabilite": {
+      "ROE": "NEUTRAL (ROE=12.6%)",
+      "Marge_Nette": "ATTENTION (marge=9.7% faible)",
+      "ROA": "ATTENTION (ROA=3.5% < 5%)"
+    },
+    "croissance": {
+      "Croissance_CA": "SELL (croissance=-0.0% négative)",
+      "Croissance_BPA": "ATTENTION (BPA=-8.6%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "NEUTRAL (D/E=76.4%)",
+      "Current_Ratio": "NEUTRAL (CR=1.39)"
+    },
+    "dividende": {
+      "Dividende": "BUY (rendement=202.0%)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "SIE.DE",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 27.913223,
+    "pe_forward": 21.173143,
+    "pb_ratio": 3.261867,
+    "ps_ratio": 2.5858953,
+    "ev_ebitda": 21.753,
+    "peg_ratio": 4.02,
+    "roe": 0.12593001,
+    "roa": 0.03542,
+    "marge_nette": 0.09688,
+    "marge_brute": 0.38845003,
+    "marge_operationnelle": 0.12725,
+    "ebitda": 11843999744,
+    "croissance_revenus": -0.0,
+    "croissance_bpa": -0.086,
+    "revenus": 79699001344,
+    "bpa": 9.68,
+    "bpa_forward": 12.76145,
+    "dette_totale": 54160998400,
+    "cash": 8664000512,
+    "ratio_dette_equity": 76.352,
+    "current_ratio": 1.393,
+    "quick_ratio": 0.743,
+    "dividende_yield": 2.02,
+    "dividende_par_action": 5.35,
+    "payout_ratio": 0.5533,
+    "market_cap": 206093271040,
+    "beta": 1.29,
+    "52w_high": 280.2,
+    "52w_low": 198.0,
+    "prix_actuel": 270.2,
+    "secteur": "Industrials",
+    "industrie": "Specialty Industrial Machinery",
+    "nom": "Siemens Aktiengesellschaft"
+  }
+}

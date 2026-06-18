@@ -1,0 +1,79 @@
+{
+  "ticker": "TTE.PA",
+  "nom": "TotalEnergies SE",
+  "secteur": "Energy",
+  "date": "2026-06-15 16:15",
+  "prix": 71.71,
+  "market_cap": 159281676288,
+  "beta": 0.045,
+  "scores": {
+    "valorisation": 7,
+    "rentabilite": 0,
+    "croissance": 2,
+    "sante_financiere": 1,
+    "dividende": 2,
+    "total": 12
+  },
+  "recommandation": "🟢 STRONG BUY",
+  "details": {
+    "valorisation": {
+      "PE": "BUY (PE=12.3 < 15 → sous-évalué)",
+      "PEG": "BUY (PEG=0.72 < 1)",
+      "PB": "NEUTRAL (PB=1.44)",
+      "EV_EBITDA": "BUY (EV/EBITDA=5.5 < 10)"
+    },
+    "rentabilite": {
+      "ROE": "NEUTRAL (ROE=12.5%)",
+      "Marge_Nette": "ATTENTION (marge=8.2% faible)",
+      "ROA": "ATTENTION (ROA=4.9% < 5%)"
+    },
+    "croissance": {
+      "Croissance_CA": "ATTENTION (croissance=3.4% faible)",
+      "Croissance_BPA": "BUY (BPA=57.1%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "NEUTRAL (D/E=51.3%)",
+      "Current_Ratio": "NEUTRAL (CR=1.08)"
+    },
+    "dividende": {
+      "Dividende": "BUY (rendement=471.0%)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "TTE.PA",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 12.321305,
+    "pe_forward": 8.545652,
+    "pb_ratio": 1.4392563,
+    "ps_ratio": 0.86584485,
+    "ev_ebitda": 5.458,
+    "peg_ratio": 0.72,
+    "roe": 0.12512,
+    "roa": 0.04892,
+    "marge_nette": 0.08201,
+    "marge_brute": 0.38448003,
+    "marge_operationnelle": 0.20353001,
+    "ebitda": 36652998656,
+    "croissance_revenus": 0.034,
+    "croissance_bpa": 0.571,
+    "revenus": 183960993792,
+    "bpa": 5.82,
+    "bpa_forward": 8.391401,
+    "dette_totale": 64250998784,
+    "cash": 29866000384,
+    "ratio_dette_equity": 51.304,
+    "current_ratio": 1.076,
+    "quick_ratio": 0.507,
+    "dividende_yield": 4.71,
+    "dividende_par_action": 3.6,
+    "payout_ratio": 0.5884,
+    "market_cap": 159281676288,
+    "beta": 0.045,
+    "52w_high": 81.34,
+    "52w_low": 49.24,
+    "prix_actuel": 71.71,
+    "secteur": "Energy",
+    "industrie": "Oil & Gas Integrated",
+    "nom": "TotalEnergies SE"
+  }
+}

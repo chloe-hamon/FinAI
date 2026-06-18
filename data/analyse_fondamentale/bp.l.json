@@ -1,0 +1,80 @@
+{
+  "ticker": "BP.L",
+  "nom": "BP p.l.c.",
+  "secteur": "Energy",
+  "date": "2026-06-15 16:15",
+  "prix": 512.0,
+  "market_cap": 79105957888,
+  "beta": -0.239,
+  "scores": {
+    "valorisation": 4,
+    "rentabilite": -2,
+    "croissance": 3,
+    "sante_financiere": 1,
+    "dividende": 1,
+    "total": 7
+  },
+  "recommandation": "🟡 BUY",
+  "details": {
+    "valorisation": {
+      "PE": "ATTENTION (PE=34.1 → cher)",
+      "PEG": "BUY (PEG=0.05 < 1)",
+      "PB": "NEUTRAL (PB=1.90)",
+      "EV_EBITDA": "BUY (EV/EBITDA=4.1 < 10)"
+    },
+    "rentabilite": {
+      "ROE": "ATTENTION (ROE=5.8% < 10%)",
+      "Marge_Nette": "ATTENTION (marge=1.7% faible)",
+      "ROA": "ATTENTION (ROA=4.0% < 5%)"
+    },
+    "croissance": {
+      "Croissance_CA": "NEUTRAL (croissance=11.6%)",
+      "Croissance_BPA": "BUY (BPA=474.5%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "NEUTRAL (D/E=96.4%)",
+      "Current_Ratio": "NEUTRAL (CR=1.22)"
+    },
+    "dividende": {
+      "Dividende": "BUY (rendement=465.0%)",
+      "Payout": "ATTENTION (payout=160.0% → risqué)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "BP.L",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 34.13333,
+    "pe_forward": 9.902626,
+    "pb_ratio": 1.8987881,
+    "ps_ratio": 0.4098648,
+    "ev_ebitda": 4.134,
+    "peg_ratio": 0.05,
+    "roe": 0.05842,
+    "roa": 0.03961,
+    "marge_nette": 0.01663,
+    "marge_brute": 0.2891,
+    "marge_operationnelle": 0.15461001,
+    "ebitda": 34377998336,
+    "croissance_revenus": 0.116,
+    "croissance_bpa": 4.745,
+    "revenus": 193004994560,
+    "bpa": 0.15,
+    "bpa_forward": 0.5170346,
+    "dette_totale": 74178002944,
+    "cash": 35762999296,
+    "ratio_dette_equity": 96.384,
+    "current_ratio": 1.219,
+    "quick_ratio": 0.68,
+    "dividende_yield": 4.65,
+    "dividende_par_action": 0.25,
+    "payout_ratio": 1.6000999,
+    "market_cap": 79105957888,
+    "beta": -0.239,
+    "52w_high": 609.4,
+    "52w_low": 362.0,
+    "prix_actuel": 512.0,
+    "secteur": "Energy",
+    "industrie": "Oil & Gas Integrated",
+    "nom": "BP p.l.c."
+  }
+}

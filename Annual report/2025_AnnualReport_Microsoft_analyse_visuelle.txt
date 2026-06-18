@@ -1,0 +1,334 @@
+
+PAGE 1
+==================================================
+TEXTE PDFREADER :
+ 
+ 
+
+
+ANALYSE OLLAMA :
+Type de contenu : Rapport annuel
+
+Chiffres importants (hypothétiques) : Pas de chiffres spécifiques dans l'image.
+
+Graphiques/tableaux visibles : Aucun graphique ou tableau visible.
+
+Résumé utile pour un RAG : Le rapport est destiné à Microsoft et couvre l'année 2025. Il pourrait contenir des informations financières, des performances de produits, des tendances du marché et d'autres données clés sur la performance de l'entreprise au cours de cette année.
+
+
+PAGE 6
+==================================================
+TEXTE PDFREADER :
+ 
+5 I asked our team: What are you working on today that, 15 years from now, you will look back on and say, “we got it right”? 
+Hundreds of answers poured in spanning near -term priorities and long -term ambitions alike:  
+• “Helping the world be safe from cybercrime”   
+• “Speech is now a standard human -machine interface”   
+• “Using AI to improve the lived experience for people with disabilities”   
+• “We changed the way people learn”   
+• “Access to millions of agents powered by orders of magnitude larger models”   
+• “Medical knowledge has become ambient, embedded in clinical workflows”  
+• “We helped billions become skilled in AI”   
+These responses and so many others reflected a deep sense of purpose and belief in what’s possible. And that is precisely 
+what is needed for us to succeed.  
+Microsoft has an immense opportunity and responsibility —not just in building these futures, but in helping shape the world’s 
+future. And I’m confident that together, we can continue to think in decades and execute in quarters on this journey to 
+empower us all.  
+ 
+Satya Nadella  
+Chairman and Chief Executive Officer  
+October 15, 2025  
+
+
+ANALYSE OLLAMA :
+### 1. Type de contenu
+
+Ce texte est une partie d'un rapport financier ou stratégique, probablement issu d'une présentation ou d'un document officiel. Il s'agit d'une section où le PDG de Microsoft, Satya Nadella, pose des questions à son équipe et résume les réponses obtenues.
+
+### 2. Chiffres importants
+
+- **15 ans** : La période future envisagée pour évaluer la réussite des projets.
+- **Millions d'agents** : Nombre de systèmes ou agents utilisant des modèles plus puissants.
+- **Billions** : Nombre de personnes qui ont acquis des compétences en intelligence artificielle.
+
+### 3. Graphiques/tableaux visibles
+
+Il n'y a pas de graphiques ou tableaux visibles dans cette section du document.
+
+### 4. Résumé utile pour un RAG (Résumé Analytique Général)
+
+Ce texte souligne l'importance d'évaluer les projets à long terme et la vision stratégique de Microsoft. Le PDG encourage son équipe à se concentrer sur des objectifs ambitieux, tels que :
+
+- Protéger le monde contre les cyberattaques.
+- Transformer l'interaction vocale en une interface standard entre humains et machines.
+- Améliorer l'expérience de vie pour les personnes handicapées grâce à l'intelligence artificielle (IA).
+- Modifier la façon dont les gens apprennent.
+- Accéder à des millions d'agents utilisant des modèles plus puissants.
+- Intégrer le savoir médical dans les workflows cliniques.
+- Aider des milliards de personnes à acquérir des compétences en IA.
+
+Le PDG souligne que cette vision et ces objectifs reflètent une profonde conviction et un sens du devoir, essentiels pour réussir. Il exprime également la confiance qu'il a dans l'équipe pour poursuivre ce chemin ensemble.
+
+
+PAGE 9
+==================================================
+TEXTE PDFREADER :
+ 
+8 STOCK PERFORMANCE  
+COMPARISON OF 5 YEAR CUMULATIVE TOTAL RETURN*  
+Among Microsoft Corporation, the S&P 500 Index  
+and the NASDAQ Computer Index  
+  
+ 
+  
+     6/20      6/21      6/22      6/23      6/24      6/25   
+   
+Microsoft Corporation       100.00         134.41         128.48         172.01         227.51         255.13    
+S&P 500       100.00         140.79         125.85         150.51         187.47         215.89    
+NASDAQ Computer       100.00         150.44         117.59         154.73         223.97         254.97    
+* $100 invested on 6/30/20 in stock or index, including reinvestment of dividends. Fiscal year ending June 30.  
+  
+
+
+ANALYSE OLLAMA :
+1. **Type de contenu**: Rapport financier comparant les performances des actions de Microsoft Corporation, S&P 500 et NASDAQ Computer Index sur une période de cinq ans.
+
+2. **Chiffres importants**:
+   - Investissement initial: $100 le 30 juin 2020.
+   - Valeur finale pour Microsoft Corporation: $255.13 en fin d'exercice (30 juin).
+   - Valeur finale pour S&P 500: $215.89 en fin d'exercice (30 juin).
+   - Valeur finale pour NASDAQ Computer Index: $254.97 en fin d'exercice (30 juin).
+
+3. **Graphiques/tableaux visibles**:
+   - Graphique linéaire comparant les performances cumulatives des trois indices sur cinq ans.
+   - Tableau de données montrant la valeur de chaque indice au 30 juin pour chaque année.
+
+4. **Résumé utile pour un RAG**:
+   - Microsoft Corporation a démontré une performance supérieure à celle du S&P 500 et du NASDAQ Computer Index sur cinq ans.
+   - L'investissement initial de $100 a généré des rendements significatifs, avec Microsoft donnant les meilleurs résultats.
+
+
+PAGE 80
+==================================================
+TEXTE PDFREADER :
+ 
+   
+  
+  
+ 
+ 
+ 
+
+
+ANALYSE OLLAMA :
+Type de contenu : Rapport financier
+
+Chiffres importants :
+
+- FSC C132107 (certification forestière)
+
+Graphiques/tableaux visibles :
+- Aucun graphique ou tableau visible.
+
+Résumé utile pour un RAG :
+Ce document semble être une page de rapport financier avec une certification FSC (Forest Stewardship Council) indiquant que le papier utilisé est issu d'une forêt gérée de manière responsable. Il n'y a pas de chiffres financiers ou de graphiques visibles sur cette page spécifique du rapport.
+
+
+PAGE 80
+==================================================
+TEXTE PDFREADER :
+ 
+   
+  
+  
+ 
+ 
+ 
+
+
+ANALYSE OLLAMA :
+[Erreur analyse visuelle : model 'qwen2.5vl:3b' not found (status code: 404)]
+
+
+PAGE 6
+==================================================
+TEXTE PDFREADER :
+ 
+5 I asked our team: What are you working on today that, 15 years from now, you will look back on and say, “we got it right”? 
+Hundreds of answers poured in spanning near -term priorities and long -term ambitions alike:  
+• “Helping the world be safe from cybercrime”   
+• “Speech is now a standard human -machine interface”   
+• “Using AI to improve the lived experience for people with disabilities”   
+• “We changed the way people learn”   
+• “Access to millions of agents powered by orders of magnitude larger models”   
+• “Medical knowledge has become ambient, embedded in clinical workflows”  
+• “We helped billions become skilled in AI”   
+These responses and so many others reflected a deep sense of purpose and belief in what’s possible. And that is precisely 
+what is needed for us to succeed.  
+Microsoft has an immense opportunity and responsibility —not just in building these futures, but in helping shape the world’s 
+future. And I’m confident that together, we can continue to think in decades and execute in quarters on this journey to 
+empower us all.  
+ 
+Satya Nadella  
+Chairman and Chief Executive Officer  
+October 15, 2025  
+
+
+ANALYSE OLLAMA :
+[Erreur analyse visuelle : model 'qwen2.5vl:3b' not found (status code: 404)]
+
+
+PAGE 9
+==================================================
+TEXTE PDFREADER :
+ 
+8 STOCK PERFORMANCE  
+COMPARISON OF 5 YEAR CUMULATIVE TOTAL RETURN*  
+Among Microsoft Corporation, the S&P 500 Index  
+and the NASDAQ Computer Index  
+  
+ 
+  
+     6/20      6/21      6/22      6/23      6/24      6/25   
+   
+Microsoft Corporation       100.00         134.41         128.48         172.01         227.51         255.13    
+S&P 500       100.00         140.79         125.85         150.51         187.47         215.89    
+NASDAQ Computer       100.00         150.44         117.59         154.73         223.97         254.97    
+* $100 invested on 6/30/20 in stock or index, including reinvestment of dividends. Fiscal year ending June 30.  
+  
+
+
+ANALYSE OLLAMA :
+[Erreur analyse visuelle : model 'qwen2.5vl:3b' not found (status code: 404)]
+
+
+PAGE 1
+==================================================
+TEXTE PDFREADER :
+ 
+ 
+
+
+ANALYSE OLLAMA :
+[Erreur analyse visuelle : model 'qwen2.5vl:3b' not found (status code: 404)]
+
+
+PAGE 80
+==================================================
+TEXTE PDFREADER :
+ 
+   
+  
+  
+ 
+ 
+ 
+
+
+ANALYSE OLLAMA :
+1. Type de contenu: Rapport financier
+
+2. Chiffres importants: Non disponibles (la page est vide)
+
+3. Graphiques/tableaux visibles: Non disponibles (la page est vide)
+
+4. Résumé utile pour un RAG: La page semble être une section du rapport financier qui mentionne le FSC, mais elle ne fournit pas de chiffres importants ou de graphiques/tables. Il serait nécessaire d'examiner les autres parties du rapport financier pour obtenir des informations pertinentes pour un RAG.
+
+
+PAGE 9
+==================================================
+TEXTE PDFREADER :
+ 
+8 STOCK PERFORMANCE  
+COMPARISON OF 5 YEAR CUMULATIVE TOTAL RETURN*  
+Among Microsoft Corporation, the S&P 500 Index  
+and the NASDAQ Computer Index  
+  
+ 
+  
+     6/20      6/21      6/22      6/23      6/24      6/25   
+   
+Microsoft Corporation       100.00         134.41         128.48         172.01         227.51         255.13    
+S&P 500       100.00         140.79         125.85         150.51         187.47         215.89    
+NASDAQ Computer       100.00         150.44         117.59         154.73         223.97         254.97    
+* $100 invested on 6/30/20 in stock or index, including reinvestment of dividends. Fiscal year ending June 30.  
+  
+
+
+ANALYSE OLLAMA :
+1. Type de contenu: Rapport financier
+
+2. Chiffres importants:
+   - Microsoft Corporation: $100 -> $255.13 (6 ans)
+   - S&P 500: $100 -> $215.89 (6 ans)
+   - NASDAQ Computer: $100 -> $254.97 (6 ans)
+
+3. Graphiques/tableaux visibles:
+   - Un graphique montrant la performance cumulative totale des trois indices en fonction du temps.
+
+4. Résumé utile pour un RAG:
+   Le rapport compare les performances cumulatives totales de Microsoft Corporation, le S&P 500 et l'indice NASDAQ Computer sur une période de 6 ans, en commençant par $100 investi le 30 juin 2020.
+
+
+PAGE 1
+==================================================
+TEXTE PDFREADER :
+ 
+ 
+
+
+ANALYSE OLLAMA :
+1. Type de contenu: Rapport annuel
+
+2. Chiffres importants: Non spécifiés dans le texte fourni.
+
+3. Graphiques/tableaux visibles: Non spécifiés dans le texte fourni.
+
+4. Résumé utile pour un RAG:
+   - Le document est le rapport annuel de Microsoft pour l'année 2025.
+   - Il contient des informations sur les performances financières et stratégiques de la société en cette année.
+
+
+PAGE 6
+==================================================
+TEXTE PDFREADER :
+ 
+5 I asked our team: What are you working on today that, 15 years from now, you will look back on and say, “we got it right”? 
+Hundreds of answers poured in spanning near -term priorities and long -term ambitions alike:  
+• “Helping the world be safe from cybercrime”   
+• “Speech is now a standard human -machine interface”   
+• “Using AI to improve the lived experience for people with disabilities”   
+• “We changed the way people learn”   
+• “Access to millions of agents powered by orders of magnitude larger models”   
+• “Medical knowledge has become ambient, embedded in clinical workflows”  
+• “We helped billions become skilled in AI”   
+These responses and so many others reflected a deep sense of purpose and belief in what’s possible. And that is precisely 
+what is needed for us to succeed.  
+Microsoft has an immense opportunity and responsibility —not just in building these futures, but in helping shape the world’s 
+future. And I’m confident that together, we can continue to think in decades and execute in quarters on this journey to 
+empower us all.  
+ 
+Satya Nadella  
+Chairman and Chief Executive Officer  
+October 15, 2025  
+
+
+ANALYSE OLLAMA :
+Voici une analyse rapide du contenu et des informations fournies dans cette page de rapport financier :
+
+1. **Type de contenu** : Le texte semble être une partie d'un rapport ou d'une lettre, probablement adressée à un équipe interne de Microsoft.
+
+2. **Chiffres importants** :
+   - 15 ans
+   - Plusieurs objectifs futurs mentionnés (par exemple, "cybercrime", "interface humain-machine standard", etc.)
+   - "We helped billions become skilled in AI" (ce qui pourrait signifier que Microsoft a aidé des milliards de personnes à apprendre l'IA)
+
+3. **Graphiques/tableaux visibles** : Il n'y a pas d'informations graphiques ou tabulaires visibles dans cette page.
+
+4. **Résumé utile pour un RAG (Rapid Assessment Guide)** :
+   - Le texte parle de futurs possibles et de l'importance de la responsabilité en matière de création de ces futures.
+   - Il mentionne que Microsoft a une grande opportunité et une responsabilité à prendre, non seulement dans la construction de ces futures, mais aussi dans leur influence sur le monde du futur.
+   - Le texte exprime confiance que l'équipe peut continuer à penser à des décennies à l'avance et à exécuter en quartiers pour aider à émanciper tous les individus.
+
+Ces informations permettent de comprendre la perspective globale sur le futur et la responsabilité de Microsoft dans son développement.
+

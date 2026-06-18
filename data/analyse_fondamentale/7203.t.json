@@ -1,0 +1,80 @@
+{
+  "ticker": "7203.T",
+  "nom": "Toyota Motor Corporation",
+  "secteur": "Consumer Cyclical",
+  "date": "2026-06-15 16:15",
+  "prix": 2902.5,
+  "market_cap": 37829396660224,
+  "beta": 0.306,
+  "scores": {
+    "valorisation": 6,
+    "rentabilite": 0,
+    "croissance": 2,
+    "sante_financiere": -1,
+    "dividende": 3,
+    "total": 10
+  },
+  "recommandation": "🟢 STRONG BUY",
+  "details": {
+    "valorisation": {
+      "PE": "BUY (PE=9.8 < 15 → sous-évalué)",
+      "PEG": "NEUTRAL (PEG=1.56)",
+      "PB": "BUY (PB=0.95 < 1 → sous valeur comptable)",
+      "EV_EBITDA": "NEUTRAL (EV/EBITDA=12.0)"
+    },
+    "rentabilite": {
+      "ROE": "NEUTRAL (ROE=10.2%)",
+      "Marge_Nette": "ATTENTION (marge=7.6% faible)",
+      "ROA": "ATTENTION (ROA=2.4% < 5%)"
+    },
+    "croissance": {
+      "Croissance_CA": "ATTENTION (croissance=1.9% faible)",
+      "Croissance_BPA": "BUY (BPA=23.2%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "ATTENTION (D/E=107.1%)",
+      "Current_Ratio": "NEUTRAL (CR=1.27)"
+    },
+    "dividende": {
+      "Dividende": "BUY (rendement=360.0%)",
+      "Payout": "BUY (payout=32.2% → soutenable)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "7203.T",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 9.828654,
+    "pe_forward": 8.952254,
+    "pb_ratio": 0.94765735,
+    "ps_ratio": 0.74636346,
+    "ev_ebitda": 11.995,
+    "peg_ratio": 1.56,
+    "roe": 0.10233,
+    "roa": 0.02368,
+    "marge_nette": 0.07592,
+    "marge_brute": 0.1671,
+    "marge_operationnelle": 0.04566,
+    "ebitda": 5612894158848,
+    "croissance_revenus": 0.019,
+    "croissance_bpa": 0.232,
+    "revenus": 50684951003136,
+    "bpa": 295.31,
+    "bpa_forward": 324.22,
+    "dette_totale": 43916481003520,
+    "cash": 13867543429120,
+    "ratio_dette_equity": 107.061,
+    "current_ratio": 1.274,
+    "quick_ratio": 1.016,
+    "dividende_yield": 3.6,
+    "dividende_par_action": 100.0,
+    "payout_ratio": 0.3218,
+    "market_cap": 37829396660224,
+    "beta": 0.306,
+    "52w_high": 4000.0,
+    "52w_low": 2434.0,
+    "prix_actuel": 2902.5,
+    "secteur": "Consumer Cyclical",
+    "industrie": "Auto Manufacturers",
+    "nom": "Toyota Motor Corporation"
+  }
+}

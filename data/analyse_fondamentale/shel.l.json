@@ -1,0 +1,80 @@
+{
+  "ticker": "SHEL.L",
+  "nom": "Shell plc",
+  "secteur": "Energy",
+  "date": "2026-06-15 16:15",
+  "prix": 3052.5,
+  "market_cap": 169265790976,
+  "beta": -0.248,
+  "scores": {
+    "valorisation": 6,
+    "rentabilite": 0,
+    "croissance": 2,
+    "sante_financiere": 2,
+    "dividende": 3,
+    "total": 13
+  },
+  "recommandation": "🟢 STRONG BUY",
+  "details": {
+    "valorisation": {
+      "PE": "BUY (PE=12.8 < 15 → sous-évalué)",
+      "PEG": "NEUTRAL (PEG=1.28)",
+      "PB": "NEUTRAL (PB=1.32)",
+      "EV_EBITDA": "BUY (EV/EBITDA=4.8 < 10)"
+    },
+    "rentabilite": {
+      "ROE": "NEUTRAL (ROE=10.7%)",
+      "Marge_Nette": "ATTENTION (marge=7.0% faible)",
+      "ROA": "ATTENTION (ROA=5.0% < 5%)"
+    },
+    "croissance": {
+      "Croissance_CA": "ATTENTION (croissance=0.7% faible)",
+      "Croissance_BPA": "BUY (BPA=26.6%)"
+    },
+    "sante_financiere": {
+      "Dette_Equity": "BUY (D/E=43.3% → peu endetté)",
+      "Current_Ratio": "NEUTRAL (CR=1.27)"
+    },
+    "dividende": {
+      "Dividende": "BUY (rendement=361.0%)",
+      "Payout": "BUY (payout=45.0% → soutenable)"
+    }
+  },
+  "donnees_brutes": {
+    "ticker": "SHEL.L",
+    "date": "2026-06-15 16:15",
+    "pe_ratio": 12.771966,
+    "pe_forward": 8.403175,
+    "pb_ratio": 1.322069,
+    "ps_ratio": 0.63314325,
+    "ev_ebitda": 4.786,
+    "peg_ratio": 1.28,
+    "roe": 0.10697,
+    "roa": 0.049889997,
+    "marge_nette": 0.07014,
+    "marge_brute": 0.25858,
+    "marge_operationnelle": 0.14873,
+    "ebitda": 49131999232,
+    "croissance_revenus": 0.007,
+    "croissance_bpa": 0.266,
+    "revenus": 267342004224,
+    "bpa": 2.39,
+    "bpa_forward": 3.6325552,
+    "dette_totale": 75645001728,
+    "cash": 23117000704,
+    "ratio_dette_equity": 43.324,
+    "current_ratio": 1.275,
+    "quick_ratio": 0.824,
+    "dividende_yield": 3.61,
+    "dividende_par_action": 1.16,
+    "payout_ratio": 0.45049998,
+    "market_cap": 169265790976,
+    "beta": -0.248,
+    "52w_high": 3758.5,
+    "52w_low": 2498.955,
+    "prix_actuel": 3052.5,
+    "secteur": "Energy",
+    "industrie": "Oil & Gas Integrated",
+    "nom": "Shell plc"
+  }
+}
