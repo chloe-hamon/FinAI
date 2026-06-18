@@ -46,7 +46,7 @@ memory = ConversationBufferMemory(
 # ==========================================
 # OUTILS (TOOLS)
 # ==========================================
-TICKERS = {
+TICKERS = { 
     "Apple":         "AAPL",
     "Tesla":         "TSLA",
     "Microsoft":     "MSFT",

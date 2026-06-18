@@ -46,7 +46,7 @@ def lancer_extraction(pdf_path: str, pages_filter: list[int], existing_ids: set 
 
     # ── 2. Skip pages déjà indexées ──────────────────────────────
     if existing_ids:
-        avant = len(pages_a_traiter)
+        avant =len(pages_a_traiter)
         pages_a_traiter = [
             i for i in pages_a_traiter
             if f"{nom_pdf}_p{i + 1}_visual" not in existing_ids
