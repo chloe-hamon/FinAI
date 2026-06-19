@@ -5,20 +5,16 @@ from vadim_eval import ask, charger_vector_store
 
 # Modèle utilisé uniquement pour rédiger un commentaire
 evaluateur = ChatOllama(
-    model="llama3.2:1b",
+    model="llama3.2:3b",
     temperature=0
 )
-
 
 df_questions = pd.read_csv(
     "questions_evaluation_rag.csv",
     sep=";",
     encoding="utf-8-sig"
 )
-
-
 vector_store = charger_vector_store()
-
 
 def noter_pertinence(reponse_rag):
     if not reponse_rag or "je ne trouve pas" in reponse_rag.lower():
