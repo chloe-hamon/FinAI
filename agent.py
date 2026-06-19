@@ -1,4 +1,5 @@
 import os
+import re
 from langchain_core.prompts import PromptTemplate, MessagesPlaceholder
 from langchain_classic.agents import create_react_agent, AgentExecutor
 from langchain_classic.memory import ConversationBufferMemory
@@ -7,6 +8,7 @@ from langchain_ollama import ChatOllama
 from vadim import ask, retriever, charger_vector_store, construire_contexte
 from prompt_template import formater_historique, creer_prompt_template, formater_prompt
 from prompt_template import SYSTEM_PROMPT, HUMAN_PROMPT
+from financial_tools_langchain import TICKERS,ENTREPRISES_CONNUES
 
 
 from financial_tools_langchain import (
@@ -14,7 +16,16 @@ from financial_tools_langchain import (
     calcul_croissance,
     calcul_ratio_endettement,
     verifier_alerte,
-    get_donnees_financieres
+    get_donnees_financieres,
+    get_historique_action,
+    get_pe_ratio,
+    get_top_performers,
+    get_correlation,
+    get_cours_action,
+    recherche_financiere,
+    detecter_ticker,
+    detecter_entreprise,
+    analyser_action
 )
 
 historique = [] 
@@ -42,199 +53,35 @@ memory = ConversationBufferMemory(
     return_messages=False
 )
 
-
 # ==========================================
-# OUTILS (TOOLS)
+# Outils
 # ==========================================
-TICKERS = { 
-    "Apple":         "AAPL",
-    "Tesla":         "TSLA",
-    "Microsoft":     "MSFT",
-    "Google":        "GOOGL",
-    "Amazon":        "AMZN",
-    # NASDAQ
-    "Nvidia":        "NVDA",
-    "Meta":          "META",
-    "Netflix":       "NFLX",
-    "AMD":           "AMD",
-    "Intel":         "INTC",
-    # CAC40
-    "Airbus":        "AIR.PA",
-    "TotalEnergies": "TTE.PA",
-    "LVMH":          "MC.PA",
-    "BNP Paribas":   "BNP.PA",
-    "Sanofi":        "SAN.PA",
-    # DAX
-    "SAP":           "SAP.DE",
-    "Siemens":       "SIE.DE",
-    "BMW":           "BMW.DE",
-    "Volkswagen":    "VOW3.DE",
-    "Adidas":        "ADS.DE",
-    # FTSE100
-    "HSBC":          "HSBA.L",
-    "BP":            "BP.L",
-    "Shell":         "SHEL.L",
-    "Unilever":      "ULVR.L",
-    "AstraZeneca":   "AZN.L",
-    # Nikkei225
-    "Toyota":        "7203.T",
-    "Sony":          "6758.T",
-    "SoftBank":      "9984.T",
-    "Nintendo":      "7974.T",
-    "Mitsubishi":    "8058.T",
-    "Honda":         "7267.T",
-}
-ENTREPRISES_CONNUES = {
-    "apple":          "Apple",
-    "tesla":          "Tesla",
-    "microsoft":      "Microsoft",
-    "google":         "Google",
-    "alphabet":       "Google",
-    "amazon":         "Amazon",
-    "nvidia":         "Nvidia",
-    "meta":           "Meta",
-    "facebook":       "Meta",
-    "netflix":        "Netflix",
-    "intel":          "Intel",
-    "amd":            "AMD",
-    "airbus":         "Airbus",
-    "totalenergies":  "TotalEnergies",
-    "total":          "TotalEnergies",
-    "lvmh":           "LVMH",
-    "bnp paribas":    "BNP Paribas",
-    "bnp":            "BNP Paribas",
-    "sanofi":         "Sanofi",
-    "sap":            "SAP",
-    "siemens":        "Siemens",
-    "bmw":            "BMW",
-    "volkswagen":     "Volkswagen",
-    "vw":             "Volkswagen",
-    "adidas":         "Adidas",
-    "hsbc":           "HSBC",
-    "bp":             "BP",
-    "shell":          "Shell",
-    "unilever":       "Unilever",
-    "astrazeneca":    "AstraZeneca",
-    "toyota":         "Toyota",
-    "sony":           "Sony",
-    "softbank":       "SoftBank",
-    "nintendo":       "Nintendo",
-    "mitsubishi":     "Mitsubishi",
-    "honda":          "Honda",
-}
-
-def detecter_entreprise(question: str) -> str | None:
-    """Détecte le nom canonique de l'entreprise dans la question."""
-    question_lower = question.lower()
-    # Trier par longueur décroissante → "bnp paribas" matché avant "bnp"
-    for variante in sorted(ENTREPRISES_CONNUES, key=len, reverse=True):
-        if variante in question_lower:
-            entreprise = ENTREPRISES_CONNUES[variante]
-            print(f"   🏢 Entreprise détectée : '{entreprise}'")
-            return entreprise
-    print("   🏢 Aucune entreprise détectée — recherche globale")
-    return None
-
-def detecter_ticker(question: str) -> str | None:
-    """
-    Détecte le ticker boursier depuis la question.
-    Utilisé pour enrichir l'input de get_cours_action.
-    """
-    question_lower = question.lower()
-    for nom, ticker in sorted(TICKERS.items(), key=lambda x: len(x[0]), reverse=True):
-        if nom.lower() in question_lower:
-            return ticker
-    return None
 
 @tool
-def recherche_financiere(question: str) -> str:
-    """Recherche des informations financières dans les documents.
-    UTILISE CET OUTIL EN PREMIER pour trouver les chiffres bruts.
-    Input : une question en langage naturel."""
-
-    # ── Détection entreprise + filtre Chroma
-    entreprise = detecter_entreprise(question)
-    if entreprise:
-        # Recherche partielle : "Microsoft" dans "Microsoft_rapportannuel"
-        filtre = {"fichier": {"$contains": entreprise}}
-    else:
-        filtre = None
+def get_news_action(entreprise: str) -> str:
+    """Recherche les dernières actualités sur une entreprise ou un sujet financier.
+    Input: nom de l'entreprise ou sujet ex: 'Airbus', 'inflation', 'BCE', 'Bitcoin'"""
     resultats = vector_store.similarity_search_with_score(
-        question,
-        k=10,
-        filter=filtre
+        f"actualités news {entreprise}",
+        k=5,
+        filter={"type": {"$in": ["news", "media_article"]}}
     )
-
-    print(f"\n   → {len(resultats)} chunks avant filtrage"
-          + (f" (filtrés sur '{entreprise}')" if entreprise else " (global)") + " :")
-    for doc, score in resultats:
-        source = os.path.basename(doc.metadata.get("source", "inconnue"))
-        page   = doc.metadata.get("page", "?")
-        print(f"     Score: {score:.4f} | {source} p.{page}")
-
-    # ── Filtre 1 : score de similarité
-    SEUIL_SCORE = 0.85
-    resultats_filtres = [
-        (doc, score) for doc, score in resultats
-        if score < SEUIL_SCORE
-    ]
-
-    # ── Filtre 2 : disclaimers
-    MOTS_EXCLUS = [
-        "éléments de projection",
-        "facteurs d'incertitudes",
-        "aucunement à mettre à jour",
-        "obligations légales"
-    ]
-    resultats_filtres = [
-        (doc, score) for doc, score in resultats_filtres
-        if not any(mot in doc.page_content for mot in MOTS_EXCLUS)
-    ]
-
-    print(f"   → {len(resultats_filtres)} chunks après filtrage (seuil={SEUIL_SCORE})")
-
-    if not resultats_filtres:
-        if entreprise:
-            return (
-                f"❌ Aucun document trouvé pour '{entreprise}'. "
-                f"Le rapport annuel de {entreprise} n'est peut-être pas "
-                f"dans la base de données."
-            )
-        return (
-            "❌ Aucun document pertinent trouvé dans la base de données. "
-            "Le rapport demandé n'a probablement pas été ingéré."
-        )
-
-    # ── Construction réponse
+    
+    if not resultats:
+        return f"❌ Aucune actualité trouvée pour '{entreprise}'. Relance chloe.py pour mettre à jour les news."
+    
+    SEUIL = 1.2
+    filtres = [(doc, score) for doc, score in resultats if score < SEUIL]
+    
+    if not filtres:
+        return f"❌ Aucune actualité récente pertinente pour '{entreprise}'."
+    
     blocs = []
-    for i, (doc, score) in enumerate(resultats_filtres[:5]):
-        source          = doc.metadata.get("source", "inconnue")
-        page            = doc.metadata.get("page", "?")
-        entreprise_doc  = doc.metadata.get("entreprise", "?")
-        blocs.append(
-            f"[Source {i+1} : {entreprise_doc} | "
-            f"{os.path.basename(source)}, p.{page} | score={score:.4f}]\n"
-            f"{doc.page_content.strip()}"
-        )
-
+    for doc, score in filtres[:3]:
+        blocs.append(doc.page_content.strip())
+    
     return "\n\n".join(blocs)
 
-@tool
-def get_cours_action(ticker: str) -> str:
-    """Récupère le cours actuel d'une action via yfinance. Utilise le symbole boursier ex: AAPL, TSLA, NVDA, MC.PA"""
-    import yfinance as yf
-    try:
-        ticker = ticker.replace("ticker:", "").replace("Ticker:", "").replace("TICKER:", "").strip().upper()
-        
-        action = yf.Ticker(ticker)
-        prix = action.fast_info.last_price
-        if prix is None:
-            return f"❌ Aucun cours trouvé pour {ticker}. Vérifiez le symbole."
-        
-        return f"{ticker} : {prix:.2f} USD"
-            
-    except Exception as e:
-        return f"❌ Impossible de récupérer {ticker} : {e}"
 # ==========================================
 # CRÉATION DE L'AGENT
 # ==========================================
@@ -247,24 +94,47 @@ tools = [
     calcul_ratio_endettement,
     verifier_alerte,
     get_donnees_financieres,
+    get_historique_action,
+    get_pe_ratio,
+    get_top_performers,
+    get_correlation,
+    get_news_action
 ]
 
 # Prompt ReAct
 prompt = PromptTemplate.from_template("""Tu es FinAI, un assistant expert en finance.
 Tu réponds TOUJOURS en français.
 
-Tu as accès aux outils suivants :
+Outils disponibles :
 {tools}
 
-Noms des outils : {tool_names}
+Noms : {tool_names}
 
 RÈGLES STRICTES :
-1. Utilise UN SEUL outil par question si possible
-2. Après l'Observation, passe DIRECTEMENT à Final Answer
-3. Ne répète JAMAIS le même appel d'outil
-4. Si l'Observation contient la réponse, n'appelle plus d'outil
+- Cours actuel → get_cours_action avec UN SEUL ticker (ex: ^FCHI)
+- Performance sur une période → get_historique_action avec format 'TICKER PERIODE' (ex: '^FCHI 1mo', '^GSPC 6mo')
+- Pour comparer 2 actifs → appelle get_historique_action DEUX FOIS, une par ticker
+- Données fondamentales → get_donnees_financieres
+- Rapports PDF → recherche_financiere
+- Après chaque Observation utile → Final Answer immédiatement
+- Ne JAMAIS passer plusieurs tickers dans un seul appel
+- P/E ratio → get_pe_ratio avec le ticker exact (LVMH=MC.PA, Sanofi=SAN.PA)
+- Top performers d'un indice → get_top_performers avec le nom de l'indice (ex: CAC40, DAX)
+- Corrélation entre deux actifs → get_correlation avec format 'TICKER1 TICKER2 PERIODE'
+- Dès que tu as toutes les données nécessaires pour répondre, passe IMMÉDIATEMENT à Final Answer sans rappeler d'outil
+- Si tu as déjà appelé le même outil avec le même input → STOP, passe à Final Answer
+- Pour COMPARER deux actifs : fais DEUX appels séparés, un par un :
+  1er appel → Action: get_historique_action / Action Input: TSLA 3mo
+  Attends l'Observation
+  2ème appel → Action: get_historique_action / Action Input: NVDA 3mo  
+  Attends l'Observation
+  Puis Final Answer
+- Il est INTERDIT d'écrire deux "Action Input:" dans le même bloc
+- Analyse d'opportunité d'achat ou tendance d'un actif → analyser_action avec le ticker, puis Final Answer avec ton interprétation
+- Actualités sur une entreprise ou sujet → get_news_action avec le nom (ex: 'Airbus', 'inflation BCE')
+- Ne jamais inventer de chiffres économiques si l'outil ne retourne rien
 
-Format OBLIGATOIRE — respecte-le à la lettre :
+Format OBLIGATOIRE :
 
 Question: la question posée
 Thought: ce que je dois faire
@@ -293,9 +163,8 @@ agent_executor = AgentExecutor(
     memory=memory,
     verbose=True,
     handle_parsing_errors=True,
-    max_iterations=3,
-    agent_kwargs={"stop": ["Observation:"]},
-    early_stopping_method="force",
+    max_iterations=10,
+    max_execution_time=60,
     return_intermediate_steps=False,
 )
 # ==========================================

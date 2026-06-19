@@ -1,4 +1,10 @@
 from langchain.tools import tool
+from vadim import ask, retriever, charger_vector_store, construire_contexte
+import re
+import os
+
+
+vector_store = charger_vector_store()
 
 
 @tool
@@ -111,6 +117,123 @@ def verifier_alerte(input: str) -> str:
     else:
         return f"✅ {nom} = {valeur} dans la zone normale [{seuil_bas} — {seuil_haut}]"
 
+TICKERS = { 
+    # Indices
+    "CAC40":     "^FCHI",
+    "SP500":     "^GSPC",
+    "S&P500":    "^GSPC",
+    "NASDAQ":    "^IXIC",
+    "DAX":       "^GDAXI",
+    "FTSE100":   "^FTSE",
+    "Nikkei225": "^N225",
+    # Crypto
+    "Bitcoin":   "BTC-USD",
+    "Ethereum":  "ETH-USD",
+    "BNB":       "BNB-USD",
+    # Forex
+    "EUR/USD":   "EURUSD=X",
+    "EUR/GBP":   "EURGBP=X",
+    "USD/JPY":   "JPY=X",
+
+    "Apple":         "AAPL",
+    "Tesla":         "TSLA",
+    "Microsoft":     "MSFT",
+    "Google":        "GOOGL",
+    "Amazon":        "AMZN",
+    # NASDAQ
+    "Nvidia":        "NVDA",
+    "Meta":          "META",
+    "Netflix":       "NFLX",
+    "AMD":           "AMD",
+    "Intel":         "INTC",
+    # CAC40
+    "Airbus":        "AIR.PA",
+    "TotalEnergies": "TTE.PA",
+    "LVMH":          "MC.PA",
+    "BNP Paribas":   "BNP.PA",
+    "Sanofi":        "SAN.PA",
+    # DAX
+    "SAP":           "SAP.DE",
+    "Siemens":       "SIE.DE",
+    "BMW":           "BMW.DE",
+    "Volkswagen":    "VOW3.DE",
+    "Adidas":        "ADS.DE",
+    # FTSE100
+    "HSBC":          "HSBA.L",
+    "BP":            "BP.L",
+    "Shell":         "SHEL.L",
+    "Unilever":      "ULVR.L",
+    "AstraZeneca":   "AZN.L",
+    # Nikkei225
+    "Toyota":        "7203.T",
+    "Sony":          "6758.T",
+    "SoftBank":      "9984.T",
+    "Nintendo":      "7974.T",
+    "Mitsubishi":    "8058.T",
+    "Honda":         "7267.T",
+}
+ENTREPRISES_CONNUES = {
+    "apple":          "Apple",
+    "tesla":          "Tesla",
+    "microsoft":      "Microsoft",
+    "google":         "Google",
+    "alphabet":       "Google",
+    "amazon":         "Amazon",
+    "nvidia":         "Nvidia",
+    "meta":           "Meta",
+    "facebook":       "Meta",
+    "netflix":        "Netflix",
+    "intel":          "Intel",
+    "amd":            "AMD",
+    "airbus":         "Airbus",
+    "totalenergies":  "TotalEnergies",
+    "total":          "TotalEnergies",
+    "lvmh":           "LVMH",
+    "bnp paribas":    "BNP Paribas",
+    "bnp":            "BNP Paribas",
+    "sanofi":         "Sanofi",
+    "sap":            "SAP",
+    "siemens":        "Siemens",
+    "bmw":            "BMW",
+    "volkswagen":     "Volkswagen",
+    "vw":             "Volkswagen",
+    "adidas":         "Adidas",
+    "hsbc":           "HSBC",
+    "bp":             "BP",
+    "shell":          "Shell",
+    "unilever":       "Unilever",
+    "astrazeneca":    "AstraZeneca",
+    "toyota":         "Toyota",
+    "sony":           "Sony",
+    "softbank":       "SoftBank",
+    "nintendo":       "Nintendo",
+    "mitsubishi":     "Mitsubishi",
+    "honda":          "Honda",
+}
+
+def detecter_entreprise(question: str) -> str | None:
+    """Détecte le nom canonique de l'entreprise dans la question."""
+    question_lower = question.lower()
+    # Trier par longueur décroissante → "bnp paribas" matché avant "bnp"
+    for variante in sorted(ENTREPRISES_CONNUES, key=len, reverse=True):
+        if variante in question_lower:
+            entreprise = ENTREPRISES_CONNUES[variante]
+            print(f"   🏢 Entreprise détectée : '{entreprise}'")
+            return entreprise
+    print("   🏢 Aucune entreprise détectée — recherche globale")
+    return None
+
+def detecter_ticker(question: str) -> str | None:
+    """
+    Détecte le ticker boursier depuis la question.
+    Utilisé pour enrichir l'input de get_cours_action.
+    """
+    question_lower = question.lower()
+    for nom, ticker in sorted(TICKERS.items(), key=lambda x: len(x[0]), reverse=True):
+        if nom.lower() in question_lower:
+            return ticker
+    return None
+
 
 @tool
 def get_donnees_financieres(ticker: str) -> str:
@@ -144,6 +267,300 @@ def get_donnees_financieres(ticker: str) -> str:
     except Exception as e:
         return f"❌ Erreur pour '{ticker}' : {e}"
 
+
+
+@tool
+def recherche_financiere(question: str) -> str:
+    """Recherche des informations financières dans les documents.
+    UTILISE CET OUTIL EN PREMIER pour trouver les chiffres bruts.
+    Input : une question en langage naturel."""
+
+    # ── Détection entreprise + filtre Chroma
+    entreprise = detecter_entreprise(question)
+    if entreprise:
+        # Recherche partielle : "Microsoft" dans "Microsoft_rapportannuel"
+        filtre = {"fichier": {"$contains": entreprise}}
+    else:
+        filtre = None
+    resultats = vector_store.similarity_search_with_score(
+        question,
+        k=10,
+        filter=filtre
+    )
+
+    print(f"\n   → {len(resultats)} chunks avant filtrage"
+          + (f" (filtrés sur '{entreprise}')" if entreprise else " (global)") + " :")
+    for doc, score in resultats:
+        source = os.path.basename(doc.metadata.get("source", "inconnue"))
+        page   = doc.metadata.get("page", "?")
+        print(f"     Score: {score:.4f} | {source} p.{page}")
+
+    # ── Filtre 1 : score de similarité
+    SEUIL_SCORE = 0.85
+    resultats_filtres = [
+        (doc, score) for doc, score in resultats
+        if score < SEUIL_SCORE
+    ]
+
+    # ── Filtre 2 : disclaimers
+    MOTS_EXCLUS = [
+        "éléments de projection",
+        "facteurs d'incertitudes",
+        "aucunement à mettre à jour",
+        "obligations légales"
+    ]
+    resultats_filtres = [
+        (doc, score) for doc, score in resultats_filtres
+        if not any(mot in doc.page_content for mot in MOTS_EXCLUS)
+    ]
+
+    print(f"   → {len(resultats_filtres)} chunks après filtrage (seuil={SEUIL_SCORE})")
+
+    if not resultats_filtres:
+        if entreprise:
+            return (
+                f"❌ Aucun document trouvé pour '{entreprise}'. "
+                f"Le rapport annuel de {entreprise} n'est peut-être pas "
+                f"dans la base de données."
+            )
+        return (
+            "❌ Aucun document pertinent trouvé dans la base de données. "
+            "Le rapport demandé n'a probablement pas été ingéré."
+        )
+
+    # ── Construction réponse
+    blocs = []
+    for i, (doc, score) in enumerate(resultats_filtres[:5]):
+        source          = doc.metadata.get("source", "inconnue")
+        page            = doc.metadata.get("page", "?")
+        entreprise_doc  = doc.metadata.get("entreprise", "?")
+        blocs.append(
+            f"[Source {i+1} : {entreprise_doc} | "
+            f"{os.path.basename(source)}, p.{page} | score={score:.4f}]\n"
+            f"{doc.page_content.strip()}"
+        )
+
+    return "\n\n".join(blocs)
+
+@tool
+def get_cours_action(ticker: str) -> str:
+    """Récupère le cours actuel d'une action ou indice. UN SEUL ticker par appel.
+    Exemples: AAPL, TSLA, ^FCHI, ^GSPC, BTC-USD, EURUSD=X"""
+    import yfinance as yf
+    try:
+        # Nettoyer : supprimer guillemets, espaces, et tout texte superflu
+        ticker = re.sub(r"['\"]", "", ticker).strip().split()[0].upper()
+        
+        action = yf.Ticker(ticker)
+        prix = action.fast_info.last_price
+        devise = getattr(action.fast_info, "currency", "USD")
+
+        if prix is None:
+            return f"❌ Aucun cours trouvé pour {ticker}."
+
+        return f"{ticker} : {prix:.2f} {devise}"
+    except Exception as e:
+        return f"❌ Impossible de récupérer {ticker} : {e}"
+
+@tool
+def get_historique_action(input: str) -> str:
+    """Récupère le cours historique d'une action ou indice.
+    Input format STRICT: TICKER PERIODE — ex: ^FCHI 1mo, AAPL 6mo, ^GSPC 1y
+    UN SEUL ticker par appel. Périodes: 5d, 1wk, 1mo, 3mo, 6mo, 1y"""
+    import yfinance as yf
+    ticker = "inconnu"
+    try:
+        # Nettoyer l'input : supprimer guillemets et tout ce qui suit le 2e mot
+        input = input.strip().strip("'\"")
+        
+        # Extraire uniquement TICKER et PERIODE avec regex
+        match = re.match(r"([A-Z0-9\^\.\-=]+)\s+(5d|1wk|1mo|3mo|6mo|1y|ytd|2y|5y)", input, re.IGNORECASE)
+        if not match:
+            return "❌ Format invalide. Utilise: TICKER PERIODE (ex: ^FCHI 1mo, AAPL 3mo)"
+        
+        ticker = match.group(1).upper()
+        periode = match.group(2).lower()
+
+        action = yf.Ticker(ticker)
+        hist = action.history(period=periode)
+
+        if hist.empty:
+            return f"❌ Aucune donnée historique pour {ticker}."
+
+        cours_debut = hist["Close"].iloc[0]
+        cours_fin = hist["Close"].iloc[-1]
+        variation = ((cours_fin - cours_debut) / cours_debut) * 100
+        signe = "📈" if variation > 0 else "📉"
+
+        return (
+            f"{ticker} sur {periode} :\n"
+            f"  Début : {cours_debut:.2f}\n"
+            f"  Actuel : {cours_fin:.2f}\n"
+            f"  Variation : {signe} {variation:+.2f}%"
+        )
+    except Exception as e:
+        return f"❌ Erreur pour {ticker} : {e}"
+
+@tool
+def get_pe_ratio(ticker: str) -> str:
+    """Récupère le P/E ratio d'UNE SEULE action. UN ticker par appel.
+    Input: UN ticker ex: MC.PA ou SAN.PA (pas deux à la fois)"""
+    import yfinance as yf
+    import re
+    # Prendre uniquement le premier ticker
+    ticker = re.sub(r"['\"]", "", ticker).strip().split()[0].rstrip(",").upper()
+    try:
+        info = yf.Ticker(ticker).info
+        pe = info.get("trailingPE") or info.get("forwardPE")
+        nom = info.get("shortName", ticker)
+        if pe is None:
+            return f"❌ P/E ratio non disponible pour {ticker}."
+        return f"{nom} ({ticker}) — P/E ratio : {pe:.2f}"
+    except Exception as e:
+        return f"❌ Erreur pour {ticker} : {e}"
+
+@tool  
+def get_top_performers(indice: str) -> str:
+    """Récupère les meilleures performances hebdomadaires des actions d'un indice.
+    Input: nom de l'indice parmi CAC40, DAX, FTSE100, NASDAQ, Nikkei225"""
+    import yfinance as yf
+
+    INDICE_ACTIONS = {
+        "CAC40":    {"Airbus": "AIR.PA", "TotalEnergies": "TTE.PA", "LVMH": "MC.PA", "BNP Paribas": "BNP.PA", "Sanofi": "SAN.PA"},
+        "DAX":      {"SAP": "SAP.DE", "Siemens": "SIE.DE", "BMW": "BMW.DE", "Volkswagen": "VOW3.DE", "Adidas": "ADS.DE"},
+        "FTSE100":  {"HSBC": "HSBA.L", "BP": "BP.L", "Shell": "SHEL.L", "Unilever": "ULVR.L", "AstraZeneca": "AZN.L"},
+        "NASDAQ":   {"Nvidia": "NVDA", "Meta": "META", "Netflix": "NFLX", "AMD": "AMD", "Intel": "INTC"},
+        "Nikkei225":{"Toyota": "7203.T", "Sony": "6758.T", "SoftBank": "9984.T", "Nintendo": "7974.T", "Honda": "7267.T"},
+    }
+
+    indice = indice.strip().upper()
+    actions = None
+    for key in INDICE_ACTIONS:
+        if key.upper() in indice:
+            actions = INDICE_ACTIONS[key]
+            break
+
+    if not actions:
+        return f"❌ Indice non reconnu. Disponibles : {', '.join(INDICE_ACTIONS.keys())}"
+
+    resultats = []
+    for nom, ticker in actions.items():
+        try:
+            hist = yf.Ticker(ticker).history(period="5d")
+            if hist.empty:
+                continue
+            debut = hist["Close"].iloc[0]
+            fin = hist["Close"].iloc[-1]
+            variation = ((fin - debut) / debut) * 100
+            resultats.append((nom, ticker, variation))
+        except:
+            continue
+
+    if not resultats:
+        return "❌ Impossible de récupérer les données."
+
+    resultats.sort(key=lambda x: x[2], reverse=True)
+    lignes = [f"  {'📈' if v > 0 else '📉'} {n} ({t}) : {v:+.2f}%" for n, t, v in resultats]
+    return f"Top performers {indice} (semaine) :\n" + "\n".join(lignes)
+
+ALIAS_TICKERS = {
+    "NASDAQ": "^IXIC",
+    "SP500":  "^GSPC",
+    "S&P500": "^GSPC",
+    "CAC40":  "^FCHI",
+    "DAX":    "^GDAXI",
+    "FTSE100":"^FTSE",
+    "NIKKEI": "^N225",
+}
+
+@tool
+def get_correlation(input: str) -> str:
+    """Calcule la corrélation entre deux actifs sur une période.
+    Input format: 'TICKER1 TICKER2 PERIODE' ex: 'TTE.PA CL=F 3mo', 'BTC-USD ^IXIC 3mo'
+    Pétrole Brent=BZ=F, WTI=CL=F, NASDAQ=^IXIC, SP500=^GSPC"""
+    import yfinance as yf
+    import pandas as pd
+    
+    input = input.strip().strip("'\"")
+    parts = input.split()
+    if len(parts) < 2:
+        return "❌ Format: TICKER1 TICKER2 PERIODE (ex: TTE.PA CL=F 3mo)"
+    
+    ticker1 = ALIAS_TICKERS.get(parts[0].upper(), parts[0].upper())
+    ticker2 = ALIAS_TICKERS.get(parts[1].upper(), parts[1].upper())
+    periode = parts[2] if len(parts) > 2 else "3mo"
+
+    try:
+        h1 = yf.Ticker(ticker1).history(period=periode)["Close"]
+        h2 = yf.Ticker(ticker2).history(period=periode)["Close"]
+        
+        if h1.empty:
+            return f"❌ Aucune donnée pour {ticker1}"
+        if h2.empty:
+            return f"❌ Aucune donnée pour {ticker2}"
+
+        # Aligner les index (fuseau horaire différent possible)
+        h1.index = pd.to_datetime(h1.index).tz_localize(None).normalize()
+        h2.index = pd.to_datetime(h2.index).tz_localize(None).normalize()
+        
+        df = h1.to_frame("a").join(h2.to_frame("b"), how="inner")
+        
+        if len(df) < 5:
+            return f"❌ Pas assez de données communes entre {ticker1} et {ticker2}."
+        
+        corr = df["a"].corr(df["b"])
+
+        if corr > 0.7:
+            interpretation = "forte corrélation positive 📈📈"
+        elif corr > 0.3:
+            interpretation = "corrélation modérée positive"
+        elif corr > -0.3:
+            interpretation = "faible corrélation"
+        elif corr > -0.7:
+            interpretation = "corrélation modérée négative"
+        else:
+            interpretation = "forte corrélation négative 📉📉"
+
+        return (
+            f"Corrélation {ticker1} / {ticker2} sur {periode} :\n"
+            f"  Coefficient : {corr:.3f}\n"
+            f"  Interprétation : {interpretation}"
+        )
+    except Exception as e:
+        return f"❌ Erreur : {e}"
+
+@tool
+def analyser_action(ticker: str) -> str:
+    """Analyse rapide d'une action : cours actuel, performance 1 mois, P/E ratio.
+    Input: ticker ex: 7203.T, AAPL, BTC-USD"""
+    import yfinance as yf
+    import re
+    ticker = re.sub(r"['\"]", "", ticker).strip().split()[0].upper()
+    try:
+        t = yf.Ticker(ticker)
+        prix = t.fast_info.last_price
+        devise = getattr(t.fast_info, "currency", "USD")
+        hist = t.history(period="1mo")
+        pe = t.info.get("trailingPE")
+
+        if hist.empty or prix is None:
+            return f"❌ Données non disponibles pour {ticker}."
+
+        debut = hist["Close"].iloc[0]
+        variation = ((prix - debut) / debut) * 100
+        signe = "📈" if variation > 0 else "📉"
+
+        result = (
+            f"{ticker} — Analyse :\n"
+            f"  Cours actuel : {prix:.2f} {devise}\n"
+            f"  Performance 1 mois : {signe} {variation:+.2f}%\n"
+        )
+        if pe:
+            result += f"  P/E ratio : {pe:.2f}\n"
+
+        return result
+    except Exception as e:
+        return f"❌ Erreur pour {ticker} : {e}"
 
 if __name__ == "__main__":
     print("=== Tests financial_tools_langchain ===\n")

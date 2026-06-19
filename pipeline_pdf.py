@@ -196,7 +196,7 @@ def save_to_chroma(chunks, reset: bool = False) -> Chroma:
     print(f"🧠 Initialisation embedding : {EMBEDDING_MODEL}...")
     embeddings = HuggingFaceEmbeddings(
         model_name=EMBEDDING_MODEL,
-        model_kwargs={"device": "cuda"},
+        model_kwargs={"device": "cpu"},
         encode_kwargs={"batch_size": 512}
     )
 
