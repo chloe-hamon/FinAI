@@ -2,9 +2,9 @@
   "ticker": "SIE.DE",
   "nom": "Siemens Aktiengesellschaft",
   "secteur": "Industrials",
-  "date": "2026-06-15 16:15",
-  "prix": 270.2,
-  "market_cap": 206093271040,
+  "date": "2026-06-21 18:48",
+  "prix": 274.5,
+  "market_cap": 209373052928,
   "beta": 1.29,
   "scores": {
     "valorisation": -4,
@@ -17,10 +17,10 @@
   "recommandation": "🟠 SELL",
   "details": {
     "valorisation": {
-      "PE": "ATTENTION (PE=27.9 → cher)",
-      "PEG": "SELL (PEG=4.02 > 2)",
-      "PB": "ATTENTION (PB=3.26 > 3)",
-      "EV_EBITDA": "ATTENTION (EV/EBITDA=21.8 > 15)"
+      "PE": "ATTENTION (PE=28.4 → cher)",
+      "PEG": "SELL (PEG=5.35 > 2)",
+      "PB": "ATTENTION (PB=3.31 > 3)",
+      "EV_EBITDA": "ATTENTION (EV/EBITDA=22.4 > 15)"
     },
     "rentabilite": {
       "ROE": "NEUTRAL (ROE=12.6%)",
@@ -36,18 +36,18 @@
       "Current_Ratio": "NEUTRAL (CR=1.39)"
     },
     "dividende": {
-      "Dividende": "BUY (rendement=202.0%)"
+      "Dividende": "BUY (rendement=195.0%)"
     }
   },
   "donnees_brutes": {
     "ticker": "SIE.DE",
-    "date": "2026-06-15 16:15",
-    "pe_ratio": 27.913223,
-    "pe_forward": 21.173143,
-    "pb_ratio": 3.261867,
-    "ps_ratio": 2.5858953,
-    "ev_ebitda": 21.753,
-    "peg_ratio": 4.02,
+    "date": "2026-06-21 18:48",
+    "pe_ratio": 28.41615,
+    "pe_forward": 21.49046,
+    "pb_ratio": 3.3137767,
+    "ps_ratio": 2.6270473,
+    "ev_ebitda": 22.409,
+    "peg_ratio": 5.35,
     "roe": 0.12593001,
     "roa": 0.03542,
     "marge_nette": 0.09688,
@@ -57,21 +57,21 @@
     "croissance_revenus": -0.0,
     "croissance_bpa": -0.086,
     "revenus": 79699001344,
-    "bpa": 9.68,
-    "bpa_forward": 12.76145,
+    "bpa": 9.66,
+    "bpa_forward": 12.77311,
     "dette_totale": 54160998400,
     "cash": 8664000512,
     "ratio_dette_equity": 76.352,
     "current_ratio": 1.393,
     "quick_ratio": 0.743,
-    "dividende_yield": 2.02,
+    "dividende_yield": 1.95,
     "dividende_par_action": 5.35,
     "payout_ratio": 0.5533,
-    "market_cap": 206093271040,
+    "market_cap": 209373052928,
     "beta": 1.29,
     "52w_high": 280.2,
     "52w_low": 198.0,
-    "prix_actuel": 270.2,
+    "prix_actuel": 274.5,
     "secteur": "Industrials",
     "industrie": "Specialty Industrial Machinery",
     "nom": "Siemens Aktiengesellschaft"

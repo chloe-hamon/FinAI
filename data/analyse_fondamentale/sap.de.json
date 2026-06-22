@@ -2,9 +2,9 @@
   "ticker": "SAP.DE",
   "nom": "SAP SE",
   "secteur": "Technology",
-  "date": "2026-06-15 16:15",
-  "prix": 144.08,
-  "market_cap": 168221900800,
+  "date": "2026-06-21 18:48",
+  "prix": 134.14,
+  "market_cap": 156616376320,
   "beta": 0.727,
   "scores": {
     "valorisation": 2,
@@ -17,10 +17,10 @@
   "recommandation": "🟢 STRONG BUY",
   "details": {
     "valorisation": {
-      "PE": "NEUTRAL (PE=23.1)",
-      "PEG": "NEUTRAL (PEG=1.42)",
-      "PB": "ATTENTION (PB=3.77 > 3)",
-      "EV_EBITDA": "NEUTRAL (EV/EBITDA=13.9)"
+      "PE": "NEUTRAL (PE=21.5)",
+      "PEG": "NEUTRAL (PEG=1.35)",
+      "PB": "ATTENTION (PB=3.51 > 3)",
+      "EV_EBITDA": "NEUTRAL (EV/EBITDA=13.3)"
     },
     "rentabilite": {
       "ROE": "NEUTRAL (ROE=16.4%)",
@@ -36,19 +36,19 @@
       "Current_Ratio": "NEUTRAL (CR=1.07)"
     },
     "dividende": {
-      "Dividende": "BUY (rendement=178.0%)",
+      "Dividende": "BUY (rendement=186.0%)",
       "Payout": "BUY (payout=37.7% → soutenable)"
     }
   },
   "donnees_brutes": {
     "ticker": "SAP.DE",
-    "date": "2026-06-15 16:15",
-    "pe_ratio": 23.089745,
-    "pe_forward": 16.821615,
-    "pb_ratio": 3.7730117,
-    "ps_ratio": 4.504898,
-    "ev_ebitda": 13.913,
-    "peg_ratio": 1.42,
+    "date": "2026-06-21 18:48",
+    "pe_ratio": 21.496796,
+    "pe_forward": 15.685734,
+    "pb_ratio": 3.5127137,
+    "ps_ratio": 4.194108,
+    "ev_ebitda": 13.299,
+    "peg_ratio": 1.35,
     "roe": 0.16350001,
     "roa": 0.09082,
     "marge_nette": 0.19584,
@@ -59,20 +59,20 @@
     "croissance_bpa": 0.093,
     "revenus": 37341999104,
     "bpa": 6.24,
-    "bpa_forward": 8.56517,
+    "bpa_forward": 8.55172,
     "dette_totale": 7862000128,
     "cash": 10044999680,
     "ratio_dette_equity": 17.331,
     "current_ratio": 1.069,
     "quick_ratio": 0.916,
-    "dividende_yield": 1.78,
+    "dividende_yield": 1.86,
     "dividende_par_action": 2.5,
     "payout_ratio": 0.3766,
-    "market_cap": 168221900800,
+    "market_cap": 156616376320,
     "beta": 0.727,
     "52w_high": 269.35,
-    "52w_low": 135.44,
-    "prix_actuel": 144.08,
+    "52w_low": 132.24,
+    "prix_actuel": 134.14,
     "secteur": "Technology",
     "industrie": "Software - Application",
     "nom": "SAP SE"

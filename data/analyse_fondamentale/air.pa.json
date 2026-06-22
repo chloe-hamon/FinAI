@@ -2,9 +2,9 @@
   "ticker": "AIR.PA",
   "nom": "Airbus SE",
   "secteur": "Industrials",
-  "date": "2026-06-15 16:15",
-  "prix": 184.48,
-  "market_cap": 145227841536,
+  "date": "2026-06-21 18:48",
+  "prix": 189.42,
+  "market_cap": 149116747776,
   "beta": 0.88,
   "scores": {
     "valorisation": -2,
@@ -17,10 +17,10 @@
   "recommandation": "⚪ NEUTRAL",
   "details": {
     "valorisation": {
-      "PE": "ATTENTION (PE=29.1 → cher)",
-      "PEG": "NEUTRAL (PEG=1.57)",
-      "PB": "ATTENTION (PB=5.57 > 3)",
-      "EV_EBITDA": "ATTENTION (EV/EBITDA=18.3 > 15)"
+      "PE": "ATTENTION (PE=29.9 → cher)",
+      "PEG": "NEUTRAL (PEG=1.66)",
+      "PB": "ATTENTION (PB=5.72 > 3)",
+      "EV_EBITDA": "ATTENTION (EV/EBITDA=19.3 > 15)"
     },
     "rentabilite": {
       "ROE": "NEUTRAL (ROE=19.7%)",
@@ -36,19 +36,19 @@
       "Current_Ratio": "NEUTRAL (CR=1.14)"
     },
     "dividende": {
-      "Dividende": "BUY (rendement=178.0%)",
+      "Dividende": "BUY (rendement=169.0%)",
       "Payout": "BUY (payout=31.6% → soutenable)"
     }
   },
   "donnees_brutes": {
     "ticker": "AIR.PA",
-    "date": "2026-06-15 16:15",
-    "pe_ratio": 29.143759,
-    "pe_forward": 21.52181,
-    "pb_ratio": 5.5661826,
-    "ps_ratio": 2.0023417,
-    "ev_ebitda": 18.293,
-    "peg_ratio": 1.57,
+    "date": "2026-06-21 18:48",
+    "pe_ratio": 29.924171,
+    "pe_forward": 22.09812,
+    "pb_ratio": 5.715234,
+    "ps_ratio": 2.0559602,
+    "ev_ebitda": 19.336,
+    "peg_ratio": 1.66,
     "roe": 0.19748,
     "roa": 0.024820002,
     "marge_nette": 0.06913,
@@ -65,14 +65,14 @@
     "ratio_dette_equity": 55.655,
     "current_ratio": 1.14,
     "quick_ratio": 0.399,
-    "dividende_yield": 1.78,
+    "dividende_yield": 1.69,
     "dividende_par_action": 3.2,
     "payout_ratio": 0.316,
-    "market_cap": 145227841536,
+    "market_cap": 149116747776,
     "beta": 0.88,
     "52w_high": 221.3,
     "52w_low": 157.42,
-    "prix_actuel": 184.48,
+    "prix_actuel": 189.42,
     "secteur": "Industrials",
     "industrie": "Aerospace & Defense",
     "nom": "Airbus SE"

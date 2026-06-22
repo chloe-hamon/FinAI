@@ -2,9 +2,9 @@
   "ticker": "META",
   "nom": "Meta Platforms, Inc.",
   "secteur": "Communication Services",
-  "date": "2026-06-15 16:15",
-  "prix": 591.38,
-  "market_cap": 1501172727808,
+  "date": "2026-06-21 18:48",
+  "prix": 577.22,
+  "market_cap": 1465228591104,
   "beta": 1.229,
   "scores": {
     "valorisation": 3,
@@ -17,10 +17,10 @@
   "recommandation": "🟢 STRONG BUY",
   "details": {
     "valorisation": {
-      "PE": "NEUTRAL (PE=21.5)",
-      "PEG": "BUY (PEG=0.82 < 1)",
-      "PB": "ATTENTION (PB=6.16 > 3)",
-      "EV_EBITDA": "NEUTRAL (EV/EBITDA=13.2)"
+      "PE": "NEUTRAL (PE=21.0)",
+      "PEG": "BUY (PEG=0.83 < 1)",
+      "PB": "ATTENTION (PB=6.01 > 3)",
+      "EV_EBITDA": "NEUTRAL (EV/EBITDA=13.5)"
     },
     "rentabilite": {
       "ROE": "BUY (ROE=32.9% > 20%)",
@@ -36,19 +36,19 @@
       "Current_Ratio": "BUY (CR=2.35 → bonne liquidité)"
     },
     "dividende": {
-      "Dividende": "BUY (rendement=37.0%)",
+      "Dividende": "BUY (rendement=36.0%)",
       "Payout": "BUY (payout=7.6% → soutenable)"
     }
   },
   "donnees_brutes": {
     "ticker": "META",
-    "date": "2026-06-15 16:15",
-    "pe_ratio": 21.504728,
-    "pe_forward": 16.31575,
-    "pb_ratio": 6.159374,
-    "ps_ratio": 6.983401,
-    "ev_ebitda": 13.218,
-    "peg_ratio": 0.82,
+    "date": "2026-06-21 18:48",
+    "pe_ratio": 21.005095,
+    "pe_forward": 15.925084,
+    "pb_ratio": 6.0118937,
+    "ps_ratio": 6.81619,
+    "ev_ebitda": 13.456,
+    "peg_ratio": 0.83,
     "roe": 0.32930002,
     "roa": 0.16395001,
     "marge_nette": 0.32837,
@@ -58,21 +58,21 @@
     "croissance_revenus": 0.331,
     "croissance_bpa": 0.624,
     "revenus": 214962995200,
-    "bpa": 27.5,
+    "bpa": 27.48,
     "bpa_forward": 36.24596,
     "dette_totale": 86769000448,
     "cash": 81180000256,
     "ratio_dette_equity": 35.608,
     "current_ratio": 2.348,
     "quick_ratio": 2.11,
-    "dividende_yield": 0.37,
+    "dividende_yield": 0.36,
     "dividende_par_action": 2.1,
     "payout_ratio": 0.0764,
-    "market_cap": 1501172727808,
+    "market_cap": 1465228591104,
     "beta": 1.229,
     "52w_high": 796.25,
     "52w_low": 520.26,
-    "prix_actuel": 591.38,
+    "prix_actuel": 577.22,
     "secteur": "Communication Services",
     "industrie": "Internet Content & Information",
     "nom": "Meta Platforms, Inc."

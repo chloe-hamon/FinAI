@@ -2,9 +2,9 @@
   "ticker": "AAPL",
   "nom": "Apple Inc.",
   "secteur": "Technology",
-  "date": "2026-06-15 16:15",
-  "prix": 295.705,
-  "market_cap": 4343124459520,
+  "date": "2026-06-21 18:48",
+  "prix": 298.01,
+  "market_cap": 4376979046400,
   "beta": 1.086,
   "scores": {
     "valorisation": -5,
@@ -17,10 +17,10 @@
   "recommandation": "🟡 BUY",
   "details": {
     "valorisation": {
-      "PE": "SELL (PE=35.8 → très cher)",
-      "PEG": "SELL (PEG=2.35 > 2)",
-      "PB": "ATTENTION (PB=40.73 > 3)",
-      "EV_EBITDA": "ATTENTION (EV/EBITDA=26.8 > 15)"
+      "PE": "SELL (PE=36.1 → très cher)",
+      "PEG": "SELL (PEG=2.41 > 2)",
+      "PB": "ATTENTION (PB=41.05 > 3)",
+      "EV_EBITDA": "ATTENTION (EV/EBITDA=27.5 > 15)"
     },
     "rentabilite": {
       "ROE": "BUY (ROE=141.5% > 20%)",
@@ -36,19 +36,19 @@
       "Current_Ratio": "NEUTRAL (CR=1.07)"
     },
     "dividende": {
-      "Dividende": "BUY (rendement=37.0%)",
+      "Dividende": "BUY (rendement=36.0%)",
       "Payout": "BUY (payout=12.6% → soutenable)"
     }
   },
   "donnees_brutes": {
     "ticker": "AAPL",
-    "date": "2026-06-15 16:15",
-    "pe_ratio": 35.756344,
-    "pe_forward": 30.818687,
-    "pb_ratio": 40.730713,
-    "ps_ratio": 9.620559,
-    "ev_ebitda": 26.83,
-    "peg_ratio": 2.35,
+    "date": "2026-06-21 18:48",
+    "pe_ratio": 36.122425,
+    "pe_forward": 31.040802,
+    "pb_ratio": 41.04821,
+    "ps_ratio": 9.695551,
+    "ev_ebitda": 27.462,
+    "peg_ratio": 2.41,
     "roe": 1.4147099,
     "roa": 0.26229,
     "marge_nette": 0.27152002,
@@ -58,21 +58,21 @@
     "croissance_revenus": 0.166,
     "croissance_bpa": 0.218,
     "revenus": 451442016256,
-    "bpa": 8.27,
-    "bpa_forward": 9.59499,
+    "bpa": 8.25,
+    "bpa_forward": 9.60059,
     "dette_totale": 84710998016,
     "cash": 68507000832,
     "ratio_dette_equity": 79.548,
     "current_ratio": 1.07,
     "quick_ratio": 0.906,
-    "dividende_yield": 0.37,
+    "dividende_yield": 0.36,
     "dividende_par_action": 1.08,
     "payout_ratio": 0.1259,
-    "market_cap": 4343124459520,
+    "market_cap": 4376979046400,
     "beta": 1.086,
     "52w_high": 317.4,
-    "52w_low": 195.07,
-    "prix_actuel": 295.705,
+    "52w_low": 198.96,
+    "prix_actuel": 298.01,
     "secteur": "Technology",
     "industrie": "Consumer Electronics",
     "nom": "Apple Inc."

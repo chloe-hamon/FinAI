@@ -2,9 +2,9 @@
   "ticker": "MSFT",
   "nom": "Microsoft Corporation",
   "secteur": "Technology",
-  "date": "2026-06-15 16:15",
-  "prix": 397.84,
-  "market_cap": 2955328618496,
+  "date": "2026-06-21 18:48",
+  "prix": 379.4,
+  "market_cap": 2818348154880,
   "beta": 1.103,
   "scores": {
     "valorisation": 0,
@@ -17,10 +17,10 @@
   "recommandation": "🟢 STRONG BUY",
   "details": {
     "valorisation": {
-      "PE": "NEUTRAL (PE=23.7)",
-      "PEG": "NEUTRAL (PEG=1.20)",
-      "PB": "ATTENTION (PB=7.13 > 3)",
-      "EV_EBITDA": "ATTENTION (EV/EBITDA=16.0 > 15)"
+      "PE": "NEUTRAL (PE=22.6)",
+      "PEG": "NEUTRAL (PEG=1.17)",
+      "PB": "ATTENTION (PB=6.80 > 3)",
+      "EV_EBITDA": "ATTENTION (EV/EBITDA=15.5 > 15)"
     },
     "rentabilite": {
       "ROE": "BUY (ROE=34.0% > 20%)",
@@ -36,19 +36,19 @@
       "Current_Ratio": "NEUTRAL (CR=1.28)"
     },
     "dividende": {
-      "Dividende": "BUY (rendement=93.0%)",
+      "Dividende": "BUY (rendement=96.0%)",
       "Payout": "BUY (payout=20.7% → soutenable)"
     }
   },
   "donnees_brutes": {
     "ticker": "MSFT",
-    "date": "2026-06-15 16:15",
-    "pe_ratio": 23.680954,
-    "pe_forward": 20.564564,
-    "pb_ratio": 7.132689,
-    "ps_ratio": 9.285515,
-    "ev_ebitda": 15.992,
-    "peg_ratio": 1.2,
+    "date": "2026-06-21 18:48",
+    "pe_ratio": 22.569899,
+    "pe_forward": 19.611391,
+    "pb_ratio": 6.802087,
+    "ps_ratio": 8.855128,
+    "ev_ebitda": 15.535,
+    "peg_ratio": 1.17,
     "roe": 0.34013999,
     "roa": 0.14814,
     "marge_nette": 0.39341998,
@@ -58,21 +58,21 @@
     "croissance_revenus": 0.183,
     "croissance_bpa": 0.234,
     "revenus": 318272995328,
-    "bpa": 16.8,
+    "bpa": 16.81,
     "bpa_forward": 19.3459,
     "dette_totale": 125431996416,
     "cash": 78227996672,
     "ratio_dette_equity": 30.271,
     "current_ratio": 1.283,
     "quick_ratio": 1.142,
-    "dividende_yield": 0.93,
+    "dividende_yield": 0.96,
     "dividende_par_action": 3.64,
     "payout_ratio": 0.20729999,
-    "market_cap": 2955328618496,
+    "market_cap": 2818348154880,
     "beta": 1.103,
     "52w_high": 555.45,
     "52w_low": 356.28,
-    "prix_actuel": 397.84,
+    "prix_actuel": 379.4,
     "secteur": "Technology",
     "industrie": "Software - Infrastructure",
     "nom": "Microsoft Corporation"

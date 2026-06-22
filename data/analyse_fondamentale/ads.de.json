@@ -2,9 +2,9 @@
   "ticker": "ADS.DE",
   "nom": "adidas AG",
   "secteur": "Consumer Cyclical",
-  "date": "2026-06-15 16:15",
-  "prix": 177.0,
-  "market_cap": 31390760960,
+  "date": "2026-06-21 18:48",
+  "prix": 174.9,
+  "market_cap": 31018326016,
   "beta": 1.202,
   "scores": {
     "valorisation": 3,
@@ -17,10 +17,10 @@
   "recommandation": "🟢 STRONG BUY",
   "details": {
     "valorisation": {
-      "PE": "NEUTRAL (PE=22.9)",
-      "PEG": "BUY (PEG=0.94 < 1)",
-      "PB": "ATTENTION (PB=5.18 > 3)",
-      "EV_EBITDA": "NEUTRAL (EV/EBITDA=14.7)"
+      "PE": "NEUTRAL (PE=22.7)",
+      "PEG": "BUY (PEG=0.93 < 1)",
+      "PB": "ATTENTION (PB=5.12 > 3)",
+      "EV_EBITDA": "NEUTRAL (EV/EBITDA=14.6)"
     },
     "rentabilite": {
       "ROE": "BUY (ROE=22.9% > 20%)",
@@ -36,19 +36,19 @@
       "Current_Ratio": "NEUTRAL (CR=1.35)"
     },
     "dividende": {
-      "Dividende": "BUY (rendement=159.0%)",
+      "Dividende": "BUY (rendement=160.0%)",
       "Payout": "BUY (payout=25.9% → soutenable)"
     }
   },
   "donnees_brutes": {
     "ticker": "ADS.DE",
-    "date": "2026-06-15 16:15",
-    "pe_ratio": 22.927462,
-    "pe_forward": 15.117093,
-    "pb_ratio": 5.1843824,
-    "ps_ratio": 1.2431984,
-    "ev_ebitda": 14.726,
-    "peg_ratio": 0.94,
+    "date": "2026-06-21 18:48",
+    "pe_ratio": 22.684824,
+    "pe_forward": 14.937737,
+    "pb_ratio": 5.122873,
+    "ps_ratio": 1.2284485,
+    "ev_ebitda": 14.623,
+    "peg_ratio": 0.93,
     "roe": 0.22917,
     "roa": 0.06625,
     "marge_nette": 0.055209998,
@@ -58,21 +58,21 @@
     "croissance_revenus": 0.071,
     "croissance_bpa": 0.133,
     "revenus": 25250000896,
-    "bpa": 7.72,
+    "bpa": 7.71,
     "bpa_forward": 11.7086,
     "dette_totale": 5952000000,
     "cash": 873000000,
     "ratio_dette_equity": 93.747,
     "current_ratio": 1.351,
     "quick_ratio": 0.501,
-    "dividende_yield": 1.59,
+    "dividende_yield": 1.6,
     "dividende_par_action": 2.8,
     "payout_ratio": 0.2591,
-    "market_cap": 31390760960,
+    "market_cap": 31018326016,
     "beta": 1.202,
     "52w_high": 214.9,
     "52w_low": 129.95,
-    "prix_actuel": 177.0,
+    "prix_actuel": 174.9,
     "secteur": "Consumer Cyclical",
     "industrie": "Footwear & Accessories",
     "nom": "adidas AG"

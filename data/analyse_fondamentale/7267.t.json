@@ -2,9 +2,9 @@
   "ticker": "7267.T",
   "nom": "Honda Motor Co., Ltd.",
   "secteur": "Consumer Cyclical",
-  "date": "2026-06-15 16:15",
-  "prix": 1458.0,
-  "market_cap": 5675381948416,
+  "date": "2026-06-21 18:48",
+  "prix": 1412.5,
+  "market_cap": 5498269597696,
   "beta": 0.287,
   "scores": {
     "valorisation": 0,
@@ -18,7 +18,7 @@
   "details": {
     "valorisation": {
       "PEG": "SELL (PEG=3.45 > 2)",
-      "PB": "BUY (PB=0.48 < 1 → sous valeur comptable)",
+      "PB": "BUY (PB=0.47 < 1 → sous valeur comptable)",
       "EV_EBITDA": "ATTENTION (EV/EBITDA=16.0 > 15)"
     },
     "rentabilite": {
@@ -39,12 +39,12 @@
   },
   "donnees_brutes": {
     "ticker": "7267.T",
-    "date": "2026-06-15 16:15",
+    "date": "2026-06-21 18:48",
     "pe_ratio": null,
-    "pe_forward": 6.390813,
-    "pb_ratio": 0.48025188,
-    "ps_ratio": 0.2603791,
-    "ev_ebitda": 16.037,
+    "pe_forward": 6.191374,
+    "pb_ratio": 0.4652646,
+    "ps_ratio": 0.2522534,
+    "ev_ebitda": 16.044,
     "peg_ratio": 3.45,
     "roe": -0.028499998,
     "roa": -0.00806,
@@ -55,7 +55,7 @@
     "croissance_revenus": 0.086,
     "croissance_bpa": null,
     "revenus": 21796610899968,
-    "bpa": -106.11,
+    "bpa": -106.08,
     "bpa_forward": 228.14,
     "dette_totale": 13796360847360,
     "cash": 5363801784320,
@@ -65,11 +65,11 @@
     "dividende_yield": 4.96,
     "dividende_par_action": 70.0,
     "payout_ratio": 0.553,
-    "market_cap": 5675381948416,
+    "market_cap": 5498269597696,
     "beta": 0.287,
     "52w_high": 1730.0,
     "52w_low": 1238.0,
-    "prix_actuel": 1458.0,
+    "prix_actuel": 1412.5,
     "secteur": "Consumer Cyclical",
     "industrie": "Auto Manufacturers",
     "nom": "Honda Motor Co., Ltd."

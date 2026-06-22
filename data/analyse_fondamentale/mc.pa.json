@@ -2,25 +2,25 @@
   "ticker": "MC.PA",
   "nom": "LVMH Moët Hennessy - Louis Vuitton, Société Européenne",
   "secteur": "Consumer Cyclical",
-  "date": "2026-06-15 16:15",
-  "prix": 517.8,
-  "market_cap": 255833178112,
+  "date": "2026-06-21 18:48",
+  "prix": 499.25,
+  "market_cap": 246375989248,
   "beta": 0.836,
   "scores": {
-    "valorisation": 0,
+    "valorisation": 2,
     "rentabilite": 2,
     "croissance": -3,
     "sante_financiere": 1,
     "dividende": 2,
-    "total": 2
+    "total": 4
   },
   "recommandation": "⚪ NEUTRAL",
   "details": {
     "valorisation": {
-      "PE": "NEUTRAL (PE=23.7)",
-      "PEG": "SELL (PEG=2.03 > 2)",
-      "PB": "ATTENTION (PB=3.81 > 3)",
-      "EV_EBITDA": "NEUTRAL (EV/EBITDA=13.5)"
+      "PE": "NEUTRAL (PE=22.8)",
+      "PEG": "NEUTRAL (PEG=1.99)",
+      "PB": "ATTENTION (PB=3.67 > 3)",
+      "EV_EBITDA": "NEUTRAL (EV/EBITDA=13.2)"
     },
     "rentabilite": {
       "ROE": "NEUTRAL (ROE=16.2%)",
@@ -36,18 +36,18 @@
       "Current_Ratio": "NEUTRAL (CR=1.58)"
     },
     "dividende": {
-      "Dividende": "BUY (rendement=255.0%)"
+      "Dividende": "BUY (rendement=260.0%)"
     }
   },
   "donnees_brutes": {
     "ticker": "MC.PA",
-    "date": "2026-06-15 16:15",
-    "pe_ratio": 23.697939,
-    "pe_forward": 20.192305,
-    "pb_ratio": 3.8094535,
-    "ps_ratio": 3.165978,
-    "ev_ebitda": 13.513,
-    "peg_ratio": 2.03,
+    "date": "2026-06-21 18:48",
+    "pe_ratio": 22.828074,
+    "pe_forward": 19.44659,
+    "pb_ratio": 3.6729813,
+    "ps_ratio": 3.0489435,
+    "ev_ebitda": 13.239,
+    "peg_ratio": 1.99,
     "roe": 0.16236,
     "roa": 0.075830005,
     "marge_nette": 0.13462,
@@ -57,21 +57,21 @@
     "croissance_revenus": -0.047,
     "croissance_bpa": -0.014,
     "revenus": 80807002112,
-    "bpa": 21.85,
-    "bpa_forward": 25.64343,
+    "bpa": 21.87,
+    "bpa_forward": 25.67288,
     "dette_totale": 36778999808,
     "cash": 13520000000,
     "ratio_dette_equity": 53.342,
     "current_ratio": 1.584,
     "quick_ratio": 0.691,
-    "dividende_yield": 2.55,
+    "dividende_yield": 2.6,
     "dividende_par_action": 13.0,
     "payout_ratio": 0.595,
-    "market_cap": 255833178112,
+    "market_cap": 246375989248,
     "beta": 0.836,
     "52w_high": 654.7,
     "52w_low": 436.55,
-    "prix_actuel": 517.8,
+    "prix_actuel": 499.25,
     "secteur": "Consumer Cyclical",
     "industrie": "Luxury Goods",
     "nom": "LVMH Moët Hennessy - Louis Vuitton, Société Européenne"

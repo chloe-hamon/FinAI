@@ -2,9 +2,9 @@
   "ticker": "ULVR.L",
   "nom": "Unilever PLC",
   "secteur": "Consumer Defensive",
-  "date": "2026-06-15 16:15",
-  "prix": 4370.0,
-  "market_cap": 94629707776,
+  "date": "2026-06-21 18:48",
+  "prix": 4363.5,
+  "market_cap": 94488952832,
   "beta": 0.45,
   "scores": {
     "valorisation": 0,
@@ -17,9 +17,9 @@
   "recommandation": "⚪ NEUTRAL",
   "details": {
     "valorisation": {
-      "PE": "NEUTRAL (PE=19.5)",
-      "PEG": "SELL (PEG=10.88 > 2)",
-      "PB": "ATTENTION (PB=7.11 > 3)",
+      "PE": "NEUTRAL (PE=19.4)",
+      "PEG": "SELL (PEG=10.76 > 2)",
+      "PB": "ATTENTION (PB=7.10 > 3)",
       "EV_EBITDA": "NEUTRAL (EV/EBITDA=11.1)"
     },
     "rentabilite": {
@@ -33,18 +33,18 @@
       "Current_Ratio": "SELL (CR=0.79 < 1 → risque liquidité)"
     },
     "dividende": {
-      "Dividende": "BUY (rendement=386.0%)"
+      "Dividende": "BUY (rendement=388.0%)"
     }
   },
   "donnees_brutes": {
     "ticker": "ULVR.L",
-    "date": "2026-06-15 16:15",
-    "pe_ratio": 19.508928,
-    "pe_forward": 14.846714,
-    "pb_ratio": 7.1079006,
-    "ps_ratio": 1.8737442,
-    "ev_ebitda": 11.145,
-    "peg_ratio": 10.88,
+    "date": "2026-06-21 18:48",
+    "pe_ratio": 19.393333,
+    "pe_forward": 14.748434,
+    "pb_ratio": 7.0977483,
+    "ps_ratio": 1.8709573,
+    "ev_ebitda": 11.1,
+    "peg_ratio": 10.76,
     "roe": 0.30955,
     "roa": 0.08427,
     "marge_nette": 0.18749,
@@ -54,21 +54,21 @@
     "croissance_revenus": null,
     "croissance_bpa": null,
     "revenus": 50503000064,
-    "bpa": 2.24,
-    "bpa_forward": 2.9434123,
+    "bpa": 2.25,
+    "bpa_forward": 2.958619,
     "dette_totale": 28277999616,
     "cash": 5011999744,
     "ratio_dette_equity": 160.789,
     "current_ratio": 0.788,
     "quick_ratio": 0.497,
-    "dividende_yield": 3.86,
+    "dividende_yield": 3.88,
     "dividende_par_action": 1.69,
     "payout_ratio": 0.7896,
-    "market_cap": 94629707776,
+    "market_cap": 94488952832,
     "beta": 0.45,
     "52w_high": 5542.11,
     "52w_low": 3644.0,
-    "prix_actuel": 4370.0,
+    "prix_actuel": 4363.5,
     "secteur": "Consumer Defensive",
     "industrie": "Household & Personal Products",
     "nom": "Unilever PLC"

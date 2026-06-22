@@ -9,7 +9,7 @@ from chloe import CHROMA_PATH, EMBEDDING_MODEL
 # ==========================================
 # CONFIGURATION 
 # ==========================================
-OLLAMA_MODEL = "qwen2.5vl:7b"
+OLLAMA_MODEL = "qwen2.5:7b"
 
 # Nombre de chunks récupérés depuis ChromaDB
 K_RESULTS = 8

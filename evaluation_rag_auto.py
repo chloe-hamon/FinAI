@@ -5,7 +5,7 @@ from vadim_eval import ask, charger_vector_store
 
 # Modèle utilisé uniquement pour rédiger un commentaire
 evaluateur = ChatOllama(
-    model="llama3.2:3b",
+    model="qwen2.5vl:3b",
     temperature=0
 )
 

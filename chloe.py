@@ -1,7 +1,11 @@
 import re
 import os
 from datetime import datetime
-
+from config import (
+    ACTIONS, INDICES, CRYPTO, FOREX,
+    FLUX_RSS, GOOGLE_NEWS_QUERIES,
+    CHROMA_PATH, EMBEDDING_MODEL, PATHS
+)
 import feedparser
 import pandas as pd
 import yfinance as yf
@@ -24,104 +28,6 @@ for _d in [
     "data/macro",                      
 ]:
     os.makedirs(_d, exist_ok=True)
-
-CHROMA_PATH     = "chroma_db/"
-EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-
-PATHS = {
-    "indices_clean": "data/indices_clean",
-    "actions_clean": "data/actions_clean",
-    "crypto_clean":  "data/crypto_clean",
-    "forex_clean":   "data/forex_clean",
-    "scoring":       "data/scoring",
-    "logs":          "logs",
-    "analyse_technique":  "data/analyse_technique",
-    "analyse_fondamentale": "data/analyse_fondamentale",
-    "macro":                "data/macro",
-    "chroma":                "chroma_db",
-    "pdf":                   "Annual report",
-    "images":                "pages_images",
-}
-
-# ============================================================
-# UNIVERS D'INVESTISSEMENT
-# ============================================================
-
-INDICES = {
-    "CAC40":     "^FCHI",
-    "SP500":     "^GSPC",
-    "NASDAQ":    "^IXIC",
-    "DAX":       "^GDAXI",
-    "FTSE100":   "^FTSE",
-    "Nikkei225": "^N225",
-}
-
-ACTIONS = {
-    # US
-    "Apple":         "AAPL",
-    "Tesla":         "TSLA",
-    "Microsoft":     "MSFT",
-    "Google":        "GOOGL",
-    "Amazon":        "AMZN",
-    # NASDAQ
-    "Nvidia":        "NVDA",
-    "Meta":          "META",
-    "Netflix":       "NFLX",
-    "AMD":           "AMD",
-    "Intel":         "INTC",
-    # CAC40
-    "Airbus":        "AIR.PA",
-    "TotalEnergies": "TTE.PA",
-    "LVMH":          "MC.PA",
-    "BNP Paribas":   "BNP.PA",
-    "Sanofi":        "SAN.PA",
-    # DAX
-    "SAP":           "SAP.DE",
-    "Siemens":       "SIE.DE",
-    "BMW":           "BMW.DE",
-    "Volkswagen":    "VOW3.DE",
-    "Adidas":        "ADS.DE",
-    # FTSE100
-    "HSBC":          "HSBA.L",
-    "BP":            "BP.L",
-    "Shell":         "SHEL.L",
-    "Unilever":      "ULVR.L",
-    "AstraZeneca":   "AZN.L",
-    # Nikkei225
-    "Toyota":        "7203.T",
-    "Sony":          "6758.T",
-    "SoftBank":      "9984.T",
-    "Nintendo":      "7974.T",
-    "Mitsubishi":    "8058.T",
-    "Honda":         "7267.T",
-}
-
-CRYPTO = {
-    "Bitcoin":  "BTC-USD",
-    "Ethereum": "ETH-USD",
-    "BNB":      "BNB-USD",
-}
-
-FOREX = {
-    "EUR/USD": "EURUSD=X",
-    "EUR/GBP": "EURGBP=X",
-    "USD/JPY": "JPY=X",
-}
-
-FLUX_RSS = {
-    "Les Echos":     "https://www.lesechos.fr/rss/rss_finance.xml",
-    "BFM Bourse":    "https://www.bfmtv.com/rss/bourse/",
-    "Boursorama":    "https://www.boursorama.com/bourse/actualites/rss.phtml",
-    "Reuters":       "https://feeds.reuters.com/reuters/businessNews",
-    "MarketWatch":   "https://feeds.marketwatch.com/marketwatch/topstories/",
-    "Yahoo Finance": "https://finance.yahoo.com/news/rssindex",
-}
-
-GOOGLE_NEWS_QUERIES = [
-    "CAC40", "bourse finance", "Bitcoin crypto",
-    "taux intérêt BCE", "inflation économie",
-    "Wall Street NASDAQ", "matières premières",
-]
 
 
 # ============================================================

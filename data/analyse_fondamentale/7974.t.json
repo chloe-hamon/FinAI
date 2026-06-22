@@ -2,9 +2,9 @@
   "ticker": "7974.T",
   "nom": "Nintendo Co., Ltd.",
   "secteur": "Communication Services",
-  "date": "2026-06-15 16:15",
-  "prix": 7110.0,
-  "market_cap": 8196613734400,
+  "date": "2026-06-21 18:48",
+  "prix": 7076.0,
+  "market_cap": 8157417439232,
   "beta": 0.132,
   "scores": {
     "valorisation": 0,
@@ -17,10 +17,10 @@
   "recommandation": "🟡 BUY",
   "details": {
     "valorisation": {
-      "PE": "NEUTRAL (PE=19.5)",
-      "PEG": "SELL (PEG=3.61 > 2)",
-      "PB": "NEUTRAL (PB=2.77)",
-      "EV_EBITDA": "ATTENTION (EV/EBITDA=16.1 > 15)"
+      "PE": "NEUTRAL (PE=19.4)",
+      "PEG": "SELL (PEG=3.57 > 2)",
+      "PB": "NEUTRAL (PB=2.76)",
+      "EV_EBITDA": "ATTENTION (EV/EBITDA=15.8 > 15)"
     },
     "rentabilite": {
       "ROE": "NEUTRAL (ROE=14.9%)",
@@ -35,18 +35,18 @@
       "Current_Ratio": "BUY (CR=3.96 → bonne liquidité)"
     },
     "dividende": {
-      "Dividende": "BUY (rendement=305.0%)"
+      "Dividende": "BUY (rendement=309.0%)"
     }
   },
   "donnees_brutes": {
     "ticker": "7974.T",
-    "date": "2026-06-15 16:15",
-    "pe_ratio": 19.509384,
-    "pe_forward": 20.891489,
-    "pb_ratio": 2.774727,
-    "ps_ratio": 3.5436375,
-    "ev_ebitda": 16.104,
-    "peg_ratio": 3.61,
+    "date": "2026-06-21 18:48",
+    "pe_ratio": 19.417688,
+    "pe_forward": 20.791586,
+    "pb_ratio": 2.7614584,
+    "ps_ratio": 3.5266917,
+    "ev_ebitda": 15.804,
+    "peg_ratio": 3.57,
     "roe": 0.14931,
     "roa": 0.06249,
     "marge_nette": 0.18333,
@@ -56,21 +56,21 @@
     "croissance_revenus": 0.951,
     "croissance_bpa": 0.571,
     "revenus": 2313050914816,
-    "bpa": 364.44,
+    "bpa": 364.41,
     "bpa_forward": 340.33,
     "dette_totale": 0,
     "cash": 2216856125440,
     "ratio_dette_equity": null,
     "current_ratio": 3.959,
     "quick_ratio": 3.11,
-    "dividende_yield": 3.05,
+    "dividende_yield": 3.09,
     "dividende_par_action": 219.0,
     "payout_ratio": 0.60080004,
-    "market_cap": 8196613734400,
+    "market_cap": 8157417439232,
     "beta": 0.132,
     "52w_high": 14795.0,
     "52w_low": 6849.0,
-    "prix_actuel": 7110.0,
+    "prix_actuel": 7076.0,
     "secteur": "Communication Services",
     "industrie": "Electronic Gaming & Multimedia",
     "nom": "Nintendo Co., Ltd."

@@ -2,9 +2,9 @@
   "ticker": "6758.T",
   "nom": "Sony Group Corporation",
   "secteur": "Technology",
-  "date": "2026-06-15 16:15",
-  "prix": 3320.0,
-  "market_cap": 19554356953088,
+  "date": "2026-06-21 18:48",
+  "prix": 3140.0,
+  "market_cap": 18494181605376,
   "beta": 0.74,
   "scores": {
     "valorisation": 5,
@@ -17,10 +17,10 @@
   "recommandation": "🟡 BUY",
   "details": {
     "valorisation": {
-      "PE": "NEUTRAL (PE=19.4)",
-      "PEG": "NEUTRAL (PEG=1.87)",
-      "PB": "NEUTRAL (PB=2.42)",
-      "EV_EBITDA": "BUY (EV/EBITDA=7.2 < 10)"
+      "PE": "NEUTRAL (PE=18.3)",
+      "PEG": "NEUTRAL (PEG=1.78)",
+      "PB": "NEUTRAL (PB=2.28)",
+      "EV_EBITDA": "BUY (EV/EBITDA=6.8 < 10)"
     },
     "rentabilite": {
       "ROE": "NEUTRAL (ROE=12.4%)",
@@ -36,19 +36,19 @@
       "Current_Ratio": "NEUTRAL (CR=1.18)"
     },
     "dividende": {
-      "Dividende": "BUY (rendement=106.0%)",
+      "Dividende": "BUY (rendement=111.0%)",
       "Payout": "BUY (payout=14.6% → soutenable)"
     }
   },
   "donnees_brutes": {
     "ticker": "6758.T",
-    "date": "2026-06-15 16:15",
-    "pe_ratio": 19.357473,
-    "pe_forward": 18.12227,
-    "pb_ratio": 2.4157436,
-    "ps_ratio": 1.5669032,
-    "ev_ebitda": 7.17,
-    "peg_ratio": 1.87,
+    "date": "2026-06-21 18:48",
+    "pe_ratio": 18.315445,
+    "pe_forward": 17.139738,
+    "pb_ratio": 2.2847695,
+    "ps_ratio": 1.4819508,
+    "ev_ebitda": 6.836,
+    "peg_ratio": 1.78,
     "roe": 0.12367,
     "roa": 0.03707,
     "marge_nette": -0.02619,
@@ -58,21 +58,21 @@
     "croissance_revenus": 0.154,
     "croissance_bpa": -0.575,
     "revenus": 12479619923968,
-    "bpa": 171.51,
+    "bpa": 171.44,
     "bpa_forward": 183.2,
     "dette_totale": 1669669060608,
     "cash": 2208879083520,
     "ratio_dette_equity": 19.612,
     "current_ratio": 1.182,
     "quick_ratio": 0.801,
-    "dividende_yield": 1.06,
+    "dividende_yield": 1.11,
     "dividende_par_action": 35.0,
     "payout_ratio": 0.1458,
-    "market_cap": 19554356953088,
+    "market_cap": 18494181605376,
     "beta": 0.74,
     "52w_high": 4776.0,
     "52w_low": 3043.0,
-    "prix_actuel": 3320.0,
+    "prix_actuel": 3140.0,
     "secteur": "Technology",
     "industrie": "Consumer Electronics",
     "nom": "Sony Group Corporation"

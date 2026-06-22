@@ -2,9 +2,9 @@
   "ticker": "SAN.PA",
   "nom": "Sanofi",
   "secteur": "Healthcare",
-  "date": "2026-06-15 16:15",
-  "prix": 75.52,
-  "market_cap": 90388709376,
+  "date": "2026-06-21 18:48",
+  "prix": 74.14,
+  "market_cap": 88737013760,
   "beta": 0.275,
   "scores": {
     "valorisation": 3,
@@ -17,10 +17,10 @@
   "recommandation": "⚪ NEUTRAL",
   "details": {
     "valorisation": {
-      "PE": "NEUTRAL (PE=19.1)",
-      "PEG": "SELL (PEG=3.85 > 2)",
-      "PB": "NEUTRAL (PB=1.25)",
-      "EV_EBITDA": "BUY (EV/EBITDA=8.3 < 10)"
+      "PE": "NEUTRAL (PE=18.7)",
+      "PEG": "SELL (PEG=3.73 > 2)",
+      "PB": "NEUTRAL (PB=1.23)",
+      "EV_EBITDA": "BUY (EV/EBITDA=8.1 < 10)"
     },
     "rentabilite": {
       "ROE": "ATTENTION (ROE=6.6% < 10%)",
@@ -36,19 +36,19 @@
       "Current_Ratio": "NEUTRAL (CR=1.00)"
     },
     "dividende": {
-      "Dividende": "BUY (rendement=538.0%)",
+      "Dividende": "BUY (rendement=556.0%)",
       "Payout": "ATTENTION (payout=99.0% → risqué)"
     }
   },
   "donnees_brutes": {
     "ticker": "SAN.PA",
-    "date": "2026-06-15 16:15",
-    "pe_ratio": 19.070705,
-    "pe_forward": 8.381053,
-    "pb_ratio": 1.249049,
-    "ps_ratio": 1.9087873,
-    "ev_ebitda": 8.345,
-    "peg_ratio": 3.85,
+    "date": "2026-06-21 18:48",
+    "pe_ratio": 18.722221,
+    "pe_forward": 8.227904,
+    "pb_ratio": 1.2262247,
+    "ps_ratio": 1.8739074,
+    "ev_ebitda": 8.115,
+    "peg_ratio": 3.73,
     "roe": 0.06576,
     "roa": 0.04666,
     "marge_nette": 0.15954,
@@ -65,14 +65,14 @@
     "ratio_dette_equity": 27.372,
     "current_ratio": 1.005,
     "quick_ratio": 0.201,
-    "dividende_yield": 5.38,
+    "dividende_yield": 5.56,
     "dividende_par_action": 4.12,
     "payout_ratio": 0.9899,
-    "market_cap": 90388709376,
+    "market_cap": 88737013760,
     "beta": 0.275,
     "52w_high": 91.15,
     "52w_low": 71.73,
-    "prix_actuel": 75.52,
+    "prix_actuel": 74.14,
     "secteur": "Healthcare",
     "industrie": "Drug Manufacturers - General",
     "nom": "Sanofi"

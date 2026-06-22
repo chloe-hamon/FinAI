@@ -2,9 +2,9 @@
   "ticker": "BNP.PA",
   "nom": "BNP Paribas SA",
   "secteur": "Financial Services",
-  "date": "2026-06-15 16:15",
-  "prix": 99.0,
-  "market_cap": 109058465792,
+  "date": "2026-06-21 18:48",
+  "prix": 101.58,
+  "market_cap": 111900598272,
   "beta": 1.051,
   "scores": {
     "valorisation": 3,
@@ -17,9 +17,9 @@
   "recommandation": "🟡 BUY",
   "details": {
     "valorisation": {
-      "PE": "BUY (PE=9.3 < 15 → sous-évalué)",
-      "PEG": "SELL (PEG=2.98 > 2)",
-      "PB": "BUY (PB=0.84 < 1 → sous valeur comptable)"
+      "PE": "BUY (PE=9.6 < 15 → sous-évalué)",
+      "PEG": "SELL (PEG=3.13 > 2)",
+      "PB": "BUY (PB=0.86 < 1 → sous valeur comptable)"
     },
     "rentabilite": {
       "ROE": "ATTENTION (ROE=9.6% < 10%)",
@@ -32,18 +32,18 @@
     },
     "sante_financiere": {},
     "dividende": {
-      "Dividende": "BUY (rendement=1029.0%)"
+      "Dividende": "BUY (rendement=980.0%)"
     }
   },
   "donnees_brutes": {
     "ticker": "BNP.PA",
-    "date": "2026-06-15 16:15",
-    "pe_ratio": 9.3396225,
-    "pe_forward": 7.6885085,
-    "pb_ratio": 0.8370677,
-    "ps_ratio": 2.22201,
+    "date": "2026-06-21 18:48",
+    "pe_ratio": 9.583018,
+    "pe_forward": 7.8888755,
+    "pb_ratio": 0.85888225,
+    "ps_ratio": 2.2799168,
     "ev_ebitda": null,
-    "peg_ratio": 2.98,
+    "peg_ratio": 3.13,
     "roe": 0.09575,
     "roa": 0.00456,
     "marge_nette": 0.2545,
@@ -60,14 +60,14 @@
     "ratio_dette_equity": null,
     "current_ratio": null,
     "quick_ratio": null,
-    "dividende_yield": 10.29,
+    "dividende_yield": 9.8,
     "dividende_par_action": 9.95,
     "payout_ratio": 0.6961,
-    "market_cap": 109058465792,
+    "market_cap": 111900598272,
     "beta": 1.051,
-    "52w_high": 99.45,
+    "52w_high": 101.82,
     "52w_low": 65.12,
-    "prix_actuel": 99.0,
+    "prix_actuel": 101.58,
     "secteur": "Financial Services",
     "industrie": "Banks - Regional",
     "nom": "BNP Paribas SA"

@@ -2,9 +2,9 @@
   "ticker": "VOW3.DE",
   "nom": "Volkswagen AG",
   "secteur": "Consumer Cyclical",
-  "date": "2026-06-15 16:15",
-  "prix": 91.06,
-  "market_cap": 45647945728,
+  "date": "2026-06-21 18:48",
+  "prix": 80.44,
+  "market_cap": 40324194304,
   "beta": 0.976,
   "scores": {
     "valorisation": 7,
@@ -17,10 +17,10 @@
   "recommandation": "⚪ NEUTRAL",
   "details": {
     "valorisation": {
-      "PE": "BUY (PE=7.5 < 15 → sous-évalué)",
-      "PEG": "BUY (PEG=0.81 < 1)",
-      "PB": "BUY (PB=0.26 < 1 → sous valeur comptable)",
-      "EV_EBITDA": "NEUTRAL (EV/EBITDA=12.1)"
+      "PE": "BUY (PE=6.6 < 15 → sous-évalué)",
+      "PEG": "BUY (PEG=0.73 < 1)",
+      "PB": "BUY (PB=0.23 < 1 → sous valeur comptable)",
+      "EV_EBITDA": "NEUTRAL (EV/EBITDA=11.9)"
     },
     "rentabilite": {
       "ROE": "ATTENTION (ROE=3.1% < 10%)",
@@ -36,18 +36,18 @@
       "Current_Ratio": "NEUTRAL (CR=1.07)"
     },
     "dividende": {
-      "Dividende": "BUY (rendement=595.0%)"
+      "Dividende": "BUY (rendement=654.0%)"
     }
   },
   "donnees_brutes": {
     "ticker": "VOW3.DE",
-    "date": "2026-06-15 16:15",
-    "pe_ratio": 7.4578214,
-    "pe_forward": 3.627157,
-    "pb_ratio": 0.26234135,
-    "ps_ratio": 0.14264448,
-    "ev_ebitda": 12.113,
-    "peg_ratio": 0.81,
+    "date": "2026-06-21 18:48",
+    "pe_ratio": 6.5880427,
+    "pe_forward": 3.204135,
+    "pb_ratio": 0.2289012,
+    "ps_ratio": 0.12600839,
+    "ev_ebitda": 11.93,
+    "peg_ratio": 0.73,
     "roe": 0.03105,
     "roa": 0.0128999995,
     "marge_nette": 0.0212,
@@ -64,14 +64,14 @@
     "ratio_dette_equity": 137.093,
     "current_ratio": 1.07,
     "quick_ratio": 0.819,
-    "dividende_yield": 5.95,
+    "dividende_yield": 6.54,
     "dividende_par_action": 5.26,
     "payout_ratio": 0.5209,
-    "market_cap": 45647945728,
+    "market_cap": 40324194304,
     "beta": 0.976,
     "52w_high": 109.15,
-    "52w_low": 82.66,
-    "prix_actuel": 91.06,
+    "52w_low": 79.9,
+    "prix_actuel": 80.44,
     "secteur": "Consumer Cyclical",
     "industrie": "Auto Manufacturers",
     "nom": "Volkswagen AG"

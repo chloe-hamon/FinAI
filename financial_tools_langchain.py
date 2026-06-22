@@ -159,7 +159,7 @@ TICKERS = {
     "Volkswagen":    "VOW3.DE",
     "Adidas":        "ADS.DE",
     # FTSE100
-    "HSBC":          "HSBA.L",
+    "HSBC":          "HSBC",
     "BP":            "BP.L",
     "Shell":         "SHEL.L",
     "Unilever":      "ULVR.L",
@@ -210,6 +210,41 @@ ENTREPRISES_CONNUES = {
     "mitsubishi":     "Mitsubishi",
     "honda":          "Honda",
 }
+
+TRADUCTIONS = {
+    "chiffre d'affaires": "total revenue",
+    "chiffre d affaires": "total revenue",
+    "bénéfice net":       "net income",
+    "benefice net":       "net income",
+    "résultat net":       "net income",
+    "resultat net":       "net income",
+    "revenus totaux":     "total revenue",
+    "revenus":            "revenue",
+    "marge nette":        "net margin",
+    "marge":              "margin",
+    "dette":              "debt",
+    "capitaux propres":   "shareholders equity",
+    "trésorerie":         "cash",
+    "tresorerie":         "cash",
+    "croissance":         "growth",
+    "bénéfice":           "income",
+    "benefice":           "income",
+    "charges":            "expenses",
+    "coût":               "cost",
+    "cout":               "cost",
+    "dividende":          "dividend",
+    "rachat d'actions":   "share buyback",
+    "endettement":        "debt ratio",
+    "résultat opérationnel": "operating income",
+    "resultat operationnel": "operating income",
+}
+
+def traduire_requete(question: str) -> str:
+    q = question.lower()
+    for fr, en in sorted(TRADUCTIONS.items(), key=lambda x: len(x[0]), reverse=True):
+        q = q.replace(fr, en)
+    return q
+
 
 def detecter_entreprise(question: str) -> str | None:
     """Détecte le nom canonique de l'entreprise dans la question."""
@@ -275,65 +310,71 @@ def recherche_financiere(question: str) -> str:
     UTILISE CET OUTIL EN PREMIER pour trouver les chiffres bruts.
     Input : une question en langage naturel."""
 
-    # ── Détection entreprise + filtre Chroma
     entreprise = detecter_entreprise(question)
-    if entreprise:
-        # Recherche partielle : "Microsoft" dans "Microsoft_rapportannuel"
-        filtre = {"fichier": {"$contains": entreprise}}
-    else:
-        filtre = None
-    resultats = vector_store.similarity_search_with_score(
-        question,
-        k=10,
-        filter=filtre
-    )
+    requete_recherche = traduire_requete(question)
+    print(f"   🔍 Requête traduite : '{requete_recherche}'")
 
-    print(f"\n   → {len(resultats)} chunks avant filtrage"
+    resultats = vector_store.similarity_search_with_score(requete_recherche, k=20)
+
+    # ── 1. Filtre entreprise ──────────────────────────────────────
+    if entreprise:
+        resultats = [
+            (doc, score) for doc, score in resultats
+            if entreprise.lower() in doc.metadata.get("fichier", "").lower()
+            or entreprise.lower() in doc.metadata.get("source", "").lower()
+        ]
+
+    print(f"\n   → {len(resultats)} chunks"
           + (f" (filtrés sur '{entreprise}')" if entreprise else " (global)") + " :")
     for doc, score in resultats:
         source = os.path.basename(doc.metadata.get("source", "inconnue"))
         page   = doc.metadata.get("page", "?")
         print(f"     Score: {score:.4f} | {source} p.{page}")
 
-    # ── Filtre 1 : score de similarité
+    # ── 2. Filtre score ───────────────────────────────────────────
     SEUIL_SCORE = 0.85
-    resultats_filtres = [
-        (doc, score) for doc, score in resultats
-        if score < SEUIL_SCORE
-    ]
+    resultats = [(doc, score) for doc, score in resultats if score < SEUIL_SCORE]
 
-    # ── Filtre 2 : disclaimers
+    # ── 3. Filtre disclaimers ─────────────────────────────────────
     MOTS_EXCLUS = [
         "éléments de projection",
         "facteurs d'incertitudes",
         "aucunement à mettre à jour",
         "obligations légales"
     ]
-    resultats_filtres = [
-        (doc, score) for doc, score in resultats_filtres
+    resultats = [
+        (doc, score) for doc, score in resultats
         if not any(mot in doc.page_content for mot in MOTS_EXCLUS)
     ]
 
-    print(f"   → {len(resultats_filtres)} chunks après filtrage (seuil={SEUIL_SCORE})")
+    # ── 4. Déduplication ─────────────────────────────────────────
+    vus = set()
+    resultats_dedup = []
+    for doc, score in resultats:
+        cle = (doc.page_content[:100], doc.metadata.get("page", ""))
+        if cle not in vus:
+            vus.add(cle)
+            resultats_dedup.append((doc, score))
+    resultats = resultats_dedup
 
-    if not resultats_filtres:
+    print(f"   → {len(resultats)} chunks après filtrage (seuil={SEUIL_SCORE})")
+
+    # ── 5. Aucun résultat ─────────────────────────────────────────
+    if not resultats:
         if entreprise:
             return (
                 f"❌ Aucun document trouvé pour '{entreprise}'. "
-                f"Le rapport annuel de {entreprise} n'est peut-être pas "
-                f"dans la base de données."
+                f"Donnez une Final Answer indiquant que les données "
+                f"ne sont pas disponibles dans la base."
             )
-        return (
-            "❌ Aucun document pertinent trouvé dans la base de données. "
-            "Le rapport demandé n'a probablement pas été ingéré."
-        )
+        return "❌ Aucun document pertinent trouvé dans la base de données."
 
-    # ── Construction réponse
+    # ── 6. Construction réponse ───────────────────────────────────
     blocs = []
-    for i, (doc, score) in enumerate(resultats_filtres[:5]):
-        source          = doc.metadata.get("source", "inconnue")
-        page            = doc.metadata.get("page", "?")
-        entreprise_doc  = doc.metadata.get("entreprise", "?")
+    for i, (doc, score) in enumerate(resultats[:5]):
+        source         = doc.metadata.get("source", "inconnue")
+        page           = doc.metadata.get("page", "?")
+        entreprise_doc = doc.metadata.get("entreprise", "?")
         blocs.append(
             f"[Source {i+1} : {entreprise_doc} | "
             f"{os.path.basename(source)}, p.{page} | score={score:.4f}]\n"
@@ -342,23 +383,24 @@ def recherche_financiere(question: str) -> str:
 
     return "\n\n".join(blocs)
 
+
 @tool
 def get_cours_action(ticker: str) -> str:
-    """Récupère le cours actuel d'une action ou indice. UN SEUL ticker par appel.
-    Exemples: AAPL, TSLA, ^FCHI, ^GSPC, BTC-USD, EURUSD=X"""
+    """Récupère le cours actuel d'une action ou indice. UN SEUL ticker par appel."""
     import yfinance as yf
     try:
-        # Nettoyer : supprimer guillemets, espaces, et tout texte superflu
         ticker = re.sub(r"['\"]", "", ticker).strip().split()[0].upper()
+        base = ticker.split(".")[0]  # HSBC.L → HSBC
         
-        action = yf.Ticker(ticker)
-        prix = action.fast_info.last_price
-        devise = getattr(action.fast_info, "currency", "USD")
-
-        if prix is None:
-            return f"❌ Aucun cours trouvé pour {ticker}."
-
-        return f"{ticker} : {prix:.2f} {devise}"
+        for t in [base]:
+            action = yf.Ticker(t)
+            info = action.info
+            prix = info.get("currentPrice") or info.get("regularMarketPrice")
+            if prix:
+                devise = info.get("currency", "USD")
+                return f"{t} : {prix:.2f} {devise}"
+        
+        return f"❌ Aucun cours trouvé pour {ticker}."
     except Exception as e:
         return f"❌ Impossible de récupérer {ticker} : {e}"
 
@@ -428,7 +470,7 @@ def get_top_performers(indice: str) -> str:
     INDICE_ACTIONS = {
         "CAC40":    {"Airbus": "AIR.PA", "TotalEnergies": "TTE.PA", "LVMH": "MC.PA", "BNP Paribas": "BNP.PA", "Sanofi": "SAN.PA"},
         "DAX":      {"SAP": "SAP.DE", "Siemens": "SIE.DE", "BMW": "BMW.DE", "Volkswagen": "VOW3.DE", "Adidas": "ADS.DE"},
-        "FTSE100":  {"HSBC": "HSBA.L", "BP": "BP.L", "Shell": "SHEL.L", "Unilever": "ULVR.L", "AstraZeneca": "AZN.L"},
+        "FTSE100":  {"HSBC": "HSBC", "BP": "BP.L", "Shell": "SHEL.L", "Unilever": "ULVR.L", "AstraZeneca": "AZN.L"},
         "NASDAQ":   {"Nvidia": "NVDA", "Meta": "META", "Netflix": "NFLX", "AMD": "AMD", "Intel": "INTC"},
         "Nikkei225":{"Toyota": "7203.T", "Sony": "6758.T", "SoftBank": "9984.T", "Nintendo": "7974.T", "Honda": "7267.T"},
     }

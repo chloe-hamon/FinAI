@@ -2,9 +2,9 @@
   "ticker": "HSBA.L",
   "nom": "HSBC Holdings plc",
   "secteur": "Financial Services",
-  "date": "2026-06-15 16:15",
-  "prix": 1379.6,
-  "market_cap": 236611010560,
+  "date": "2026-06-21 18:48",
+  "prix": 1431.6,
+  "market_cap": 245493760000,
   "beta": 0.579,
   "scores": {
     "valorisation": 4,
@@ -17,9 +17,9 @@
   "recommandation": "🟡 BUY",
   "details": {
     "valorisation": {
-      "PE": "NEUTRAL (PE=15.3)",
-      "PEG": "BUY (PEG=0.91 < 1)",
-      "PB": "NEUTRAL (PB=1.81)"
+      "PE": "NEUTRAL (PE=15.6)",
+      "PEG": "BUY (PEG=0.93 < 1)",
+      "PB": "NEUTRAL (PB=1.88)"
     },
     "rentabilite": {
       "ROE": "NEUTRAL (ROE=11.6%)",
@@ -32,18 +32,18 @@
     },
     "sante_financiere": {},
     "dividende": {
-      "Dividende": "BUY (rendement=405.0%)"
+      "Dividende": "BUY (rendement=388.0%)"
     }
   },
   "donnees_brutes": {
     "ticker": "HSBA.L",
-    "date": "2026-06-15 16:15",
-    "pe_ratio": 15.331112,
-    "pe_forward": 9.78151,
-    "pb_ratio": 1.8086325,
-    "ps_ratio": 3.7096107,
+    "date": "2026-06-21 18:48",
+    "pe_ratio": 15.560869,
+    "pe_forward": 10.154099,
+    "pb_ratio": 1.8765315,
+    "ps_ratio": 3.8494334,
     "ev_ebitda": null,
-    "peg_ratio": 0.91,
+    "peg_ratio": 0.93,
     "roe": 0.11611,
     "roa": 0.00722,
     "marge_nette": 0.34977,
@@ -53,21 +53,21 @@
     "croissance_revenus": 0.033,
     "croissance_bpa": 0.026,
     "revenus": 63773999104,
-    "bpa": 0.9,
-    "bpa_forward": 1.4106206,
+    "bpa": 0.92,
+    "bpa_forward": 1.409874,
     "dette_totale": 773452988416,
     "cash": 1162820976640,
     "ratio_dette_equity": null,
     "current_ratio": null,
     "quick_ratio": null,
-    "dividende_yield": 4.05,
+    "dividende_yield": 3.88,
     "dividende_par_action": 0.56,
     "payout_ratio": 0.6082,
-    "market_cap": 236611010560,
+    "market_cap": 245493760000,
     "beta": 0.579,
-    "52w_high": 1416.8,
+    "52w_high": 1442.4,
     "52w_low": 860.3,
-    "prix_actuel": 1379.6,
+    "prix_actuel": 1431.6,
     "secteur": "Financial Services",
     "industrie": "Banks - Diversified",
     "nom": "HSBC Holdings plc"
