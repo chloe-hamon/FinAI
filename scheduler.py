@@ -7,7 +7,7 @@ from datetime import datetime
 from analyse_tech import pipeline_technique
 from analyse_fond import pipeline_fondamental
 from macro import pipeline_macro
-from chloe import (
+from collecte import (
     get_market_indices,
     get_multiple_stocks,
     get_crypto_and_forex,
@@ -78,7 +78,7 @@ def tache_news():
 def tache_nuit():
     """Pipeline complet — chaque nuit à 2h"""
     from macro import pipeline_macro
-    from chloe import ACTIONS
+    from collecte import ACTIONS
     from scoring_global import pipeline_scoring_global
 
     log.info("🌙 Pipeline nuit complet...")
