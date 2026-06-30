@@ -1,6 +1,6 @@
 import pandas as pd
 from langchain_ollama import ChatOllama
-from vadim_eval import ask, charger_vector_store
+from rag import ask, charger_vector_store
 
 
 # Modèle utilisé uniquement pour rédiger un commentaire
