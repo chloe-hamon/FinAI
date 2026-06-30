@@ -138,6 +138,13 @@ if "agent_charge" not in st.session_state:
 # ─────────────────────────────────────────
 def interroger_agent(question: str) -> str:
     try:
+        mots_analyse = ["score", "analyse", "opportunité", "recommandation", "vaut-il"]
+        if any(mot in question.lower() for mot in mots_analyse):
+            from agent import detecter_ticker
+            ticker_detected = detecter_ticker(question)
+            if ticker_detected:
+                question = f"{question} — utilise analyser_action avec le ticker {ticker_detected}"
+
         resultat = agent_executor.invoke({"input": question})
         return resultat.get("output", "Pas de réponse.")
     except Exception as e:
@@ -178,11 +185,9 @@ with st.sidebar:
     st.markdown("### 💡 Suggestions")
     suggestions = [
         f"Analyse {action}",
-        f"Actualités récentes sur {action}",
+        f"Quelles sont les actualités récentes sur {action} ?",
         f"Quels sont les risques de {action} ?",
-        f"Score global de {action}",
-        f"Analyse technique de {action}",
-        f"Analyse fondamentale de {action}",
+        f"Quel est le score global de {action} ?",
         f"Quel est le cours actuel de {action} ?",
         f"Performance de {action} sur 1 mois",
     ]
@@ -199,7 +204,7 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown(
-        "<small style='color:#555'>FinAI v1.0 — Projet Ingénieur 2025<br>"
+        "<small style='color:#555'>FinAI v1.0 — Projet E3 2026<br>"
         f"💬 {len(st.session_state.messages)//2} échange(s) dans la session</small>",
         unsafe_allow_html=True
     )
