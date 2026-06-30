@@ -5,7 +5,7 @@ from langchain_classic.agents import create_react_agent, AgentExecutor
 from langchain_classic.memory import ConversationBufferWindowMemory
 from langchain_classic.tools import tool
 from langchain_ollama import ChatOllama
-from vadim import ask, retriever, charger_vector_store, construire_contexte
+from rag import ask, retriever, charger_vector_store, construire_contexte
 from prompt_template import formater_historique, creer_prompt_template, formater_prompt
 from prompt_template import SYSTEM_PROMPT, HUMAN_PROMPT
 from financial_tools_langchain import TICKERS,ENTREPRISES_CONNUES
