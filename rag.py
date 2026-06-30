@@ -4,7 +4,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_ollama import ChatOllama
 from langchain_core.output_parsers import StrOutputParser
 from prompt_template import formater_prompt
-from chloe import CHROMA_PATH, EMBEDDING_MODEL
+from collecte import CHROMA_PATH, EMBEDDING_MODEL
 
 # ==========================================
 # CONFIGURATION 
