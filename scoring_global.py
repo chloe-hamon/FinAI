@@ -1,7 +1,7 @@
 import json
 import os
 from datetime import datetime
-from chloe import PATHS
+from collecte import PATHS
 
 os.makedirs(PATHS["scoring"], exist_ok=True)
 
