@@ -25,7 +25,8 @@ from financial_tools_langchain import (
     recherche_financiere,
     detecter_ticker,
     detecter_entreprise,
-    analyser_action
+    analyser_action,
+    score_global_action,
 )
 
 historique = [] 
@@ -55,6 +56,9 @@ def creer_agent():
     def get_news_action(entreprise: str) -> str:
         """Recherche les dernières actualités sur une entreprise ou un sujet financier.
         Input: nom de l'entreprise ou sujet ex: 'Airbus', 'inflation', 'BCE', 'Bitcoin'"""
+
+        SEUIL = 1.2
+
         resultats = vector_store.similarity_search_with_score(
             f"actualités news {entreprise}",
             k=5,
@@ -62,21 +66,19 @@ def creer_agent():
         )
 
         if not resultats:
-            return (f"❌ Aucune actualité trouvée pour '{entreprise}'."
-                   f"STOP. Donne Final Answer maintenant : les actualités ne sont pas disponibles.")
+            resultats = vector_store.similarity_search_with_score(
+                f"actualités news {entreprise}", k=5
+            )
 
-
-        SEUIL = 1.2
         filtres = [(doc, score) for doc, score in resultats if score < SEUIL]
 
         if not filtres:
             return f"❌ Aucune actualité récente pertinente pour '{entreprise}'."
 
-        blocs = []
-        for doc, score in filtres[:3]:
-            blocs.append(doc.page_content.strip())
-
-        return "\n\n".join(blocs)
+        return ("Voici les actualités récentes :\n\n"
+                + "\n\n".join(doc.page_content.strip() for doc, _ in filtres[:3])
+                + "\n\nObservation terminée. Passe directement à Final Answer."
+                )  
 
     # ==========================================
     # CRÉATION DE L'AGENT
@@ -96,6 +98,7 @@ def creer_agent():
         get_correlation,
         get_news_action,
         analyser_action,
+        score_global_action,
     ]
 
     # Prompt ReAct
@@ -110,37 +113,36 @@ def creer_agent():
     RÈGLES STRICTES :
     - Cours actuel → get_cours_action avec UN SEUL ticker (ex: ^FCHI)
     - Performance sur une période → get_historique_action avec format 'TICKER PERIODE'
-    - Données fondamentales → get_donnees_financieres
     - Rapports PDF → recherche_financiere
     - P/E ratio → get_pe_ratio avec le ticker exact
     - Top performers → get_top_performers avec le nom de l'indice
     - Corrélation → get_correlation avec format 'TICKER1 TICKER2 PERIODE'
     - Actualités → get_news_action avec le nom de l'entreprise
-    - Analyse d'opportunité → analyser_action avec le ticker
-    - Si un outil retourne '❌ Aucun document trouvé' ne rappelle PAS le même outil avec la même entrée passe directement à Final Answer avec ce que tu sais
-    - Pour comparer deux entreprises, appelle recherche_financiere UNE FOIS pour chaque entreprise séparément, puis synthétise
+    - Si un outil retourne une erreur, ne le rappelle PAS → Final Answer immédiat
+    - Analyse technique (cours, RSI, tendance, graphique) → analyser_action avec le ticker
+    - Score global, recommandation, faut-il acheter, avis → score_global_action
+    - Ces deux outils sont DIFFÉRENTS et JAMAIS interchangeables :
+        * analyser_action = données techniques brutes
+        * score_global_action = scoring pondéré + décision BUY/SELL/NEUTRAL
 
     INTERDICTIONS ABSOLUES :
-    Ne JAMAIS écrire Action Input sans Action avant
-    Ne JAMAIS appeler le même outil deux fois avec le même input
-    Ne JAMAIS inventer de chiffres si l'outil ne retourne rien
-    Ne JAMAIS écrire deux Action/Action Input dans le même bloc
+    - Ne JAMAIS rappeler un outil déjà utilisé avec le même input
+    - Ne JAMAIS réécrire Question:/Thought: depuis le début après une Observation
+    - Ne JAMAIS écrire Action sans avoir besoin d'un outil supplémentaire
+    - Ne JAMAIS inventer de chiffres
+    - Ne JAMAIS Enchaîner deux Action/Action Input.
 
-    OBLIGATION :
-    Dès que tu as les données → Final Answer IMMÉDIATEMENT
-    Si aucun document trouvé → Final Answer avec "Information non disponible"
-    Toujours citer la source exacte (nom du PDF, page)
-    
-    Format OBLIGATOIRE :
+    FORMAT STRICT — chaque étape UNE SEULE FOIS :
 
-    Question: la question posée
-    Thought: ce que je dois faire
-    Action: nom_de_loutil
-    Action Input: paramètre
-    Observation: résultat de l'outil
-    Thought: J'ai suffisamment d'informations pour répondre
-    Final Answer: ma réponse complète en français
+    Question: {input}
+    Thought: [ce que je vais faire]
+    Action: [nom_outil]
+    Action Input: [paramètre]
+    Observation: [résultat — NE PAS RÉÉCRIRE, c'est fourni automatiquement]
+    Thought: J'ai les informations nécessaires. Je rédige ma réponse finale.
+    Final Answer: [réponse complète en français]
 
+    ⚠️ RÈGLE ABSOLUE : Après chaque Observation, tu DOIS écrire Thought puis Final Answer.
     ---
     Historique : {chat_history}
 
@@ -187,8 +189,8 @@ def creer_agent():
         memory=memory,
         verbose=True,
         handle_parsing_errors= handle_error,
-        max_iterations=10,
-        max_execution_time=120,
+        max_iterations=5,
+        max_execution_time=60,
         return_intermediate_steps=False,
     )
     return agent_executor, tools
@@ -207,6 +209,9 @@ if __name__ == "__main__":
     print("💬 Tapez 'quit' pour quitter\n")
 
     historique = []
+    
+    MOTS_SCORE = ["score", "recommandation", "acheter", "vendre", "avis", "décision", "faut-il"]
+    MOTS_ANALYSE = ["analyse", "technique", "rsi", "tendance", "graphique", "performance"]
 
     while True:
         try:
@@ -218,9 +223,31 @@ if __name__ == "__main__":
                 print("👋 Au revoir !")
                 break
            
-            ticker = detecter_ticker(user_input)
+            ticker = detecter_ticker(user_input)  
+            question_lower = user_input.lower()
+            
             if ticker:
-                user_input = f"{user_input} (ticker: {ticker})"
+                if any(mot in question_lower for mot in MOTS_SCORE):
+                    print("\n🎯 Score global en cours...\n")
+                    reponse = score_global_action.invoke(ticker)
+                    print(f"\n🤖 FinAI : {reponse}")
+                    print("-" * 50 + "\n")
+                    historique.append({"role": "user",      "content": user_input})
+                    historique.append({"role": "assistant", "content": reponse})
+                    continue
+
+                elif any(mot in question_lower for mot in MOTS_ANALYSE):
+                    print("\n📊 Analyse technique en cours...\n")
+                    reponse = analyser_action.invoke(ticker)
+                    print(f"\n🤖 FinAI : {reponse}")
+                    print("-" * 50 + "\n")
+                    historique.append({"role": "user",      "content": user_input})
+                    historique.append({"role": "assistant", "content": reponse})
+                    continue
+
+                else:
+                    # Cas général avec ticker → on l'injecte dans l'input
+                    user_input = f"{user_input} (ticker: {ticker})"
 
             print("\n🤔 Analyse en cours...\n")
 
