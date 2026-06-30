@@ -1,5 +1,5 @@
 from langchain.tools import tool
-from vadim import ask, retriever, charger_vector_store, construire_contexte
+from rag import ask, retriever, charger_vector_store, construire_contexte
 import re
 import os
 
