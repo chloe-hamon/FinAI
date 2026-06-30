@@ -151,26 +151,26 @@ TICKERS = {
     "TotalEnergies": "TTE.PA",
     "LVMH":          "MC.PA",
     "BNP Paribas":   "BNP.PA",
-    "Sanofi":        "SAN.PA",
+    "Sanofi":        "SNY",
     # DAX
     "SAP":           "SAP.DE",
-    "Siemens":       "SIE.DE",
-    "BMW":           "BMW.DE",
-    "Volkswagen":    "VOW3.DE",
-    "Adidas":        "ADS.DE",
+    "Siemens":       "SIEGY",
+    "BMW":           "BMWYY",
+    "Volkswagen":    "VWAGY",
+    "Adidas":        "ADDYY",
     # FTSE100
     "HSBC":          "HSBC",
     "BP":            "BP.L",
     "Shell":         "SHEL.L",
-    "Unilever":      "ULVR.L",
+    "Unilever":      "UL",
     "AstraZeneca":   "AZN.L",
     # Nikkei225
-    "Toyota":        "7203.T",
-    "Sony":          "6758.T",
-    "SoftBank":      "9984.T",
-    "Nintendo":      "7974.T",
-    "Mitsubishi":    "8058.T",
-    "Honda":         "7267.T",
+    "Toyota":        "TM",
+    "Sony":          "SONY",
+    "SoftBank":      "SFTBY",
+    "Nintendo":      "NTDOY",
+    "Mitsubishi":    "MSBHF",
+    "Honda":         "HMC",
 }
 ENTREPRISES_CONNUES = {
     "apple":          "Apple",
@@ -573,8 +573,10 @@ def get_correlation(input: str) -> str:
 
 @tool
 def analyser_action(ticker: str) -> str:
-    """Analyse rapide d'une action : cours actuel, performance 1 mois, P/E ratio.
-    Input: ticker ex: 7203.T, AAPL, BTC-USD"""
+    """Analyse TECHNIQUE d'une action : cours actuel, performance 1 mois, P/E ratio, moyennes mobiles, RSI.
+    Utiliser pour : 'analyse technique', 'analyse', 'graphique', 'tendance', 'RSI', 'momentum'.
+    NE PAS utiliser pour le scoring ou la recommandation.
+    Input: ticker ex: AAPL, BTC-USD"""
     import yfinance as yf
     import re
     ticker = re.sub(r"['\"]", "", ticker).strip().split()[0].upper()
@@ -593,14 +595,74 @@ def analyser_action(ticker: str) -> str:
         signe = "📈" if variation > 0 else "📉"
 
         result = (
-            f"{ticker} — Analyse :\n"
-            f"  Cours actuel : {prix:.2f} {devise}\n"
-            f"  Performance 1 mois : {signe} {variation:+.2f}%\n"
+            f"{ticker} — Analyse rapide :\n"
+            f"  Cours actuel      : {prix:.2f} {devise}\n"
+            f"  Performance 1 mois: {signe} {variation:+.2f}%\n"
         )
         if pe:
-            result += f"  P/E ratio : {pe:.2f}\n"
-
+            result += f"  P/E ratio         : {pe:.2f}\n"
         return result
+    except Exception as e:
+        return f"❌ Erreur pour {ticker} : {e}"
+
+
+@tool
+def score_global_action(ticker: str) -> str:
+    """Score global et recommandation d'investissement BUY/SELL/NEUTRAL.
+    Utiliser pour : 'score', 'score global', 'recommandation', 'faut-il acheter', 'avis', 'décision'.
+    NE PAS utiliser pour l'analyse technique ou les graphiques.
+    Input: ticker ex: AAPL, BTC-USD"""
+
+    import yfinance as yf
+    import re
+    import sys, os
+    sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+    from scoring_global import scorer_actif
+
+    ticker = re.sub(r"['\"]", "", ticker).strip().split()[0].upper()
+    try:
+        t = yf.Ticker(ticker)
+        prix = t.fast_info.last_price
+        hist = t.history(period="1mo")
+        info = t.info
+
+        if hist.empty or prix is None:
+            return f"❌ Données non disponibles pour {ticker}."
+
+        debut = hist["Close"].iloc[0]
+        variation = ((prix - debut) / debut) * 100
+
+        pe = info.get("trailingPE")
+        pb = info.get("priceToBook")
+
+        # Scores
+        score_tech = round(min(10, max(-10, variation / 3)), 2)
+
+        score_fond = 0
+        if pe:
+            score_fond += 3 if pe < 15 else (1 if pe < 25 else -2)
+        if pb:
+            score_fond += 2 if pb < 1.5 else (0 if pb < 3 else -1)
+        score_fond = round(min(10, max(-10, score_fond)), 2)
+
+        resultat = scorer_actif(
+            ticker     = ticker,
+            type_actif = "action",
+            score_tech  = score_tech,
+            score_fond  = score_fond,
+            score_senti = None,
+            score_macro = None,
+        )
+
+        return (
+            f"🎯 {ticker} — Score Global FinAI\n"
+            f"  Score technique  : {resultat['scores']['technique']:+.2f}\n"
+            f"  Score fondamental: {resultat['scores']['fondamental']:+.2f}\n"
+            f"  Score total      : {resultat['scores']['total']:+.2f}\n"
+            f"  Décision         : {resultat['recommandation']}\n"
+            f"  Action           : {resultat['action']}\n"
+            f"  Confiance        : {resultat['confiance']}"
+        )
     except Exception as e:
         return f"❌ Erreur pour {ticker} : {e}"
 
