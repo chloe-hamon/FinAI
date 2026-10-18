@@ -13,6 +13,7 @@ Interface Utilisateur : Streamlit.
 Ordonnancement : scheduler.py pour la mise à jour continue des flux.
 
 Structure du Projet
+
 ├── config.py                  # Centralisation de la configuration (actifs, chemins, modèles)
 
 ├── collecte.py                # Collecte des données (yFinance, flux RSS, ChromaDB)
