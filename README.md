@@ -14,16 +14,27 @@ Ordonnancement : scheduler.py pour la mise à jour continue des flux.
 
 Structure du Projet
 ├── config.py                  # Centralisation de la configuration (actifs, chemins, modèles)
+
 ├── collecte.py                # Collecte des données (yFinance, flux RSS, ChromaDB)
+
 ├── agent.py                   # Agent conversationnel ReAct et mémoire fenêtrée
+
 ├── rag.py                     # Pipeline de recherche sémantique et traduction FR-EN
+
 ├── pipeline_pdf.py            # Ingestion des rapports PDF (texte + vision)
+
 ├── financial_tools_langchain.py # Registre des 14 outils LangChain `@tool`
+
 ├── scoring_global.py          # Modèle de scoring multifactoriel par classe d'actif
+
 ├── analyse_tech.py            # Indicateurs d'analyse technique (RSI, MACD, etc.)
+
 ├── analyse_fond.py            # Analyse fondamentale (ratios financiers yFinance)
+
 ├── macro.py                   # Indicateurs macroéconomiques (API FRED, VIX, courbe des taux)
+
 ├── scheduler.py               # Tâches de fond et mises à jour périodiques
+
 └── app.py                     # Interface Web Streamlit
 
 Modules Fonctionnels
